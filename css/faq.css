@@ -1,0 +1,432 @@
+.faq_oneOnOne_header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.faq_oneOnOne_header .content {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.faq_oneOnOne_header .logo {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 60px;
+    width: 110px;
+    background: url(../images/logo_sub_header.png) 0 50% no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    opacity: 1;
+}
+
+.faq_oneOnOne_header .top {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 32px;
+    padding-top: 28px;
+    font-family: 'sw_f';
+    font-weight: bold;
+    color: #bbbbbb;
+    font-size: 13px;
+    opacity: 1;
+}
+
+.faq_oneOnOne_header .top:after {
+    content: '';
+    width: 12px;
+    height: 15px;
+    background: url(../images/icon_arr_top.png) 50% 0 no-repeat;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 18px;
+}
+
+.faq_oneOnOne_header ul {
+    width: 1170px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.faq_oneOnOne_header ul li {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+}
+
+.faq_oneOnOne_header ul li a {
+    font-size: 16px;
+    color: #999999;
+    line-height: 60px;
+    font-family: 'noto_dl';
+    letter-spacing :-0.08em;
+}
+
+.faq_oneOnOne_header ul li+li{
+    margin-left: 21px;
+}
+
+.faq_oneOnOne_header ul li+li::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #dddddd;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: 28px;
+}
+
+.faq_oneOnOne_header .active a {
+    display: block;
+    position: relative;
+    color: #009223;
+    font-family: 'noto_m';
+}
+
+.faq_oneOnOne_header .active a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #009223;
+}
+
+.faq_oneOnOne_header ul li:last-child a {
+    padding-left: 24px;
+}
+
+.board_list_wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 127px;
+}
+
+#content {
+    padding-top: 0;
+    position: relative;
+    z-index: 3;
+}
+
+#content h2.faqTitle {
+    font-size: 40px;
+    font-family: noto_dl;
+    letter-spacing: -0.007em;
+    color: rgb(41, 41, 41);
+    text-align: center;
+    padding: 74px 0px 80px;
+}
+
+.faq_wrapper {
+    background-color: #f2f2f2;
+    margin-top: 33px;
+    padding-bottom: 130px;
+    min-height: 277px;
+}
+
+.faq_wrapper .faq_menu {
+    height: 100px;
+    width: 1230px;
+    margin: 0 auto;
+    background: url(../images/bg_tab.png) 0 0 no-repeat;
+    position: relative;
+    top: -40px;
+    z-index: 3;
+    text-align: center;
+}
+
+.faq_wrapper .faq_menu ul {
+    font-size: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.faq_wrapper .faq_menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.faq_wrapper .faq_menu li::after{
+    content: '';
+    
+}
+
+.faq_wrapper .faq_menu a {
+    font-family: 'noto_m';
+    font-size: 16px;
+    color: #666666;
+    display: block;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 24px;
+}
+
+.faq_wrapper .faq_menu li.active a {
+    color: #009223;
+    font-family: 'noto_b';
+}
+
+.faq_wrapper li:first-child a::after {
+    display: none;
+}
+
+.faq_wrapper li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 33px;
+    width: 1px;
+    height: 15px;
+    background-color: #dddddd;
+}
+
+.form_area{
+    width: 1170px;
+    margin: 0 auto;
+    display: table;
+}
+
+.board_list_wrapper .board_total {
+    color: #999999;
+    float: left;
+    margin-top: 17px;
+    font-family: 'noto_dl';
+    letter-spacing: -0.045em;
+}
+
+.board_list_wrapper .board_total strong {
+    font-family: 'noto_m';
+    color: #009223;
+    display: inline-block;
+    margin: 0 0 0 3px;
+}
+
+.form_search {
+    float: right;
+    margin-bottom: 10px;
+    width: 224px;
+    border: 2px solid #dddddd;
+    height: 41px;
+    display: block;
+    position: relative;
+    padding-right: 42px;
+}
+
+.form_search input {
+    border: 0;
+    height: 41px;
+    width: 100%;
+    text-indent: 14px;
+    color: #292929;
+    font-size: 16px;
+}
+
+input {
+    vertical-align: middle;
+    font-family: 'noto_dl';
+    outline: none;
+}
+
+input::placeholder {
+    color: #bbbbbb;
+  }
+
+.form_search .btn_search {
+    background: url(../images/icon_search.png) 50% 50% no-repeat;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.form_search .btn_search:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 13px;
+    width: 2px;
+    height: 16px;
+    background-color: #e5e5e5;
+}
+
+.faq_content {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.faq_wrapper .faq_content {
+    border-top: 4px solid #009223;
+}
+
+.faq_wrapper .faq_content li {
+    border-bottom: 1px solid #dddddd;
+    background-color: #fff;
+}
+
+details[open]{
+    background-color: #f8f8f8;
+}
+
+details[open] .question strong{
+    color: #009223;
+}
+
+.faq_wrapper .question {
+    cursor: pointer;
+    position: relative;
+    padding: 20px 100px 25px;
+}
+
+.faq_wrapper .question .q_txt {
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    margin-top: -15px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'sw_f';
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    background-color: #009223;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.faq_wrapper .question strong {
+    display: block;
+    margin-top: 5px;
+    font-family: 'noto_dl';
+    color: #292929;
+    line-height: 26px;
+    font-weight: normal;
+}
+
+.faq_wrapper .question:after {
+    content: '';
+    background: url(../images/icon_faq.png) 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+details[open] .question:after{
+    transform: rotate(135deg);
+}
+
+.faq_wrapper .question:after{
+    transition-duration: 0.5s;
+}
+
+.faq_wrapper .answer {
+    position: relative;
+    padding: 0px 100px;
+    overflow: hidden;
+}
+
+.faq_wrapper .answer .a_txt {
+    position: absolute;
+    left: 35px;
+    top: 21px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'sw_f';
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    background-color: #ffc300;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+.faq_wrapper .answer .answer_txt {
+    display: block;
+    color: #666666;
+    font-family: 'noto_dl';
+    line-height: 26px;
+    border-top: 1px solid #dddddd;
+    padding: 15px 0;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 34px;
+    font-size: 0;
+}
+
+.pagination a {
+    font-family: 'sw_f';
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 3px;
+    margin: 0 10px;
+    display: inline-block;
+    color: #bbbbbb;
+}
+
+.pagination a.active {
+    color: #009223;
+}
+
+.pagination .prev_btn{
+    margin-right: 97px;
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    background: url(../images/icon_page_btn.png) no-repeat;
+    background-position: 0 0;
+}
+
+.pagination .prev_btn:hover{
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    background: url(../images/icon_page_btn.png) no-repeat;
+    background-position: 0 100%;
+}
+
+.pagination .next_btn{
+    margin-left: 97px;
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    background: url(../images/icon_page_btn.png) no-repeat;
+    background-position: 100% 0;
+}
+
+.pagination .next_btn:hover{
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    background: url(../images/icon_page_btn.png) no-repeat;
+    background-position: 100% 100%;
+}
+
+
