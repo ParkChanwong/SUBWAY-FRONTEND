@@ -221,6 +221,11 @@ td{
     border-bottom: 1px solid #dddddd;
 }
 
-/* div {
-    display: block;
-} */
+.font_search{
+    font-family: 'noto_r';
+}
+
+.font_search::placeholder{
+    font-family: 'noto_r';
+    color: #bbbbbb;
+}
