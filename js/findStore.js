@@ -1,3 +1,3 @@
-$(document).ready(funtion(){
-    $(".new_store_slider_wrapper").slick();
+$(document).ready(function() {
+    $('.new_store_slider_wrapper').slick();
 });
