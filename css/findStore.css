@@ -416,10 +416,10 @@
     margin-bottom: 0 !important;
 }
 
-.slick-dots {
-    top: -20px !important;
-    right: -560px !important;
-}
+/* .slick-dots {
+    top: 0 !important;
+    right: -50% !important;
+} */
 
 .slick-dots li {
     width: unset !important;
@@ -453,7 +453,7 @@
 .slick-dots li.slick-active button:before {
     width: 30px !important;
     background-color: #ffc300;
-}
+} 
 
 
 
