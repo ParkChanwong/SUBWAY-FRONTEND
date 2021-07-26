@@ -411,8 +411,33 @@
     font-size: 18px;
     font-family: 'sw_f';
 }
+.slick-prev, .slick-next {
+    width: 50px !important;
+    height: 50px !important;
+    background: url('/images/findStoreImages/icon_event_slider_arr.png') no-repeat !important;
+    top: 50% !important;
+}
+.slick-prev::before, .slick-next::before {
+    display: none;
+}
 
+.slick-prev {
+    background-position: 0 0 !important;
+    left: -110px !important;
+}
 
+.slick-next {
+    background-position: 100% 0 !important;
+    right: -110px !important;
+}
+
+.slick-prev:hover {
+    background-position: 0 100% !important;
+}
+
+.slick-next:hover {
+    background-position: 100% 100% !important;
+}
 /* 
 .new_store_slider{
     display: inline-block;
