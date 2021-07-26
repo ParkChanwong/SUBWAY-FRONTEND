@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY 써브웨이</title>
+    <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/global.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/newsNotice.css" type="text/css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="">로그인</a></li>
+                        <li class="signUp">
+                            <a href="">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="./images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div id="container">
+            <div class="content_wrap">
+                <div class="sub_header">
+                    
+                </div>
+                <h2 class="subTitle">뉴스ㆍ공지사항</h2>
+                <div class="table_contain">
+                    <div class="board_total">
+                        <p>총 <strong>147</strong>건의 게시글이 있습니다.</p>
+                    </div>
+                    <form action="#">
+                        <div class="form_search">
+                            <input type="text" placeholder="검색어를 입력하세요"><a href="#" class="btn_search" ><span id="text">검색</span></a>
+                        </div>
+                    </form>
+                    <table>
+                        <caption>뉴스ㆍ공지사항 테이블</caption>
+                        <tbody>
+                            <tr class="notice">
+                                <td class="td_icon">
+                                    <div class="icon_notice"></div>
+                                </td>
+                                <td class="td_title">
+                                    <div class="title"><a href="./newsView.html">써브웨이와 함께하는 tvN '간떨어지는동거'</a></div>
+                                </td>
+                                <td class="td_blank">
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    21.05.27
+                                </td>
+                            </tr>
+                            <tr class="notice">
+                                <td class="td_icon">
+                                    <div class="icon_notice"></div>
+                                </td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">써브웨이 2021년 5월 가격 인상 안내</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    21.05.03
+                                </td>
+                            </tr>
+                            <tr class="notice">
+                                <td  class="td_icon">
+                                    <div class="icon_notice"></div>
+                                </td>
+
+                                <td class="td_title">
+                                    <div class="title"><a href="#">써브웨이 앱 출시 및 앱 사용 불가 매장 안내</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    20.06.24
+                                </td>
+                            </tr>
+                            <tr class="notice">
+                                <td class="td_icon">
+                                    <div class="icon_notice"></div>
+                                </td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">써브웨이 그릴드 랩 & 파니니 일부 매장 판매 안내</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    19.10.10
+                                </td>
+                            </tr>
+                            <tr class="notice">
+                                <td class="td_icon">
+                                    <div class="icon_notice"></div>
+                                </td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">써브웨이 모바일 상품권 이용 안내의 건</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    19.08.20
+                                </td>
+                            </tr>
+                            <tr class="notice">
+                                <td class="td_icon">
+                                    <div class="icon_notice"></div>
+                                </td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">고객 경험 설문조사 프로그램 안내</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    18.07.20
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="num">147</td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">써브웨이와 함께하는 tvN '간떨어지는동거'</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    21.05.27
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">146</td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">써브웨이 2021년 5월 가격 인상 안내</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    21.05.03
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">145</td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">써브웨이 고객센터 2021년 설 연휴 휴무 안내</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    21.02.09
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">144</td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">2021년 설날 당일 매장 영업 안내</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    21.02.09
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">143</td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">써브웨이와 함께하는 JTBC '라이브온'</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    20.11.16
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">142</td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">2020년 추석 당일 매장운영 안내</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    20.09.28
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">141</td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">써브웨이 고객센터 2020년 추석 연휴 휴무 안내</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    20.09.28
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">140</td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">써브웨이와 함께하는 KBS '오!삼광빌라'</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    20.09.21
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">139</td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">써브웨이와 함께하는 tvN '청춘기록'</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    20.09.07
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num">138</td>
+                                <td class="td_title">
+                                    <div class="title"><a href="#">써브웨이와 함께하는 tvN '식스센스'</a></div>
+                                </td>
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td class="td_date">
+                                    20.09.07
+                                </td>
+                            </tr>
+
+                </div>
+                </tbody>
+                </table>
+                <div>
+                    <div class="pagenation">
+                        <a href="#"><div class="left_arrow"></div></a>
+                        <a class="active" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#"><div class="right_arrow"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.
+                    </p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
