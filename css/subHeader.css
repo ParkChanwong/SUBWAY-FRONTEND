@@ -1,3 +1,9 @@
+.content {
+    width: 1170px; 
+    margin: 0 auto; 
+    position: relative; 
+}
+
 .sub_header{
     left: 0;
     width: 100%;
@@ -11,9 +17,10 @@
 }
 
 .sub_header .sub_loc ul li a{
+    font-family: 'noto_r';
     display: block;
     line-height: 60px;
-    color: #999999 !important;
+    color: #999999;
     font-size: 16px;
     letter-spacing: -0.08em;
     position: relative;
@@ -48,7 +55,7 @@
 }
 .sub_header .sub_loc ul li.active a{
     color: #009223;
-    font-family: 'noto_l';
+    font-family: 'noto_r';
 }
 
 .sub_header .sub_loc ul li.active a:after{
@@ -80,7 +87,7 @@
     top: 0px;
     height: 32px;
     padding-top: 28px;
-    font-family: 'noto_r';
+    font-family: 'sw_f';
     color: #bbbbbb;
     font-size: 13px;
 }
