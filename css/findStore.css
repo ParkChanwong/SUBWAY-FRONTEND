@@ -341,7 +341,7 @@
     margin-bottom: 95px;
 }
 .new_store_content .content{
-    max-width: 1170px;
+    width: 1170px;
     margin: 0 auto;
     position: relative;
 }

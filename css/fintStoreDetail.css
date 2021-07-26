@@ -167,3 +167,40 @@
     margin: 0 0 8px 0px;
     letter-spacing: 0;
 }
+.slick-dots {
+    bottom: 0 !important;
+}
+
+.slick-dots li {
+    width: unset !important;
+    height: unset !important;
+    margin: 0 5px !important;
+}
+
+.slick-dots li button {
+    width: 10px !important;
+    height: 10px !important;
+    padding: 0 !important;
+    transition-duration: 0.3s;
+}
+
+.slick-dots li button:before {
+    content: "" !important;
+    width: 10px !important;
+    height: 10px !important;
+    line-height: 13px !important;
+    color: unset !important;
+    background-color: #dddddd;
+    border-radius: 30px;
+    opacity: 1 !important;
+    transition-duration: 0.3s;
+}
+
+.slick-dots li.slick-active button {
+    width: 30px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    width: 30px !important;
+    background-color: #ffc300;
+} 
