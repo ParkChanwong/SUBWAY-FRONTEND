@@ -334,7 +334,6 @@
     position: relative;
     top: -2px;
 }
-
 /* 신규 매장 안내 */
 .new_store_content{
     background-color: #f6f6f6;
@@ -346,40 +345,29 @@
     margin: 0 auto;
     position: relative;
 }
-
-.new_store_content .content>h3{
+.new_store_content .content .title{
     font-size: 28px;
     color: #292929;
     font-family: 'noto_r';
     letter-spacing: -0.05em;
-    padding-bottom: 38px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
-.new_store_slider{
-    display: inline-block;
-    width: 1170px;
-}
-.store_list{
-    list-style: none;
-    position: relative;
-    width: 100%;
-    margin: -30px 0 0 -30px;
-}
-
-.store_list li{
+.new_store_info{
+    float: left;
     width: 270px;
     height: 172px;
     background-color: #fff;
-    float: left;
     position: relative;
     margin: 20px 0 0 20px;
 }
-.store_list li .area{
+.new_store_info .area{
     text-align: center;
     color: #292929;
     font-size: 18px;
     padding-top: 32px;
 }
-.store_list li .area>span{
+.new_store_info .area>span{
     font-family: 'noto_b';
     color: #292929;
     font-size: 22px;
@@ -387,7 +375,8 @@
     display: block;
     margin-top: 5px;
 }
-.store_list li .state{
+
+.new_store_info .state{
     height: 50px;
     position: absolute;
     left: 0;
@@ -398,20 +387,7 @@
     font-size: 18px;
     font-family: 'sw_f';
 }
-.store_list li .comming{
-    background-color: #ffce32;
-    color: #009223;
-}
-.store_list li .open{
-    background-color: #009223;
-    color: #ffce32;
-}
-.store_list li .open>span{
-    color: #fff;
-    font-size: 18px;
-    font-family: 'sw_f';
-}
-.store_list li .state::after{
+.new_store_info .state::after{
     content: '';
     width: 12px;
     height: 7px;
@@ -421,6 +397,91 @@
     top: 0;
     margin-left: -6px;
 }
+.new_store_info .comming{
+    background-color: #ffce32;
+    color: #009223;
+}
+
+.new_store_info .open{
+    background-color: #009223;
+    color: #ffce32;
+}
+.new_store_info .open>span{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'sw_f';
+}
+
+
+/* 
+.new_store_slider{
+    display: inline-block;
+    width: 1170px;
+}
+.new_store_slider_wrapper{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    margin: -30px 0 0 -30px;
+}
+
+.new_store_slider_wrapper div{
+    width: 270px;
+    height: 172px;
+    background-color: #fff;
+    float: left;
+    position: relative;
+    margin: 20px 0 0 20px;
+    display: inline-block;
+}
+.new_store_slider_wrapper .area{
+    text-align: center;
+    color: #292929;
+    font-size: 18px;
+    padding-top: 32px;
+}
+.store_list .area>span{
+    font-family: 'noto_b';
+    color: #292929;
+    font-size: 22px;
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+}
+.store_list .state{
+    height: 50px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: 'sw_f';
+}
+.store_list .comming{
+    background-color: #ffce32;
+    color: #009223;
+}
+.store_list .open{
+    background-color: #009223;
+    color: #ffce32;
+}
+.store_list .open>span{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'sw_f';
+}
+.store_list .state::after{
+    content: '';
+    width: 12px;
+    height: 7px;
+    background: url(/images/findStoreImages/icon_store_arr.png) 0 0 no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -6px;
+} */
 .slider_arr a{
     width: 50px;
     height: 50px;
