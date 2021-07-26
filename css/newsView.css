@@ -86,7 +86,7 @@ a:focus{
 
 .board_right ul.notice li a::before{
     content: '';
-    background: url(../images/newsview_images/icon_notice.png)0 0 no-repeat;
+    background: url(../images/newsViewImages/icon_notice.png)0 0 no-repeat;
     width: 20px;
     height: 14px;
     position: absolute;
@@ -130,7 +130,7 @@ a:focus{
     position: absolute;
     left: 10px;
     top: 28px;
-    background: url(../images/newsview_images/icon_arr_l01.png) 0 0 no-repeat;
+    background: url(../images/newsViewImages/icon_arr_l01.png) 0 0 no-repeat;
 }
 
 .next a{
@@ -155,7 +155,7 @@ a:focus{
     position: absolute;
     left: 10px;
     top: 28px;
-    background: url(../images/newsview_images/icon_arr_d02.png) 0 0 no-repeat;
+    background: url(../images/newsViewImages/icon_arr_d02.png) 0 0 no-repeat;
 }
 
 li{
