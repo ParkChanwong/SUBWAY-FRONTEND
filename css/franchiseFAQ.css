@@ -11,7 +11,7 @@
     color: #292929;
     font-weight: 300;
     letter-spacing: -0.07em;
-    padding: 134px 0 80px;
+    padding: 80px 0 80px;
 }
 
 .content_wrap{
@@ -51,7 +51,7 @@
     font-size: 18px;
     width: 30px;
     height: 30px;
-    padding-top: 1px;
+    padding-top: 2px;
     box-sizing: border-box;
     background-color: #009223;
     text-align: center;
@@ -77,6 +77,8 @@
     position: relative;
     padding: 0 100px;
     overflow: hidden;
+    font-family: 'noto_r';
+    color: #666666;
 }
 
 .faq_content .ask .a{
@@ -88,11 +90,19 @@
     font-size: 18px;
     width: 30px;
     height: 30px;
-    padding-top: 1px;
+    padding-top: 2px;
     box-sizing: border-box;
     background-color: #ffc300;
     text-align: center;
     border-radius: 15px;
+}
+.faq_content .ask .ask_text{
+    position: relative;
+    padding: 18px 0 22px;
+    border-top: 1px solid #dddddd;
+    color: #666666;
+    line-height: 26px;
+    font-size: 16px;
 }
 
 .faq_content details[open] .ask .ask-text{
@@ -102,7 +112,6 @@
     color: #666666;
     line-height: 26px;
     font-size: 16px;
-    margin-top: 20px;
 }
 
 div{
@@ -122,7 +131,7 @@ details[open] .question strong{
     font-family: 'noto_l';
 }
 details[open] .question, details[open] .ask{
-    background-color: #f5f5f5;
+    background-color: #fafafa;
 }
 
 .faq_wrapper .faq_content li, .faq_wrapper .question:after, .faq_wrapper .ask .ask_text {
