@@ -18,7 +18,7 @@
     line-height: 50px;
 }
 .date{
-    margin: 17px 0;
+    margin: 24px 0;
     color: #bbbbbb;
     font-size: 16px;
     font-family: 'sw_s';
@@ -50,6 +50,7 @@ a:focus{
     transition-duration: 0.2s;
     width: 170px;
     margin: 0 auto;
+    margin-top: 60px;
 }
 
 .btn_list:before{
