@@ -8,6 +8,40 @@
     text-align: center;
 }
 
+.sub_header .logo{
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    height: 60px;
+    width: 110px;
+    background: url(/images/findStoreImages/logo_sub_header.png) 0 50% no-repeat;
+    display: none;
+}
+
+.sub_header .top{
+    position: absolute;
+    right: 200px;
+    top: 0px;
+    height: 32px;
+    padding-top: 28px;
+    font-family: 'sw_f';
+    color: #bbbbbb;
+    font-size: 13px;
+    display: none;
+}
+.sub_header .top::after{
+    content: '';
+    width: 12px;
+    height: 15px;
+    background: url(/images/findStoreImages/icon_arr_top.png) 50% 0 no-repeat;
+    /* display: block; */
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 18px;
+
+}
 .content_category ul {
     font-size: 0;
 }
