@@ -1,0 +1,19 @@
+[33m3736361[m[33m ([m[1;36mHEAD -> [m[1;32mfindStore[m[33m, [m[1;31morigin/findStore[m[33m)[m fix accept current change
+[33m254c762[m add slider js, html 어유 이 멍청아
+[33m5155ec3[m fix findStore, findStoreDetail html,css
+[33m1f3a426[m fix findStore, findStoreDetail html,css
+[33ma8e0cdd[m fix findStrore css, add findStoreDetail js
+[33m778e609[m fitx findStore html,css,js
+[33m31d082d[m fix findStore html, css, js
+[33mc406b15[m fix findStore css
+[33mb243587[m fix findStore html, css
+[33m5c8a989[m fix findStore html css
+[33mccc7548[m fix slide function and html 어유 이 바보야
+[33m62626cb[m fix findStore html
+[33m1d03dff[m add findStoreDetail html,css
+[33mab8476f[m fix findStore html, css
+[33mb656f20[m fix findStore html, css
+[33mcb8f34b[m fix findStore html, add findStore.js
+[33m5f2fd3f[m add findStore html,css
+[33m8d83d88[m[33m ([m[1;31morigin/subwayPromise[m[33m, [m[1;31morigin/subwayHowToUse[m[33m, [m[1;31morigin/subwayHistory[m[33m, [m[1;31morigin/subwayFranchise[m[33m, [m[1;31morigin/subway[m[33m, [m[1;31morigin/smileSub[m[33m, [m[1;31morigin/news[m[33m, [m[1;31morigin/mySub[m[33m, [m[1;31morigin/myInfoModify[m[33m, [m[1;31morigin/menuInfo[m[33m, [m[1;31morigin/howToUse[m[33m, [m[1;31morigin/homeSub[m[33m, [m[1;31morigin/groupOrder[m[33m, [m[1;31morigin/groupMenuHowToUse[m[33m, [m[1;31morigin/franchise[m[33m, [m[1;31morigin/footer[m[33m, [m[1;31morigin/fastSub[m[33m, [m[1;31morigin/eventPromotion[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/customerInquiry[m[33m, [m[1;31morigin/checkPw[m[33m, [m[1;31morigin/businessDesc[m[33m, [m[1;31morigin/branchInfo[m[33m, [m[1;31morigin/artistSupport[m[33m, [m[1;31morigin/appHowToUse[m[33m, [m[1;31morigin/advertisementVideo[m[33m, [m[1;31morigin/Withdrawal[m[33m, [m[1;32msubwayPromise[m[33m, [m[1;32msubwayHowToUse[m[33m, [m[1;32msubwayHistory[m[33m, [m[1;32msubwayFranchise[m[33m, [m[1;32msubway[m[33m, [m[1;32msmileSub[m[33m, [m[1;32mnews[m[33m, [m[1;32mmySub[m[33m, [m[1;32mmyInfoModify[m[33m, [m[1;32mmenuInfo[m[33m, [m[1;32mhowToUse[m[33m, [m[1;32mhomeSub[m[33m, [m[1;32mgroupOrder[m[33m, [m[1;32mgroupMenuHowToUse[m[33m, [m[1;32mfranchise[m[33m, [m[1;32mfooter[m[33m, [m[1;32mfastSub[m[33m, [m[1;32meventPromotion[m[33m, [m[1;32mdevelop[m[33m, [m[1;32mcustomerInquiry[m[33m, [m[1;32mcheckPw[m[33m, [m[1;32mbusinessDesc[m[33m, [m[1;32mbranchInfo[m[33m, [m[1;32martistSupport[m[33m, [m[1;32mappHowToUse[m[33m, [m[1;32madvertisementVideo[m[33m, [m[1;32mWithdrawal[m[33m)[m add index, templte file
+[33m456c887[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Initial commit
