@@ -140,7 +140,7 @@ select {
     background-color: #009223;
 }
 
-.oneOnOne_wrapper {
+.franchiseApplication_wrapper {
     background-color: #fff;
     width: 1028px;
     margin: 0 auto;
@@ -148,7 +148,7 @@ select {
     padding: 0 70px 49px;
 }
 
-.oneOnOne_wrapper h2.oneOnOne_title {
+.franchiseApplication_wrapper h2.franchiseApplication_title {
     font-size: 40px;
     font-family: 'noto_dl';
     letter-spacing: -0.07em;
@@ -157,21 +157,21 @@ select {
     padding: 74px 0px 80px;
 }
 
-.oneOnOne_wrapper .agree_wrapper {
+.franchiseApplication_wrapper .agree_wrapper {
     overflow: hidden;
     margin-bottom: 96px;
 }
 
-.oneOnOne_wrapper .agree_wrapper .agree:first-child {
+.franchiseApplication_wrapper .agree_wrapper .agree:first-child {
     margin-right: 48px;
 }
 
-.oneOnOne_wrapper .agree_wrapper .agree {
+.franchiseApplication_wrapper .agree_wrapper .agree {
     float: left;
     width: 490px;
 }
 
-.oneOnOne_wrapper .agree_wrapper .agree h3 {
+.franchiseApplication_wrapper .agree_wrapper .agree h3 {
     color: #666666;
     font-size: 18px;
     font-weight: 300;
@@ -180,7 +180,7 @@ select {
     padding-bottom: 19px;
 }
 
-.oneOnOne_wrapper .agree_wrapper .agree .scroll_wrapper {
+.franchiseApplication_wrapper .agree_wrapper .agree .scroll_wrapper {
     border: 2px solid #e5e5e5;
     height: 150px;
     padding: 13px 0 13px 17px;
@@ -199,7 +199,7 @@ select {
     margin-right: 5px;
 }
 
-.oneOnOne_wrapper .agree_wrapper .agree .scroll_wrapper .agreeTxt {
+.franchiseApplication_wrapper .agree_wrapper .agree .scroll_wrapper .agreeTxt {
     margin-right: 10px;
     color: #bbbbbb;
     font-size: 13px;
