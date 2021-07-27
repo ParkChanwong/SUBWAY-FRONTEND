@@ -1,0 +1,128 @@
+#content{
+    padding-top: 0;
+    position: relative;
+    z-index: 3;
+}
+
+.order.group_sub{
+    min-height: 663px;
+    padding-bottom: 130px;
+    background: url(../images/onlineOrder/group_bg.jpg)50% 0% no-repeat #ff8201;
+}
+.order, .order .store_often{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.order_title{
+    text-align: center;
+}
+
+.order_title h3{
+    padding: 50px 0 12px 0;
+    color: #fff;
+    font-size: 70px;
+    font-family: 'noto_m';
+}
+
+.order_title p{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'noto_r';
+}
+
+.order_step li.pick_store.on{
+    width: 164px;
+    height: 170px;
+    padding-right: 16px;
+    background: url(../images/onlineOrder/step00_on_bg.png) no-repeat 0 0;
+}
+
+.order_step li.on{
+    font-family: 'noto_r';
+    padding-left: 102px;
+    font-size: 24px;
+    text-align: left;
+}
+
+.order .order_step li{
+    line-height: 92px;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    vertical-align: top;
+}
+
+.order .order_step{
+    margin-top: 58px;
+    text-align: center;
+    margin-left: 65px;
+}
+
+.store_often .order_con{
+    padding: 0 100px;
+    margin: 0 50px 0;
+    padding-top: 90px;
+}
+
+.order .order_con{
+    position: relative;
+    background-color: #fff;
+}
+
+fieldset{
+    display: block;
+    border: 0;
+}
+legend{
+    display: none;
+}
+
+.shop_select{
+    padding: 40px 0;
+    background: #f6f6f6;
+    overflow: hidden;
+}
+.form_search input{
+    font-family: 'noto_r';
+    border: 0;
+    height: 41px;
+    width: 100%;
+    text-indent: 14px;
+    color: #292929;
+    font-size: 16px;
+}
+
+.shop_select > div.form_search{
+    width: 570px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.form_search {
+    border: 2px solid #dddddd;
+    height: 41px;
+    display: block;
+    position: relative;
+    padding-right: 42px;
+}
+
+
+.form_search .btn_search{
+    background: url(../images/onlineOrder/icon_search.png) 50% 50% no-repeat;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.form_search .btn_search::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 13px;
+    width: 2px;
+    height: 16px;
+    background-color: #e5e5e5;
+}
