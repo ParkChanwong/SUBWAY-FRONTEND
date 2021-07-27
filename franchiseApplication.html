@@ -352,28 +352,8 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <th scope="col">카테고리<span class="essImg"></span></th>
-                                                <td>
-                                                    <div class="form_select" style="width:170px;">
-                                                        <select class="sort1" onchange="changeSort2()">
-                                                        <option>1차분류</option>
-                                                        <option>고객문의</option>
-                                                        <option>앱 관련 문의</option>
-                                                        <option>마케팅 제휴/제안</option>
-                                                        <option>메뉴</option>
-                                                        <option>가맹 개설 문의</option>
-                                                    </select>
-                                                    </div>
-                                                    <div class="form_select" style="width:200px;">
-                                                        <select class="sort2" onchange="showCal()">
-                                                            <option>2차분류</option>
-                                                        </select>
-                                                    </div> 
-                                                </td>
-                                            </tr>
-                                            <tr class="region1" style="display:none">
-                                                <th scope="col">지역/매장<span class="essImg"></span></th>
+                                            <tr class="region1">
+                                                <th scope="col">지역<span class="essImg"></span></th>
                                                 <td>
                                                     <div class="form_select" style="width:196px;">
                                                         <select class="region1_sort" onchange="changeRegion()">
@@ -398,7 +378,7 @@
                                                     </div>
                                                     <div class="form_select" style="width:196px;">
                                                         <select class="region2_sort">
-                                                            <option value="">매장명</option>
+                                                            <option value="">시/군/구</option>
                                                         </select>
                                                     </div>
                                                 </td>
@@ -424,9 +404,8 @@
                                                 <th scope="col">내용<span class="essImg"></span></th>
                                                 <td>
                                                     <span class="form_textarea" style="width:100%">
-                                                        <textarea cols="5" id="qaContent" name="content" placeholder="· 욕설, 비속어, 비방성 등 부적절한 단어가 포함되어 있는 경우, 답변 진행이 어려울 수 있습니다 
-    · 문의가 집중되거나 주말의 경우 답변이 지연될 수 있습니다. 최대한 빠르게 답변 드리도록 하겠습니다" rows="10" style="height:230px;"></textarea>
-                                                    </span>
+                                                        <textarea cols="5" maxlength="500" name="content" placeholder="가맹점 신청과 관련된 문의사항을 작성해 주세요. 
+문의하실 내용을 구체적으로 작성해 주시면 더욱 빠르고 정확한 답변을 드릴 수 있습니다." rows="10" style="height:230px;"></textarea></span>
                                                 </td>
                                             </tr>
                                             <tr>
