@@ -107,6 +107,9 @@ legend{
     padding-right: 42px;
 }
 
+.form_search #keyword::placeholder{
+    color: #bbb;
+}
 
 .form_search .btn_search{
     background: url(../images/onlineOrder/icon_search.png) 50% 50% no-repeat;
@@ -126,3 +129,166 @@ legend{
     height: 16px;
     background-color: #e5e5e5;
 }
+
+.content{
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.board_total{
+    margin: 57px 0 27px 0;
+}
+
+.board_list_wrapper .board_total{
+    color: #999999;
+    letter-spacing: -0.045em;
+    float: left;
+    font-family: 'noto_r';
+}
+
+.board_total strong{
+    color: #009223;
+    display: inline-block;
+    margin: 0 0 0 3px;
+}
+
+.notice_t{
+    display: block;
+    padding-top: 8px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.notice_t em{
+    color: #292929;
+    font-style: normal;
+}
+
+.board_list_wrapper table{
+    clear: both;
+    border-top: 4px solid #009223;
+}
+
+.board_list_wrapper table th{
+    color: #009223;
+    font-size: 16px;
+    font-family: 'noto_l';
+    height: 69px;
+    border-bottom: 1px solid #009223;
+    text-align: center;
+}
+
+.board_list_wrapper table td{
+    height: 69px;
+    border-bottom: 1px solid #dddddd;
+    color: #292929;
+    font-size: 16px;
+    font-family: 'noto_r';
+    text-align: center;
+}
+
+.board_list_wrapper table td .t_l{
+    text-align: left;
+    padding-left: 30px;
+}
+
+.store_name{
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+    padding-left: 60px;
+}
+
+.store_name label{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.my_bookmark{
+    cursor: pointer;
+    width: 24px;
+    z-index: 5;
+}
+
+.my_bookmark input{
+    opacity: 0;
+    position: absolute;
+    left: -2px;
+    height: 0;
+    width: 0;
+}
+
+.my_bookmark .i_star{
+    background: url(../images/onlineOrder/icon_star.png) no-repeat center 50%;
+    background-color: #dddddd;
+    background-size: 12px;
+    display: block;
+    border-radius: 100%;
+    transition-duration: 0.3s;
+    height: 24px;
+    width: 24px;
+    margin-left: 20px;
+}
+
+i{
+    font-style: italic;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.store_address{
+    padding-left: 88px;
+    background: url(../images/onlineOrder/address_icon.png)no-repeat 45px 50%;
+    text-align: left;
+    line-height: 24px;
+}
+
+.store_tel {
+    color: #999999;
+    font-family: 'sw_s';
+}
+.store_distance{
+    color: #999999;
+    font-family: 'sw_s';    
+}
+.store_status span{
+    display: inline-block;
+    width: 67px;
+    height: 25px;
+    border: 1px solid #999;
+    border-radius: 12.5px;
+    color: #999;
+    font-size: 13px;
+    font-family: 'noto_r';
+    text-align: center;
+    line-height: 25px;
+    transition: all 0.3s;
+}
+
+.pagenation{
+    text-align: center;
+    margin-top: 34px;
+}
+
+.pagenation a{
+    font-family: 'sw_f';
+    font-size: 18px;
+    padding: 0 3px;
+    margin: 0 10px;
+}
+
+.pagenation a.active{
+    display: inline-block;
+    color: #009223;
+}
+
+.board_list_wrapper{
+    padding-bottom: 95px;
+}
+
