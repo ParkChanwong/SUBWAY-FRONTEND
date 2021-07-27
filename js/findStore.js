@@ -1,10 +1,9 @@
 $(document).ready(function() {
-<<<<<<< Updated upstream
     $('.new_store_slider_wrapper').slick({
         dots: true,
         dotsClass : "slick-dots",
     });
-<<<<<<< HEAD
+    
     $('.store_slider').slick({
         arrows: false,
         dots: true,
@@ -22,10 +21,3 @@ function initTmap(){
     });
 
 } 
-=======
-    $('.new_store_slider_wrapper').slick();
-});
->>>>>>> Stashed changes
-=======
-});
->>>>>>> parent of 5155ec3 (fix findStore, findStoreDetail html,css)
