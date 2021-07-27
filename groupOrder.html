@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <header>
@@ -214,13 +216,14 @@
                             <p>단체모임에도 써브웨이와 함께하세요!</p>
                         </div>
                         <ol class="order_step">
-                            <li class="pick_store on">매장선택</li> 
+                            <li class="pick_store on">매장선택</li>
                         </ol>
                         <div class="order_con">
                             <fieldset class="shop_select">
                                 <legend>매장 정보 선택 및 입력</legend>
                                 <div class="form_search">
-                                    <input autocomplete="off" id="keyword" maxlength="30" placeholder="지역 또는 매장명 입력" type="text">
+                                    <input autocomplete="off" id="keyword" maxlength="30" placeholder="지역 또는 매장명 입력"
+                                        type="text">
                                     <a href="#" class="btn_search"></a>
                                 </div>
                             </fieldset>
@@ -273,10 +276,12 @@
                                                     <div class="store_distance">1.5km</div>
                                                 </td>
                                                 <td>
-                                                    <div class="store_status" id="map_vi" style="cursor: pointer;" href="#">
+                                                    <div class="store_status" id="map_vi" style="cursor: pointer;"
+                                                        href="#">
                                                         <span class="off">주문불가</span>
                                                     </div>
-                                                    <div class="store_status" id="map_vi" style="cursor: pointer;" href="#">
+                                                    <div class="store_status" id="map_vi" style="cursor: pointer;"
+                                                        href="#">
                                                         <span class="on">주문가능</span>
                                                     </div>
                                                 </td>
@@ -284,9 +289,13 @@
                                         </tbody>
                                     </table>
                                     <div class="pagenation">
-                                        <a href="#"><div class="left_arrow"></div></a>
+                                        <a href="#">
+                                            <div class="left_arrow"></div>
+                                        </a>
                                         <a class="active" href="#">1</a>
-                                        <a href="#"><div class="right_arrow"></div></a>
+                                        <a href="#">
+                                            <div class="right_arrow"></div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="data_none" style="display: none;">
@@ -302,7 +311,53 @@
                 </div>
             </div>
         </div>
-        
+        <div class="popup_back"
+            style="width: 100%; height: 100%; position: fixed; background-color: rgba(0, 0, 0, 0.5); display: flex; justify-content: center; align-items: center;">
+            <div class="popup_wrapper" style="width: 100px; height: 100px; background-color: #fff;">
+                <div id="popup_wrap_wh">
+                    <div class="store">
+                        <div class="title">
+                            <h1 id="storNm">인천주안역</h1>
+                        </div>
+                        <div class="popup_content">
+                            <div class="store_info_wrap">
+                                <dl class="store_info">
+                                    <dt>매장주소</dt>
+                                    <dd id="stroAddr">인천광역시 미추홀구 주안로 89</dd>
+                                </dl>
+                                <dl class="store_info">
+                                    <dt>연락처</dt>
+                                    <dd id="tel">
+                                        032-876-4909
+                                    </dd>
+                                </dl>
+                                <dl class="store_info">
+                                    <dt>영업시간</dt>
+                                    <dd>08:00 ~ 23:00</dd>
+                                </dl>
+                                <dl class="store_info">
+                                    <dt>· 주요서비스</dt>
+                                    <dd>
+                                        <p class="badge">매장오픈</p>
+                                        <p class="badge">APP-패스트썹</p>
+                                        <p class="badge">주차가능</p>
+                                        <p class="badge">배달가능</p>
+                                        <p class="badge">단체주문</p>
+                                        <p class="badge">시그니처랩</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="store_map">
+                                <article class="map_area">
+                                    
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn_close"></button>
+            </div>
+        </div>
         <footer>
             <div class="footer_wrap">
                 <div class="footer_top">
@@ -331,7 +386,8 @@
                     <span class="after">대표 : 콜린클락</span>
                     <span class="after">전화 : 02-797-5036</span>
                     <span>사업자등록번호 : 101-84-04143</span>
-                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.
+                    </p>
                 </div>
                 <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
                 <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
@@ -339,4 +395,5 @@
         </footer>
     </div>
 </body>
+
 </html>
