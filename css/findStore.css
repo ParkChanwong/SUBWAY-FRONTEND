@@ -254,13 +254,11 @@
 .search_result .pagination .next:hover::after{
     background-position: 100% 100%;
 }
-.content_wrap .store_map{
-    width: 100%;
-    height: 700px;
-    position: relative;
+.content_wrap #map_div{
+    position: relative !important;
 }
 /* 매장찾기 팝업..? */
-.store_map .store_map_layout{
+#map_div .store_map_layout{
     width: 298px;
     height: 243px;
     border: 1px solid #000000;
@@ -269,24 +267,24 @@
     left: 50%;
     top: 50%;
     margin: -234px 0 0 -150px;
-    z-index: 0;
+    z-index: 100;
 }
-.store_map .store_map_layout::after{
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -8px;
-        width: 12px;
-        height: 8px;
-        margin-left: -6px;
-        background: url(/images/findStoreImages/icon_arr_d.png) 0 0 no-repeat;
+#map_div .store_map_layout::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    width: 12px;
+    height: 8px;
+    margin-left: -6px;
+    background: url(/images/findStoreImages/icon_arr_d.png) 0 0 no-repeat;
 }
-.store_map .store_map_layout .title{
+#map_div .store_map_layout .title{
     background-color: #ffce32;
     position: relative;
     height: 54px;
 }
-.store_map .store_map_layout .title>span{
+#map_div .store_map_layout .title>span{
     color: #292929;
     font-size: 18px;
     display: block;
@@ -294,7 +292,7 @@
     letter-spacing: -0.03em;
     font-family: 'noto_m';
 }
-.store_map .store_map_layout .title .close_btn{
+#map_div .store_map_layout .title .close_btn{
     background: url(/images/findStoreImages/icon_close01.png) 50% 50% no-repeat;
     width: 54px;
     height: 54px;
@@ -306,15 +304,15 @@
     font-size: 0;
     line-height: 0;
 }
-.store_map .store_map_layout .info{
+#map_div .store_map_layout .info{
     margin: 0 24px;
     border-bottom: 1px solid #dddddd;
     height: 133px;
 }
-.store_map .store_map_layout .info dl{
+#map_div .store_map_layout .info dl{
     padding-top: 23px;
 }
-.store_map .store_map_layout .info dt{
+#map_div .store_map_layout .info dt{
     color: #292929;
     font-size: 13px;
     float: left;
@@ -324,7 +322,7 @@
     margin-bottom: 4px;
     letter-spacing: -0.04em;
 }
-.store_map .store_map_layout .info dt::before{
+#map_div .store_map_layout .info dt::before{
     content: '';
     width: 2px;
     height: 2px;
@@ -336,7 +334,7 @@
     top: -1px;
 }
 
-.store_map .store_map_layout .info dd{
+#map_div .store_map_layout .info dd{
     color: #999999;
     font-size: 13px;
     line-height: 21px;
@@ -346,18 +344,18 @@
     letter-spacing: -0.03em;
     min-height: 21px;
 }
-.store_map .store_map_layout .detail{
+#map_div .store_map_layout .detail{
     text-align: center;
     padding-top: 17px;
 }
-.store_map .store_map_layout .detail a{
+#map_div .store_map_layout .detail a{
     display: inline-block;
     color: #292929;
     font-size: 16px;
     letter-spacing: -0.045em;
     font-family: 'noto_m';
 }
-.store_map .store_map_layout .detail a::after{
+#map_div .store_map_layout .detail a::after{
     content: '';
     width: 25px;
     height: 25px;
