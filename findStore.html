@@ -15,9 +15,10 @@
     <link rel="stylesheet" type="text/css" href="/library/slick-1.8.1/slick/slick-theme.css"/>
     <script type="text/javascript" src="/library/slick-1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="/js/findStore.js"></script>
-
+    <script
+	src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx360121828bc1498a9a0d5bef45f85c58"></script>
 </head>
-<body>
+<body onload="initTmap()">
     <div id="wrap">
         <header>
             <div class="header_wrap">
@@ -269,8 +270,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="store_map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25318.189720916856!2d127.07627811204817!3d37.51325485768232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5ec21ada78f%3A0x4c5857d223fb614c!2z7I2o67iM7Juo7J20IOyeoOyLpOyXreygkCBTVUJXQVk!5e0!3m2!1sko!2skr!4v1627270653440!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div id="map_div">
                     <div class="store_map_layout">
                         <div class="title">
                             <span>잠실역</span>
@@ -287,7 +287,7 @@
                             </dl>
                         </div>
                         <div class="detail">
-                            <a href="#">자세히보기</a>
+                            <a href="/fintStoreDetail.html">자세히보기</a>
                         </div>
                     </div>
                 </div>
