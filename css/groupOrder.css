@@ -8,6 +8,7 @@
     min-height: 663px;
     padding-bottom: 130px;
     background: url(../images/onlineOrder/group_bg.jpg)50% 0% no-repeat #ff8201;
+    width: 100%;
 }
 .order, .order .store_often{
     width: 1170px;
