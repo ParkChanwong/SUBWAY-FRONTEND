@@ -457,6 +457,8 @@
     width: unset !important;
     height: unset !important;
     margin: 0 5px !important;
+    top: -400px !important;
+    right: -550px !important;
 }
 
 .slick-dots li button {
