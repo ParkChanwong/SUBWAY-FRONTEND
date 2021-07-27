@@ -2,7 +2,7 @@
     font-family: 'noto_m';
 }
 .content_wrap{
-    padding-top: 130px;
+    padding-top: 70px;
     padding-bottom: 130px;
     position: relative;
     max-width: 1170px;
@@ -76,7 +76,7 @@ a:focus{
     font-family: 'noto_r';
     position: absolute;
     left: 870px;
-    top: 140px;
+    top: 80px;
     width: 300px;
 }
 
