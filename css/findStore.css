@@ -174,14 +174,24 @@
 .store_search_layer .store_list{
     margin-top: 0;
     height: 421px;
+    
 }
-
+.store_result{
+    height: 400px;
+    overflow-y: scroll;
+}
+.store_result{
+    
+}
 .store_list .store_result_container ul li{
     position: relative;
-    padding: 20px 40px 30px 40px;
-    border-top: 1px solid #dddddd;
+    padding: 5px 40px 20px 40px;
     border-bottom: 1px solid #dddddd;
     cursor: pointer;
+}
+.store_list .store_result_container ul li:first-child{
+    border-top: 1px solid #dddddd;
+    padding-top: 20px;
 }
 .store_list .store_result_container ul li>span{
     display: block;
