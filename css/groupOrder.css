@@ -338,3 +338,74 @@ a:hover .right_arrow {
     background-position: right bottom;
     margin-left: 97px;
 }
+
+
+.popup_back{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.popup_wrapper{
+    width: 620px;
+    height: 694px;
+    top: 520px;
+    margin-left: -370px;
+    transform: matrix(1,0,0,1,0,0);
+
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+}
+
+.popup_wrapper{
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    z-index: 999;
+}
+
+.popup_wrap_wh{
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    height: 644px;
+    box-sizing: border-box;
+}
+
+.popup_wrap_wh .store .titie{
+    text-align: left;
+    padding-bottom: 25px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.popup_wrap_wh .store .titie h1{
+    font-family: 'noto_m';
+    font-size: 30px;
+    color: #009223;
+    letter-spacing: -0.05em;
+    line-height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.popup_wrap_wh .store .titie::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #009223;
+}
