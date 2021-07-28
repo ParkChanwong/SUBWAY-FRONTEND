@@ -382,6 +382,7 @@ a:hover .right_arrow {
     width: 100%;
     height: 644px;
     box-sizing: border-box;
+    overflow-y: scroll;
 }
 
 .popup_wrap_wh .store .title{

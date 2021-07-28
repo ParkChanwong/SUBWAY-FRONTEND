@@ -7,7 +7,7 @@ function initTmap() {
     var map = new Tmapv2.Map("map_div", { // 지도가 생성될 div
         width: "100%", // 지도의 넓이
         height: "260px", // 지도의 높이
-        zoom: 12,
+        zoom: 15,
         zoomControl: false
     });
 }
