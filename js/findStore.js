@@ -1,13 +1,12 @@
 $(document).ready(function() {
     $('.new_store_slider_wrapper').slick({
         dots: true,
-        dotsClass : "slick-dots",
+        dotsClass : "slick-dots"
     });
     
     $('.store_slider').slick({
-        arrows: false,
         dots: true,
-        dotsClass : "slick-dots",
+        dotsClass : "slick-dots"
     });
 });
 
