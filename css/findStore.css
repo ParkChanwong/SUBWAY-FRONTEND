@@ -6,6 +6,7 @@
     min-width: 1170px;
     z-index: 100;
     text-align: center;
+    z-index: 100;
 }
 
 .sub_header .logo{
@@ -42,6 +43,7 @@
     top: 18px;
 
 }
+
 .content_category ul {
     font-size: 0;
 }
@@ -267,17 +269,28 @@
     left: 50%;
     top: 50%;
     margin: -234px 0 0 -150px;
-    z-index: 100;
+    z-index: 3;
 }
 #map_div .store_map_layout::after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -8px;
-    width: 12px;
-    height: 8px;
-    margin-left: -6px;
-    background: url(/images/findStoreImages/icon_arr_d.png) 0 0 no-repeat;
+    border-top: 24px solid #fff; 
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-bottom: 0px solid transparent; 
+    content:""; 
+    position:absolute;
+    bottom: -24px;
+    left:50.25%;
+    z-index: 100; 
+}
+#map_div .store_map_layout::before{
+    border-top: 25px solid #000; 
+    border-left: 10.5px solid transparent; 
+    border-right: 10.5px solid transparent; 
+    border-bottom: 2px solid transparent; 
+    content:""; 
+    position:absolute;
+    bottom: -27px;
+    left:50%;
 }
 #map_div .store_map_layout .title{
     background-color: #ffce32;
