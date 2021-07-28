@@ -67,6 +67,8 @@
 }
 
 .order .order_con{
+    right: 13%;
+    width: 1170px;
     position: relative;
     background-color: #fff;
 }
@@ -241,6 +243,10 @@ table{
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
+}
+
+#uiResultList td:nth-of-type(2){
+    padding-left: 30px;
 }
 
 .store_address{
@@ -465,4 +471,33 @@ a:hover .right_arrow {
 
 .popup_back{
     display: none;
+}
+
+.data_none{
+    display: none;
+}
+
+.data_none{
+    padding: 172px 0;
+    text-align: center;
+    font-family: 'noto_r';
+}
+
+.data_none p{
+    position: relative;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    color: #999;
+    padding-top: 58px;
+}
+
+.data_none p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+    background: url(../images/onlineOrder/icon_exc_sm.png)no-repeat;
+    width: 40px;
+    height: 40px;
 }

@@ -4,4 +4,5 @@ function initTmap(){
         width : "100%", // 지도의 넓이
         height : "260px" // 지도의 높이
     });
+    zoomControl:false
 } 
