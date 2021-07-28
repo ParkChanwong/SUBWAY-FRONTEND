@@ -383,14 +383,15 @@ a:hover .right_arrow {
     height: 644px;
     box-sizing: border-box;
 }
-.scroll .popup_wrap_wh{
+.popup_wrap_wh .scroll{
     overflow-y: scroll;
+    height: 567px;
 }
-.scroll .popup_wrap_wh::-webkit-scrollbar{
+.popup_wrap_wh .scroll::-webkit-scrollbar{
     width: 12px;
 }
 
-.scroll .popup_wrap_wh::-webkit-scrollbar-thumb{
+.popup_wrap_wh .scroll::-webkit-scrollbar-thumb{
     background-color: #dddddd; 
     background-clip: padding-box;
     border: 4px solid transparent;
