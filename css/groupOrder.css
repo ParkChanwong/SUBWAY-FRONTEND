@@ -382,7 +382,18 @@ a:hover .right_arrow {
     width: 100%;
     height: 644px;
     box-sizing: border-box;
+}
+.scroll .popup_wrap_wh{
     overflow-y: scroll;
+}
+.scroll .popup_wrap_wh::-webkit-scrollbar{
+    width: 12px;
+}
+
+.scroll .popup_wrap_wh::-webkit-scrollbar-thumb{
+    background-color: #dddddd; 
+    background-clip: padding-box;
+    border: 4px solid transparent;
 }
 
 .popup_wrap_wh .store .title{
