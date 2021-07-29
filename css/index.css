@@ -269,5 +269,18 @@ img{vertical-align:top; border:0}
 .main_slider_wrapper .slider_controller {width: 1170px; position: absolute; left: 50%; bottom: 0; margin-left: -585px;}
 .main_slider_wrapper .slider_controller .slider_btn_area {position: absolute; right: 0; bottom: 47px;}
 .main_slider_wrapper .slider_controller .slider_btn_area .slider_btn {display: inline-block; margin: 0 5px;}
-.main_slider_wrapper .slider_controller .slider_btn_area .slider_btn a {display: block; width: 10px; height: 20px; background-color: #fff; font-size: 0; line-height: 0; text-indent: -9999px; overflow: hidden; border-radius: 30px; transition-duration: 0.3s;}
+.main_slider_wrapper .slider_controller .slider_btn_area .slider_btn a {display: block; width: 10px; height: 10px; background-color: #fff; font-size: 0; line-height: 0; text-indent: -9999px; overflow: hidden; border-radius: 30px; transition-duration: 0.3s;}
 .main_slider_wrapper .slider_controller .slider_btn_area .slider_btn a.active {background-color:#ffc300; width:30px;}
+
+.main_slider_wrapper .quick_link {position: absolute; width: 1170px; left: 50%; bottom: 0; margin-left: -585px; text-align: right; overflow: hidden; z-index: 5;}
+.main_slider_wrapper .quick_link .link_content {float: right; display: table; overflow: hidden;}
+.main_slider_wrapper .quick_link .link_content > div {display: table-cell; vertical-align: bottom; height: 80px;}
+.main_slider_wrapper .quick_link .link_content > div a {display: block; width: 300px; height: 80px; position: relative; text-align: center; overflow: hidden;}
+.main_slider_wrapper .quick_link .link_content > div a strong {display: inline-block; font-size: 22px; font-weight: bold; padding: 27px 0 0 0;}
+.main_slider_wrapper .quick_link .link_content > div a strong::before {content: ''; position: relative; top: -2px; display: inline-block; vertical-align: middle; padding-right: 13px;}
+.main_slider_wrapper .quick_link .link_content .store a {float: right; background-color: #ffce32; border-radius: 30px 0 0 0 ; transition-duration: 0.2s; letter-spacing: -0.02em;}
+.main_slider_wrapper .quick_link .link_content .store a > strong {color: #292929; display: block;}
+.main_slider_wrapper .quick_link .link_content .store a > strong::before {background: url('../images/main/icon_map.png') 0 0 no-repeat; width: 24px; height: 30px;}
+.main_slider_wrapper .quick_link .link_content .inquire a {float: left; background-color: #009223; border-radius: 0 0 30px 0; letter-spacing: -.0.05em;}
+.main_slider_wrapper .quick_link .link_content .inquire a > strong {color: #fff;}
+.main_slider_wrapper .quick_link .link_content .inquire a > strong::before {background: url('../images/main/icon_franchise.png') 0 0 no-repeat; width: 34px; height: 30px;}
