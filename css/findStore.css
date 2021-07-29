@@ -173,11 +173,11 @@
 }
 .store_search_layer .store_list{
     margin-top: 0;
-    height: 421px;
-    
-}
-.store_result{
     height: 400px;
+}
+
+.store_result{
+    height: 430px;
     overflow-y: scroll;
 }
 .store_result::-webkit-scrollbar{
@@ -193,19 +193,20 @@
 .store_list .store_result_container ul li{
     position: relative;
     padding: 5px 40px 20px 40px;
-    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
     cursor: pointer;
 }
 .store_list .store_result_container ul li:first-child{
     border-top: 1px solid #dddddd;
     padding-top: 20px;
 }
-.store_list .store_result_container ul li>span{
+.store_list .store_result_container ul li>strong{
     display: block;
     color: #292929;
     font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 10px;
+    font-family: 'noto_r';
+    padding: 10px 0;
+
 }
 .store_list .store_result_container ul li .info{
     margin-bottom: 15px;
@@ -233,7 +234,6 @@
     width: 100%;
     bottom: 25px;
     text-align: center;
-    margin-top: 34px;
 }
 .search_result .pagination a{
     font-family: 'sw_f';
@@ -403,7 +403,7 @@
     margin-bottom: 95px;
 }
 .new_store_content .content{
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
     position: relative;
 }
@@ -412,16 +412,17 @@
     color: #292929;
     font-family: 'noto_r';
     letter-spacing: -0.05em;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 10px;
 }
+
 .new_store_info{
     float: left;
     width: 270px;
     height: 172px;
     background-color: #fff;
     position: relative;
-    margin: 20px 0 0 20px;
+    margin: 30px 0 0 30px;
 }
 .new_store_info .area{
     text-align: center;
@@ -487,8 +488,8 @@
     width: unset !important;
     height: unset !important;
     margin: 0 5px !important;
-    top: -400px !important;
-    right: -550px !important;
+    top: -410px !important;
+    right: -575px !important;
 }
 
 .slick-dots li button {
@@ -645,7 +646,7 @@
     text-align: center;
     color: #292929;
     font-size: 16px;
-    font-family: 'noto_r';
+    font-family: 'noto_dl';
 }
 .board_list_wrapper .content table td .num{
     color: #ffc300;
