@@ -319,3 +319,44 @@ a {
     line-height: 50px;
     letter-spacing: -0.03em;
 }
+
+
+
+/* 팝업 css */
+
+.popup_dim {
+    position: fixed;
+    opacity: 0;
+    background-color: #000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.popup_iframe_wrapper iframe {
+    border: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.popup_iframe_wrapper {
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+}
+
+.popup_iframe_wrapper {
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+}
+
+
+
+
+
+
+

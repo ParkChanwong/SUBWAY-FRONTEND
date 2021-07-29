@@ -13,6 +13,14 @@
     <script src="./js/index.js"></script>
 </head>
 <body>
+
+    <div class="popup_bc" style="opacity: 0.6;"></div>
+    <div class="popup_iframe_wrapper" style="opacity: 1; width: 1000px; margin-left: -500px; top: 20px; transform: matrix(1, 0, 0, 1, 0, 0); height: 795px;">
+        <iframe name="ifrm" id="ifrm" src="/myInfoPw.html" scrolling="no" style="height: 100%;">
+        </iframe>
+        <button class="btn_close"></button>
+    </div>
+
     <div id="wrap">
         <header>
             <div class="header_wrap">
@@ -197,7 +205,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div><div class="popup_dim" style="opacity: 0.6;"></div>
                         </li>
                     </ul>
                 </nav>
