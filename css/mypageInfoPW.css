@@ -131,12 +131,13 @@ select {
     margin: auto 0;
 }
 
-.btn.i_reg:after {
+.btn_area a:after {
     content: '';
     display: inline-block;
     vertical-align: middle;
     width: 21px;
     height: 16px;
+    margin-left: 7px;
     background: url(../images/icon_reg.png) 0 0 no-repeat;
 }
 
