@@ -1,0 +1,321 @@
+#container {
+    position: relative;
+    background-color: #f6f6f6;
+    padding-bottom: 130px;
+}
+
+#content_wrap {
+    padding-top: 0;
+    position: relative;
+    z-index: 3;
+}
+
+#content_wrap h2.subTitle {
+    text-align: center;
+    font-size: 40px;
+    color: #292929;
+    font-family: 'noto_dl';
+    letter-spacing: -0.05em;
+    padding: 73px 0 50px;
+}
+
+.manage_wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1170px;
+    background: #ffffff;
+}
+
+.manage_wrap .form_box {
+    padding: 87px 100px 0 100px;
+    overflow: hidden;
+}
+
+.form_box .write_info_wrap {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.pw_btn {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    transition-duration: 0.2s;
+    font-family: 'noto_dl';
+}
+
+.manage_wrap .pw_btn {
+    position: absolute;
+    right: 100px;
+    top: 88px;
+    background-color: #f2f2f2;
+}
+
+.pw_btn span {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 33px;
+    height: 35px;
+    letter-spacing: -0.025em;
+    color: #666666;
+    font-family: 'noto_m';
+}
+
+.form_box .write_info_wrap {
+    overflow: hidden;
+}
+
+.form_box h2{
+    font-size: 26px;
+    font-family: 'noto_dl';
+    margin-bottom: 26px;
+    letter-spacing: -0.05em;
+    color: #666666;
+}
+
+.write_info_wrap .input_set {
+    overflow: hidden;
+    position: relative;
+}
+
+.manage_wrap .input_set.style01 {
+    border: 1px solid #e5e5e5;
+}
+
+.write_info_wrap .input_set dl {
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    padding: 22px 30px;
+}
+
+.write_info_wrap .input_set .info_dl {
+    overflow: hidden;
+}
+
+.manage_wrap .input_set.style01 .info_dl {
+    position: relative;
+    border: 0;
+}
+
+.write_info_wrap .input_set dt {
+    float: left;
+    position: relative;
+    font-family: 'noto_dl';
+    width: 120px;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+}
+
+.manage_wrap .input_set.style01 .info_dl dt {
+    position: relative;
+    float: left;
+    width: 140px;
+}
+
+.manage_wrap .input_set.style01 .info_dl dd {
+    position: relative;
+    float: left;
+    width: calc(100% - 140px);
+    color: #292929;
+    margin-left: unset;
+    line-height: 35px;
+    color: #999;
+    font-family: 'noto_dl';
+}
+
+.write_info_wrap > div ~ div {
+    margin-top: 10px;
+}
+
+.manage_wrap .input_set.style01 .info_dl + dl {
+    padding-top: 0;
+}
+
+.write_info_wrap .input_set .phone_num_wrap {
+    display: inline-block;
+}
+
+.write_info_wrap .input_set dd .form_text {
+    display: inline-block;
+    background-color: #fff;
+    width: 100%;
+}
+
+.form_text input {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    font-size: 16px;
+    vertical-align: middle;
+    font-family: 'noto_dl';
+    outline: none;
+    height: 35px;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    color: #999;
+    text-indent: 0;
+}
+
+.write_info_wrap .input_set .btn_input_in {
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+    width: 127px;
+    text-align: center;
+}
+
+.write_info_wrap .input_set .btn_input_in:before {
+    background-color: #e8e8e8;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -16px;
+    height: 32px;
+    width: 2px;
+}
+
+.write_info_wrap .input_set .btn_input_in .in_form_btn {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    height: 35px;
+    font: inherit;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.write_info_wrap .input_set .btn_input_in .in_form_btn span{
+    color: #009223;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+    line-height: 35px;
+    font-family: 'noto_dl';
+}
+
+.manage_wrap .p_notice {
+    margin-top: 28px;
+    font-size: 13px;
+    color: #999;
+    font-family: 'noto_dl';
+}
+
+.form_box h2 ~ h2 {
+    margin-top: 70px;
+}
+
+.write_info_wrap .input_set dd .marketing_agree_box {
+    height: 35px;
+}
+
+.form_checkbox {
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    color: #292929;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+    font-family: 'noto_dl';
+}
+
+.write_info_wrap .input_set dd .marketing_agree_box label {
+    margin-left: 30px;
+}
+
+.write_info_wrap .input_set dd .marketing_agree_box label:first-child {
+    margin-left: 20px;
+}
+
+.form_checkbox input[type="checkbox"] {
+    height: 0;
+    opacity: 0;
+    width: 0;
+    position: absolute;
+    left: -10px;
+}
+
+.form_checkbox .icon {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #dddddd;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.form_checkbox input[type="checkbox"]:checked+span.icon:before {
+    width: 24px;
+}
+
+.form_checkbox input[type="checkbox"]+span.icon::before {
+    content: '';
+    width: 0;
+    height: 20px;
+    background: url(../images/icon_checkbox.png) 0 0 no-repeat;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    transition-duration: 0.2s;
+}
+
+.btn_area {
+    text-align: center;
+    margin-top: 100px;
+    padding: 40px 0 60px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.btn_area .btn {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+    transition-duration: 0.2s;
+}
+
+.btn_area .btn.bgc_white {
+    background-color: #fff;
+    border: 2px solid #009223;
+    color: #009223;
+    box-sizing: border-box;
+}
+
+.btn_area .btn span {
+    display: inline-block;
+    vertical-align: middle;
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    font-family: 'noto_m';
+}
+
+.btn.bgc_point {
+    background-color: #009223;
+    color: #fff;
+}
+
+.btn.bgc_point:hover{
+    background-color: #00811f;
+}
+
+.btn_area .btn:last-child {
+    margin-left: 7px;
+}
+
+.btn.bgc_point span {
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+}
