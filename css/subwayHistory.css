@@ -1,0 +1,231 @@
+#container {
+    margin-top: 170px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+.sub_header {
+    background-color: transparent;
+    border: 0;
+    height: 60px;
+    position:absolute;
+    left:0;
+    width:100%;
+    top:0;
+    border-bottom:1px solid #e5e5e5;
+    height:59px;
+    background-color:#fff;
+    z-index:5;
+}
+.sub_header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.1;
+}
+.sub_header .logo {
+    position:absolute;
+    left:0;
+    top:0px;
+    height:60px;
+    width:110px;
+    background:url(../images/logo_sub_header.png) 0 50% no-repeat;
+    overflow:hidden;
+    text-indent:-9999px;
+    font-size:0;
+    line-height:0;
+    opacity:0;
+}
+.sub_header .top {
+    position:absolute; 
+    right:0; 
+    top:0px; 
+    height:32px; 
+    padding-top:28px; 
+    font-family:noto_dl; 
+    font-weight:bold; 
+    color:#bbbbbb; 
+    font-size:13px; 
+    opacity:0;
+}
+
+
+.sub_header .sub_loc ul li::after { 
+    opacity: 0.2;
+}
+.sub_header .sub_loc ul li a {
+    color: #fff;
+}
+.sub_header .sub_loc ul li.active a {
+    color: #ffce32 !important;
+}
+.sub_header .sub_loc ul li.active a::after {
+    background-color: #ffce32 !important;
+}
+/* .sub_header {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    height: 60px;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+    position: sticky;
+    position:absolute; 
+    left:0; 
+    width:100%; 
+    top:0; 
+    border-bottom:1px solid #e5e5e5; 
+    height:59px; 
+    background-color:#fff; 
+    z-index:5;
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-family: noto_dl;
+}
+.sub_header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.1;
+}
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    line-height: 120%;
+}
+.sub_header .logo {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 60px;
+    width: 110px;
+    background: url(../images/logo_sub_header.png) 0 50% no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute; 
+    left: 0;
+    top: 0px;
+    height: 60px;
+    width: 110px;
+    background: url(../images/logo_sub_header.png) 0 50% no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+    display: none;
+}
+.sub_header .sub_loc {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+.sub_header .sub_loc ul {
+    overflow: hidden;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+.sub_header .sub_loc ul li {
+    float: left;
+    position: relative;
+}
+.sub_header .sub_loc ul li::after {
+    opacity: 0.2;
+}
+.sub_header .sub_loc ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+.sub_header .sub_loc ul li:first-child:after {
+    display: none;
+}
+.sub_header .sub_loc ul li.active a {
+    color: #ffce32 !important;
+}
+.sub_header .sub_loc ul li.active a::after {
+    
+}
+.sub_header .sub_loc ul li a {
+    display: block;
+    line-height: 60px;
+    color: #999999;
+    font-size: 16px;
+    letter-spacing: -0.08em;
+    position: relative;
+    cursor: pointer;
+}
+.sub_header .sub_loc ul li + li {
+    padding-left: 24px;
+    margin-left: 21px;
+}
+.sub_header .sub_loc ul li + li:after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #dddddd;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: 28px;
+}
+.sub_header .sub_loc ul li.active a {
+    color: #009223;
+    font-weight: 300;
+}
+.sub_header .sub_loc ul li.active a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background-color: #009223;
+}
+.sub_header .top {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 32px;
+    padding-top: 28px;
+    font-family: sw_s;
+    font-weight: bold;
+    color: #bbbbbb;
+    opacity: 0;
+    display: none;
+}
+.sub_header .top:after {
+    content: '';
+    height: 15px;
+    background: url(../images/icon_arr_top.png) 50% 0 no-repeat;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 18px;
+}x: 3;
+} */
