@@ -146,7 +146,6 @@ a {
     margin: 0 auto;
     padding: 90px 100px;
     width: 1170px;
-    font-weight: bold;
 }
 
 .data_none {
@@ -180,7 +179,7 @@ a {
 
 .cart .cart_header.wh_box {
     padding: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .cart .cart_header dl {
@@ -373,11 +372,15 @@ input {
     transition-duration: 0.2s;
 }
 
+.form_checkbox input[type="checkbox"]:checked+.icon:before {
+    width: 24px;
+}
+
 .cart .cart_list .order_info .menu_info p {
     padding: 16px 0 36px 47px;
     color: #999;
     line-height: 23px;
-    font-family: noto_t;
+    font-family: noto_dl;
 }
 
 .cart .cart_list .order_info .menu_info > strong {
