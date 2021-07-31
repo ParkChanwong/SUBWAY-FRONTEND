@@ -4,6 +4,6 @@ function tab_fastsub(){
 }
 
 function tab_homesub(){
-    $('.tab_fastsub').addClass('active');
-    $('.tab_homesub').removeClass('active');
+    $('.tab_fastsub').removeClass('active');
+    $('.tab_homesub').addClass('active');
 }
