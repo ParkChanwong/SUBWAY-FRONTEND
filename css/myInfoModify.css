@@ -328,12 +328,17 @@ a {
 
 .popup_wrapper {
     position: absolute;
-    left: 50%;
     z-index: 1000;
     background-color: #ffc300;
     border-radius: 30px;
     box-sizing: border-box;
     padding: 20px 15px 15px 15px;
+    opacity: 1;
+    width: 1000px;
+    margin-left: -500px;
+    left: 50%;
+    top: 20px;
+    height: 795px;
 }
 
 #change_pw {
