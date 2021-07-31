@@ -14,12 +14,78 @@
 </head>
 <body>
 
-    <div class="popup_bc" style="opacity: 0.6;"></div>
-    <div class="popup_iframe_wrapper" style="opacity: 1; width: 1000px; margin-left: -500px; top: 20px; transform: matrix(1, 0, 0, 1, 0, 0); height: 795px;">
-        <iframe name="ifrm" id="ifrm" src="/myInfoPw.html" scrolling="no" style="height: 100%;">
-        </iframe>
-        <button class="btn_close"></button>
+    <div id="popup" style="display: none;">
+        <div class="popup_bgc" style="opacity: 0.6;"></div>
+        <div class="popup_wrapper" style="opacity: 1; width: 1000px; margin-left: -500px; top: 20px; height: 795px; transform: matrix(1, 0, 0, 1, 0, 0);">
+            
+
+
+
+            <div id="change_pw">
+                <!-- container -->
+                <div id="popup_wrap_wh">
+                    <!-- 비밀번호 변경 팝업-->
+                    <div class="chage_pw">
+                        <h1 class="title">비밀번호 변경</h1>
+                        <div class="popup_content">
+                            <p class="txt">개인정보 보호를 위해 주기적으로 변경해 주세요.<br>타인에게 비밀번호가 노출되지 않도록 주의해 주세요.</p>
+                            <section class="form_box">
+                                <div class="write_info_wrap">
+                                    <div class="input_set">
+                                        <dl class=""><!-- 입력값 정상일때:class="true_v"추가 -->
+                                            <dt>현재 비밀번호<span class="ess"></span></dt>
+                                            <dd>
+                                                <span class="form_text">
+                                                    <input id="cpNo" type="hidden" value="로그인한사람전화번호">
+                                                    <input id="pw" name="pw" placeholder="현재 비밀번호" type="password">
+                                                </span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="input_set input_pw_div">
+                                        <dl>
+                                            <dt>새 비밀번호<span class="ess"></span></dt>
+                                            <dd>
+                                                <span class="form_text">
+                                                    <input class="input_pw" id="newPw" name="newPw" placeholder="비밀번호 변경" type="password">
+                                                </span>
+                                                <span class="pw_check miss" style="display: block;">암호체크문구</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <p class="p_notice on worng-msg-pw">영문+숫자+특수문자 조합 8자리 이상 입력해 주세요.<br> 반드시 현재의 비밀번호와 다르게 입력해 주세요.</p>
+                                    <div class="input_set input_pw_div">
+                                        <dl>
+                                            <dt>새 비밀번호 확인<span class="ess"></span></dt>
+                                            <dd>
+                                                <span class="form_text">
+                                                     <input class="input_pw" id="subPw" name="subPw" placeholder="비밀번호 변경" type="password" readonly="readonly">
+                                                </span>
+                                                <span class="pw_check miss" id="wrong-msg-subPw" style="display: block;">새 비밀번호와 일치 하지 않습니다.</span>
+                                                <i class="icon_true_v"></i><!-- 입력값 정상 확인 아이콘 -->
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="btn_area">
+                                <a class="btn bgc_white" style="width:130px;" onclick="document.getElementById('popup').style.display='none'"><span>취소</span></a>
+                                <a class="btn bgc_point i_reg" id="pwInfo" style="width:136px;"><span>변경하기</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 비밀번호 변경 팝업 -->
+                </div>
+                
+            </div>
+
+
+            <input type="button" class="popup_close" onclick="document.getElementById('popup').style.display='none'">
+
+        </div>
     </div>
+
+    
 
     <div id="wrap">
         <header>
@@ -222,9 +288,10 @@
                         <section class="form_box">
                             <div class="write_info_wrap">
                             	<!--  비밀번호변경 버튼 추가 -->
-								<a class="pw_btn" href="#" style="width:132px;">
+                                <input class="pw_btn" type="button" style="width:132px;" onclick="document.getElementById('popup').style.display=''" value="비밀번호 변경">
+								<!-- <a class="pw_btn" href="#" style="width:132px;">
 									<span>비밀번호 변경</span>
-								</a>
+								</a> -->
 								<!--// 비밀번호변경 버튼 추가 -->
 								<div class="write_info_wrap">
 									<h2>회원 정보</h2><!--  타이틀 추가 -->
