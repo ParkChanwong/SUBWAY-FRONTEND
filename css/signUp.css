@@ -1,0 +1,119 @@
+.content_wrap {
+    width: 100%;
+    background-color: #f6f6f6;
+    padding-bottom: 130px;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'noto_dl';
+    letter-spacing: -0.05em;
+    color: #292929;
+    padding: 73px 0 50px;
+}
+
+.step_img {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    font-size: 0;
+    text-align: center;
+}
+
+.step_img li {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    margin-left: 85px;
+    display: inline-block;
+}
+
+.step_img li::after {
+    content: '';
+    position: absolute;
+    background: url('../images/signUp/dots.png');
+    width: 45px;
+    height: 5px;
+    top: 50%;
+    margin-top: -2.5px;
+    right: -65px;
+}
+
+.step_img li:nth-last-child(1)::after {
+    display: none;
+}
+
+.step_img li.check::after {
+    background-position: 0 -5px;
+}
+
+.step_img li.step1 {
+    margin-left: 0;
+    background: url('../images/signUp/stepImage.png') no-repeat;
+    background-position: 0 0;
+}
+
+.step_img li.step2 {
+    background: url('../images/signUp/stepImage.png') no-repeat;
+    background-position: -70px 0;
+}
+
+.step_img li.step3 {
+    background: url('../images/signUp/stepImage.png') no-repeat;
+    background-position: -140px 0;
+}
+
+.step_img li.step4 {
+    background: url('../images/signUp/stepImage.png') no-repeat;
+    background-position: -210px 0;
+}
+
+
+.step_img li.step1.check {
+    background-position: 0 -70px;
+}
+
+.step_img li.step2.check {
+    background-position: -70px -70px;
+}
+
+.step_img li.step3.check {
+    background-position: -140px -70px;
+}
+
+.step_img li.step4.check {
+    background-position: -210px -70px;
+}
+
+.step_title {
+    width: 1170px;
+    height: 70px;
+    border-radius: 40px 0 0 0;
+    background-color: #58006c;
+    overflow: hidden;
+    font-size: 24px;
+    line-height: 70px;
+    text-align: center;
+    color: #ffc300;
+    font-family: 'noto_m';
+    margin: 0 auto;
+}
+
+.step_title span {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 70px;
+    font-family: 'noto_m';
+}
+
+.step_content {
+    margin: 0 auto;
+    width: 1170px;
+    background-color: #ffffff;
+    padding: 85px 100px 100px 100px;
+    box-sizing: border-box;
+}
+
+.checkbox_wrap {
+    
+}
