@@ -56,14 +56,18 @@ a {
     height: 35px;
     letter-spacing: -0.025em;
     color: #666666;
-    font-family: 'noto_m';
+    font-family: 'noto_r';
     border: 0;
     cursor: pointer;
 }
 
+.manage_wrap .pw_btn:hover {
+    background-color: #e5e5e5;
+}
+
 .form_box h2{
     font-size: 26px;
-    font-family: 'noto_dl';
+    font-family: 'noto_r';
     margin-bottom: 26px;
     letter-spacing: -0.05em;
     color: #666666;
@@ -259,6 +263,11 @@ a {
     left: 4px;
     top: 0;
     transition-duration: 0.2s;
+}
+
+.form_checkbox .agree_text{
+    margin-top: 4px;
+    display: inline-block;
 }
 
 .btn_area {

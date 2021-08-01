@@ -59,7 +59,7 @@
                                             <dt>새 비밀번호 확인<span class="ess"></span></dt>
                                             <dd>
                                                 <span class="form_text">
-                                                     <input class="input_pw" id="subPw" name="subPw" placeholder="비밀번호 변경" type="password" readonly="readonly">
+                                                     <input class="input_pw" id="subPw" name="subPw" placeholder="비밀번호 변경" type="password">
                                                 </span>
                                                 <span class="pw_check miss" id="wrong-msg-subPw" style="display: block;">새 비밀번호와 일치 하지 않습니다.</span>
                                                 <i class="icon_true_v"></i><!-- 입력값 정상 확인 아이콘 -->
@@ -320,7 +320,7 @@
 													<input readonly="" type="tel" value="로그인된전화번호">
 												</span>
 												<div class="btn_input_in">
-													<button class="in_form_btn" type="button">
+													<button class="in_form_btn" type="button" onclick="api()">
 														<span>정보변경</span>
 													</button>
 												</div>
@@ -340,19 +340,19 @@
 												<label class="form_checkbox">
 													<input type="checkbox">
 													<span class="icon"></span>
-													<span>SMS/LMS/MMS 수신 동의</span>
+													<span class="agree_text">SMS/LMS/MMS 수신 동의</span>
 												</label>
 												<input type="hidden" value="N">
 												<label class="form_checkbox">
 													<input type="checkbox">
 													<span class="icon"></span>
-													<span>E-mail 수신 동의</span>
+													<span class="agree_text">E-mail 수신 동의</span>
 												</label>
 												<input type="hidden" value="N">
 												<label class="form_checkbox">
 													<input type="checkbox">
 													<span class="icon"></span>
-													<span>알림톡 수신 동의</span>
+													<span class="agree_text">알림톡 수신 동의</span>
 												</label>
 												<input type="hidden" value="N">
 											</div>
@@ -408,4 +408,34 @@
         </footer>
     </div>
 </body>
+휴대폰 본인인증 api 연결
+ <!-- jQuery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+ <!-- iamport.payment.js -->
+ <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+ <script>
+
+function api(){
+
+    IMP.init("/implementation/account-info?lang=ko"); // "imp00000000" 대신 발급받은 "가맹점 식별코드"를 사용합니다.
+ 
+    IMP.certification({
+        merchant_uid: "ORD20180131-0000011",
+        popup:true
+    }, function (rsp) { // callback
+        if (rsp.success) { // 인증 성공 시
+        // jQuery로 HTTP 요청
+        jQuery.ajax({
+            url: "https://www.myservice.com/certifications", // 서비스 웹서버
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            data: { imp_uid: rsp.imp_uid }
+        });
+    } else {
+      alert("인증에 실패하였습니다. 에러 내용: " +  rsp.error_msg);
+    }
+    });
+}
+ </script>
 </html>
