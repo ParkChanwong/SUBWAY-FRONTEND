@@ -21,10 +21,8 @@ select {
 
 .mypageInfoPW_wrapper {
     background-color: #fff;
-    width: 1028px;
+    width: 1170px;
     margin: 0 auto;
-    border: 1px solid #e8e8e8;
-    padding: 100px 70px 0px;
 }
 
 .mypageInfo{
@@ -40,15 +38,16 @@ select {
 }
 
 .mypageInfo p{
-    letter-spacing: -0.03em;
+    letter-spacing: -0.3px;
     font-size: 16px;
     margin-top: 15px;
+    color: #666666;
 }
 
 .mypageInfoPW_wrapper .content {
-    max-width: 1170px;
     margin: 0 auto;
     position: relative;
+    padding: 87px 100px 20px 100px;
 }
 
 .board_write_wrapper {
@@ -64,7 +63,7 @@ select {
     width: 100%;
     border: 0;
     background: transparent;
-    height: 45px;
+    height: 35px;
     color: #292929;
     font-size: 16px;
     text-indent: 15px;
@@ -156,10 +155,11 @@ select {
 .write_info_wrap .input_set dt {
     float: left;
     position: relative;
-    font-weight: 300;
     width: 120px;
-    line-height: 45px;
+    line-height: 35px;
     letter-spacing: -0.05em;
+    color: #666666;
+    font-family: 'noto_r';
 }
 
 .write_info_wrap .input_set dt .ess {
@@ -169,7 +169,7 @@ select {
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    top: -2px;
+    top: -1px;
     margin-left: 4px;
 }
 
@@ -200,10 +200,10 @@ select {
     flex-direction: column;
     justify-content: center;
     font-size: 13px;
-    margin-top: 20px;
-    margin-bottom: 100px;
     padding: 15px 15px 19px 81px;
     min-height: 52px;
+    width: 874px;
+    margin: 0 auto;
 }
 
 .inquiry_notice li{
