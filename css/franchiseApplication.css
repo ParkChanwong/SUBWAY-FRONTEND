@@ -196,7 +196,7 @@ select {
     max-width: 100%;
     outline: 0;
     direction: ltr;
-    margin-right: 5px;
+    margin-right: 4px;
 }
 
 .franchiseApplication_wrapper .agree_wrapper .agree .scroll_wrapper .agreeTxt {
@@ -216,11 +216,11 @@ select {
     left: 0px;
 }
 .agreeScrollBox::-webkit-scrollbar{
-    width:7px;
+    width:8px;
 }
 
 .agreeScrollBox::-webkit-scrollbar-thumb{
-    background-color:#dddddd;
+    background-color:#e5e5e5;
     border-radius: 5px;
     background-clip: padding-box;
     border:2px solid transparent;
@@ -302,7 +302,7 @@ select {
     position: absolute;
     right: 0;
     top: -29px;
-    background: url(../images/icon_ess.png) 0 7px no-repeat;
+    background: url(../images/icon_ess.png) 0 9px no-repeat;
     padding-left: 10px;
 }
 
@@ -332,7 +332,7 @@ select {
     vertical-align: middle;
     position: relative;
     margin-left: 4px;
-    top: -2px;
+    top: -1px;
 }
 
 .board_write_wrapper td {
@@ -481,7 +481,7 @@ select {
 .board_write_wrapper td .fileType {
     font-size: 13px;
     color: #999999;
-    margin-left: 25px;
+    margin-left: 39px;
 }
 
 .board_write_wrapper .agree_info {
