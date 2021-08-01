@@ -1,0 +1,137 @@
+header {
+    border-bottom: 1px solid #dae0ea;
+    display: block;
+}
+.layout_layoutContainer{
+    margin: 0 auto;
+    max-width: 768px;
+    min-width: 320px;
+    outline: none;
+    padding: 0 24px;
+}
+.layout_mainHeader{
+    padding: 32px 0;
+    min-height: 54px;
+    display: table;
+    width: 100%;
+}
+
+.layout_mainHeader.layout_clearfix{
+    padding-bottom: 0%;
+}
+
+.layout_mainHeaderLeft{
+    width: 70%;
+    overflow: hidden;
+}
+.layout_mainHeaderLeft, .layout_mainHeaderRight{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.layout_logo{
+    width: 222px;
+    height: 44px;
+    float: left;
+    margin-bottom: 0%;
+    max-width: 100%;
+}
+img{
+    border: 0;
+}
+
+.dropdown_dropdownSelector_isInactive{
+    opacity: 1;
+}
+
+.dropdown_dropdownSelector{
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #dae0ea;
+    transition: box-shadow .15s ease-in-out;
+    width: 100%;
+}
+.dropdown_dropdownContainer{
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 hsl(0deg 0% 85% / 60%);
+    cursor: pointer;
+    min-width: 250px;
+    text-align: left;
+    -webkit-tap-highlight-color: rgba(27,110,194,.1);
+}
+.dropdown_dropdownTitle{
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    box-sizing: border-box;
+    max-width: 310px;
+    overflow: hidden;
+    padding: 16px 20px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 90%;
+    height: 55px;
+}
+.dropdown_dropdownListItem:last-child{
+    border-bottom: 1px solid transparent;
+}
+.dropdown_dropdownListItem{
+    position: relative;
+    padding: 16px 32px 16px 20px;
+    transition: box-shadow .15s ease-in-out;
+    transform: translateZ(0);
+    word-wrap: break-word;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul{
+    list-style: none;
+}
+.dropdown_dropdownList_isActive{
+    display: block;
+    animation: dropdown_dropdownOpeningAnimation .2s ease;
+}
+
+.dropdown_dropdownList{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 1px 3px 0 hsl(0deg 0% 85% / 60%);
+    margin-bottom: 20px;
+    transform-origin: top;
+    width: 100%;
+    z-index: 4000;
+}
+.dropdown_dropdownIcon{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    bottom: 0;
+    margin: auto;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.TS_headerNavText{
+    margin: auto;
+    padding: 5px 0px 1px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.TS_headerText{
+    color: #028940;
+    font-size: 20px;
+    font-weight: normal;
+}
+div{
+    display: block;
+}
