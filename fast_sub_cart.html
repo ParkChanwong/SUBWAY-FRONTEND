@@ -213,12 +213,12 @@
                     <h2 class="subTitle_02">장바구니</h2>
                     <div class="tab02">
                         <ul>
-                            <li class="swiper-slide active"><a href="">FAST-SUB</a></li>
-                            <li class="swiper-slide "><a href="">HOME-SUB</a></li>
+                            <li class="swiper-slide tab_fastsub active" onclick="tab_fastsub()"><a href="#">FAST-SUB</a></li>
+                            <li class="swiper-slide tab_homesub " onclick="tab_homesub()"><a href="#">HOME-SUB</a></li>
                         </ul>
                     </div>
                     <!-- 장바구니 목록 있을때 -->
-                    
+                    <div class="fast_sub_container">
                         <div class="cart_header wh_box">
                             <dl>
                                 <dt>픽업매장</dt>
@@ -331,8 +331,128 @@
                                 <a class="btn bgc_point i_reg" href="javascript:void(0);" id="setOrder" data-cart-type="CART_TYPE.FAST_SUB"><span>주문하기</span></a>
                             </div>
                         </div>
+                    </div>
                     
-        
+                    <!-- 장바구니 목록 있을때 -->
+                    <div class="home_sub_container" style="display: none;">
+                        <div class="cart_header wh_box">
+                            <dl>
+                                <dt>배달주소</dt>
+                                <dd>
+                                    <strong>배달주소</strong>
+                                    <a href="javascript:void(0);" id="changeStore" data-url="/order/view/home/step1" data-stor="68056">
+                                        변경
+                                    </a>
+                                </dd>
+                            </dl>
+                            <div class="txt_last_14day">최근 14일 이내 담은 상품만 확인 가능합니다.</div>
+                            <div class="all_select">
+                                <label class="form_checkbox">
+                                    <input data-target="all" type="checkbox">
+                                    <span class="icon"></span>
+                                    전체선택
+                                </label>
+                                <a class="btn bgc_white" href="javascript:void(0);" id="cartItemDelete"><span>선택삭제</span></a>
+                            </div>
+                        </div>
+                        <ul class="cart_list">
+                            <li class="wh_box" data-target="row" data-cartidx="1687199" data-side="N">
+                                <div class="order_info">
+                                    <div class="menu_info">
+                                        <label class="form_checkbox">
+                                            <input data-target="each" type="checkbox">
+                                            <span class="icon"></span>
+                                            스테이크 &amp; 치즈
+                                        </label>
+                                        <p>
+                                            
+                                                <!-- 빵길이 -->
+                                                15cm, 
+                                                <!-- 빵종류 -->
+                                                화이트(토스팅), 
+                                                <!-- 치즈 -->
+                                                슈레드치즈, 
+                                                <!-- 야채 -->
+                                                
+                                                    양상추, 
+                                                
+                                                
+                                                    토마토, 
+                                                
+                                                
+                                                    오이, 
+                                                
+                                                
+                                                    피망, 
+                                                
+                                                
+                                                    양파, 
+                                                
+                                                <!-- 소스 -->
+                                                
+                                                    스모크 바비큐, 
+                                                
+                                                
+                                                    사우스 웨스트 치폴레
+
+                                            
+                                        </p>
+                                        <strong>
+                                            <em>6,500</em>
+                                            <span>원</span>
+                                        </strong>
+                                    </div>
+                                    <img onerror="this.src='/images/noneImage.jpg'" alt="스테이크 &amp; 치즈" src="/images/noneImage.jpg">
+                                </div>
+                                
+                                
+                                    
+                                    <div class="total">
+                                        <dl class="count">
+                                            <dt>수량</dt>
+                                            <dd>
+                                                <input name="eachPrice" type="hidden" value="6500">
+                                                <a class="minus" href="javascript:void(0);">수량 빼기</a>
+                                                <input name="qty" type="text" value="1">
+                                                <a class="plus" href="javascript:void(0);">수량 더하기</a>
+                                            </dd>
+                                        </dl>
+                                        
+                                        <dl class="total_sum">
+                                            <dt>총 주문금액</dt>
+                                            <dd>
+                                                <strong class="eachTotalPrice">6,500</strong>
+                                                <span>원</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                
+                            </li>
+                        </ul>
+                        <div class="final_payment wh_box">
+                            <dl>
+                                <dt>최종 결제 금액</dt>
+                                <dd>
+                                    <strong id="totalPrice">0</strong>
+                                    <span>원</span>
+                                </dd>
+                            </dl>
+                            <div class="btn_area">
+                                <form method="post" name="orderForm">
+                                    <input name="ordType" type="hidden" value="ORD_TYPE.HOME_SUB">
+                                    <input name="storCd" type="hidden" value="68056">
+                                    
+                                        <input name="receiverZipcd" type="hidden" value="21518">
+                                        <input name="receiverAddr" type="hidden" value="인천 남동구 백범로248번길 20">
+                                        <input name="receiverAddrDtl" type="hidden" value="영풍아파트 202동 1101호">
+                                    
+                                </form>
+                                <a class="btn bgc_white" href="javascript:void(0);" id="addMenu"><span>메뉴추가하기</span></a>
+                                <a class="btn bgc_point i_reg" href="javascript:void(0);" id="setOrder" data-cart-type="CART_TYPE.HOME_SUB"><span>주문하기</span></a>
+                            </div>
+                        </div>
+                    </div>
+    
                     <!-- 장바구니 목록 없을때 -->
                     
         
