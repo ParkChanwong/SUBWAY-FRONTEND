@@ -443,18 +443,18 @@ a:hover .right_arrow {
     color: #999999;
     letter-spacing: -0.05em;
     width: 105px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 .store .store_info dd{
     float: left;
     color: #292929;
     letter-spacing: -0.04em;
     width: 535px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .store .store_info dd .badge{
-    font-size: 13px;
+    font-size: 11px;
     color: #666666;
     letter-spacing: -0.05em;
     display: inline-block;
