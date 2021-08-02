@@ -21,7 +21,7 @@ div {
     border-bottom: 1px solid #e5e5e5;
     height: 59px;
     background-color: #fff;
-    z-index: 5;
+    z-index: 11;
 }
 
 .content {
@@ -137,7 +137,7 @@ li {
     top: 0px;
     height: 32px;
     padding-top: 28px;
-    font-family: font_sw;
+    font-family: sw_f;
     font-weight: bold;
     color: #bbbbbb;
     font-size: 13px;
@@ -451,7 +451,7 @@ img {
 
 .utilization_subway_content .slider_wrapper .info_content ol li .btns_wrapper .btn.size1 span {
     height: 36px;
-    line-height: 36px;
+    line-height: 35px;
 }
 
 .btn.bgc_bw .i_mag {
@@ -730,7 +730,3 @@ em {
     background: url(../images/bg_order_tip03.jpg) 50% 0 no-repeat;
 }
 
-#order_tip .order_tip_wrapper .section03 .visual .sandwich {
-    top: 36px;
-    margin-left: -3px;
-}
