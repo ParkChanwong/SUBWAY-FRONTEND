@@ -114,6 +114,7 @@
     top: 20px;
     background-color: #fff;
     width: 400px;
+    height: 557px;
     border: 1px solid #dddddd;
     padding: 0 29px 20px;
     box-sizing: border-box;
@@ -157,11 +158,15 @@
     overflow: hidden;
     border-radius: 30px;
 }
+
 .store_search_layer .slider_page .active{
     background-color: #ffc300;
     width: 30px;
 }
-
+.store_search_layer .info{
+    line-height: 120%;
+    margin-top: -5px;
+}
 .store_search_layer .info dt{
     color: #292929;
     font-size: 16px;
@@ -208,6 +213,7 @@
     width: unset !important;
     height: unset !important;
     margin: 0 5px !important;
+    top: -4px !important;
 }
 
 .slick-dots li button {
