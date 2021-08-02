@@ -2,7 +2,7 @@
     padding-top: 0;
     position: relative;
     z-index: 3;
-    font-family: 'noto_dl';
+    font-family: 'noto_l';
 }
 
 #content.policy .subTitle{
@@ -10,6 +10,7 @@
 }
 
 #content h2.subTitle{
+    font-family: 'noto_dl';
     text-align: center;
     font-size: 40px;
     color: #292929;
@@ -128,4 +129,8 @@ a{
 
 .policy_list_area p{
     margin-top: 18px;
+}
+
+ol, ul{
+    margin-bottom: 9px;
 }
