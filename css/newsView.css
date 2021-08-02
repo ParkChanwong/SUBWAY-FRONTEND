@@ -53,6 +53,11 @@ a:focus{
     margin-top: 60px;
 }
 
+.btn_list a:hover{
+    background-color: #2e7d32;
+    transition-duration: 0.2s;
+}
+
 .btn_list:before{
     bottom: 160px;
 }
