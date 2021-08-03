@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/coupon.css" type="text/css">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/coupon.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -231,11 +232,11 @@
                             <h2 class="subTitle">쿠폰</h2>
                             <div class="tab02">
                                 <ul>
-                                    <li class="active" id="available">
-                                        <a href="">사용 가능한 쿠폰</a>
+                                    <li class="tab_available active" id="available" onclick="available()">
+                                        <a href="#">사용 가능한 쿠폰</a>
                                     </li>
-                                    <li id="expired">
-                                        <a href="">만료된 쿠폰</a>
+                                    <li class="tab_expired" id="expired" onclick="expired()">
+                                        <a href="#">만료된 쿠폰</a>
                                     </li>
                                 </ul>
                             </div>
