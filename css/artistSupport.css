@@ -1,3 +1,13 @@
+html, body, button, dl, dt, dd, div, form, fieldset, legend, h1, h2, h3, h4, h5, h6, input, select, textarea, ul, ol, li, p, pre, table, td, th, caption, a, button, figure {
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+body {
+    font-size: 16px;
+    color: #666666;
+    font-family: sw_f, noto_dl;
+}
 #container {
     margin-top: 170px;
     position: relative;
@@ -133,7 +143,7 @@
     font-weight:bold; 
     line-height:46px; 
     color:#009223; 
-    letter-spacing:-1px;
+    letter-spacing: -0.005em;
 }
 .sandwich_artist_wrapper .hd h2 span {
     color:#62ce08;
@@ -144,16 +154,17 @@
     color:#000000; 
     font-size:18px; 
     line-height:26px; 
-    letter-spacing: 0px; 
-    margin-top:20px;
+    letter-spacing: -0.04em; 
+    margin-top:10px;
     font-family: noto_dl;
 }
 .sandwich_artist_wrapper .sw_point {
     height:490px; 
-    background:url(../images/img_sw_artist_point.jpg) 50% 0 no-repeat; margin:0 auto; 
+    background:url(../images/img_sw_artist_point.jpg) 50% 0 no-repeat;
     text-align: center; 
     padding-top:103px; 
     box-sizing:border-box;
+    margin: 0 auto;
 }
 .sandwich_artist_wrapper .sw_point h3 {
     color:#fff; 
@@ -161,9 +172,6 @@
     font-weight:bold; 
     margin-bottom:68px; 
     letter-spacing:-0.03em;
-    margin: 0;
-    padding: 0;
-    line-height: 120%;
 }
 .sandwich_artist_wrapper .sw_point h3 span {
     font-family:sw_f;
@@ -197,7 +205,6 @@
     text-align:center; 
     letter-spacing:-0.03em; 
     margin-bottom:57px;
-    font-family: noto_r;
 }
 .sandwich_artist_wrapper .career_path ol {
     background:url(../images/bg_career_path_line.png) 0 7px no-repeat; 
@@ -366,14 +373,13 @@
     margin:0 auto;
 }
 .sandwich_artist_wrapper .recruit .recruit_link .box strong {
-    display:block; 
-    font-weight:300; 
-    color:#292929; 
-    font-size:18px; 
-    margin:18px 0 15px 0; 
-    letter-spacing:-0.03em;
-    font-family: noto_dl;
-    font-weight: bold;
+    display: block;
+    font-weight: 300;
+    color: #292929;
+    font-size: 18px;
+    margin: 18px 0 15px 0;
+    letter-spacing: -0.03em;
+    font-family: noto_m;
 }
 .sandwich_artist_wrapper .recruit .recruit_link .box span {
     color:#999; 
@@ -447,7 +453,7 @@
     color: #666666;
     line-height: 26px;
     margin-top: 15px;
-    letter-spacing: -2px;
+    letter-spacing: -0.05em;
 }
 
 
