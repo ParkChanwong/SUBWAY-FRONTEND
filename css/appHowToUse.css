@@ -21,12 +21,26 @@ div {
 }
 
 .sub_header {
-    position: absolute;
+    position: sticky;
     width: 100%;
     border-bottom: 1px solid #e5e5e5;
     height: 59px;
     background-color: #fff;
-    z-index: 5;
+    z-index: 11;
+}
+
+.sub_header .logo {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 60px;
+    width: 110px;
+    background: url(../images/logo_sub_header.png) 0 50% no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
 }
 
 #content {
@@ -39,7 +53,7 @@ div {
     text-align: center;
     font-size: 40px;
     color: #292929;
-    font-weight: 300;
+    font-family: noto_dl;
     letter-spacing: -0.07em;
     padding: 134px 0 80px;
     font-weight: bold;
@@ -68,6 +82,7 @@ ol, ul {
 .sub_header .sub_loc ul li {
     float: left;
     position: relative;
+    font-family: noto_dl;
 }
 
 .sub_header .sub_loc ul li:first-child {
@@ -92,7 +107,7 @@ a {
 
 .sub_header .sub_loc ul li.active a {
     color: #009223;
-    font-weight: 300;
+    font-family: noto_r;
 }
 
 .sub_header .sub_loc ul li.active a:after { content:''; position:absolute; left:0; width:100%; height:4px; bottom:0; background-color:#009223}
@@ -120,6 +135,31 @@ a {
     position: absolute;
     left: 0;
     top: 28px;
+}
+
+.sub_header .top {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 32px;
+    padding-top: 28px;
+    font-family: sw_f;
+    font-weight: bold;
+    color: #bbbbbb;
+    font-size: 13px;
+    opacity: 0;
+}
+
+.sub_header .top:after {
+    content: '';
+    width: 12px;
+    height: 15px;
+    background: url(../images/icon_arr_top.png) 50% 0 no-repeat;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 18px;
 }
 
 .tab02 {
@@ -151,6 +191,7 @@ a {
     line-height: 68px;
     position: relative;
     font-size: 18px;
+    font-family: noto_dl;
     color: #666666;
     text-align: center;
     background-color: #fff;
@@ -232,6 +273,19 @@ strong {
     width: 65px;
     background: url(../images/icon_step_dot.png) 50% 0 no-repeat;
     height: 5px;
+}
+
+.utilization_subway_content .slider_wrapper .step_content ol li.prev:after {
+    background-position: 50% 100%;
+}
+
+.utilization_subway_content .slider_wrapper .step_content ol li.prev .step {
+    border-color: #009223;
+    color: #009223;
+}
+
+.utilization_subway_content .slider_wrapper .step_content ol li.prev strong {
+    color: #292929;
 }
 
 .utilization_subway_content .slider_wrapper .step_content ol li:last-child {
@@ -318,7 +372,7 @@ img {
     background-color: #fff;
     margin-top: 50px;
     opacity: 0;
-    font-family: sw_s;
+    font-family: noto_dl;
 }
 
 .utilization_subway_content .slider_wrapper .info_content ol li.active {
@@ -349,6 +403,7 @@ img {
 .utilization_subway_content .slider_wrapper .info_content ol li .txt1 {
     color: #666666;
     font-size: 16px;
+    font-family: noto_dl;
     line-height: 26px;
     margin-top: 14px;
     letter-spacing: -0.04em;
@@ -357,6 +412,7 @@ img {
 .how_to_app .info_content .explan {
     line-height: 26px;
     margin-top: 76px;
+    font-family: noto_dl;
 }
 
 .how_to_app .info_content .explan::before {
@@ -405,6 +461,14 @@ img {
 .utilization_subway_content .slider_wrapper .arr_controls .arr.next {
     right: 0;
     background-position: 100% 0;
+}
+
+.utilization_subway_content .slider_wrapper .arr_controls .arr.prev:hover {
+    background-position: 0 100%;
+}
+
+.utilization_subway_content .slider_wrapper .arr_controls .arr.next:hover {
+    background-position: 100% 100%;
 }
 
 section {
