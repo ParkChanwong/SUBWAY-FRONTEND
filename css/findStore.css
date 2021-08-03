@@ -138,6 +138,7 @@
     text-indent: 14px;
     color: #292929;
     font-size: 16px;
+    font-family: 'noto_r';
 }
 .store_search_layer .form_search .keyword::placeholder{
     color:#bbbbbb;
