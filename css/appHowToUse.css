@@ -22,7 +22,9 @@ div {
 
 .sub_header {
     position: sticky;
+    left: 0;
     width: 100%;
+    top: 0;
     border-bottom: 1px solid #e5e5e5;
     height: 59px;
     background-color: #fff;
@@ -55,8 +57,7 @@ div {
     color: #292929;
     font-family: noto_dl;
     letter-spacing: -0.07em;
-    padding: 134px 0 80px;
-    font-weight: bold;
+    padding: 74px 0 80px;
 }
 
 h2 {
