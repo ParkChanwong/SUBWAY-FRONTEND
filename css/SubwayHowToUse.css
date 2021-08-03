@@ -238,6 +238,10 @@ li {
     position: relative;
 }
 
+.utilization_subway_content .slider_wrapper .step_content ol li:last-child {
+    padding-right: 0;
+}
+
 .utilization_subway_content .slider_wrapper .step_content ol li .step {
     width: 70px;
     height: 70px;
@@ -376,7 +380,7 @@ img {
 .utilization_subway_content .slider_wrapper .info_content ol li strong {
     color: #292929;
     font-size: 28px;
-    font-family: noto_dl;
+    font-family: noto_l;
     display: block;
     position: relative;
     margin-top: 16px;
@@ -462,6 +466,7 @@ img {
     height: 16px;
     background: url(../images/btn_mag.png) 0 0 no-repeat;
     margin-left: 4px;
+    margin-top: 1px;
 }
 
 .btn.bgc_bw:hover {
