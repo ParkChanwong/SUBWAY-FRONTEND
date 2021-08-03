@@ -605,7 +605,6 @@ a {
 }
 /* 원산지 정보 팝업 */
 .contry_popUp{
-    display: none;
     font-family: 'noto_dl';
     position: fixed;
     top: 3%;
