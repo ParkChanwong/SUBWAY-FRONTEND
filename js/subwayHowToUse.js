@@ -40,7 +40,3 @@ function orderTip(){
     $('.tab_orderTip').addClass('active');
     $('.tab_storeOrder').removeClass('active');
 }
-
-function over(){
-    $('.arr').css("top", "50");
-}
