@@ -110,6 +110,10 @@
     margin: 0 auto;
     width: 1170px;
     background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.step1_content {
     padding: 85px 100px 100px 100px;
     box-sizing: border-box;
 }
@@ -155,6 +159,10 @@
     display: inline-block;
     border-radius: 50px;
     position: relative;
+    margin-right: 13px;
+}
+
+.checkbox_wrap label[for="agreeAll"] span {
     margin-right: 10px;
 }
 
@@ -173,7 +181,6 @@
     color: #009223;
     font-style: normal;
     margin-right: 3px;
-    letter-spacing: -0.05em;
     line-height: 26px;
 }
 
@@ -209,4 +216,43 @@
     font-size: 13px;
     color: #666666;
     line-height: 120%;
+    font-family: 'noto_r';
+}
+
+.marketing_text {
+    height: 130px;
+}
+
+/* 스크롤바 설정*/
+.scroll_wrap::-webkit-scrollbar{
+    width: 6px;
+}
+
+/* 스크롤바 막대 설정*/
+.scroll_wrap::-webkit-scrollbar-thumb{
+    height: 17%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.submit_wrap {
+    width: 100%;
+    border-top: 1px solid #e8e8e8;
+    padding: 40px 0 60px;
+    text-align: center;
+}
+
+#go_step2 {
+    width: 170px;
+    display: inline-block;
+    background-color: #ffffff;
+    border: 2px solid #009223;
+    color: #009223;
+    transition-duration: 0.2s;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'noto_m';
+    height: 50px;
 }
