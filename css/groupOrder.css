@@ -68,7 +68,7 @@
 
 .order .order_con{
     box-sizing: border-box;
-    right: 13%;
+    right: 5%;
     width: 1170px;
     position: relative;
     background-color: #fff;
@@ -376,6 +376,7 @@ a:hover .right_arrow {
 }
 
 .popup_wrap_wh{
+    padding-right: 40px;
     background-color: #fff;
     padding: 40px 50px;
     border-radius: 30px;
@@ -479,9 +480,9 @@ a:hover .right_arrow {
     outline: none;
 }
 
-.popup_back{
+/* .popup_back{
     display: none;
-}
+} */
 
 .data_none{
     display: none;
