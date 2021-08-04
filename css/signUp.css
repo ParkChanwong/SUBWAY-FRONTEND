@@ -223,12 +223,10 @@
     height: 130px;
 }
 
-/* 스크롤바 설정*/
 .scroll_wrap::-webkit-scrollbar{
     width: 6px;
 }
 
-/* 스크롤바 막대 설정*/
 .scroll_wrap::-webkit-scrollbar-thumb{
     height: 17%;
     background-color: rgba(0, 0, 0, 0.1);
@@ -255,4 +253,9 @@
     font-size: 18px;
     font-family: 'noto_m';
     height: 50px;
+    cursor: pointer;
+}
+
+#go_step2:hover {
+    border-color: #00811f;
 }
