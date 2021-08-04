@@ -152,6 +152,10 @@ select {
     padding: 22px 30px;
 }
 
+.write_info_wrap .input_set dl:focus-within{
+    border-color: #009223;
+}
+
 .write_info_wrap .input_set dt {
     float: left;
     position: relative;
