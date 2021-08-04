@@ -39,10 +39,8 @@ a {
 
 .pw_btn {
     text-align: center;
-    display: inline-block;
     vertical-align: middle;
     transition-duration: 0.2s;
-    font-family: 'noto_dl';
 }
 
 .manage_wrap .pw_btn {
@@ -56,7 +54,7 @@ a {
     height: 35px;
     letter-spacing: -0.025em;
     color: #666666;
-    font-family: 'noto_r';
+    font-family: 'noto_m';
     border: 0;
     cursor: pointer;
 }
