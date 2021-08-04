@@ -2,7 +2,7 @@
     padding-top: 0;
     position: relative;
     z-index: 3;
-    font-family: 'noto_l';
+    font-family: 'noto_dl';
 }
 
 #content.policy .subTitle{
@@ -10,7 +10,7 @@
 }
 
 #content h2.subTitle{
-    font-family: 'noto_dl';
+    font-family: 'noto_l';
     text-align: center;
     font-size: 40px;
     color: #292929;
