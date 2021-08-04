@@ -80,7 +80,7 @@
 .content_category li a {
     text-decoration-line: none;
     color: #999999;;
-    font-family: 'noto_m';
+    font-family: 'noto_r';
     line-height:60px;
     font-size:16px;
     letter-spacing:-0.08em;
@@ -666,12 +666,14 @@
     height: 23px;
     line-height: 23px;
     padding: 0 8px;
+    font-family: 'noto_r';
 }
 
 .board_list_wrapper .content table td .service .on{
     font-weight: 300;
     color: #666;
     border-color: #666;
+    font-family: 'noto_r';
 }
 
 .board_list_wrapper .content table td .tel{

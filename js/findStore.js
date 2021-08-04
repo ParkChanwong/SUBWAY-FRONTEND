@@ -20,5 +20,9 @@ function initTmap(){
         zoom : 15,
         zoomControl : false
     });
+    var marker = new Tmapv2.Marker({
+        position: new Tmapv2.LatLng(37.564901622537940,126.97892302169841), //Marker의 중심좌표 설정.
+        map: map //Marker가 표시될 Map 설정..
+    });
 
 } 
