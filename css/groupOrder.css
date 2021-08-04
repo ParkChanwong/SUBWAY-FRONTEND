@@ -384,6 +384,7 @@ a:hover .right_arrow {
     width: 100%;
     height: 644px;
     box-sizing: border-box;
+    
 }
 .popup_wrap_wh .scroll{
     overflow-y: scroll;
@@ -451,7 +452,7 @@ a:hover .right_arrow {
     float: left;
     color: #292929;
     letter-spacing: -0.04em;
-    width: 535px;
+    width: 100%;
     margin-bottom: 1px;
 }
 
