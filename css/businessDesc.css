@@ -19,7 +19,7 @@ em{font-style:normal;}
 
 .content {max-width: 1170px; margin: 0 auto; position: relative;}
 .content_main{padding-top:0; position:relative; z-index:3;}
-.content_main h2.sub_tit{text-align:center; font-size:40px; color:#292929; font-weight:300; letter-spacing:-0.07em; padding: 70px 0 110px; font-family: noto_m; background-color: #fff;}
+.content_main h2.sub_tit{text-align:center; font-size:40px; color:#292929; font-weight:300; letter-spacing:-0.07em; padding: 70px 0 70px; font-family: noto_m; background-color: #fff;}
 
 .content_wrap {position: sticky; left: 0; top: 0; width: 100%; border-bottom: 1px solid #e5e5e5; height: 59px;  background-color: #fff; z-index: 5;} /*position: sticky*/
 .content_wrap .logo {position: absolute; left: 0; top: 0; height: 60px; width: 110px; background: url('../images/common/logo_sub_header.png') 0 50% no-repeat; overflow: hidden; text-indent: -9999px; font-size: 0; line-height: 0; opacity: 0;}
@@ -32,7 +32,7 @@ em{font-style:normal;}
 .content_wrap .content_nav ul li + li::after {content: ''; width: 4px; height: 4px; background-color: #dddddd; border-radius: 30px; position: absolute; left: 0; top: 28px;}
 .content_wrap .content_nav ul li:first-child {margin-left: 0; padding-left: 0;}
 .content_wrap .content_nav ul li:first-child::after {display: none;}
-.content_wrap .content_nav ul li a {display: block; line-height: 60px; color: #999999; font-size: 16px; letter-spacing: -0.08em; position: relative; font-family: noto_m;}
+.content_wrap .content_nav ul li a {display: block; line-height: 60px; color: #999999; font-size: 16px; letter-spacing: -0.08em; position: relative; font-family: noto_r;}
 .content_wrap .content_nav ul li.active a {color: #009223; font-weight: 300;}
 .content_wrap .content_nav ul li.active a::after {content:''; position: absolute; left: 0; width: 100%; height: 4px; bottom: 0; background-color: #009223;}
 
