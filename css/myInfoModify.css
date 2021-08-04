@@ -290,6 +290,10 @@ a {
     box-sizing: border-box;
 }
 
+.btn.bgc_white:hover{
+    border-color: #00811f;
+}
+
 .btn_area .btn span {
     display: inline-block;
     vertical-align: middle;
