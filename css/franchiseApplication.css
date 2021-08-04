@@ -646,6 +646,10 @@ select {
     box-sizing: border-box;
 }
 
+.btn.bgc_white:hover{
+    border-color: #00811f;
+}
+
 .btn.bgc_point {
     background-color: #009223;
     color: #fff;
