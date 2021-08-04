@@ -67,6 +67,7 @@
 }
 
 .order .order_con{
+    box-sizing: border-box;
     right: 13%;
     width: 1170px;
     position: relative;
@@ -134,7 +135,6 @@ legend{
 }
 
 .content{
-    box-sizing: border-box;
     max-width: 1170px;
     margin: 0 auto;
     position: relative;
