@@ -22,9 +22,9 @@ em{font-style:normal;}
 .content_main h2.sub_tit{text-align:center; font-size:40px; color:#292929; font-weight:300; letter-spacing:-0.07em; padding:70px 0 80px; font-family: noto_m; background-color: #fff;}
 .content_main h3.h_tit {font-size:28px; color:#292929; font-weight:bold; letter-spacing:-0.05em; padding-bottom:38px;}
 
-.content_wrap {position: sticky; left: 0; top: 0; width: 100%; border-bottom: 1px solid #e5e5e5; height: 59px;  background-color: #fff; z-index: 5;} /*position: sticky*/
-.content_wrap .logo {position: absolute; left: 0; top: 0; height: 60px; width: 110px; background: url('../images/common/logo_sub_header.png') 0 50% no-repeat; overflow: hidden; text-indent: -9999px; font-size: 0; line-height: 0; opacity: 0;}
-.content_wrap .top {position: absolute; right: 0; top: 0; height: 32px; padding-top: 28px; font-family: font_sw; font-weight: bold; color: #bbbbbb; font-size: 13px; opacity: 0;}
+.content_wrap {position: sticky; left: 0; top: 0; width: 100%; border-bottom: 1px solid #e5e5e5; height: 59px;  background-color: #fff; z-index: 5;}
+.content_wrap .logo {position: absolute; left: 0; top: 0; height: 60px; width: 110px; background: url('../images/common/logo_sub_header.png') 0 50% no-repeat; overflow: hidden;  font-size: 0; line-height: 0; } /*opacity: 0;*/
+.content_wrap .top {position: absolute; right: 0; top: 0; height: 32px; padding-top: 28px; font-family: font_sw; font-weight: bold; color: #bbbbbb; font-size: 13px; font-family: sw_f;}/*opacity: 0;*/
 .content_wrap .top::after {content: ''; width: 12px; height: 15px; background: url(../images/common/icon_arr_top.png) 50% 0 no-repeat; display: inline-block; position: absolute; left: 0; width: 100%; top: 18px;}
 .content_wrap .content_nav {text-align: center;}
 .content_wrap .content_nav ul {overflow: hidden; display: inline-block;}
@@ -38,15 +38,15 @@ em{font-style:normal;}
 .content_wrap .content_nav ul li.active a::after {content:''; position: absolute; left: 0; width: 100%; height: 4px; bottom: 0; background-color: #009223;}
 
 .franchise_wrapper{margin-top:-61px;}
-.franchise_wrapper .txt{font-size:16px; line-height:26px; text-align:center; letter-spacing:-0.045em}
+.franchise_wrapper .txt{font-size:16px; line-height:26px; text-align:center; letter-spacing:-0.045em; font-family: noto_dl;}
 .franchise_wrapper .nation_store {overflow:hidden; margin-top:66px;}
 .franchise_wrapper .nation_store >div{float:left; width:50%; height:220px; background-color:#f6f6f6; color:#292929; overflow:hidden; transition-duration:0.3s; position:relative;}
 .franchise_wrapper .nation_store >div:after{content:''; position:absolute; left:0; width:100%; top:0; height:100%; z-index:2; opacity:0; transition-duration:0.3s}
-.franchise_wrapper .nation_store >div .inner{text-align:center; font-size:30px; margin-top:55px; position:relative; z-index:3;}
+.franchise_wrapper .nation_store >div .inner{text-align:center; font-size:30px; margin-top:55px; position:relative; z-index:3; font-family: noto_l;}
 .franchise_wrapper .nation_store >div .inner p{margin-bottom:38px;}
-.franchise_wrapper .nation_store >div .inner p span{display:inline-block; position:relative; padding-bottom:6px;}
-.franchise_wrapper .nation_store >div .inner p span:after{content:''; height:1px; position:absolute; left:0; right:0; bottom:0; transition-duration:0.3s}
-.franchise_wrapper .nation_store >div .inner strong{font-weight:bold; font-size:80px; letter-spacing:-0.025em; display:inline-block; margin-right:5px; }
+.franchise_wrapper .nation_store >div .inner p span{display:inline-block; position:relative; padding-bottom:6px; margin-bottom: 20px;}
+.franchise_wrapper .nation_store >div .inner p span:after{content:''; height:1px; position:absolute; left:0; right:0; bottom:0; transition-duration:0.3s; margin-bottom: -10px;}
+.franchise_wrapper .nation_store >div .inner strong{font-weight:bold; font-size:80px; letter-spacing:-0.025em; display:inline-block; margin-right:5px; font-family: noto_m;}
 .franchise_wrapper .nation_store .nation .inner{float:right; margin-right:197px;}
 .franchise_wrapper .nation_store .nation .inner span:after{background-color:#000}
 .franchise_wrapper .nation_store .store .inner{float:left; margin-left:153px;}
@@ -59,7 +59,7 @@ em{font-style:normal;}
 .franchise_wrapper .nation_store .store:after{background:url(../images/franchise/bg_store.jpg) 0 0 no-repeat;}
 
 .franchise_wrapper .brand{width:1170px; margin:0 auto 48px;}
-.franchise_wrapper .brand h3{text-align:center; margin:96px 0 0 0;}
+.franchise_wrapper .brand h3{text-align:center; margin:96px 0 0 0; font-family: noto_m; font-weight: bold;}
 .franchise_wrapper .brand > ul{overflow:hidden; margin-left:-30px; display: block;}
 .franchise_wrapper .brand > ul > li{height:460px; float:left; width:560px; position:relative; margin-left:30px;}
 .franchise_wrapper .brand > ul > li h4{background-color:#ffce32; width:170px; height:150px; padding-top:41px; box-sizing:border-box; text-align:center; line-height:30px; color:#009223; font-size:22px; font-weight:bold; position:absolute; left:0; top:215px; font-family:font_sw;}
