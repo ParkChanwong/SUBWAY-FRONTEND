@@ -1,3 +1,13 @@
+html, body, button, dl, dt, dd, div, form, fieldset, legend, h1, h2, h3, h4, h5, h6, input, select, textarea, ul, ol, li, p, pre, table, td, th, caption, a, button, figure {
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+body {
+    font-size: 16px;
+    color: #666666;
+    font-family: sw_f, noto_dl;
+}
 #container {
     margin-top: 170px;
     position: relative;
@@ -124,7 +134,7 @@
     color:#292929; 
     font-weight:300; 
     letter-spacing:-0.07em; 
-    padding:134px 0 80px;
+    padding:78px 0 80px;
     font-family: noto_m;
 }
 #content h2.subTitle > span {
@@ -295,6 +305,7 @@
     letter-spacing:-0.04em; 
     display:block; 
     margin-bottom:38px;
+    font-family: noto_r;
 }
 .group_menu_wrapper .group_menu_order ol {
     overflow:hidden; 
@@ -352,7 +363,7 @@
     color:#292929; 
     font-weight:300; 
     letter-spacing:-0.05em;
-    font-family: noto_dl;
+    font-family: noto_l;
     font-size: 22px;
     font-weight: bold;
 }
