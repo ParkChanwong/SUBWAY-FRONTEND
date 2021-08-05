@@ -247,11 +247,13 @@ body {
 .sandwich_artist_wrapper .career_path ol li .view {
     color:#999999; 
     font-size:13px; 
-    position:absolute; 
-    left:0; 
-    width:100%; 
-    bottom:0; 
+    position:relative; 
+    /* left:0;  */
+    /* width:100%;  */
+    /* bottom:0;  */
     letter-spacing:-0.025em;
+    display: inline-block;
+    margin-top: 17px;
 }
 .sandwich_artist_wrapper .career_path ol li .view p {
     display:inline-block; 
@@ -259,9 +261,6 @@ body {
     font-size: 13px;
     font-family: noto_dl;
 }
-/* .sandwich_artist_wrapper .career_path ol li .view p:hover{
-
-} */
 .sandwich_artist_wrapper .career_path ol li .layer_view { 
     position:absolute; 
     left:0; 
