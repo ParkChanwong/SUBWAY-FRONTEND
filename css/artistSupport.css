@@ -259,6 +259,9 @@ body {
     font-size: 13px;
     font-family: noto_dl;
 }
+/* .sandwich_artist_wrapper .career_path ol li .view p:hover{
+
+} */
 .sandwich_artist_wrapper .career_path ol li .layer_view { 
     position:absolute; 
     left:0; 
