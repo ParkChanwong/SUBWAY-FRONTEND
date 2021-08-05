@@ -276,7 +276,7 @@ em{font-style:normal;}
 .main_slider_wrapper .slider {position: relative; z-index: 3;}
 .main_slider_wrapper .slider_controller {width: 1170px; position: absolute; left: 50%; bottom: 0; margin-left: -585px;}
 .main_slider_wrapper .slider_controller .slider_btn_area {position: absolute; right: 0; bottom: 47px;}
-.main_slider_wrapper .slider_controller .slider_btn_area .slider_btn {display: inline-block; margin: 0 5px;}
+.main_slider_wrapper .slider_controller .slider_btn_area .slider_btn {display: inline-block; margin: 0 4px;}
 .main_slider_wrapper .slider_controller .slider_btn_area .slider_btn a {display: block; width: 10px; height: 10px; background-color: #fff; font-size: 0; line-height: 0; text-indent: -9999px; overflow: hidden; border-radius: 30px; transition-duration: 0.3s;}
 .main_slider_wrapper .slider_controller .slider_btn_area .slider_btn a.active {background-color:#ffc300; width:30px;}
 .main_slider_wrapper .quick_link {position: absolute; width: 1170px; left: 50%; bottom: 0; margin-left: -585px; text-align: right; overflow: hidden; z-index: 5;}
@@ -301,7 +301,7 @@ em{font-style:normal;}
 .index_menu .index_menu_txt .index_menu_sort ul li::after {content: ''; position: absolute; left: 0; top: 3px; width: 1px; height: 15px; background-color: #ddd;}
 .index_menu .index_menu_txt .index_menu_sort ul li:first-child {padding: 0; margin: 0;}
 .index_menu .index_menu_txt .index_menu_sort ul li:first-child::after {display: none;}
-.index_menu .index_menu_txt .index_menu_sort ul li a {display: block; font-size: 16px; color: #666666; font-weight: 300; letter-spacing: -0.03em; font-family: noto_l;}
+.index_menu .index_menu_txt .index_menu_sort ul li a {display: block; font-size: 16px; color: #666666; font-weight: 300; letter-spacing: -0.03em; font-family: noto_r;}
 .index_menu .index_menu_txt .index_menu_sort ul li.active a {color: #009223; font-weight: bold;}
 
 .subway_menu_slider_wrapper {position: relative; height: 320px; overflow: hidden;}
@@ -338,7 +338,7 @@ em{font-style:normal;}
 .section .section_top .history p {position: absolute; left: 410px; top: 38px; color: #fff; font-size: 28px; font-weight: bold; line-height: 40px; letter-spacing: -0.03em; font-family: noto_r;}
 .section .section_top .history .btn {position: absolute; left: 410px; bottom: 42px; border: 2px solid #fff; border-radius: 20px; width: 128px;}
 .section .section_top .history .btn span {display:block; height:36px; line-height:36px; color:#fff; font-size:16px; font-family: noto_t;}
-.section .section_bottom {margin:30px 0 0 55px;}
+.section .section_bottom {margin:30px 0 0 55px; overflow: hidden;}
 .section .section_bottom .whats_new {position:relative; float:left; background-color:#fff; width:870px; height:300px; border-radius:30px 0 30px 0;}
 .section .section_bottom .whats_new .tit {position:absolute; top:75px; left:60px}
 .section .section_bottom .whats_new .tit h2{color:#292929; font-size:30px; font-weight:bold; font-family:font_sw; background:url(../images/main/bul_tit.png) 0 0 no-repeat; min-height:60px; padding:17px 0 0 25px; margin-bottom:1px; font-family: sw_f;}
