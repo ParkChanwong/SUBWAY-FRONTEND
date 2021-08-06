@@ -1,3 +1,28 @@
+html,body,button,dl,dt,dd,div,form,fieldset,legend,h1,h2,h3,h4,h5,h6,input,select,textarea,ul,ol,li,p,pre,table,td,th,caption,a,button,figure{margin:0;padding:0; line-height:120%;}
+html,body{background-color:#fff;}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+body{font-size:16px; color:#666666; font-family:font_ns, sans-serif;}
+
+ol,ul{list-style:none}
+a{text-decoration:none; color:#333;}
+img{vertical-align:top; border:0}
+table{border-collapse:collapse;border-spacing:0; width:100%;}
+caption{visibility:hidden; font-size:0; line-height:0; opacity:0; height:0; overflow:hidden;}
+em{font-style:normal;}
+
+#container{ position:relative;}
+
+/* wrap */
+#wrap{min-width:1280px;}
+.content{max-width:1170px; margin:0 auto; position:relative;}
+
+.content {max-width: 1170px; margin: 0 auto; position: relative;}
+.content_main{padding-top:0; position:relative; z-index:3;}
+.content_main h2.sub_tit{text-align:center; font-size:40px; color:#292929; font-weight:300; letter-spacing:-0.07em; padding: 70px 0 70px; font-family: noto_m; background-color: #fff;}
+
+.txt_point {font-family:'font_sw'; font-size:16px; font-weight:bold;}
+.txt_point:before {vertical-align:2px;}
+
 #container {position: relative;}
 
 .content_wrap {position: sticky; width: 100%; top: 0; left: 0; border-bottom: 1px solid #e5e5e5; height: 59px; background-color: #fff; z-index: 5;}
@@ -14,4 +39,53 @@
 .content_wrap .content_nav ul li a {position: relative; display: block; line-height: 60px; color: #999999; font-size: 16px; letter-spacing: -0.08em; font-family: noto_r;}
 .content_wrap .content_nav ul li.active a {color: #009223; font-weight: 300;}
 .content_wrap .content_nav ul li.active a::after {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 4px; background-color: #009223;}
+
+.point_title {width: 1170px; height: 70px; margin: 0 auto; position: relative; z-index: 10; box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.1); }
+.point_title ul {overflow: hidden; width: 1170px; display: flex; border-left: 1px solid #e5e5e5;}
+.point_title ul li {flex: 1; border: 1px solid #e5e5e5; margin-left: -1px; position: relative;}
+.point_title ul li:first-child {margin-left: 0;}
+.point_title ul li a {display: block; height: 68px; line-height: 68px; position: relative; font-size: 18px; color: #666666; text-align: center; background-color: #fff;}
+.point_title ul li.active {z-index: 3; border: 1px solid #009223;}
+.point_title ul li.active a {background-color: #009223; color: #fff;}
+
+.point_content {margin-top: -35px; background-color: #f6f6f6; padding: 90px 0 130px;}
+
+.point_status {background-color: #ffffff; overflow: hidden; box-sizing: border-box; margin: 0 auto; padding: 60px 100px 80px 100px; width: 1170px;}
+.point_status .level_copy {overflow: hidden; margin-bottom: 60px;}
+.point_status .level_copy h3 {color: #292929; font-size: 28px; font-weight: bold; text-align: center;}
+.point_status .level_copy h3 span {font-size: 28px;}
+.point_status .input_set .info_dl dd .txt_point {display:inline-block; color:#292929; font-size:24px; font-weight:bold;}
+.point_status .input_set .info_dl dd .txt_point span {display:inline-block; color:#292929; font-size:24px; font-weight:bold;}
+
+.write_info .input_set {overflow:hidden; position:relative;}
+.write_info > div ~ div {margin-top:10px;}
+.write_info .input_set dl {background-color:#fff; overflow:hidden; border:1px solid #e5e5e5; padding:22px 30px;}
+.write_info .input_set dl ~ dl {border-top:none;}
+.write_info .input_set dl:focusin {border:1px solid #009223}
+.write_info .input_set dt {float:left;position:relative;font-weight:300; width:120px; line-height:35px; letter-spacing:-0.05em}
+.write_info .input_set dt ~ dt, .write_info .input_set dd ~ dd {padding-top:44px;}
+.write_info .input_set dt ~ dt:before {content:'';position:absolute;top:22px;right:0;width:100%;height:1px;background-color:#e5e5e5;padding-left:30px}
+.write_info .input_set dd ~ dd:before {content:'';position:absolute;top:22px;left:0;width:100%;height:1px;background-color:#e5e5e5;padding-right:30px;}
+.write_info .input_set dd {float:left; position:relative; width:786px;}
+.write_info .input_set .info_dl {overflow:hidden;}
+.write_info .input_set .info_dl dt,
+.write_info .input_set .info_dl dd {width:auto;}
+.write_info .input_set .info_dl dt {float:left;}
+.write_info .input_set .info_dl dd {float:right;}
+
+.notice {background:#f6f6f6 url(../images/common/icon_exc.png) 25px 50% no-repeat; display:flex; color:#999999; flex-direction:column; justify-content:center; font-size:13px; margin-top:20px; padding:15px 15px 19px 81px; min-height:52px;}
+.notice li{line-height:1.385em; letter-spacing:-0.015em; position:relative;}
+.notice li ~ li {margin-top:5px;}
+
+.data_none {padding: 172px 0; text-align: center;}
+
+.membership_point .board_list {overflow:hidden; background-color:#ffffff; box-sizing:border-box; margin:0 auto; padding:60px 100px; width:1170px;}
+.membership .board_list.point_history {width: 100%; padding: 0;}
+
+.data_none {padding:172px 0; text-align:center;}
+.data_none p {position:relative; line-height:18px; letter-spacing:-0.05em; color:#999; padding-top:58px;}
+.data_none p:before {content:'';position:absolute;top:0;left:50%;margin-left:-20px;background:url(../images/common/icon_exc_sm.png)no-repeat;width:40px; height:40px;}
+
+
+
 
