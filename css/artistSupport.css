@@ -263,13 +263,33 @@ body {
 }
 .sandwich_artist_wrapper .career_path ol li .layer_view { 
     position:absolute; 
-    left:0; 
-    top:56px; 
+    left: -107px;; 
+    top:-75px; 
     width:260px; 
     background-color:#009223; 
     padding:15px 0 16px 0; 
-    display:table; 
+    /* display:table;  */
     display:none;
+}
+.sandwich_artist_wrapper .career_path ol li .view:hover .layer_view {
+    display: table;
+    top: -95px;
+    animation-name: upDown;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+}
+@keyframes upDown {
+    0% {
+        top: -80px;
+    }
+
+    50% {
+        top: -96px
+    }
+
+    100% {
+        top: -94.5px;
+    }
 }
 .sandwich_artist_wrapper .career_path ol li .layer_view:after {
     content:''; 
