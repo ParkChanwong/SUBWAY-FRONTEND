@@ -79,7 +79,7 @@
     font-size: 16px;
     color: #999999;
     line-height: 60px;
-    font-family: 'noto_m';
+    font-family: 'noto_r';
 }
 
 .mysub_cate_wrap ul .active a {
@@ -114,6 +114,8 @@
     width: 1170px;
     height: 70px;
     margin: 0 auto;
+    position: relative;
+    box-shadow: 7px 7px 20px 0px rgb(0 0 0 / 10%);
 }
 
 .giftCard_tap ul {
@@ -127,6 +129,7 @@
     width: 100%;
     height: 100%;
 }
+
 
 .giftCard_tap ul li:first-child a {
     border-right: 0;
@@ -151,6 +154,10 @@
     border: 1px solid #009223;
 }
 
+.gift_wrap {
+    display: none;
+}
+
 .card_slide_wrap {
     width: 100%;
     margin-top: -45px;
@@ -170,11 +177,14 @@
     padding: 80px 0 130px;
 }
 
-.gift_input_content {
-    position: relative;
+.gift_input_wrap form {
     width: 1170px;
     margin: 0 auto;
     background-color: #ffffff;
+}
+
+.gift_input_content {
+    position: relative;
     padding: 86px 100px 0 100px;
     overflow: hidden;
     box-sizing: border-box;
@@ -250,14 +260,14 @@
     border-color: #009223;
 }
 
-.gift_input_content .gift_money ul {
+.gift_input_content ul {
     display: inline-block;
     width: 786px;
     position: relative;
     font-size: 0;
 }
 
-.gift_input_content .gift_money ul li {
+.gift_input_content ul li {
     display: inline-block;
     margin-right: 10px;
 }
@@ -267,7 +277,7 @@
     display: flex;
 }
 
-.gift_input_content .gift_money ul li span {
+.gift_input_content ul li span {
     display: block;
     min-width: 120px;
     font-size: 18px;
@@ -308,12 +318,12 @@
     display: none;
 }
 
-.gift_input_content .gift_money ul .check span {
+.gift_input_content ul .check span {
     background-color: #009223;
     color: #ffffff !important;
 }
 
-.gift_input_content .gift_money ul .check span::before {
+.gift_input_content ul .check span::before {
     background-position: -16px 0;
 }
 
@@ -343,3 +353,180 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0;
 }
 
+.gift_input_content .pay_method .creditCard {
+    font-size: 16px;
+    line-height: 33px;
+    font-family: 'noto_r';
+}
+
+.gift_input_content .send_method span {
+    font-size: 16px;
+    line-height: 33px;
+    font-family: 'noto_r';
+    color: #aaaaaa;
+    display: inline-block;
+}
+
+.gift_input_content .send_method .reserve.check .sel {
+    display: inline-block;
+}
+
+.gift_input_content .send_method .sel {
+    overflow: hidden;
+    position: relative;
+    margin-right: 15px;
+    height: 35px;
+    display: none;
+}
+
+.gift_input_content .send_method .sel::before {
+    content: '';
+    position: absolute;
+    right: 13px;
+    top: 15px;
+    width: 12px;
+    height: 7px;
+    background: url('../images/giftCard/icon_select_arr.png') 0 0 no-repeat;
+}
+
+.gift_input_content .send_method .sel select {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    appearance: none;
+    color: #999999;
+    font-family: 'noto_dl';
+    letter-spacing: -0.09em;
+    text-indent: 16px;
+}
+
+.gift_input_content .send_method .select_date {
+    margin-left: 45px;
+    width: 180px
+}
+
+
+.gift_input_content .send_method .select_ampm {
+    width: 94px;
+}
+
+.gift_input_content .send_method .select_time {
+    width: 97px;
+}
+
+.inquiry_notice {
+    width: 100%;
+    padding: 15px 15px 19px 81px;
+    box-sizing: border-box;
+    min-height: 52px;
+    background: #f6f6f6 url('../images/giftCard/icon_exc.png') 25px 50% no-repeat;
+    margin-top: 20px;
+}
+
+.inquiry_notice ul li {
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.385em;
+    letter-spacing: -0.015em;
+    margin-top: 5px;
+    font-family: 'noto_dl';
+    display: flex;
+    flex-direction: column;
+}
+
+.inquiry_notice ul li:first-child {
+    margin: 0;
+}
+
+.submit_wrap {
+    width: 100%;
+    margin-top: 100px;
+    padding: 40px 0 60px;
+    box-sizing: border-box;
+    border-top: 1px solid #e8e8e8;
+}
+
+.submit_wrap a {
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+    background-color: #009223;
+    color: #fff;
+    font-family: 'noto_l';
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition-duration: 0.2s;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit_wrap a:hover {
+    background-color: #00811f;
+}
+
+.submit_wrap a::after {
+    content: '';
+    display: inline-block;
+    width: 21px;
+    height: 16px;
+    margin-left: 7px;
+    vertical-align: middle;
+    margin-top: -4px;
+    background: url("../images/giftCard/icon_reg.png") 0 0 no-repeat;
+}
+
+.history_content_wrap {
+    width: 100%;
+    margin-top: -35px;
+    padding: 90px 0 130px;
+    background-color: #f6f6f6;
+}
+
+.history_content_wrap .subTitle {
+    font-size: 20px;
+    margin-bottom: 56px;
+    color: #292929;
+    font-family: 'noto_l';
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+}
+
+.history_list_wrap {
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    min-height: 390px;
+}
+
+.history_list_wrap .no_data {
+    padding: 154px 0;
+    text-align: center;
+}
+
+.history_list_wrap .no_data p {
+    font-size: 16px;
+    line-height: 18px;
+    position: relative;
+    color: #999999;
+    letter-spacing: -0.05em;
+    padding-top: 58px;
+    font-family: 'noto_r';
+}
+
+.history_list_wrap .no_data p::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+    background: url('../images/giftCard/icon_exc_sm.png') no-repeat;
+}
