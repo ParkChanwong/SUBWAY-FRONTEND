@@ -53,9 +53,12 @@ em{font-style:normal;}
 .franchise_wrapper .nation_store .store .inner{float:left; margin-left:153px;}
 .franchise_wrapper .nation_store .store .inner span:after{background-color:#fff}
 
-.franchise_wrapper .nation_store >div.hover{color:#fff;}
-.franchise_wrapper .nation_store >div.hover .inner p span:after{background-color:#fff;}
-.franchise_wrapper .nation_store >div.hover:after{opacity:1;}
+.franchise_wrapper .nation_store > .nation:hover{color:#fff;}
+.franchise_wrapper .nation_store > .nation:hover .inner p span:after{background-color:#fff;}
+.franchise_wrapper .nation_store > .nation:hover::after{opacity:1;}
+.franchise_wrapper .nation_store > .store:hover{color:#fff;}
+.franchise_wrapper .nation_store > .store:hover .inner p span:after{background-color:#fff;}
+.franchise_wrapper .nation_store > .store:hover::after{opacity:1;}
 .franchise_wrapper .nation_store .nation:after{background:url(../images/franchise/bg_nation.jpg) 0 0 no-repeat;}
 .franchise_wrapper .nation_store .store:after{background:url(../images/franchise/bg_store.jpg) 0 0 no-repeat;}
 
@@ -93,7 +96,7 @@ em{font-style:normal;}
 .invest_cost{margin-top:95px; width: 100%;}
 .invest_cost .h_tit{text-align:center; padding-bottom:7px !important; font-size:28px; color:#292929; font-weight:bold; letter-spacing:-0.05em; font-family: noto_m;}
 .invest_cost .board_list{position:relative; padding-bottom:127px;} 
-.invest_cost .board_list .cont_right{position: absolute; float:right; font-size:13px; color:#999999; margin-bottom:16px; letter-spacing:-0.03em; top: -30px; right: 330px;}
+.invest_cost .board_list .cont_right{position: absolute; float:right; font-size:13px; color:#999999; margin-bottom:16px; letter-spacing:-0.03em; top: -30px; right: 315px;}
 .invest_cost .board_list .cont_right p {font-size: 13px; font-family: noto_dl;}
 .invest_cost .board_list table{clear:both; border-top:4px solid #009223; margin: 0 auto; text-align: center; width: 1180px;}
 .invest_cost .board_list table th{text-align:left; padding:0 30px; color:#292929; line-height:22px; font-weight:normal; border-bottom:1px solid #dddddd; font-family: noto_dl;}
@@ -102,11 +105,12 @@ em{font-style:normal;}
 .invest_cost .board_list table tfoot{background-color:#f6f6f6;}
 .invest_cost .board_list table tfoot th,
 .invest_cost .board_list table tfoot td{font-weight:300; color:#292929; font-family: noto_m;}
-.invest_cost .board_list .notice{position: relative; float: left; color:#999; font-size:13px; line-height:23px; margin:19px 0 50px; left: 330px;}
+.invest_cost .board_list .notice{position: relative; float: left; color:#999; font-size:13px; line-height:23px; margin:19px 0 50px; left: 315px;}
 .invest_cost .board_list .notice li{margin-bottom:8px; letter-spacing:-0.035em; font-size: 13px; font-family: noto_dl;}
 
 .invest_cost .board_list .btns{clear: both; text-align:center;}
-.invest_cost .board_list .btns .btn{font-size:18px; font-weight:bold; text-align:center; display:inline-block; vertical-align:middle; border-radius:30px; transition-duration:0.2s; background-color: #009233; color: #fff;}
+.invest_cost .board_list .btns .btn{font-size:18px; font-weight:bold; text-align:center; display:inline-block; vertical-align:middle; border-radius:30px; transition-duration:0.2s; background-color: #009233; color: #fff; margin: 0 4px;}
 .invest_cost .board_list .btns .btn.i_arr::after {content: ''; display: inline-block; vertical-align: middle; width: 10px; height: 14px; background: url('../images/common/icon_arr_r01.png') 0 0 no-repeat; margin-left: 7px;}
-.invest_cost .board_list .btn span{display:inline-block; vertical-align:middle; height:46px; line-height:46px; margin: 0 4px; font-size: 17px; font-family: noto_dl;}
-.invest_cost .board_list .btn.bgc_point:hover a {background-color:#00811f}
+.invest_cost .board_list .btn span{display:inline-block; vertical-align:middle; height:46px; line-height:46px; font-size: 17px; font-family: noto_dl;}
+.invest_cost .board_list .btn:hover {background-color:#00811f}
+.invest_cost .board_list .btn.bgc_point span{height:50px; line-height:50px; letter-spacing:-0.03em;}
