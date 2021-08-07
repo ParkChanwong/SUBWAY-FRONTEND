@@ -1,0 +1,257 @@
+#container.bg_gray{
+    background-color: #f6f6f6;
+    padding-bottom: 130px;
+}
+#container{
+    margin-top: 170px;
+    position: relative;
+}
+#content{
+    padding-top: 0;
+    position: relative;
+    z-index: 3;
+}
+
+#content h2.subTitle{
+    text-align: center;
+    font-size: 40px;
+    color: #292929;
+    font-family: 'noto_dl';
+    letter-spacing: -0.07em;
+    padding: 134px 0 80px;
+}
+.bookmark_wrapper .bookmark_list{
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 40px 100px 80px;
+    width: 1170px;
+}
+.board_list_wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.board_list_wrapper .store_list_sorting{
+    background-color: #f6f6f6;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.board_list_wrapper .store_list_sorting .sort_tit{
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'noto_l';
+}
+
+.form_select select{
+    width: 100%;
+    border: 0;
+    height: 41px;
+    line-height: 41px;
+    font-size: 16px;
+    color: #999999;
+    position: relative;
+    z-index: 1;
+    text-indent: 9px;
+}
+
+.board_list_wrapper .store_list_sorting .form_select{
+    display: inline-block;
+    margin-left: 24px;
+    width: 340px;
+}
+
+.form_select {
+    box-sizing: border-box;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #dddddd;
+}
+
+.form_select:before{
+    content: '';
+    position: absolute;
+    right: 13px;
+    top: 18px;
+    width: 12px;
+    height: 7px;
+    z-index: 3;
+    background: url(../images/oftenFindImages/icon_select_arr.png);
+}
+.bookmark_wrapper .bookmark_list .board_list_wrapper {
+    padding-bottom: 0;
+}
+
+.content{
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+.bookmark_wrapper .bookmark_list .board_list_wrapper .board_total {
+    margin-bottom: 17px;
+}
+
+.board_list_wrapper .board_total {
+    font-family: 'noto_dl';
+    color: #999999;
+    letter-spacing: -0.045em;
+    float: left;
+    margin-top: 17px;
+}
+
+.board_list_wrapper .board_total strong {
+    font-weight: bold;
+    color: #009223;
+    display: inline-block;
+    margin: 0 0 0 3px;
+}
+.board_list_wrapper table {
+    clear: both;
+    border-top: 4px solid #009223;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.board_list_wrapper table th {
+    color: #009223;
+    font-size: 16px;
+    font-family: 'noto_dl';
+    height: 69px;
+    border-bottom: 1px solid #009223;
+    text-align: center;
+}
+caption {
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+.bookmark_wrapper .bookmark_list .board_list_wrapper tbody td {
+    letter-spacing: -0.05em;
+}
+.board_list_wrapper table td {
+    height: 69px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    color: #292929;
+    font-size: 16px;
+}
+.bookmark_wrapper .bookmark_list .board_list_wrapper tbody td p {
+    color: #999999;
+    font-family: 'noto_dl';
+}
+.data_none p {
+    position: relative;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    color: #999;
+    padding-top: 58px;
+}
+
+.data_none {
+    padding: 172px 0;
+    text-align: center;
+}
+
+.data_none p:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background: url(../images/oftenFindImages/icon_exc_sm.png);
+}
+
+#data_none{
+    display: none;
+}
+
+.bookmark_wrapper .bookmark_list .board_list_wrapper tbody td {
+    letter-spacing: -0.05em;
+}
+
+.board_list_wrapper table td.t_l {
+    text-align: left;
+    padding-left: 30px;
+}
+.board_list_wrapper table td {
+    height: 69px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    color: #292929;
+    font-size: 16px;
+}
+.bookmark_wrapper .bookmark_list .board_list_wrapper table td .store {
+    color: #292929;
+    padding-left: 30px;
+    font-family: 'noto_dl';
+}
+.board_list_wrapper .bookmark_map .map{
+    background: url(../images/oftenFindImages/icon_map.png);
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0;
+    transition-duration: 0.2s;
+    height: 22px;
+    width: 22px;
+}
+.blind {
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+.board_list_wrapper .bookmark_map address {
+    display: inline-block;
+    color: #292929;
+    font-family: 'noto_dl';
+    font-style: normal;
+    vertical-align: middle;
+    margin-left: 10px;
+    max-width: 88%;
+}
+.board_list_wrapper table td .tel {
+    color: #999999;
+    font-family: 'sw_s';
+}
+
+.my_bookmark .i_star{
+    background: url(../images/oftenFindImages/icon_star.png) no-repeat center 50% #ffc300;
+    background-size: 12px;
+    display: block;
+    border-radius: 100%;
+    transition-duration: 0.3s;
+    height: 24px;
+    width: 24px;
+}
+.my_bookmark {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 24px;
+    z-index: 5;
+}
+.my_bookmark input {
+    opacity: 0;
+    position: absolute;
+    left: -2px;
+    height: 0;
+    width: 0;
+}
+.bookmark_wrapper .bookmark_list .board_list_wrapper table td .my_bookmark {
+    margin: 0 auto;
+}
