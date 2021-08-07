@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.your-class').slick({});
+    $('.your-class').slick();
 });
 
 $(document).on('click', '.giftCard_tap ul li', (e) => {
