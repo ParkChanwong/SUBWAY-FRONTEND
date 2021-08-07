@@ -1,17 +1,21 @@
 $(document).ready(function(){
-    $('.your-class').slick();
-});
-
-$(document).on('click', '.giftCard_tap ul li', (e) => {
-    $('.giftCard_tap ul li').removeClass('active');
-    $(e.currentTarget).addClass('active');
-    if($(e.currentTarget).hasClass('gift')) {
-        $('.history_wrap').css('display', 'none');
-        $('.gift_wrap').css('display', 'block');
-    } else {
-        $('.gift_wrap').css('display', 'none');
-        $('.history_wrap').css('display', 'block');
-    }
+    $('.card_slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.card_slide_list'
+    });
+    $('.card_slide_list').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        asNavFor: '.card_slide',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        centerPadding: '0px',
+        arrows: true,
+    });
 });
 
 $(document).on('click', '.gift_money ul li', (e) => {
