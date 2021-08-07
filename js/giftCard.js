@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    $('.your-class').slick({});
+});
+
 $(document).on('click', '.giftCard_tap ul li', (e) => {
     $('.giftCard_tap ul li').removeClass('active');
     $(e.currentTarget).addClass('active');
