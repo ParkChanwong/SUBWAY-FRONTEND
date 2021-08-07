@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUBWAY 써브웨이</title>
+    <title>MY-SUB > 자주 주문한 매장</title>
     <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
@@ -228,21 +228,21 @@
             <div class="content_wrap">
                 <div id="content">
                     <div class="bookmark_wrapper">
-                        <h2 class="subTitle">자주 찾는 매장</h2>
+                        <h2 class="subTitle">자주 주문한 매장</h2>
                         <div class="bookmark_list">
                             <div class="board_list_wrapper">
                                 <div class="store_list_sorting">
-                                    <h3 class="sort_tit">자주 찾는 매장</h3>
+                                    <h3 class="sort_tit">자주 주문한 매장</h3>
                                     <div class="form_select">
                                         <select name="storeType">
-                                            <option selected="selected" value="oftenFind">자주 찾는 매장</option>
-                                            <option value="oftenOrd">자주 주문한 매장</option>
+                                            <option value="oftenFind">자주 찾는 매장</option>
+                                            <option selected="selected" value="oftenOrd">자주 주문한 매장</option>
                                             <option value="nearStore">가까운 매장</option>
                                             <option value="areaStore">지역별 매장</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="content" id="content_table">
+                                <div class="content_often" id="content_table">
                                     <p class="board_total">
                                         등록된 매장 
                                         <strong>0</strong>개
@@ -325,6 +325,9 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <p class="counsel_copy">
+                                    최근 6개월 기준 자주 주문한 매장입니다.
+                                </p>
                             </div>
                         </div>
                     </div>

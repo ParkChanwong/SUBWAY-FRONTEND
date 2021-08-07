@@ -179,13 +179,13 @@ select{
 
 
 /* 데이터가 없는경우 활성화 */
-#t_l_none{
-    display: none;
-}
-
-/* #data_none{
+/* #t_l_none{
     display: none;
 } */
+
+#data_none{
+    display: none;
+}
 
 
 
@@ -276,6 +276,11 @@ select{
 
 .counsel_copy::before {
     content: '· ';
+}
+
+.store_distance{
+    font-size: 16px;
+    font-family: 'noto_dl';
 }
 
 
