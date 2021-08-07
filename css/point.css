@@ -27,7 +27,8 @@ em{font-style:normal;}
 
 .content_wrap {position: sticky; width: 100%; top: 0; left: 0; border-bottom: 1px solid #e5e5e5; height: 59px; background-color: #fff; z-index: 5;}
 .content_wrap .logo {position: absolute; top: 0; left: 0; width: 110px; height: 60px; background: url('../images/common/logo_sub_header.png') 0 50% no-repeat; overflow: hidden; text-indent: -9999px; font-size: 0; line-height: 0; opacity: 1;}
-.content_wrap .top {position: absolute; top: 0; right: 0; height: 32px; padding-top: 28px; color: #bbbbbb; font-size: 13px; opacity: 1;}
+.content_wrap .top {position: absolute; right: 0; top: 0; height: 32px; padding-top: 28px; font-family: font_sw; font-weight: bold; color: #bbbbbb; font-size: 13px; opacity: 1;}
+.content_wrap .top a {font-size: 13px; font-family: sw_f; font-weight: bold; color: #bbbbbb;}
 .content_wrap .top::after {content: ''; width: 12px; height: 15px; background: url('../images/common/icon_arr_top.png') 50% 0 no-repeat; display: block; position: absolute; left: 0; width: 100%; top: 18px;}
 .content_wrap .content_nav {text-align: center;}
 .content_wrap .content_nav ul {overflow: hidden; display: inline-block;}
