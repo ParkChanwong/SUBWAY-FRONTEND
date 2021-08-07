@@ -44,7 +44,7 @@ em{font-style:normal;}
 .point_title ul {overflow: hidden; width: 1170px; display: flex; border-left: 1px solid #e5e5e5;}
 .point_title ul li {flex: 1; border: 1px solid #e5e5e5; margin-left: -1px; position: relative;}
 .point_title ul li:first-child {margin-left: 0;}
-.point_title ul li a {display: block; height: 68px; line-height: 68px; position: relative; font-size: 18px; color: #666666; text-align: center; background-color: #fff;}
+.point_title ul li a {display: block; height: 68px; line-height: 68px; position: relative; font-size: 18px; color: #666666; text-align: center; background-color: #fff; font-family: noto_r;}
 .point_title ul li.active {z-index: 3; border: 1px solid #009223;}
 .point_title ul li.active a {background-color: #009223; color: #fff;}
 
@@ -52,10 +52,10 @@ em{font-style:normal;}
 
 .point_status {background-color: #ffffff; overflow: hidden; box-sizing: border-box; margin: 0 auto; padding: 60px 100px 80px 100px; width: 1170px;}
 .point_status .level_copy {overflow: hidden; margin-bottom: 60px;}
-.point_status .level_copy h3 {color: #292929; font-size: 28px; font-weight: bold; text-align: center;}
-.point_status .level_copy h3 span {font-size: 28px;}
-.point_status .input_set .info_dl dd .txt_point {display:inline-block; color:#292929; font-size:24px; font-weight:bold;}
-.point_status .input_set .info_dl dd .txt_point span {display:inline-block; color:#292929; font-size:24px; font-weight:bold;}
+.point_status .level_copy h3 {color: #292929; font-size: 28px; text-align: center; font-family: noto_m;}
+.point_status .level_copy h3 span {color: #292929; font-size: 28px; text-align: center; font-family: noto_m;}
+.point_status .input_set .info_dl dd .txt_point {display:inline-block; color:#292929; font-size:24px; font-family: sw_f;}
+.point_status .input_set .info_dl dd .txt_point span {display:inline-block; color:#292929; font-size:24px;}
 
 .write_info .input_set {overflow:hidden; position:relative;}
 .write_info > div ~ div {margin-top:10px;}
@@ -70,11 +70,11 @@ em{font-style:normal;}
 .write_info .input_set .info_dl {overflow:hidden;}
 .write_info .input_set .info_dl dt,
 .write_info .input_set .info_dl dd {width:auto;}
-.write_info .input_set .info_dl dt {float:left;}
+.write_info .input_set .info_dl dt {float:left; font-family: noto_m;}
 .write_info .input_set .info_dl dd {float:right;}
 
 .notice {background:#f6f6f6 url(../images/common/icon_exc.png) 25px 50% no-repeat; display:flex; color:#999999; flex-direction:column; justify-content:center; font-size:13px; margin-top:20px; padding:15px 15px 19px 81px; min-height:52px;}
-.notice li{line-height:1.385em; letter-spacing:-0.015em; position:relative;}
+.notice li{line-height:1.385em; letter-spacing:-0.015em; position:relative; font-size: 13px; font-family: noto_dl;}
 .notice li ~ li {margin-top:5px;}
 
 .data_none {padding: 172px 0; text-align: center;}
@@ -83,7 +83,7 @@ em{font-style:normal;}
 .membership .board_list.point_history {width: 100%; padding: 0;}
 
 .data_none {padding:172px 0; text-align:center;}
-.data_none p {position:relative; line-height:18px; letter-spacing:-0.05em; color:#999; padding-top:58px;}
+.data_none p {position:relative; line-height:18px; letter-spacing:-0.05em; color:#999; padding-top:58px; font-family: noto_dl;}
 .data_none p:before {content:'';position:absolute;top:0;left:50%;margin-left:-20px;background:url(../images/common/icon_exc_sm.png)no-repeat;width:40px; height:40px;}
 
 
