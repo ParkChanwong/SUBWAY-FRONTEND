@@ -388,7 +388,7 @@ select{
 }
 
 .popup_wrapper .btn_close{
-    background: url(../images/onlineOrder/icon_popup_close.png) 50% 50% no-repeat;
+    background: url(../images/icon_popup_close.png) 50% 50% no-repeat;
     width: 73px;
     height: 73px;
     position: absolute;
@@ -400,6 +400,6 @@ select{
     outline: none;
 }
 
-/* .popup_back{
+.popup_back{
     display: none;
-} */
+}
