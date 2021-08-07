@@ -26,7 +26,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 40px 100px 80px;
-    width: 1170px;
+    /* width: 1170px; */
 }
 .board_list_wrapper{
     position: relative;
@@ -89,7 +89,7 @@
 }
 
 .content{
-    max-width: 1170px;
+    /* max-width: 1170px; */
     margin: 0 auto;
     position: relative;
 }
