@@ -232,8 +232,91 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.marketing_detail_check {
+    padding: 16px 15px;
+    height: 50px;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
 
+.detail_check {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    margin-right: 25px;
+}
 
+.detail_check input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    left: -10px;
+}
+
+.detail_check label {
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'noto_m';
+    line-height: 17px;
+    letter-spacing: -0.05em;
+    color: #666666;
+    align-items: center;
+}
+
+.detail_check label span {
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    background: url('../images/signUp/icon_checkbox_basic.png') no-repeat;
+}
+
+.detail_check label span::before {
+    content: '';
+    width: 0px;
+    height: 15px;
+    background: url("../images/signUp/icon_checkbox_basic.png") 0 -15px no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    transition-duration: 0.2s;
+}
+
+.marketing_detail_check input:checked + label {
+    color: #009223;
+}
+
+.marketing_detail_check input:checked + label span::before {
+    width: 18px;
+}
+
+.inquiry_notice {
+    background: #f6f6f6 url('../images/signUp/icon_exc.png') 25px 50% no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 19px 81px;
+    min-height: 52px;
+    margin-top: 20px;
+}
+
+.inquiry_notice strong {
+    font-size: 13px;
+    font-family: 'noto_dl';
+    line-height: 23px;
+    color: #666666;
+}
+
+.inquiry_notice p {
+    font-size: 13px;
+    font-family: 'noto_l';
+    line-height: 23px;
+    color: #999999;
+}
 
 .submit_wrap {
     width: 100%;
