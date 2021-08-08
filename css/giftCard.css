@@ -214,12 +214,91 @@
     margin-top: 60px;
 }
 
-.card_slide_list img {
+.card_slide_list .list_img_wrap {
     width: 144px;
     height: 90px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card_slide_list .slick-current .list_img_wrap::before {
+    content: '';
+    position: absolute;
+    width: 136px;
+    height: 82px;
+    border: 4px solid #009223;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.card_slide_list .list_img_wrap span {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #009223;
+    visibility: hidden;
+}
+
+.card_slide_list .list_img_wrap span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 30px;
+    background: url('../images/giftCard/icon_radio_chk.png') 50% 50% no-repeat;
+    transition-duration: 0.3s;
+    visibility: hidden;
+}
+
+.card_slide_list .slick-current .list_img_wrap span {
+    visibility: unset;
+}
+
+.card_slide_list .slick-current .list_img_wrap span::before {
+    width: 30px;
+    visibility: unset;
+}
+
+.card_slide_list img {
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
+.slick-prev, .slick-next {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.slick-prev {
+    background: url('../images/giftCard/icon_gift_slider_arr.png') no-repeat !important;
+    background-position: 0 0 !important;
+    left: -50px !important;
+}
+
+.slick-next {
+    background: url('../images/giftCard/icon_gift_slider_arr.png') no-repeat !important;
+    background-position: 100% 0 !important;
+    right: -50px !important;
+}
+
+.slick-prev:hover {
+    background-position: 0 100% !important;
+}
+
+.slick-next:hover {
+    background-position: 100% 100% !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    opacity: 1 !important;
+    font-size: 0 !important;
+}
 
 
 .gift_input_wrap {

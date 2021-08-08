@@ -13,7 +13,7 @@ $(document).ready(function(){
         dots: false,
         centerMode: true,
         focusOnSelect: true,
-        centerPadding: '0px',
+        // centerPadding: '40px',
         arrows: true,
     });
 });
