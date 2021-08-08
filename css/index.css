@@ -311,11 +311,24 @@ em{font-style:normal;}
 .subway_menu_slider_wrapper .subway_menu_slider ul li {float: left; width: 260px; height: 320px; padding: 0 5px; margin-left: 30px; display: block;}
 .subway_menu_slider_wrapper .subway_menu_slider ul li:first-child {margin-left: 0px !important;}
 .subway_menu_slider_wrapper .subway_menu_slider ul li .img {text-align: center;}
-.subway_menu_slider_wrapper .subway_menu_slider ul li .img img {width: 100%; height: 182px; left}
+.subway_menu_slider_wrapper .subway_menu_slider ul li .img img {width: 100%; height: 182px;}
 .subway_menu_slider_wrapper .subway_menu_slider ul li strong {font-size: 18px; color: #292929; margin: 3px 0 10px; display: block; font-family: noto_r;}
 .subway_menu_slider_wrapper .subway_menu_slider ul li p {font-size: 13px; color: #999999; line-height: 21px; opacity: 1; width: 260px; margin: 0 auto; letter-spacing: -0.04em; font-family: noto_dl;}
 .subway_menu_slider_wrapper .subway_menu_slider ul li a {display: block; position: relative; text-align: center; margin: 0 auto;}
 .subway_menu_slider_wrapper .subway_menu_slider ul li a::after {content: ''; background: url('../images/main/btn_more.png') 0 0 no-repeat; width: 98px; height: 98px; position: absolute; left: 65%; top: 40%; margin: -22px 0 0 -42px; opacity: 0;}
+
+/* .subway_menu_slider_wrapper .subway_menu_slider ul li:nth-child(1):hover {margin: 0; width: 350px;}
+.subway_menu_slider_wrapper .subway_menu_slider ul li:nth-child(1):hover + li {margin: 0; width: 260px}
+.subway_menu_slider_wrapper .subway_menu_slider ul li:nth-child(1):hover + li + li {margin: 0; width: 260px}
+.subway_menu_slider_wrapper .subway_menu_slider ul li:nth-child(1):hover + li + li + li {margin: 0; width: 260px} */
+
+/* .subway_menu_slider_wrapper .subway_menu_slider ul + li:hover {margin: 0; width: 350px;}
+.subway_menu_slider_wrapper .subway_menu_slider ul + li:hover + li {margin: 0; width: 260px;}
+.subway_menu_slider_wrapper .subway_menu_slider ul + li:hover + li + li {margin: 0; width: 260px;}
+.subway_menu_slider_wrapper .subway_menu_slider ul + li:hover + li + li + li {margin: 0; width: 260px;} */
+
+
+
 .subway_menu_slider_wrapper .subway_menu_slider.active ul li:hover .wrap{padding:0;}
 .subway_menu_slider_wrapper .subway_menu_slider.active ul li:hover img{width:340px; height:238px;}
 .subway_menu_slider_wrapper .subway_menu_slider.active ul li:hover strong{font-size:22px; margin-top:10px}
