@@ -74,7 +74,7 @@
     display: table-cell;
     width: 176px;
     line-height: 1.15;
-    font-family: 'noto_r';
+    font-family: 'noto_m';
 }
 
 .member_active .my_info .info.member .name_gender .name strong{
@@ -97,7 +97,7 @@ em{
 .member_active .my_info .info.member .name_gender .name .multiple_line {
     word-break: break-all;
     font-size: 30px;
-    font-family: 'noto_r';
+    font-family: 'noto_m';
 }
 
 .btn {
@@ -226,7 +226,7 @@ em{
 .content_wrap h3.h_title {
     font-size: 28px;
     color: #292929;
-    font-family: 'noto_r';
+    font-family: 'noto_m';
     letter-spacing: -0.05em;
     padding-bottom: 38px;
 }
@@ -256,7 +256,7 @@ em{
     display: inline-block;
     color: #999999;
     font-size: 20px;
-    font-family: 'noto_m';
+    font-family: 'noto_b';
     line-height: 80px;
     height: 80px;
 }
@@ -323,7 +323,8 @@ em{
     overflow: hidden;
     color: #292929;
     font-size: 20px;
-    font-family: 'noto_b';
+    font-family: 'noto_r';
+    font-weight: bold;
     line-height: 78px;
     text-overflow: ellipsis;
     white-space: nowrap;
