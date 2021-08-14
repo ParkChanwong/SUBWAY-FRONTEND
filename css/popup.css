@@ -601,7 +601,7 @@ input {
     opacity: 1;
     width: 520px;
     transform: matrix(1, 0, 0, 1, 0, 0);
-    height: 725px;
+    height: 700px;
     background-color: #ffc300;
     border-radius: 30px;
     box-sizing: border-box;
@@ -700,6 +700,12 @@ input {
     color: #fff;
 }
 
+.popup_content.double .scroll{
+    padding-left: 20px;
+    height: 300px;
+}
+
+
 /* doubleAdd 종료 */
 
 .popup_back .popup_wrapper.setSelect{
@@ -707,7 +713,7 @@ input {
     width: 520px;
     margin-left: -260px;
     transform: matrix(1, 0, 0, 1, 0, 0);
-    height: 877px;
+    height: 700px;
     background-color: #ffc300;
     border-radius: 30px;
     box-sizing: border-box;
@@ -808,8 +814,14 @@ select{
     font-family: 'noto_r';
 }
 
-#popup_wrap.order_popup .popup_content.set_popup .form_select{
-    margin-bottom: 20px;
+.set_popup .form_select{
+    margin-top: 15px;
 }   
+
+.popup_content.set .scroll{
+    padding-left: 10px;
+    height: 140px;
+}
+
 
 /* setSelect 종료 */
