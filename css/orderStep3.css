@@ -1,7 +1,7 @@
 #container .content_wrap{
     min-height: 663px;
     padding-bottom: 130px;
-    background: url(/images/orderpage_img/fast_bg.jpg) no-repeat 50% 0 #89cd2f;
+    background: url(/images/orderstep3_img/fast_bg.jpg) no-repeat 50% 0 #89cd2f;
     padding-top: 0;
     position: relative;
     z-index: 3;
@@ -47,29 +47,29 @@
     top: 45px;
     width: 45px;
     height: 5px;
-    background: url(/images/orderpage_img/step_bg_off.png) no-repeat 0 0;
+    background: url(/images/orderstep3_img/step_bg_off.png) no-repeat 0 0;
 }
 .order_wrap .step_wrap li:last-child:after{
     background:none;
 }
 .order_wrap .step_wrap .step1{
-    background: url(/images/orderpage_img/step01_off_bg.png) no-repeat 0 12px;
+    background: url(/images/orderstep3_img/step01_off_bg.png) no-repeat 0 12px;
 }
 .order_wrap .step_wrap .step2{
-    background: url(/images/orderpage_img/step02_off_bg.png) no-repeat 0 12px;
+    background: url(/images/orderstep3_img/step02_off_bg.png) no-repeat 0 12px;
 }
 .order_wrap .step_wrap .on{
     width: 164px;
     height: 170px;
     padding-right: 16px;
-    background: url(/images/orderpage_img/step03_on_bg.png) no-repeat 0 0;
+    background: url(/images/orderstep3_img/step03_on_bg.png) no-repeat 0 0;
     padding-left: 102px;
     font-size: 24px;
     text-align: left;
     font-family: 'noto_r';
 }
 .order_wrap .step_wrap .on::after{
-    background-image: url(/images/orderpage_img/step_bg_on.png);
+    background-image: url(/images/orderstep3_img/step_bg_on.png);
 }
 .order_wrap .step_wrap .on strong{
     display: block;
@@ -79,7 +79,7 @@
     font-family: 'sw_f';
 }
 .order_wrap .step_wrap .step4{
-    background: url(/images/orderpage_img/step04_off_bg.png) no-repeat 0 12px;
+    background: url(/images/orderstep3_img/step04_off_bg.png) no-repeat 0 12px;
 }
 .order_content{
     padding: 86px 100px 100px 100px;
@@ -192,7 +192,7 @@
     content:'';
     width:0; 
     height:20px; 
-    background:url(/images/orderpage_img/icon_checkbox.png) 0 0 no-repeat; 
+    background:url(/images/orderstep3_img/icon_checkbox.png) 0 0 no-repeat; 
     position:absolute; 
     left:4px; 
     top:0; 
@@ -257,7 +257,7 @@
     content:''; 
     width:0; 
     height:20px; 
-    background:url(/images/orderpage_img/icon_checkbox.png) 0 0 no-repeat; 
+    background:url(/images/orderstep3_img/icon_checkbox.png) 0 0 no-repeat; 
     position:absolute; 
     left:4px; 
     top:0; 
@@ -273,7 +273,7 @@
     content: '　　';
     width: 24px;
     height: 24px;
-    background: url(/images/orderpage_img/icon_dispos.png) no-repeat;
+    background: url(/images/orderstep3_img/icon_dispos.png) no-repeat;
     background-size: 24px 24px;
 }
 
@@ -309,7 +309,7 @@
     top: 15px;
     width: 12px;
     height: 7px;
-    background: url(/images/orderpage_img/icon_select_arr.png) 0 0 no-repeat;
+    background: url(/images/orderstep3_img/icon_select_arr.png) 0 0 no-repeat;
     z-index: 3;
 }
 
@@ -695,7 +695,7 @@ img {
     vertical-align: middle;
     width: 21px;
     height: 16px;
-    background: url(/images/orderpage_img/icon_reg.png) 0 0 no-repeat;
+    background: url(/images/orderstep3_img/icon_reg.png) 0 0 no-repeat;
     margin-left: 7px;
 }
 .btn_area .order_btn:hover{
