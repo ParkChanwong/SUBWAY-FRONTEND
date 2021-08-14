@@ -423,6 +423,20 @@ button {
 }
 
 /* cheeseSelect 종료 */
+#popup_wrap.order_popup .popup_content.vegetable{
+    margin-top: 50px;
+}
+
+.form_checkbox .icon {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #dddddd;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 10px;
+}
 
 .popup_back .popup_wrapper.vegeSelect{
     opacity: 1;
@@ -445,6 +459,7 @@ button {
     top: -42px;
     width: 100%;
     overflow: hidden;
+    font-family: 'noto_r';
 }
 
 .vegetable .lately label .icon {
@@ -486,11 +501,12 @@ input {
 .vegetable .lately label .icon {
     margin-right: 6px;
     background-color: #fff;
+    
 }
 
 .form_checkbox .icon:before {
     content: '';
-    width: 0;
+    width: 20px;
     height: 20px;
     background: url(../images/popupImages/icon_checkbox.png) 0 0 no-repeat;
     position: absolute;
