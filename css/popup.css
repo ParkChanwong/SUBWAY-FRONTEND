@@ -808,4 +808,8 @@ select{
     font-family: 'noto_r';
 }
 
+#popup_wrap.order_popup .popup_content.set_popup .form_select{
+    margin-bottom: 20px;
+}   
+
 /* setSelect 종료 */
