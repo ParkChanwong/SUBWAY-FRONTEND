@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>써브카드</title>
+    <title>써브카드 > 충전</title>
     <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
@@ -211,8 +211,8 @@
                     <div class="content">
                         <a class="logo" href="#">HOME</a>
                         <ul>
-                            <li class="active"><a href="#">써브카드</a></li>
-                            <li><a href="#">카드충전</a></li>
+                            <li><a href="#">써브카드</a></li>
+                            <li class="active"><a href="#">카드충전</a></li>
                             <li><a href="#">카드사용</a></li>
                         </ul>
                         <a class="top" href="#">TOP</a>
@@ -223,53 +223,39 @@
                     <!-- 써브카드_Index -->
                     <div class="subcard_wrapper">
                         <div class="sub_tit_wrap"><!-- ※ 써브카드 메인에서만 쓰는 써브타이틀 div -->
-                            <h2 class="subTitle">써브카드</h2>
+                            <h2 class="subTitle">카드 충전 완료</h2>
                         </div>
-                        <div class="card_info_wrap">
-        
-        
-                            <div class="gift_info_cont">
-                                <div class="card_img">
-                                    <figure class="img">
-                                        <img alt="써브웨이" src="/images/img_subcard_default.png">
-                                    </figure>
-                                    <i class="status use"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="mycard_total">
-                                        <div class="name_edit"><!-- 카드명변경 버튼 클릭:class="on"추가 -->
-                                            <span class="form_text">
-                                                <input readonly="" type="text" value="HAPPY EATER"><!-- 카드명변경 버튼 클릭: readonly 삭제 -->
-                                            </span>
+                        <section class="card_charge">
+                            <!-- 결제 -->
+                            <section class="payment_subcard">
+                                <div class="charge_done">
+                                    <!-- 카드잔액 -->
+                                    <div class="card_info">
+                                        <p>HAPPY EATER</p>
+                                        <p class="left_money">100</p>
+                                        <div class="card_img">
+                                            <figure class="img">
+                                                <img alt="써브웨이" src="/images/img_subcard_default.png">
+                                            </figure>
+                                            <i class="status use"></i>
                                         </div>
-                                        <p class="txt_price">100</p>
                                     </div>
-        
-                                    <div class="icon_menu">
-                                        <a class="go_menu" href="#">
-                                            <i class="i_subcard"><img alt="" src="/images/icon_gift.png"></i>
-                                            <span>선물하기</span>
-                                        </a>
-                                        <a class="go_menu" href="#">
-                                            <i class="i_subcard"><img alt="" src="/images/icon_charge.png"></i>
-                                            <span>충전하기</span>
-                                        </a>
+                                    <!--// 카드잔액 -->
+                                    <div class="confirm_comment">
+                                        <p>
+                                            <strong>써브카드 충전이 완료되었습니다.</strong>
+                                            <span>써브카드로 써브웨이의 다양한 메뉴들을 간편하게 즐기세요!</span>
+                                        </p>
                                     </div>
-                                    <div class="btn_menu">
-                                        <a class="btn" >
-                                            <span>환불신청</span>
-                                        </a>
-                                        <a class="btn" href="#">
-                                            <span>이용내역</span>
-                                        </a>
-                                    </div>
-        
-                                    <p class="p_notice red">※ 환불 신청 후 입금은 영업일 기준 최대 2주가 소요됩니다.</p>
-                                </div>
-                            </div>
-        
-        
-                        </div>
+                                    <div class="btn_area">
+                                        <a class="btn bgc_gray" href="/mypage/subcard" style="width:170px;"><span>확인</span></a>
+                                        <a class="btn bgc_point" href="/" style="width:170px;"><span>주문하러 가기</span></a>
+                                        </div>
+                                    
+                                    
+                            </section>
+                            <!--// 결제 -->
+                        </section>
                     </div>
                     <!--// 써브카드_Index -->
                 </div>

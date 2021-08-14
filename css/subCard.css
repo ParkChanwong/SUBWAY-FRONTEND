@@ -251,6 +251,7 @@
     color: #292929;
     font-family: 'sw_f';
     font-size: 40px;
+    height: 45px;
 }
 
 .mycard_total .txt_price:before {
@@ -358,15 +359,6 @@
     margin-bottom: 20px;
 }
 
-.wh_box {
-    background-color: #fff;
-    overflow: hidden;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 90px 100px;
-    width: 1170px;
-}
-
 .subcard_wrapper .card_info {
     overflow: hidden;
     text-align: center;
@@ -377,15 +369,18 @@
 }
 
 .card_charge .card_info p{
-    font-family: 'noto_dl';
-    color: #666666;
+    font-family: 'sw_s';
+    font-size: 20px;
+    color: #999999;
+    letter-spacing: -0.05em;
 }
 
-.subcard_wrapper .card_info .left_money {
-    display: inline-block;
+.subcard_wrapper .card_info .left_money{
     color: #292929;
     font-family: 'sw_f';
     font-size: 40px;
+    margin-top: 12px;
+    letter-spacing: 0em;
 }
 
 .subcard_wrapper .card_info .left_money:before {
@@ -662,6 +657,7 @@ input {
 
 .btn_area .btn span {
     font-size: 18px;
+    font-family: 'noto_l';
 }
 
 .btn.bgc_point {
@@ -696,4 +692,185 @@ input {
     height: 16px;
     background: url(../images/icon_reg.png) 0 0 no-repeat;
     margin-left: 7px;
+}
+
+.subcard_wrapper .confirm_comment {
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.subcard_wrapper .confirm_comment p {
+    text-align: center;
+}
+
+.subcard_wrapper .confirm_comment p strong {
+    display: block;
+    color: #292929;
+    font-size: 28px;
+    font-family: 'noto_r';
+    line-height: 1.1em;
+    margin-bottom: 10px;
+}
+
+.subcard_wrapper .confirm_comment p span {
+    display: block;
+    color: #999;
+    letter-spacing: -0.02em;
+    font-family: 'noto_dl';
+}
+
+.subcard_wrapper .charge_done .btn_area {
+    border-top: 1px solid #e8e8e8;
+    margin-top: 98px;
+    padding-top: 40px;
+}
+
+.btn.bgc_gray {
+    background-color: #999;
+}
+
+.btn.bgc_gray:hover{
+    background-color: #888888;
+}
+
+.subcard_wrapper .charge_done {
+    background-color: #ffffff;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    width: 1170px;
+}
+
+.btn.bgc_gray span {
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.subcard_wrapper .board_list_wrapper {
+    padding-bottom: 0;
+}
+
+.subcard_wrapper .tit {
+    margin-bottom: 30px;
+}
+
+.form_box h2, .form_box h3 {
+    font-size: 26px;
+    font-family: 'noto_r';
+    margin-bottom: 26px;
+    letter-spacing: -0.05em;
+}
+
+.subcard_wrapper .tit h2 {
+    display: inline;
+    vertical-align: middle;
+    color: #666666;
+}
+
+.subcard_wrapper .tit .info_copy {
+    display: inline-block;
+    color: #999999;
+    font-size: 13px;
+    vertical-align: middle;
+    padding-left: 15px;
+    font-family: 'noto_dl';
+    line-height: 16px;
+}
+
+.wh_box {
+    background-color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 90px 100px;
+    width: 1170px;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.board_list_wrapper table {
+    clear: both;
+    border-top: 4px solid #009223;
+}
+
+caption {
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.board_list_wrapper table th {
+    color: #009223;
+    font-size: 16px;
+    font-family: 'noto_dl';
+    height: 69px;
+    border-bottom: 1px solid #009223;
+    text-align: center;
+}
+
+.board_list_wrapper table td {
+    height: 69px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    color: #292929;
+    font-size: 16px;
+}
+
+.subcard_wrapper .board_list_wrapper tbody td {
+    font-family: 'sw_s';
+}
+
+.board_list_wrapper .use_class {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px 3px 3px 3px;
+    color: #fff;
+    line-height: 33px;
+    height: 35px;
+    width: 85px;
+    font-family: 'noto_dl';
+}
+
+.board_list_wrapper .c_use .use_class {
+    background-color: #ff4b06;
+}
+
+.board_list_wrapper .amount {
+    display: inline-block;
+    font-family: 'sw_f';
+}
+
+.board_list_wrapper .c_use .amount {
+    color: #ff4b06;
+}
+
+.board_list_wrapper .amount:before {
+    color: inherit;
+    padding-right: 3px;
+}
+
+.board_list_wrapper .c_use .amount:before {
+    content: '-';
+}
+
+.board_list_wrapper .c_charge .use_class {
+    background-color: #009223;
+}
+
+.board_list_wrapper .c_charge .amount {
+    color: #009223;
+}
+
+.board_list_wrapper .c_charge .amount:before {
+    content: '+';
 }
