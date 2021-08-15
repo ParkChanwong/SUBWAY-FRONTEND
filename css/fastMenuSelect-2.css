@@ -628,7 +628,6 @@
 }
 
 .popup_bg {
-    display: none;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     left: 0;
@@ -639,6 +638,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 /* 원산지 정보 팝업 */
