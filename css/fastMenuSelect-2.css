@@ -627,14 +627,8 @@
     display: none;
 }
 
-
-
-
-
-
-
-
 .popup_bg {
+    display: none;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     left: 0;
@@ -915,15 +909,15 @@
 
 /* 추천 꿀 조합 팝업 */
 .suggestion_popUp {
+    display: none;
     min-height: 650px;
     max-height: 700px;
     background-color: #fff;
     padding: 40px 50px;
     border-radius: 30px;
-    overflow: hidden;
-    width: 100%;
     box-sizing: border-box;
     width: 510px;
+    position: relative;
 }
 
 .pop_title {
@@ -1088,5 +1082,15 @@
     color: #ffffff;
     line-height: 50px;
     letter-spacing: -0.03em;
-    
+}
+
+.suggestion_popUp .close_btn{
+    background: url('../images/fastMenuSelect-2/icon_popup_close.png') no-repeat;
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    top: 10px;
+    right: -90px;
+    border: none;
+    cursor: pointer;
 }
