@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/orderStep3.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -263,7 +264,7 @@
                                     </dl>
                                 </div>
                                 <div class="input_set">
-                                    <dl>
+                                    <dl id="test">
                                         <dt>주문시, 요청사항</dt>
                                         <dd>
                                             <span class="form_text">
@@ -315,7 +316,7 @@
                                         <dd>
                                             <div class="use_point">
                                                 <span class="form_text">
-                                                    <input type="text" placeholder="사용금액 입력" class="point_input">
+                                                    <input type="text" placeholder="사용금액 입력" class="point_input" onKeyup="this.value=this.value.replace(/[^-0-9]/g,'');">
                                                 </span>
                                                 <p>
                                                     <span>보유 포인트 :</span>
@@ -342,7 +343,7 @@
                                         <dd>
                                             <div class="use_point use_card">
                                                 <span class="form_text">
-                                                    <input type="text" placeholder="사용가능 금액이 없습니다" class="subcard_input">
+                                                    <input type="text" placeholder="사용가능 금액이 없습니다" class="subcard_input" onKeyup="this.value=this.value.replace(/[^-0-9]/g,'');">
                                                 </span>
                                                 <p>
                                                     <span>보유 금액 :</span>

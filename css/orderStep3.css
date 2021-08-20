@@ -132,6 +132,8 @@
     width: 120px;
     font-family: 'noto_l';
     font-weight: bold;
+    line-height: 18px;
+    margin-top: 4px;
 }
 .order_content .input_set:first-child dl dt{
     line-height: 18px;
@@ -202,7 +204,7 @@
     width:24px;
 }
 .form_circle em {
-    color:#666666; font-style: normal;
+    color:#292929; font-style: normal;
 }
 .form_text input {
     width: 100%;
@@ -214,10 +216,12 @@
     text-indent: 15px;
     font-family: 'noto_dl';
 }
+
 .form_text input::placeholder{
     color:#dddddd;
     font-size: 16px;
 }
+/* .input_set dl:focusin {border:1px solid #009223} */
 
 .input_set dd .form_text input {
     height: 35px;
@@ -268,6 +272,7 @@
 .input_set .earth p {
     display: inline-block;
     position: relative;
+    font-family: 'noto_r';
 }
 .input_set .earth p:after {
     content: '　　';
@@ -275,6 +280,7 @@
     height: 24px;
     background: url(/images/orderstep3_img/icon_dispos.png) no-repeat;
     background-size: 24px 24px;
+    margin-left: 5px;
 }
 
 .form_box h2 ~ h2{
