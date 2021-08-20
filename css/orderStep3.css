@@ -543,42 +543,60 @@ img {
     border-top: 4px solid #009223;
     border-bottom: 1px solid #009223;
 }
-.order_table tr td:nth-child(1) {
-    width: 750px;
+.order_table .name{
+    padding-left: 29px;
+    padding-top: 22px;
+    margin-bottom: 9px;
+    width: 721px;
 }
-.order_table tr td:nth-child(2) {
-    width: 90px;
-    text-align: center;
-}
-.order_table tr td:nth-child(3) {
-    width: 130px;
-    text-align: center;
-}
-.order_table td .name {
-    padding: 22px 0 22px 29px;
-    text-align: left;
+.order_table .name strong{
+    color: #292929;
     font-family: 'noto_dl';
+    line-height: 120%;
 }
-.order_content .order_list_wrap .content .order_table td .name p{
-    margin-top: 9px;
+.order_table .stuff{
+    width: 721px;
+    display: inline-block;
     color: #999;
+    font-size: 14px;
     line-height: 22px;
-    font-family: 'noto_dl';
-    font-size: 14px !important;
+    padding-left: 29px;
+    padding-bottom: 22px;
 }
-
-.order_content .order_list_wrap .content .order_table tr td .count{
+.order_table .stuff span{
     color: #999;
+    font-size: 14px;
+    line-height: 22px;
     font-family: 'noto_l';
 }
-.order_table tr td .sum strong{
-    color: #292929;
+.order_table .count{
+    display: inline-block;
+    font-family: 'noto_dl';
+    color: #999;
+    width: 90px;
+    vertical-align: middle;
+    margin-top: -30px;
+    margin-left: 20px;
+}
+.order_table .count strong{
+    font-family: 'sw_s';
+    color: #999;
+}
+.order_table .sum{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -30px;
+}
+.order_table .sum strong{
     font-family: 'sw_f';
+    color: #292929;
 }
-.order_table tr td .sum em{
+.order_table .sum em{
+    font-family: 'noto_dl';
     font-style: normal;
-    font-family: 'noto_r';
 }
+
+
 .amount h2{
     border-bottom: 4px solid #009223;
     font-size: 26px;
@@ -601,7 +619,7 @@ img {
 .amount .order_sum dt{
     color: #292929;
     line-height: 56px;
-    font-family: 'noto_r';
+    font-family: 'noto_m';
 }
 .amount .order_sum dd{
     color: #292929;
@@ -641,8 +659,11 @@ img {
     line-height: 94px;
     font-family: 'noto_m';
 }
-.amount .payment_sum dd{
+.amount .payment_sum dd span{
     line-height: 94px;
+    color: #009223;
+    font-size: 20px;
+    font-family: 'noto_m';
 }
 .amount .payment_sum dd strong{
     color: #009223;
@@ -671,6 +692,7 @@ img {
     margin-top: 7px;
     font-size: 14px;
     font-family: 'noto_dl';
+    line-height: 120%;
 }
 .payment_agree dd ul .order_caution.red{
     color: #ff4b06;
