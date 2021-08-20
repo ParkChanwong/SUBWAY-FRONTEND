@@ -5,6 +5,9 @@
     right: 0;
     top: 0;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 999;
 }
 
@@ -12,7 +15,6 @@
     opacity: 1;
     width: 520px;
     margin-left: -260px;
-    top: 0;
     transform: matrix(1, 0, 0, 1, 0, 0);
     height: 430px;
     background-color: #ffc300;
@@ -34,7 +36,7 @@
     padding: 12px 39px 12px 39px;
     background: #fff;
     margin-bottom: 16px;
-    border-radius: 10px;
+    border-radius: 20px 20px 10px 10px;
 }
 
 #popup_wrap .order_display dt {
@@ -47,7 +49,7 @@
     color: #292929;
     font-size: 20px;
     font-weight: bold;
-    font-family: 'noto_m';
+    font-family: 'noto_r';
 }
 
 
@@ -76,6 +78,7 @@
     font-family: 'noto_r';
     font-style: normal;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .form_circle .icon {
@@ -113,10 +116,13 @@
     transition-duration: 0.2s;
 }
 
+#popup_wrap .btn_area.no_scroll{
+    margin-top: 25px;
+}
+
 #popup_wrap .btn_area {
     background-color: #fff;
     overflow: hidden;
-    margin-top: 25px;
     padding: 30px 0 30px 0;
     border-top: 1px solid #e8e8e8;
     width: 100%;
@@ -136,6 +142,11 @@
     border: 2px solid #009223;
     color: #009223;
     box-sizing: border-box;
+}
+
+.btn.bgc_white:hover{
+    border-color: #2e7d32;
+    transition-duration: 0.2s;
 }
 
 .btn {
@@ -224,6 +235,12 @@ button {
     left: 50%;
     z-index: 999;
 }
+
+.popup_content.bread{
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
 
 #popup_wrap .meterial ul {
     padding: 25px 0 0 6px;
@@ -319,12 +336,21 @@ button {
     background: #009223;
     border-color: #009223;
     border-radius: 8px 28px 8px 8px;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25), 6px 0 6px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.1s linear;
+    animation: item-shadow 0.3s 0.2s ease-in-out forwards;
 }
 #popup_wrap .meterial ul li .select_recipe input:checked ~ .info img {
     animation: select_item 0.7s alternate;
 }
+
+@keyframes item-shadow {
+    0% {
+        box-shadow: 5px 2px 10px rgb(0 0 0 / 0%);
+    }
+    100%{
+        box-shadow: 5px 2px 10px rgb(0 0 0 / 40%);
+    }
+}
+
 @keyframes select_item{
     0%{
         transform: scale(0.9);
@@ -341,13 +367,13 @@ button {
     color: #fff;
 }
 
+
 /* breadSelect 종료 */
 
 .popup_back .popup_wrapper.breadWarming{
     opacity: 1;
     width: 630px;
     top: 0;
-    margin-left: 450px;
     transform: matrix(1, 0, 0, 1, 0, 0);
     height: 432px;
     background-color: #ffc300;
@@ -355,6 +381,7 @@ button {
     box-sizing: border-box;
     padding: 20px 15px 15px 15px;
 }
+
 
 /* breadWarming 종료 */
 
@@ -522,6 +549,7 @@ input {
     color: #666666;
 }
 
+
 /* vegetableSelect 종료 */
 
 .popup_back .popup_wrapper.sauceSelect{
@@ -545,6 +573,7 @@ input {
     color: #777;
     font-size: 18px;
     font-weight: normal;
+    line-height: 20px;
     text-align: center;
     transition: 0.6s;
 }
@@ -557,6 +586,7 @@ input {
     font-weight: bold;
     text-align: center;
     transition: 0.6s;
+    line-height: 20px;
 }
 
 #popup_wrap .meterial ul li .select_recipe input:checked ~ .info strong {
@@ -647,6 +677,7 @@ input {
     padding-top: 23px;
     padding-bottom: 24px;
     min-height: 70px;
+    margin-right: 10px;
 }
 
 #popup_wrap .radio_list li label input[type=radio] {
@@ -703,6 +734,7 @@ input {
 .popup_content.double .scroll{
     padding-left: 20px;
     height: 300px;
+
 }
 
 
@@ -808,7 +840,7 @@ select{
 }
 
 .set_popup .set h3 {
-    padding: 10px 19px;
+    padding: 10px 0px;
     color: #292929;
     font-size: 20px;
     font-family: 'noto_r';
