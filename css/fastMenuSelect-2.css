@@ -959,6 +959,7 @@
     padding-left: 30px;
     overflow: hidden;
     font-size: 0;
+    font-family: 'noto_l';
 }
 
 .pop_info p {
@@ -966,6 +967,7 @@
     font-size: 20px;
     display: inline-block;
     vertical-align: top;
+    line-height: 120%;
 }
 
 .pop_info .g_text {
@@ -984,6 +986,7 @@
     padding-left: 30px;
     overflow: hidden;
     font-size: 0;
+    font-family: 'noto_dl';
 }
 
 .check_length .length_input_wrap {
@@ -1043,6 +1046,8 @@
     padding: 20px 20px 20px 80px;
     background: #f7f7f7;
     font-size: 20px;
+    font-family: 'noto_dl';
+    color: #666666;
 }
 
 .tip_wrap strong {
@@ -1062,7 +1067,7 @@
 
 .no_soldOut .btn_area {
     padding: 0;
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 .no_soldOut .btn_area a {
