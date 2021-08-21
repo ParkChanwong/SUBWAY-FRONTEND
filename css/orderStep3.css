@@ -586,6 +586,7 @@ img {
     display: inline-block;
     vertical-align: middle;
     margin-top: -30px;
+    margin-left: -10px;
 }
 .order_table .sum strong{
     font-family: 'sw_f';
@@ -594,6 +595,22 @@ img {
 .order_table .sum em{
     font-family: 'noto_dl';
     font-style: normal;
+}
+.order_table .detail_btn{
+    float: right;
+    width: 22px;
+    height: 22px;
+    background: url(/images/orderStep3_img/bill_list_btn.png) no-repeat 0 50%;
+    font-size: 0;
+    transform: rotate(180deg);
+    margin-top: -10px;
+}
+.order_table details[open] summary{
+    border-bottom: 1px solid #ddd;
+
+}
+.order_table details[open] .detail_btn{
+    transform: rotate(0deg);
 }
 
 
