@@ -316,6 +316,7 @@
 
 .card_info_wrap .gift_info_cont .btn_menu {
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card_info_wrap .gift_info_cont .btn_menu .btn {
@@ -323,6 +324,10 @@
     border-radius: 0;
     transition-duration: 0.3s;
     width: 180px;
+}
+
+.card_info_wrap .gift_info_cont .btn_menu .btn:hover {
+    background-color: #e5e5e5;
 }
 
 .btn span {
@@ -369,17 +374,15 @@
 }
 
 .card_charge .card_info p{
-    font-family: 'sw_s';
-    font-size: 20px;
-    color: #999999;
-    letter-spacing: -0.05em;
+    font-family: 'noto_r';
+    font-size: 16px;
+    color: #666666;
 }
 
 .subcard_wrapper .card_info .left_money{
     color: #292929;
     font-family: 'sw_f';
     font-size: 40px;
-    margin-top: 12px;
     letter-spacing: 0em;
 }
 
@@ -541,6 +544,12 @@ input {
     width: 100%;
 }
 
+.write_info_wrap .input_set dd .form_text input[type="number"]::-webkit-outer-spin-button,
+.write_info_wrap .input_set dd .form_text input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .form_box .write_info_wrap .direct_input .form_text {
     margin-left: 10px;
     width: 251px;
@@ -653,6 +662,7 @@ input {
 
 .btn_area .btn {
     font-family: 'noto_r';
+    cursor: pointer;
 }
 
 .btn_area .btn span {
@@ -873,4 +883,28 @@ caption {
 
 .board_list_wrapper .c_charge .amount:before {
     content: '+';
+}
+
+#historyList .data_none{
+    padding: 170px 0 180px;
+}
+
+#historyList .data_none p {
+    position: relative;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    color: #999;
+    padding-top: 58px;
+    font-family: 'noto_dl';
+}
+
+#historyList .data_none p:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+    background: url(../images/icon_exc_sm.png)no-repeat;
+    width: 40px;
+    height: 40px;
 }
