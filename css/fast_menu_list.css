@@ -61,7 +61,7 @@ em{font-style:normal;}
 .order .menu_list .menu_contents {background-color: #fff; margin: 0 auto; padding-top: 30px; padding-bottom: 30px; width: 1170px;}
 
 .order .menu_list .menu_favorites {border-bottom: 1px solid #e9e9e9; text-align: center; padding: 0 0 30px; color: #292929; font-size: 18px; letter-spacing: -.025em; font-weight: 300; font-family: noto_m;}
-.order .menu_list .list{overflow: hidden; margin-left:-30px;}
+.order .menu_list .list{overflow: hidden; margin-left:-30px; margin-top: -45px;}
 
 .order .menu_list .list li {float: left; margin-top: 30px; margin-left: 30px; height: 330px; width: 370px; position: relative; /*background-color:#ccc;*/}
 
@@ -73,11 +73,11 @@ em{font-style:normal;}
 .order .menu_list .list li a p{text-align: center;}
 .order .menu_list .list li a p > strong{display: block; padding: 13px 0 7px 0; color: #292929; font-size: 22px; font-weight: bold; font-family: noto_r;}
 .order .menu_list .list .kcal {display:block; color:#ffc300; font-size:18px; font-family: sw_f;} /*2020-08-14*/
-.order .menu_list .list .eng {display:inline-block;font-size:16px; letter-spacing:0; color:#666 !important; text-align:center;padding:2px 0 14px; font-family:'noto_dl';} /*2020-08-14*/
+.order .menu_list .list .eng {display:inline-block;font-size:16px; letter-spacing:0; color:#666 !important; text-align:center;padding:2px 0 14px; font-family:'sw_s';} /*2020-08-14*/
 .order .menu_list .list .label {position:absolute; left:0; top:0; width:70px;}
 .order .menu_list .list .label span {display:block; color:#fff; font-size:13px; font-weight:bold; line-height:30px; text-align:center; height:30px;}
-.order .menu_list .list .label span.new {background-color:#ffc300;}
-.order .menu_list .list .label span.season {background-color:#9631a8;}
+.order .menu_list .list .label span.new {background-color:#ffc300; font-family: sw_f;}
+.order .menu_list .list .label span.season {background-color:#9631a8; font-family: sw_f;}
 .order .menu_list .list .label span.recommend {background-color:#ff4b06;}
 
 .order .menu_list .list .btn_delete {position: absolute; top: 0; right: 0; background: url('../images/common/icon_del02.png') no-repeat center 50%; background-size: 44px 44px; width: 44px; height: 44px; margin: 10px 10px 0 0; padding: 0; z-index: 1;}
