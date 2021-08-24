@@ -9,8 +9,20 @@
     <link rel="stylesheet" href="./css/global.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link rel="stylesheet" href="./css/subwayHistory.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function(){
+		    AOS.init({
+                once:true,
+                duration:600,
+                offset: 200,
+                easing: 'ease-out-ease'
+		});
+	});
+    </script>
 </head>
 <body>
     <div id="wrap">
