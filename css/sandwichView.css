@@ -1,77 +1,109 @@
 a {
     text-decoration: none;
 }
-#container{font-family: 'noto_l';}
-.content_wrap{
-    text-align: center;
-    width: 100%;
-    min-width: 1170px;
+#container{
+    font-family: 'noto_l';
+    position: relative;
 }
-.content_category {
+
+.sub_header{
+    width:100%; 
+    border-bottom:1px solid #e5e5e5; 
+    border-top:1px solid #e5e5e5; 
+    height:59px; 
+    background-color:#fff; 
+    z-index:999;
     position: sticky;
-    left: 0;
     top: 0;
-    width: 100%;
-    min-width: 1170px;
-    z-index: 100;
-}
-.content_category ul {
-    font-size: 0;
-}
-.content_category::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #e5e5e5;
-}
-.content_category li {
-    padding-left: 24px;
-    margin-left: 21px;
-    display: inline-block;
-    position: relative;
-}
-
-.content_category li::after{
-    content: '';
-    width: 4px;
-    height: 4px;
-    background-color: #dddddd;
-    border-radius: 30px;
-    position: absolute;
-    left: 0;
-    top: 28px;
-}
-.content_category li:first-child::after{
-    display: none;
-}
-
-.content_category li a {
-    text-decoration-line: none;
-    color: #999999;;
-    font-family: 'noto_m';
-    line-height:60px;
-    font-size:16px;
-    letter-spacing:-0.08em;
-}
-
-
-.content_category .active a {
-    color: #009223 !important;
-    display: block;
-    position: relative;
-}
-.content_category .active a::after{
-    content: '';
-    position: absolute;
-    background-color: #009223; 
-    width: 100%;
-    height: 4px;
-    bottom: 0;
     left: 0;
 }
+.sub_header .logo{
+    position:absolute; 
+    left:270px;
+    top:0px; 
+    height:60px; 
+    width:110px; 
+    background:url(/images/menuinfo_images/logo_sub_header.png) 0 50% no-repeat; 
+    overflow:hidden; 
+    font-size:0; 
+    line-height:0; 
+    opacity:0
+}
+.sub_header .top{
+    position:absolute;
+    right:270px; 
+    top:0px; 
+    height:32px; 
+    padding-top:28px; 
+    font-family:'sw_f'; 
+    color:#bbbbbb; 
+    font-size:13px; 
+    opacity:0;
+}
+.sub_header .top:after{
+    content:''; 
+    width:12px; 
+    height:15px; 
+    background:url(/images/menuinfo_images/icon_arr_top.png) 50% 0 no-repeat; 
+    display:block; 
+    position:absolute; 
+    left:0; 
+    width:100%; 
+    top:18px;
+}
+.sub_header .sub_loc{
+    text-align:center;
+}
+.sub_header .sub_loc ul{
+    overflow:hidden; 
+    display:inline-block;
+}
+.sub_header .sub_loc ul li{
+    float:left; 
+    position:relative;
+    font-family: 'noto_r';
+}
+.sub_header .sub_loc ul li + li {
+    padding-left:24px; 
+    margin-left:21px;
+}
+.sub_header .sub_loc ul li + li:after{
+    content:''; 
+    width:4px; 
+    height:4px; 
+    background-color:#dddddd; 
+    border-radius:30px; 
+    position:absolute; 
+    left:0; 
+    top:28px;
+}
+.sub_header .sub_loc ul li:first-child{
+    margin-left:0; 
+    padding-left:0
+}
+.sub_header .sub_loc ul li:first-child:after{display:none;}
+.sub_header .sub_loc ul li a{
+    display:block; 
+    line-height:60px; 
+    color:#999999; 
+    font-size:16px; 
+    letter-spacing:-0.08em; 
+    position:relative;
+}
+.sub_header .sub_loc ul li.active a{
+    color:#009223;
+    font-weight:300;
+}
+.sub_header .sub_loc ul li.active a:after{
+    content:''; 
+    position:absolute; 
+    left:0; width:100%; 
+    height:4px; 
+    bottom:0; 
+    background-color:#009223
+}
+
+
 
 .menuView_wrap{
     padding-top: 77px ;
@@ -101,7 +133,7 @@ a {
     color: #009223;
     display: inline-block !important;
 }
-.menuView_wrap .menu_header .prod_category .plus_btn{
+.menuView_wrap .menu_header .prod_category #plus_btn{
     display: inline-block;
     background: url(/images/menuinfo_images/etc/icon_category.png) 0 0 no-repeat;
     width: 20px;
@@ -111,8 +143,12 @@ a {
     vertical-align: middle;
     cursor: pointer;
 }
+.menuView_wrap .menu_header .prod_category #plus_btn.open{
+    transform: rotate(45deg);
+    margin-left: 4px;
+}
 
-.menuView_wrap .menu_header .prod_category .plus_btn:hover{
+.menuView_wrap .menu_header .prod_category #plus_btn:hover{
     background-position:100% 0
 }
 
@@ -201,6 +237,7 @@ a {
     width: 1170px;
     margin: 12px auto 0;
     position: relative;
+    text-align: center;
 }
 
 .menu_info .menu_img {
@@ -379,6 +416,7 @@ a {
     border-top: 4px solid #009223;
     width: 100%;
     border-collapse: collapse;
+    text-align: center;
 }
 
 .Nutrition_content table th{
@@ -445,6 +483,7 @@ a {
     margin: 0 auto;
     width: 1170px;
     position: relative;
+    text-align: center;
 }
 
 .three_fresh .fresh_header p{
