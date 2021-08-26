@@ -109,6 +109,7 @@ a {
     border: none;
     margin-left: -10px;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .menuView_wrap .menu_header .prod_category .plus_btn:hover{
