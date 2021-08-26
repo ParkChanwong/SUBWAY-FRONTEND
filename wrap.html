@@ -12,6 +12,7 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <body>
     <div id="wrap">
         <header>
@@ -220,8 +221,8 @@
                                 <li><a href="#">스마일썹</a></li>
                                 <li><a href="#">단체메뉴</a></li>
                             </ul>
-                            <h2>Wrap</h2>
-                            <p>Subway를 더 맛있고 간편하게 즐기는 방법 
+                            <h2 id="title">Wrap</h2>
+                            <p id="title_text">Subway를 더 맛있고 간편하게 즐기는 방법 
                             <br>
                             최상의 레시피로 만들어진 써브웨이 랩 시리즈, 이젠 고민하지 마세요!
                             <br>
@@ -246,71 +247,45 @@
                         <ul>
                             <li class="prod_wrap_new">
                                 <div class="img">
-                                    <a href="#">
-                                        <img src="/images/menuinfo_images/wrap_n_others/gril_wrap/shrimp_egg_grilled_wrap.png" alt="쉬림프 에그 그릴드 랩">
-                                    </a>
+                                    <img src="/images/menuinfo_images/wrap_n_others/gril_wrap/shrimp_egg_grilled_wrap.png" alt="쉬림프 에그 그릴드 랩">
                                 </div>
                                 <p class="title">쉬림프 에그 그릴드 랩</p>
-                                <p class="eng">shrimp Egg Grilled wrap</p>
-                                <p class="kcal">427 kcal</p>
-                                <div class="g_bg">
-                                    <p class="title">쉬림프 에그 그릴드 랩</p>
-                                    <p class="eng">shrimp Egg Grilled wrap</p>
-                                    <div class="summary">
-                                        <p>
-                                            더 뜨겁게, 더 맛있게 즐기자!
-                                            <br>
-                                            탱글한 새우와 부드러운 오믈렛의 만남
-                                        </p>
-                                    </div>
-                                    <div class="img"></div>
-                                </div>
+                                <p class="eng">Shrimp Egg Grilled Wrap</p>
+                                <p class="kcal">436 kcal</p>
+                                <div class="summary">
+                                    <p>더 뜨겁게, 더 맛있게 즐기자!
+                                        <br>
+                                        탱글한 새우와 부드러운 오믈렛의 만남
+                                    </p></div>
+                                <a href="#" class="btn_view"></a>
                             </li>
                             <li class="prod_wrap_new">
                                 <div class="img">
-                                    <a href="#">
-                                        <img src="/images/menuinfo_images/wrap_n_others/gril_wrap/steak_n_cheese_avocado_grilled_wrap.png" alt="스테이크 & 치즈 아보카도 그릴드 랩">
-                                    </a>
+                                    <img src="/images/menuinfo_images/wrap_n_others/gril_wrap/shrimp_egg_grilled_wrap.png" alt="쉬림프 에그 그릴드 랩">
                                 </div>
-                                <p class="title">스테이크 & 치즈 아보카도 그릴드 랩</p>
-                                <p class="eng">Steak & Cheese Avocado Grilled Wrap</p>
-                                <p class="kcal">451 kcal</p>
-                                <div class="g_bg">
-                                    <p class="title">스테이크 & 치즈 아보카도 그릴드 랩</p>
-                                    <p class="eng">Steak & Cheese Avocado Grilled Wrap</p>
-                                    <div class="summary">
-                                        <p>
-                                            더 뜨겁게, 더 맛있게 즐기자!
-                                            <br>
-                                            육즙이 쫙~ 비프 스테이크와 아보카도가 만나다!
-                                        </p>
-                                    </div>
-                                    <div class="img"></div>
-                                </div>
+                                <p class="title">쉬림프 에그 그릴드 랩</p>
+                                <p class="eng">Shrimp Egg Grilled Wrap</p>
+                                <p class="kcal">436 kcal</p>
+                                <div class="summary">
+                                    <p>더 뜨겁게, 더 맛있게 즐기자!
+                                        <br>
+                                        탱글한 새우와 부드러운 오믈렛의 만남
+                                    </p></div>
+                                <a href="#" class="btn_view"></a>
                             </li>
                             <li class="prod_wrap_new">
-                                <div class="prod_wrap">
-                                    <div class="img">
-                                        <a href="#">
-                                            <img src="/images/menuinfo_images/wrap_n_others/gril_wrap/chicken_bacon_mini_grilled_wrap.png" alt="치킨 베이컨 미니 그릴드 랩">
-                                        </a>
-                                    </div>
-                                    <p class="title">치킨 베이컨 미니 그릴드 랩</p>
-                                    <p class="eng">Chicken Bacon Mini Grilled Wrap</p>
-                                    <p class="kcal">376 kcal</p>
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/wrap_n_others/gril_wrap/shrimp_egg_grilled_wrap.png" alt="쉬림프 에그 그릴드 랩">
                                 </div>
-                                <div class="g_bg">
-                                    <p class="title">치킨 베이컨 미니 그릴드 랩</p>
-                                    <p class="eng">Chicken Bacon Mini Grilled Wrap</p>
-                                    <div class="summary">
-                                        <p>
-                                            더 뜨겁게 더 맛있게 즐기자!
-                                            <br>
-                                            담백한 치킨, 바삭한 베이컨 비츠가 쏙
-                                        </p>
-                                    </div>
-                                    <div class="img"></div>
-                                </div>
+                                <p class="title">쉬림프 에그 그릴드 랩</p>
+                                <p class="eng">Shrimp Egg Grilled Wrap</p>
+                                <p class="kcal">436 kcal</p>
+                                <div class="summary">
+                                    <p>더 뜨겁게, 더 맛있게 즐기자!
+                                        <br>
+                                        탱글한 새우와 부드러운 오믈렛의 만남
+                                    </p></div>
+                                <a href="#" class="btn_view"></a>
                             </li>
                             <li><a href="#"></a></li>
                             <li><a href="#"></a></li>
@@ -412,5 +387,6 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="/js/menuinfo.js"></script>
 </body>
 </html>

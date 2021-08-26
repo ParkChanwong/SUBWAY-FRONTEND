@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/wrapView.css" type="text/css">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/menuinfo.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -207,23 +208,33 @@
 
         <div id="container">
             <div class="content_wrap">
-                    <ul class="content_category">
-                        <li><a href="#">샌드위치</a></li>
-                        <li class="active"><a href="#">랩ㆍ기타</a></li>
-                        <li><a href="#">찹샐러드</a></li>
-                        <li><a href="#">아침메뉴</a></li>
-                        <li><a href="#">스마일썹</a></li>
-                        <li><a href="#">단체메뉴</a></li>
-                    </ul>
+                <div class="sub_header" id="test">
+                    <div class="content">
+                        <a class="logo" href="#" style="opacity: 0;">HOME</a>
+                        <div class="sub_loc">
+                            <ul>
+                                <li class="active"><a href=#>샌드위치</a></li>
+                                <li><a href="#">랩ㆍ기타</a></li>
+                                <li><a href="#">찹샐러드</a></li>
+                                <li><a href="#">아침메뉴</a></li>
+                                <li><a href="#">스마일 썹</a></li>
+                                <li><a href="#">단체메뉴</a></li>
+                            </ul>        
+                        </div>
+                        <a class="top" href="#none" style="opacity: 0;">TOP</a>
+                    </div>
+                </div>
                 <div class="menuView_wrap">
                     <!-- 메뉴 header -->
                     <div class="menu_header">
                         <div class="prod_category">
-                            <a href="#">시그니처 랩</a>
-                            <a href="#">미니 랩</a>
-                            <a href="#" class="active">그릴드 랩</a>
-                            <a href="#">파니니</a>
-                            <button type="button" class="plus_btn"></button>
+                            <a href="#" class="category_list">클래식</a>
+                            <a href="#" class="category_list">프레쉬&라이트</a>
+                            <a href="#" class="category_list">프리미엄</a>
+                            <a href="#" class="active category_list">신제품</a>
+                            <a href="#" class="category_list">프로모션</a>
+                            <a href="#" class="category_list">추가선택</a>
+                            <button type="button" id="plus_btn" onclick="plusClick()"></button>
                         </div>
                         <h2 class="name">쉬림프 에그 그릴드 랩</h2>
                         <ul>
@@ -453,7 +464,7 @@
         </footer>
     </div>
     <div class="popUp_back"></div>
-    <div class="contry_popUp">
+    <div class="contry_popUp" onclick="contryPopup()">
         <h1 class="title">원산지정보</h1>
         <div class="popUp_content">
             <div class="popUp_content_wrap">
@@ -527,9 +538,9 @@
                 </ul>
             </div>
         </div>
-        <button class="close_btn"></button>
+        <button class="close_btn" onclick="closePopup()"></button>
     </div>
-    <div class="allergy_popUp">
+    <div class="allergy_popUp" onclick="allergyPopup()">
         <h1 class="title">알레르기 유발성분</h1>
         <div class="popUp_content">
             <div class="popUp_content_wrap">
@@ -653,7 +664,7 @@
                 </div>
             </div>
         </div>
-        <button class="close_btn"></button>
+        <button class="close_btn"  onclick="closePopup()"></button>
     </div>
 </body>
 </html>
