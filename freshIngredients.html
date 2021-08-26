@@ -12,6 +12,7 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <body>
     <div id="wrap">
         <header>
@@ -209,22 +210,27 @@
             <div class="content_wrap">
                 <div class="content">
                     <!-- 메뉴소개 카테고리 -->
-                    <div class="menu_list">
-                        <div class="freshIngredients">
-                            <ul class="content_category">
-                                <li><a href="#">써브웨이 이용방법</a></li>
-                                <li><a href="#">단체메뉴 이용방법</a></li>
-                                <li class="active"><a href="#">신선한 재료소개</a></li>
-                                <li><a href="#">APP 이용방법</a></li>
-                            </ul>
-                            <h2>Fresh Ingredients</h2>
-                            <p>매장에서 직접 굽는 빵, 엄격하게 세척하는 야채의 신선함,
-                            <br>
-                            써브웨이만의 다양한 소스를 맛보세요.</p>
-                            <div class="img1"></div>
-                            <div class="img2"></div>
-                            <div class="img3"></div>
+                    <div class="sub_header type01">
+                        <div class="content">
+                            <a class="logo" href="#">HOME</a>
+                            <div class="sub_loc">
+                                <ul>
+                                    <li><a href=#">써브웨이 이용방법</a></li>
+                                    <li><a href="#">단체메뉴 이용방법</a></li>
+                                    <li class="active"><a href="#">신선한 재료 소개</a></li>
+                                    <li><a href="#">APP 이용방법</a></li>
+                                </ul>            
+                            </div>
+                            <a class="top" href="#">TOP</a>
                         </div>
+                    </div>
+                    <div id="cssCategory" class="visual freshIngredients">
+                        <h2 id="title">Fresh Ingredients</h2>
+                        <p id="title_text">매장에서 직접 굽는 빵, 엄격하게 세척하는 야채의 신선함,<br>
+                            써브웨이만의 다양한 소스를 맛보세요.</p>
+                        <div class="img1"></div>
+                        <div class="img2"></div>
+                        <div class="img3"></div>
                     </div>
                     <!-- 상품별 정렬 -->
                     <div class="prod_tab">
@@ -241,57 +247,53 @@
                         <ul>
                             <li class="prod_freshIngredients_new">
                                 <div class="img">
+                                    <a href="#">
                                         <img src="/images/menuinfo_images/FreshStuff/bread/img_recipe_b01.jpg"alt="허니오트">
+                                    </a>
                                 </div>
                                 <p class="title">허니오트</p>
                                 <p class="eng">Honey Oat</p>
                                 <p class="kcal">230 kcal</p>
-                                <div class="g_bg">
-                                    <p class="title">허니오트</p>
-                                    <p class="eng">Honey Oat</p>
-                                    <div class="summary">
-                                        <p>
-                                            고소한 위트빵에 오트밀 가루를 묻혀
-                                            <br>
-                                            고소함과 식감이 두배로
-                                        </p>
-                                    </div>
+                                <div class="summary">
+                                    <p>
+                                        고소한 위트빵에 오트밀 가루를 묻혀
+                                        <br>
+                                        고소함과 식감이 두배로
+                                    </p>
                                 </div>
                             </li>
                             <li class="prod_freshIngredients_new">
                                 <div class="img">
-                                        <img src="/images/menuinfo_images/FreshStuff/bread/img_recipe_b02.jpg"alt="하티">
+                                    <a href="#">
+                                        <img src="/images/menuinfo_images/FreshStuff/bread/img_recipe_b01.jpg"alt="허니오트">
+                                    </a>
                                 </div>
-                                <p class="title">하티</p>
-                                <p class="eng">Hearty Italian</p>
-                                <p class="kcal">210 kcal</p>
-                                <div class="g_bg">
-                                    <p class="title">하티</p>
-                                    <p class="eng">Hearty Italian</p>
-                                    <div class="summary">
-                                        <p>
-                                            부드러운 화이트빵에 옥수수가루를 묻혀
-                                            <br>
-                                            겉은 바삭하고 고소하며 속은 부드럽게
-                                        </p>
-                                    </div>
+                                <p class="title">허니오트</p>
+                                <p class="eng">Honey Oat</p>
+                                <p class="kcal">230 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        고소한 위트빵에 오트밀 가루를 묻혀
+                                        <br>
+                                        고소함과 식감이 두배로
+                                    </p>
                                 </div>
                             </li>
                             <li class="prod_freshIngredients_new">
                                 <div class="img">
-                                        <img src="/images/menuinfo_images/FreshStuff/bread/img_recipe_b03.jpg"alt="위트">
+                                    <a href="#">
+                                        <img src="/images/menuinfo_images/FreshStuff/bread/img_recipe_b01.jpg"alt="허니오트">
+                                    </a>
                                 </div>
-                                <p class="title">위트</p>
-                                <p class="eng">Wheat</p>
-                                <p class="kcal">210 kcal</p>
-                                <div class="g_bg">
-                                    <p class="title">위트</p>
-                                    <p class="eng">Wheat</p>
-                                    <div class="summary">
-                                        <p>
-                                            9가지 곡물로 만들어 건강하고 고소한 맛의 곡물빵
-                                        </p>
-                                    </div>
+                                <p class="title">허니오트</p>
+                                <p class="eng">Honey Oat</p>
+                                <p class="kcal">230 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        고소한 위트빵에 오트밀 가루를 묻혀
+                                        <br>
+                                        고소함과 식감이 두배로
+                                    </p>
                                 </div>
                             </li>
                             <li><a href="#"></a></li>
@@ -358,7 +360,7 @@
                     </div>
                     <div class="list_btn_wrap">
                         <div class="list_btn">
-                                <span>영양 성분표 보기</span>
+                                <span onclick="allergyPopup()"">영양 성분표 보기</span>
                         </div>
                     </div>
                 </div>
@@ -615,7 +617,8 @@
                 <p class="caution">※ 괄호 안 %는 1일 영양소 기준치에 대한 비율</p>
             </div>
         </div>
-        <button class="close_btn"></button>
+        <button class="close_btn" onclick="closePopup()"></button>
     </div>
+    <script type="text/javascript" src="/js/freshIngredients.js"></script>
 </body>
 </html>
