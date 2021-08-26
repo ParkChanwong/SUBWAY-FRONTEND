@@ -105,3 +105,14 @@ function changeRegion(){
     }
 }
 
+$(document).ready(function() {
+    $('.form_file input[type=file]').change(function() {
+        if(window.FileReader) {
+            var fileName = $(this)[0].files[0].name;
+        } else {
+            var fileName = $(this).val().split('/').pop().split('\\').pop();
+        }
+        $('.from_file input[type=text]').val('');
+        $('.form_file input[type=text]').val(fileName);
+    });
+});
