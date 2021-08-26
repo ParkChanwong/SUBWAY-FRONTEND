@@ -40,3 +40,4 @@ function orderTip(){
     $('.tab_orderTip').addClass('active');
     $('.tab_storeOrder').removeClass('active');
 }
+
