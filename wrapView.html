@@ -347,8 +347,8 @@
                                     </ul>
                                 </div>
                                 <div class="button_wrap">
-                                    <a href="#" class="btn" style="width:110px"><span>원산지 정보</span></a>
-                                    <a href="#" class="btn" style="width:125px"><span>알레르기 정보</span></a>
+                                    <a href="#" class="btn" style="width:110px" onclick="contryPopup()"><span>원산지 정보</span></a>
+                                    <a href="#" class="btn" style="width:125px" onclick="allergyPopup()"><span>알레르기 정보</span></a>
                                 </div>
                             </div> 
                         </div>
@@ -464,7 +464,7 @@
         </footer>
     </div>
     <div class="popUp_back"></div>
-    <div class="contry_popUp" onclick="contryPopup()">
+    <div class="contry_popUp">
         <h1 class="title">원산지정보</h1>
         <div class="popUp_content">
             <div class="popUp_content_wrap">
@@ -540,7 +540,7 @@
         </div>
         <button class="close_btn" onclick="closePopup()"></button>
     </div>
-    <div class="allergy_popUp" onclick="allergyPopup()">
+    <div class="allergy_popUp">
         <h1 class="title">알레르기 유발성분</h1>
         <div class="popUp_content">
             <div class="popUp_content_wrap">
