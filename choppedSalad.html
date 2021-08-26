@@ -12,6 +12,7 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <body>
     <div id="wrap">
         <header>
@@ -209,23 +210,28 @@
             <div class="content_wrap">
                 <div class="content">
                     <!-- 메뉴소개 카테고리 -->
-                    <div class="menu_list">
-                        <div class="choppedSalad">
-                            <ul class="content_category">
-                                <li><a href="#">샌드위치</a></li>
-                                <li><a href="#">랩ㆍ기타</a></li>
-                                <li class="active"><a href="#">찹샐러드</a></li>
-                                <li><a href="#">아침메뉴</a></li>
-                                <li><a href="#">스마일썹</a></li>
-                                <li><a href="#">단체메뉴</a></li>
-                            </ul>
-                            <h2>Chopped Salad</h2>
-                            <p>양은 더 많이! 칼로리는 더 적게!
-                            <br>
-                            신선한 야채와 다양한 소스로 가볍게 찹샐러드를 즐겨보세요!</p>
-                            <div class="img1"></div>
-                            <div class="img2"></div>
+                    <div class="sub_header type01">
+                        <div class="content">
+                            <a class="logo" href="#">HOME</a>
+                            <div class="sub_loc">
+                                <ul>
+                                    <li><a href="#">샌드위치</a></li>
+                                    <li><a href=#">랩ㆍ기타</a></li>
+                                    <li class="active"><a href="#">찹샐러드</a></li>
+                                    <li><a href="#">아침메뉴</a></li>
+                                    <li><a href="#">스마일 썹</a></li>
+                                    <li><a href="#">단체메뉴</a></li>
+                                </ul>            
+                            </div>
+                            <a class="top" href="#">TOP</a>
                         </div>
+                    </div>
+                    <div id="cssCategory" class="visual choppedSalad">
+                        <h2 id="title">Chopped Salad</h2>
+                        <p id="title_text">양은 더 많이! 칼로리는 더 적게!<br>
+                            신선한 야채와 다양한 소스로 가볍게 찹샐러드를 즐겨보세요!</p>
+                        <div class="img1"></div>
+                        <div class="img2"></div>
                     </div>
                     <!-- 상품별 정렬 -->
                     <div class="prod_tab">
@@ -241,80 +247,56 @@
                     <!-- 상품 목록 -->
                     <div class="prod_list">
                         <ul>
-                            <li class="prod_choppedSalad_new">
+                            <li class="prod_sandwich_new">
                                 <div class="new_label">
                                     NEW
                                 </div>
                                 <div class="img">
-                                    <a href="#">
-                                        <img src="/images/menuinfo_images/Chopped_Salad/primeum/Spicy_Shrimp_Avocado_salad.png"alt="스파이시쉬림프아보카도">
-                                    </a>
-                                </div>
-                                <p class="title">스파이시 쉬림프 아보카도</p>
-                                <p class="eng">Spicy Shrimp Avocado</p>
-                                <p class="kcal">127 kcal</p>
-                                <div class="g_bg">
-                                    <p class="title">스파이시 쉬림프 아보카도</p>
-                                    <p class="eng">Spicy Shrimp Avocado</p>
-                                    <div class="summary">
-                                        <p>
-                                            매콤한 쉬림프와 부~드러운 아보카도가 만나,<br> 이국적인 풍미 업!
-                                        </p>
-                                    </div>
-                                    <div class="img"></div>
-                                </div>
-                            </li>
-                            <li class="prod_choppedSalad_new">
-                                <div class="new_label">
-                                    NEW
-                                </div>
-                                <div class="img">
-                                    <a href="#">
-                                        <img src="/images/menuinfo_images/Chopped_Salad/primeum/Spicy_Shrimp_salad.png" alt="스파이시쉬림프">
-                                    </a>
+                                    <img src="/images/menuinfo_images/Chopped_Salad/primeum/Spicy_Shrimp_salad.png" alt="스파이시쉬림프">
                                 </div>
                                 <p class="title">스파이시 쉬림프</p>
                                 <p class="eng">Spicy Shrimp</p>
                                 <p class="kcal">71 kcal</p>
-                                <div class="g_bg">
-                                    <p class="title">스파이시 쉬림프</p>
-                                    <p class="eng">Spicy Shrimp</p>
-                                    <div class="summary">
-                                        <p>
-                                            빨간맛에 빠진 쉬림프! 이국적인 매콤함이 더해진<br> 시즌 한정 스파이시 쉬림프!
-                                        </p>
-                                    </div>
-                                    <div class="img"></div>
+                                <div class="summary">
+                                    <p>
+                                        빨간맛에 빠진 쉬림프! 이국적인 매콤함이 더해진<br> 시즌 한정 스파이시 쉬림프!
+                                    </p>
                                 </div>
+                                <a href="#" class="btn_view"></a>
                             </li>
-                            <li class="prod_choppedSalad_new">
-                                <div class="hot_label">
-                                    HOT
+                            <li class="prod_sandwich_new">
+                                <div class="new_label">
+                                    NEW
                                 </div>
-                                <div class="prod_wrap">
-                                    <div class="img">
-                                        <a href="#">
-                                            <img src="/images/menuinfo_images/Chopped_Salad/primeum/Shrimp_salad.jpg" alt="쉬림프">
-                                        </a>
-                                    </div>
-                                    <p class="title">쉬림프</p>
-                                    <p class="eng">Shrimp</p>
-                                    <p class="kcal">67 kcal</p>
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/Chopped_Salad/primeum/Spicy_Shrimp_salad.png" alt="스파이시쉬림프">
                                 </div>
-                                <div class="g_bg">
-                                    <p class="title">쉬림프</p>
-                                    <p class="eng">Shrimp</p>
-                                    <div class="summary">
-                                        <p>
-                                            탱글한 식감이 그대로 살아있는
-                                            <br>
-                                            통새우가 5마리가
-                                            <br>
-                                            찹샐러드에 쏙 ! Fresh함이 그대로~
-                                        </p>
-                                    </div>
-                                    <div class="img"></div>
+                                <p class="title">스파이시 쉬림프</p>
+                                <p class="eng">Spicy Shrimp</p>
+                                <p class="kcal">71 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        빨간맛에 빠진 쉬림프! 이국적인 매콤함이 더해진<br> 시즌 한정 스파이시 쉬림프!
+                                    </p>
                                 </div>
+                                <a href="#" class="btn_view"></a>
+                            </li>
+                            <li class="prod_sandwich_new">
+                                <div class="new_label">
+                                    NEW
+                                </div>
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/Chopped_Salad/primeum/Spicy_Shrimp_salad.png" alt="스파이시쉬림프">
+                                </div>
+                                <p class="title">스파이시 쉬림프</p>
+                                <p class="eng">Spicy Shrimp</p>
+                                <p class="kcal">71 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        빨간맛에 빠진 쉬림프! 이국적인 매콤함이 더해진<br> 시즌 한정 스파이시 쉬림프!
+                                    </p>
+                                </div>
+                                <a href="#" class="btn_view"></a>
                             </li>
                             <li><a href="#"></a></li>
                             <li><a href="#"></a></li>
@@ -417,5 +399,6 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="/js/choppedSalad.js"></script>
 </body>
 </html>
