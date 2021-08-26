@@ -46,19 +46,17 @@ em{font-style:normal;}
 .franchise_wrapper .nation_store >div .inner{text-align:center; font-size:30px; margin-top:55px; position:relative; z-index:3; font-family: noto_l;}
 .franchise_wrapper .nation_store >div .inner p{margin-bottom:38px;}
 .franchise_wrapper .nation_store >div .inner p span{display:inline-block; position:relative; padding-bottom:6px; margin-bottom: 20px;}
-.franchise_wrapper .nation_store >div .inner p span:after{content:''; height:1px; position:absolute; left:0; right:0; bottom:0; transition-duration:0.3s; margin-bottom: -10px;}
+.franchise_wrapper .nation_store >div .inner p span:after{content:''; height:1px; position:absolute; left:0; right:0; bottom:0; transition-duration:0.3s; margin-bottom: -10px; background-color: #000;}
 .franchise_wrapper .nation_store >div .inner strong{font-weight:bold; font-size:80px; letter-spacing:-0.025em; display:inline-block; margin-right:5px; font-family: noto_m;}
 .franchise_wrapper .nation_store .nation .inner{float:right; margin-right:197px;}
-.franchise_wrapper .nation_store .nation .inner span:after{background-color:#000}
 .franchise_wrapper .nation_store .store .inner{float:left; margin-left:153px;}
-.franchise_wrapper .nation_store .store .inner span:after{background-color:#fff}
 
-.franchise_wrapper .nation_store > .nation:hover{color:#fff;}
-.franchise_wrapper .nation_store > .nation:hover .inner p span:after{background-color:#fff;}
-.franchise_wrapper .nation_store > .nation:hover::after{opacity:1;}
-.franchise_wrapper .nation_store > .store:hover{color:#fff;}
-.franchise_wrapper .nation_store > .store:hover .inner p span:after{background-color:#fff;}
-.franchise_wrapper .nation_store > .store:hover::after{opacity:1;}
+.franchise_wrapper .nation_store > .nation.hover{color:#fff;}
+.franchise_wrapper .nation_store > .nation.hover .inner p span:after{background-color:#fff;}
+.franchise_wrapper .nation_store > .nation.hover::after{opacity:1;}
+.franchise_wrapper .nation_store > .store.hover{color:#fff;}
+.franchise_wrapper .nation_store > .store.hover .inner p span:after{background-color:#fff;}
+.franchise_wrapper .nation_store > .store.hover::after{opacity:1;}
 .franchise_wrapper .nation_store .nation:after{background:url(../images/franchise/bg_nation.jpg) 0 0 no-repeat;}
 .franchise_wrapper .nation_store .store:after{background:url(../images/franchise/bg_store.jpg) 0 0 no-repeat;}
 
