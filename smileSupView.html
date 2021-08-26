@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/smileSupView.css" type="text/css">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/smilesub.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -304,8 +305,8 @@
                                     </ul>
                                 </div>
                                 <div class="button_wrap">
-                                    <a href="#" class="btn" style="width:110px"><span>원산지 정보</span></a>
-                                    <a href="#" class="btn" style="width:125px"><span>알레르기 정보</span></a>
+                                    <a href="#" class="btn" style="width:110px" onclick="contryPopup()"><span>원산지 정보</span></a>
+                                    <a href="#" class="btn" style="width:125px" onclick="allergyPopup()"><span>알레르기 정보</span></a>
                                 </div>
                             </div> 
                         </div>
@@ -495,7 +496,7 @@
                 </ul>
             </div>
         </div>
-        <button class="close_btn"></button>
+        <button class="close_btn" onclick="closePopup()"></button>
     </div>
     <div class="allergy_popUp">
         <h1 class="title">알레르기 유발성분</h1>
@@ -621,7 +622,7 @@
                 </div>
             </div>
         </div>
-        <button class="close_btn"></button>
+        <button class="close_btn" onclick="closePopup()"></button>
     </div>
 </body>
 </html>

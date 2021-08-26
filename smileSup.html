@@ -12,6 +12,7 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <body>
     <div id="wrap">
         <header>
@@ -210,19 +211,26 @@
                 <div class="content">
                     <!-- 메뉴소개 카테고리 -->
                     <div class="menu_list">
-                        <div class="smileSup">
-                            <ul class="content_category">
-                                <li><a href="#">샌드위치</a></li>
-                                <li><a href="#">랩ㆍ기타</a></li>
-                                <li><a href="#">찹샐러드</a></li>
-                                <li><a href="#">아침메뉴</a></li>
-                                <li class="active"><a href="#">스마일썹</a></li>
-                                <li><a href="#">단체메뉴</a></li>
-                            </ul>
-                            <h2>Smile Sub</h2>
-                            <p>웃음이 번지는 착한 가격, 착한 맛!
-                            <br>
-                            스마일 썹과 함께 하루 종일 스마일 하세요~</p>
+                        <div class="sub_header type01">
+                            <div class="content">
+                                <a class="logo" href="#">HOME</a>
+                                <div class="sub_loc">
+                                    <ul>
+                                        <li class="active"><a href="#">샌드위치</a></li>
+                                        <li><a href=#">랩ㆍ기타</a></li>
+                                        <li><a href="#">찹샐러드</a></li>
+                                        <li><a href="#">아침메뉴</a></li>
+                                        <li><a href="#">스마일 썹</a></li>
+                                        <li><a href="#">단체메뉴</a></li>
+                                    </ul>            
+                                </div>
+                                <a class="top" href="#">TOP</a>
+                            </div>
+                        </div>
+                        <div id="cssCategory" class="visual smileSup">
+                            <h2 id="title">Smile Sub</h2>
+                            <p id="title_text">웃음이 번지는 착한 가격, 착한 맛!<br>
+                                스마일 썹과 함께 하루 종일 스마일 하세요~</p>
                             <div class="img1"></div>
                             <div class="img2"></div>
                         </div>
@@ -241,63 +249,45 @@
                                     SEASON
                                 </div>
                                 <div class="img">
-                                    <a href="#">
-                                        <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
-                                    </a>
+                                    <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
                                 </div>
                                 <p class="title">파인애플 쿠키</p>
                                 <p class="eng">Pineapple Cookies</p>
                                 <p class="kcal">200 kcal</p>
-                                <div class="g_bg">
-                                    <p class="title">파인애플 쿠키</p>
-                                    <p class="eng">Pineapple Cookies</p>
-                                    <div class="summary">
-                                        <p>
-                                            아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
-                                        </p>
-                                    </div>
-                                    <div class="img"></div>
+                                <div class="summary">
+                                    <p>
+                                        아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
+                                    </p>
                                 </div>
+                                <a href="#" class="btn_view"></a>
                             </li>
                             <li class="prod_smileSup_new">
                                 <div class="img">
-                                    <a href="#">
-                                        <img src="/images/menuinfo_images/SmileSub/mushroom_soup.png" alt="머쉬룸 수프">
-                                    </a>
+                                    <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
                                 </div>
-                                <p class="title">머쉬룸 수프</p>
-                                <p class="eng">Mushroom Soup</p>
-                                <p class="kcal">150 kcal</p>
-                                <div class="g_bg">
-                                    <p class="title">머쉬룸 수프</p>
-                                    <p class="eng">Mushroom Soup</p>
-                                    <div class="summary">
-                                        <p>
-                                            2020년 겨울, 새롭게 선보이는 부드러운 머쉬룸 수프
-                                        </p>
-                                    </div>
-                                    <div class="img"></div>
+                                <p class="title">파인애플 쿠키</p>
+                                <p class="eng">Pineapple Cookies</p>
+                                <p class="kcal">200 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
+                                    </p>
                                 </div>
+                                <a href="#" class="btn_view"></a>
                             </li>
                             <li class="prod_smileSup_new">
                                 <div class="img">
-                                    <a href="#">
-                                        <img src="/images/menuinfo_images/SmileSub/italian_mini_wrap.jpg" alt="이탈리안 미니 랩">
-                                    </a>
+                                    <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
                                 </div>
-                                <p class="title">이탈리안 미니 랩</p>
-                                <p class="eng">Italian Mini Wrap</p>
-                                <p class="kcal">405 kcal</p>
-                                <div class="g_bg">
-                                    <p class="title">이탈리안 미니 랩</p>
-                                    <p class="eng">Italian Mini Wrap</p>
-                                    <div class="summary">
-                                        <p>
-                                            작지만 화끈하다!<br>입안 가득 즐기는 이탈리아의 풍미.<br>이탈리안 미니랩!
-                                        </p>
-                                    </div>
-                                    <div class="img"></div>
+                                <p class="title">파인애플 쿠키</p>
+                                <p class="eng">Pineapple Cookies</p>
+                                <p class="kcal">200 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
+                                    </p>
                                 </div>
+                                <a href="#" class="btn_view"></a>
                             </li>
                             <li><a href="#"></a></li>
                             <li><a href="#"></a></li>
@@ -400,18 +390,6 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="/js/smilesub.js"></script>
 </body>
 </html>
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
