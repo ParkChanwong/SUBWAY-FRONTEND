@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./library/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./library/slick-1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <div id="wrap">
@@ -246,6 +248,20 @@
                             </li>
                         </ul>
                     </div>
+
+                    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+                    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+                    <script type="text/javascript" src="./library/slick-1.8.1/slick/slick.min.js"></script>
+
+                    <script type="text/javascript">
+                        $('.imglist').slick({
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 2000,
+                            });
+                    </script>
+
                     <div class="controls has_controls_direction has_pager">
                         <div class="controls_dirction">
                             <a class="prev" href>Prev</a>
