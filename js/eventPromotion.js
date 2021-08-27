@@ -10,7 +10,7 @@ $(function(){
     });
 });
 
-TweenMax.to(".event_info", 0.5, {
+TweenMax.to(".event_info", 1, {
     top: 0,
-    opacity: 1,
+    opacity: 1
 });
