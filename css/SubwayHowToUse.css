@@ -308,17 +308,18 @@ li {
     height: 420px;
 }
 
-#store_order .slider_wrapper .img_content ol {
+#store_order .slider_wrapper .img_content .ol {
     position: relative;
+    height: 420px;
 }
 
-#store_order .slider_wrapper .img_content ol li {
+#store_order .slider_wrapper .img_content .ol .li {
     width: 1170px;
     position: absolute;
     left: 100%;
 }
 
-#store_order .slider_wrapper .img_content ol li .img {
+#store_order .slider_wrapper .img_content .ol .li.img {
     width: 560px;
     height: 336px;
 }
@@ -328,7 +329,7 @@ img {
     border: 0;
 }
 
-#store_order .slider_wrapper .img_content ol li .img img {
+#store_order .slider_wrapper .img_content .ol .li.img img {
     width: 100%;
 }
 
