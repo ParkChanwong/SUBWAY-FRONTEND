@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./css/smileSupView.css" type="text/css">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/smilesub.js"></script>
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <body>
     <div id="wrap">
         <header>
@@ -208,14 +208,22 @@
 
         <div id="container">
             <div class="content_wrap">
-                    <ul class="content_category">
-                        <li><a href="#">샌드위치</a></li>
-                        <li><a href="#">랩ㆍ기타</a></li>
-                        <li><a href="#">찹샐러드</a></li>
-                        <li><a href="#">아침메뉴</a></li>
-                        <li class="active"><a href="#">스마일썹</a></li>
-                        <li><a href="#">단체메뉴</a></li>
-                    </ul>
+                <div class="sub_header" id="test">
+                    <div class="content">
+                        <a class="logo" href="#">HOME</a>
+                        <div class="sub_loc">
+                            <ul>
+                                <li><a href=#>샌드위치</a></li>
+                                <li><a href="#">랩ㆍ기타</a></li>
+                                <li><a href="#">찹샐러드</a></li>
+                                <li><a href="#">아침메뉴</a></li>
+                                <li class="active"><a href="#">스마일 썹</a></li>
+                                <li><a href="#">단체메뉴</a></li>
+                            </ul>        
+                        </div>
+                        <a class="top" href="#none">TOP</a>
+                    </div>
+                </div>
                 <div class="menuView_wrap">
                     <!-- 메뉴 header -->
                     <div class="menu_header">
@@ -624,5 +632,6 @@
         </div>
         <button class="close_btn" onclick="closePopup()"></button>
     </div>
+    <script src="./js/smilesub.js"></script>
 </body>
 </html>
