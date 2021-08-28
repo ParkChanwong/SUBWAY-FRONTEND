@@ -8,85 +8,134 @@
     text-align: center;
     width: 100%;
     min-width: 1170px;
-}
-
-.content_category {
-    position: sticky;
-    left: 0;
-    top: 0;
-    width: 100%;
-    min-width: 1170px;
-    z-index: 3;
-}
-.content_category ul {
-    font-size: 0;
-}
-.content_category::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    opacity: 0.1;
-}
-.content_category li {
-    padding-left: 24px;
-    margin-left: 21px;
-    display: inline-block;
     position: relative;
 }
 
-.content_category li::after{
-    content: '';
-    width: 4px;
-    height: 4px;
-    background-color: #dddddd;
-    border-radius: 30px;
-    position: absolute;
-    left: 0;
-    top: 28px;
-    opacity: 0.2;
+.sub_header{
+    position:sticky; 
+    left:0; 
+    top:0; 
+    width:100%; 
+    border-bottom:1px solid #e5e5e5; 
+    height:59px; 
+    background-color:#fff; 
+    z-index:999;
 }
-.content_category li:first-child::after{
-    display: none;
+.sub_header .logo{
+    position:absolute; 
+    left:270px; 
+    top:0px; 
+    height:60px; 
+    width:110px; 
+    background:url(/images/menuinfo_images/logo_sub_header.png) 0 50% no-repeat; 
+    overflow:hidden; 
+    text-indent:-9999px; 
+    font-size:0; 
+    line-height:0; 
+    opacity:0;
 }
-
-.content_category li a {
-    text-decoration-line: none;
-    color: white;
+.sub_header .top{
+    position:absolute; 
+    right:270px; 
+    top:0px; 
+    height:32px; 
+    padding-top:28px; 
+    font-family:"sw_f"; 
+    color:#bbbbbb; 
+    font-size:13px; 
+    opacity:0;
+}
+.sub_header .top:after{
+    content:''; 
+    width:12px; 
+    height:15px; 
+    background:url(/images/menuinfo_images/icon_arr_top.png) 50% 0 no-repeat; 
+    display:block; 
+    position:absolute; 
+    left:0; 
+    width:100%; 
+    top:18px
+}
+.sub_header .sub_loc{text-align:center;}
+.sub_header .sub_loc ul{
+    overflow:hidden; 
+    display:inline-block;
     font-family: 'noto_r';
-    line-height:60px;
-    font-size:16px;
-    letter-spacing:-0.08em;
+}
+.sub_header .sub_loc ul li{
+    float:left; 
+    position:relative;
+}
+.sub_header .sub_loc ul li + li { 
+    padding-left:24px; 
+    margin-left:21px;
+}
+.sub_header .sub_loc ul li + li:after{
+    content:''; width:4px; 
+    height:4px; 
+    background-color:#dddddd; 
+    border-radius:30px; 
+    position:absolute; 
+    left:0; 
+    top:28px;
+}
+.sub_header .sub_loc ul li:first-child{margin-left:0; padding-left:0}
+.sub_header .sub_loc ul li:first-child:after{display:none;}
+.sub_header .sub_loc ul li a{
+    display:block; 
+    line-height:60px; 
+    color:#999999; 
+    font-size:16px; 
+    letter-spacing:-0.08em; 
+    position:relative;
+}
+.sub_header .sub_loc ul li.active a{
+    color:#009223; 
+}
+.sub_header .sub_loc ul li.active a:after{
+    content:''; 
+    position:absolute; 
+    left:0; 
+    width:100%; 
+    height:4px; 
+    bottom:0; 
+    background-color:#009223
 }
 
+.sub_header.fixed{border-bottom:1px solid #e5e5e5 !important;}
+.sub_header.fixed .sub_loc ul li a{color:#999999 !important;}
+.sub_header.fixed .sub_loc ul li.active a{color:#009223 !important}
+.sub_header.fixed .sub_loc ul li:after{opacity:1 !important;}
 
-.content_category .active a {
-    color: #ffce32 !important;
-    display: block;
-    position: relative;
+.sub_header.type01{
+    background-color:transparent; 
+    border:0; 
+    height:60px;
 }
-.content_category .active a::after{
-    content: '';
-    position: absolute;
-    background-color: #ffce32; 
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
+.sub_header.type01:after{
+    content:''; 
+    position:absolute; 
+    left:0; 
+    bottom:0; 
+    width:100%; 
+    height:1px; 
+    background-color:#fff; 
+    opacity:0.1
 }
+.sub_header.type01 .sub_loc ul li:after{opacity:0.2}
+.sub_header.type01 .sub_loc ul li a{color:#fff;}
+.sub_header.type01 .sub_loc ul li.active a{color:#ffce32 !important}
+.sub_header.type01 .sub_loc ul li.active a:after{background-color:#ffce32 !important;}
 .wrap {
     background-color: #85c441;
     width: 100%;
     min-width: 1170px;
-    font-family: 'noto_m';
     height: 380px;
-    text-align: center;
-    color: #fff;
-    overflow: hidden;
+    font-family: 'noto_m';
+    color: white;
     position: relative;
+    overflow: hidden;
+    margin-top: -59.56px;
 }
 .wrap .img1{
     position: absolute;
@@ -113,12 +162,13 @@
 .wrap h2{
     font-size: 70px;
     font-family: 'sw_f';
+    padding: 50px 0 21px 0;
     position: relative;
     z-index: 9;
     opacity: 0;
     top: 100px;
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .wrap > p{
