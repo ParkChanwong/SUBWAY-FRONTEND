@@ -102,7 +102,10 @@ a {
     bottom:0; 
     background-color:#009223
 }
-
+.sub_header.nav-up{background-color: #fff;}
+.sub_header.nav-up .sub_loc ul li a{color: #999;}
+.sub_header.nav-up .logo{opacity: 1;}
+.sub_header.nav-up .top{opacity: 1;}
 
 .menuView_wrap{
     padding-top: 77px ;

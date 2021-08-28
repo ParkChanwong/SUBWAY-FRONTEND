@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./css/morningView.css" type="text/css">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/morning.js"></script>
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <body>
     <div id="wrap">
         <header>
@@ -205,23 +205,23 @@
             </div>
             <div class="bg_w"></div>
         </header>
-
+        
         <div id="container">
             <div class="content_wrap">
                 <div class="sub_header" id="test">
                     <div class="content">
-                        <a class="logo" href="#" style="opacity: 0;">HOME</a>
+                        <a class="logo" href="#">HOME</a>
                         <div class="sub_loc">
                             <ul>
-                                <li><a href=#>샌드위치</a></li>
+                                <li class="active"><a href=#>샌드위치</a></li>
                                 <li><a href="#">랩ㆍ기타</a></li>
                                 <li><a href="#">찹샐러드</a></li>
-                                <li class="active"><a href="#">아침메뉴</a></li>
+                                <li><a href="#">아침메뉴</a></li>
                                 <li><a href="#">스마일 썹</a></li>
                                 <li><a href="#">단체메뉴</a></li>
                             </ul>        
                         </div>
-                        <a class="top" href="#none" style="opacity: 0;">TOP</a>
+                        <a class="top" href="#none">TOP</a>
                     </div>
                 </div>
                 <div class="menuView_wrap">
@@ -663,5 +663,6 @@
         </div>
         <button class="close_btn" onclick="closePopup()"></button>
     </div>
+    <script src="./js/morning.js"></script>
 </body>
 </html>
