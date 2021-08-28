@@ -80,6 +80,6 @@ $(function(){
   sBtn.find("a").click(function(){   // sBtn에 속해 있는  a 찾아 클릭 하면.
    sBtn.removeClass("active");     // sBtn 속에 (active) 클래스를 삭제 한다.
    $(this).parent().addClass("active"); // 클릭한 a에 (active)클래스를 넣는다.
-    // TweenMax.to($('.prod_sandwich_new'), spd, { ease: eft, opacity: 0, scale: 0.8 });
+
   })
 })
