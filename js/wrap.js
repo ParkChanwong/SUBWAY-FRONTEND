@@ -56,7 +56,7 @@ function hasScrolled() {
   if (st > lastScrollTop && st > navbarHeight){
     $('.sub_header').addClass('nav-up');
   } else {
-    if(st + $(window).height() < $(document).height()+100) {
+    if(st + $(window).height() < $(document).height()) {
       $('.sub_header').removeClass('nav-up');
     }
   }

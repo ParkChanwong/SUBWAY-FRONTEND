@@ -12,7 +12,7 @@ a {
     border-top:1px solid #e5e5e5; 
     height:59px; 
     background-color:#fff; 
-    z-index:999;
+    z-index:800;
     position: sticky;
     top: 0;
     left: 0;
@@ -102,6 +102,11 @@ a {
     bottom:0; 
     background-color:#009223
 }
+
+.sub_header.nav-up{background-color: #fff;}
+.sub_header.nav-up .sub_loc ul li a{color: #999;}
+.sub_header.nav-up .logo{opacity: 1;}
+.sub_header.nav-up .top{opacity: 1;}
 
 
 .menuView_wrap{
