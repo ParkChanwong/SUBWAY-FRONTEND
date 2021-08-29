@@ -501,7 +501,7 @@ img {
     z-index: 5;
 }
 
-.utilization_subway_content .slider_wrapper .arr_controls .arr {
+/* .utilization_subway_content .slider_wrapper .arr_controls .arr {
     position: absolute;
     top: 0;
     width: 50px;
@@ -511,9 +511,9 @@ img {
     font-size: 0;
     line-height: 0px;
     text-indent: -9999px;
-}
+} */
 
-.utilization_subway_content .slider_wrapper .arr_controls .arr.prev {
+/* .utilization_subway_content .slider_wrapper .arr_controls .arr.prev {
     left: 0;
     background-position: 0 0;
 }
@@ -528,6 +528,61 @@ img {
 }
 
 .utilization_subway_content .slider_wrapper .arr_controls .arr.next:hover {
+    background-position: 100% 100%;
+} */
+.utilization_subway_content .slider_wrapper { 
+    position : relative;
+}
+.utilization_subway_content .slider_wrapper button {
+    position : absolute;
+    z-index:10;
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    background: url(../images/icon_event_slider_arr.png) no-repeat;
+
+}
+
+.utilization_subway_content .slider_wrapper button.slick-prev { left:0}
+.utilization_subway_content .slider_wrapper button.slick-prev:before {
+     content : "\e93d"; font-family:'xeicon'; font-size:40px;
+     position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0px;
+    text-indent: -9999px;
+    left: 0;
+    background-position: 0 0;
+    }
+
+    .utilization_subway_content .slider_wrapper button.slick-prev:hover{
+        background-position: 0 100%;
+    }
+
+
+.utilization_subway_content .slider_wrapper button.slick-next {
+    right:0;
+    background-position: 100% 0;
+
+}
+.utilization_subway_content .slider_wrapper button.slick-next:before { 
+    content : "\e93d"; font-family:'xeicon'; font-size:40px;
+     position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0px;
+    text-indent: -9999px;
+    left: 0;
+    background-position: 100% 0;
+}
+
+.utilization_subway_content .slider_wrapper button.slick-next:hover{
     background-position: 100% 100%;
 }
 
@@ -735,4 +790,3 @@ em {
     height: 480px;
     background: url(../images/bg_order_tip03.jpg) 50% 0 no-repeat;
 }
-
