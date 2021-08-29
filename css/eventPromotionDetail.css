@@ -20,6 +20,9 @@
     height: 60px;
     left: 0;
     background: url('../images/eventPromotion/tab_logo.png') 100% no-repeat;
+}
+
+.eventPromotion_cate_wrap .tab_logo .navi_scroll{
     display: none;
 }
 
@@ -31,6 +34,9 @@
     font-size: 13px;
     color: #bbbbbb;
     font-family: 'sw_f';
+}
+
+.eventPromotion_cate_wrap .tab_top .navi_scroll{
     display: none;
 }
 
