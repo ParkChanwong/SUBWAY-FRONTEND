@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.visual_slider_content').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         fade: true,
         asNavFor: '.bx-pager'
     });
@@ -14,6 +14,6 @@ $(document).ready(function(){
         centerMode: true,
         focusOnSelect: true,
         // centerPadding: '40px',
-        arrows: true,
+        arrows: false,
     });
 });
