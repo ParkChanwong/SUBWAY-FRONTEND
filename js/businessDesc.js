@@ -25,5 +25,7 @@ $(document).ready(function() {
             $('#map2').addClass('active');
             $('#map1').removeClass('active');
         }
+
+        return false;
     });
 });
