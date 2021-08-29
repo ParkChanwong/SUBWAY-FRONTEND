@@ -8,9 +8,11 @@ $(function(){
         draggable : false,
         infinite : false,
     });
+
+    TweenMax.to(".event_info", 0.3, {
+        top: 0,
+        opacity: 1,
+        delay:0.5
+    });
 });
 
-TweenMax.to(".event_info", 1, {
-    top: 0,
-    opacity: 1
-});
