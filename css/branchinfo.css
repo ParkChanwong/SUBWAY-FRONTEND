@@ -47,7 +47,8 @@ img{vertical-align:top; border:0}
 .branch_guide .branch_region ul li.active {z-index: 3;}
 .branch_guide .branch_region ul li.active a {background-color: #009223; color: #fff;}
 
-.branch_guide .branch_map {margin:0 auto; position:relative; width:1170px; height:0px;} /*overflow:hidden;*/
+.branch_guide .branch_map_wrap {height: 0; overflow: hidden;}
+.branch_guide .branch_map {margin:0 auto; position:relative; width:1170px;} /*overflow:hidden;*/
 .branch_guide .branch_map .label{position:absolute; left:0px; top:11px; margin-left: 20px; font-family: noto_dl;}
 .branch_guide .branch_map .label li{letter-spacing:-0.05em; margin-top:11px;}
 .branch_guide .branch_map .label li:first-child{margin-top:0}
@@ -59,14 +60,14 @@ img{vertical-align:top; border:0}
 .branch_guide .branch_map .label ul li.fiv:before {background-color: #ff8201;}
 .branch_guide .branch_map .label ul li.six:before {background-color: #dddddd;}
 .branch_guide .branch_map .map {opacity: 1; transform: scale(0.8); transition-duration: 0.5s; position: relative; z-index: 1;} /*opacity: 0;*/
-.branch_guide .branch_map#map1 {padding: 15px 0 0 35px;}
-.branch_guide .branch_map#map2 {padding: 12px 0 0 0px;}
-.branch_guide .branch_map#map2 .label {margin-left: -10px;}
-.branch_guide .branch_map#map3 {padding: 26px 0 0 103px;}
-.branch_guide .branch_map#map3 .label {margin-top: -12px; margin-left: 42px;}
+.branch_guide .branch_map_wrap#map1 .branch_map {padding: 15px 0 0 35px;}
+.branch_guide .branch_map_wrap#map2 .branch_map {padding: 12px 0 0 0px;}
+.branch_guide .branch_map_wrap#map2 .branch_map .label {margin-left: -10px;}
+.branch_guide .branch_map_wrap#map3 .branch_map {padding: 26px 0 0 103px;}
+.branch_guide .branch_map_wrap#map3 .branch_map .label {margin-top: -12px; margin-left: 42px;}
 .branch_guide .branch_map .branch_info {position: absolute; top: 3px; right: 14px; z-index: 3; margin-right: 10px;}
-.branch_guide .branch_map#map2 .branch_info {margin-right: -10px;}
-.branch_guide .branch_map#map3 .branch_info {margin-top: -12px; margin-right: 40px;}
+.branch_guide .branch_map_wrap#map2 .branch_map .branch_info {margin-right: -10px;}
+.branch_guide .branch_map_wrap#map3 .branch_map .branch_info {margin-top: -12px; margin-right: 40px;}
 .branch_guide .branch_map .branch_info ul {border: 1px solid #dddddd; background-color: #fff; width: 388px; margin-bottom: 18px; padding: 14px 0;}
 .branch_guide .branch_map .branch_info ul li{padding: 24px 0 20px 0; margin: 0 29px; border-top: 1px solid #ddd;}
 .branch_guide .branch_map .branch_info ul li:first-child {border-top: 0;}
@@ -76,9 +77,9 @@ img{vertical-align:top; border:0}
 .branch_guide .branch_map .branch_info p.txt{letter-spacing:-0.05em; font-family: noto_dl;}
 .branch_guide .branch_map .branch_info .btn_franchise {position: absolute; right: 0; bottom: 0; font-weight: 300; letter-spacing:-0.04em; padding-right: 34px; font-family: noto_r;}
 .branch_guide .branch_map .branch_info .btn_franchise::after {content: ''; position: absolute; right: 0; top: -3px; width: 25px; height: 25px; background: url('../images/common/icon_more.png') 0 0 no-repeat;}
-.branch_guide .branch_map.active {height: auto;}
-.branch_guide .branch_map.active .map{opacity: 1; transform: scale(1);}
-.branch_guide .branch_map.active#map3{height: 980px;}
+.branch_guide .branch_map_wrap.active {height: auto;}
+.branch_guide .branch_map_wrap.active .branch_map .map{opacity: 1; transform: scale(1);}
+.branch_guide .branch_map_wrap.active#map3 .branch_map{height: 980px;}
 
 
 
