@@ -1,5 +1,34 @@
+$(document).ready(function() {
+    let stickyOffset = $('.franchiseApplication_header').offset();
+    $(window).scroll(function() {
+        if($(document).scrollTop() > stickyOffset.top) {
+            $('.content .logo').fadeIn();
+            $('.content .top').fadeIn();
+            $('.franchiseApplication_header').css('background-color', '#ffffff');
+        } else {
+            $('.content .logo').fadeOut();
+            $('.content .top').fadeOut();
+            $('.franchiseApplication_header').css('background-color', 'transparent')
+        }
+    });
+
+    $(".content .top").click(function() {
+        $('html').animate({ scrollTop : 0 }, 400);
+        return false;
+    });
+
+    $('.form_file input[type=file]').change(function() {
+        if(window.FileReader) {
+            var fileName = $(this)[0].files[0].name;
+        } else {
+            var fileName = $(this).val().split('/').pop().split('\\').pop();
+        }
+        $('.from_file input[type=text]').val('');
+        $('.form_file input[type=text]').val(fileName);
+    });
+});
+
 function showCal(){
-    
     let sort2 = document.getElementsByClassName("sort2")[0];
     let sort2Option = sort2.options[sort2.selectedIndex].innerText;
     let calRow = document.getElementsByClassName("calRow")[0];
@@ -10,7 +39,6 @@ function showCal(){
     }else{
         calRow.style.display='none';
     }
-
 }
 
 function changeSort2() {
@@ -64,8 +92,6 @@ function changeSort2() {
         default:
             document.getElementsByClassName('region1')[0].style.display='none';
     }
-
-    
 }
 
 
@@ -104,15 +130,3 @@ function changeRegion(){
         }
     }
 }
-
-$(document).ready(function() {
-    $('.form_file input[type=file]').change(function() {
-        if(window.FileReader) {
-            var fileName = $(this)[0].files[0].name;
-        } else {
-            var fileName = $(this).val().split('/').pop().split('\\').pop();
-        }
-        $('.from_file input[type=text]').val('');
-        $('.form_file input[type=text]').val(fileName);
-    });
-});

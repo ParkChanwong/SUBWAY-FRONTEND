@@ -44,7 +44,7 @@ select {
     top: 0px;
     height: 60px;
     width: 110px;
-    background: url(../images/logo_sub_header.png) 0 50% no-repeat;
+    background: url('../images/menuinfo_images/logo_sub_header.png') 0 50% no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     font-size: 0;
@@ -70,7 +70,7 @@ select {
     content: '';
     width: 12px;
     height: 15px;
-    background: url(../images/icon_arr_top.png) 50% 0 no-repeat;
+    background: url('../images/menuinfo_images/icon_arr_top.png') 50% 0 no-repeat;
     display: block;
     position: absolute;
     left: 0;
