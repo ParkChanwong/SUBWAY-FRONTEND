@@ -79,6 +79,7 @@
     overflow: hidden;
     font-family: 'noto_r';
     color: #666666;
+    display: none;
 }
 
 .faq_content .ask .a{
@@ -105,7 +106,7 @@
     font-size: 16px;
 }
 
-.faq_content details[open] .ask .ask-text{
+.faq_content .open .ask .ask-text{
     position: relative;
     padding: 18px 0 22px;
     border-top: 1px solid #dddddd;
@@ -118,19 +119,19 @@ div{
     display: block;
 }
 
-details[open] .question::after{
+.open .question::after{
     transform: rotate(135deg);
 }
 
-details[open] .ask-text{
+.open .ask-text{
     opacity: 1;
 }
 
-details[open] .question strong{
+.open .question strong{
     color: #009223;
     font-family: 'noto_l';
 }
-details[open] .question, details[open] .ask{
+.open .question, .open .ask{
     background-color: #fafafa;
 }
 
