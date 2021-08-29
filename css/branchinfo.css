@@ -18,8 +18,8 @@ img{vertical-align:top; border:0}
 .content_main h2.sub_tit{text-align:center; font-size:40px; color:#292929; font-weight:300; letter-spacing:-0.07em; padding:50px 0 110px; font-family: noto_m; background-color: #fff;}
 
 .content_wrap {position: sticky; left: 0; top: 0; width: 100%; border-bottom: 1px solid #e5e5e5; height: 59px;  background-color: #fff; z-index: 5;}
-.content_wrap .logo {position: absolute; left: 0; top: 0; height: 60px; width: 110px; background: url('../images/common/logo_sub_header.png') 0 50% no-repeat; overflow: hidden; text-indent: -9999px; font-size: 0; line-height: 0; opacity: 1;}
-.content_wrap .top {position: absolute; right: 0; top: 0; height: 32px; padding-top: 28px; font-family: font_sw; font-weight: bold; color: #bbbbbb; font-size: 13px; opacity: 1;}
+.content_wrap .logo {position: absolute; left: 0; top: 0; height: 60px; width: 110px; background: url('../images/common/logo_sub_header.png') 0 50% no-repeat; overflow: hidden; text-indent: -9999px; font-size: 0; line-height: 0; opacity: 1; display: none;}
+.content_wrap .top {position: absolute; right: 0; top: 0; height: 32px; padding-top: 28px; font-family: font_sw; font-weight: bold; color: #bbbbbb; font-size: 13px; opacity: 1; display: none;}
 .content_wrap .top::after {content: ''; width: 12px; height: 15px; background: url(../images/common/icon_arr_top.png) 50% 0 no-repeat; display: inline-block; position: absolute; left: 0; width: 100%; top: 18px;}
 .content_wrap .content_nav {text-align: center;}
 .content_wrap .content_nav ul {overflow: hidden; display: inline-block;}
