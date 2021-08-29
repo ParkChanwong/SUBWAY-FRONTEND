@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,9 @@
     <link rel="stylesheet" href="./css/branchinfo.css" type="text/css">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/branchInfo.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <header>
@@ -230,123 +233,131 @@
                             <li><a href="#map3">지방</a></li>
                         </ul>
                     </div>
-                    <div class="branch_map active" id="map1">
-                        <div class="label">
-                            <ul>
-                                <li class="one">서울강북지사</li>
-                                <li class="two">서울강남지사</li>
-                            </ul>
-                        </div>
-                        <div class="branch_info">
-                            <ul>
-                                <li>
-                                    <strong>서울강북지사</strong>
-                                    <p class="manager">구남규 지사장</p>
-                                    <div class="addr">
-										서울특별시 강남구 선릉로 121길 5 정림빌딩 2F<br>연락처 : 02-6203-5212<br>팩스번호 : 02-6203-5233
-									</div>
-                                </li>
-                                <li>
-                                    <strong>서울강남지사</strong>
-                                    <p class="manager">이현주 지사장</p>
-                                    <div class="addr">
-										서울시 서초구 사평대로 55길 112-7 2층<br>연락처 : 02-6356-7907<br>팩스번호 : 02-6356-7908
-									</div>
-                                </li>
-                            </ul>
-                            <p class="txt">· 써브웨이의 가맹요건을 알아보세요</p>
-                            <a class="btn_franchise" href="#">자세히보기</a>
-                        </div>
-                        <div class="map">
-                            <img src="/images/franchise/branch_map01.png" alt="서울지사">
-                        </div>
-                    </div>
-                    <div class="branch_map" id="map2">
-                        <div class="label">
-                            <ul>
-                                <li class="one">경기서/인천지사</li>
-                                <li class="two">경기남부지사</li>
-                                <li class="six">가맹불가지역</li>
-                            </ul>
-                        </div>
-                        <div class="branch_info">
-                            <ul>
-                                <li>
-                                    <strong>경기서/인천지사</strong>
-                                    <p class="manager">임재현 지사장</p>
-                                    <div class="addr">
-										경기도 부천시 소향로 31 청죽타워빌딩 601호<br>연락처 : 032-224-6000<br>팩스번호 : 032-224-6600
-									</div>
-                                </li>
-                                <li>
-                                    <strong>경기남부지사</strong>
-                                    <p class="manager">구준희 지사장</p>
-                                    <div class="addr">
-										서울특별시 강남구 선릉로 121길 5 정림빌딩 2F<br>연락처 : 02-6203-5212<br>팩스번호 : 02-6203-5233
-									</div>
-                                </li>
-                            </ul>
-                            <p class="txt">· 써브웨이의 가맹요건을 알아보세요</p>
-                            <a class="btn_franchise" href="#">자세히보기</a>
-                        </div>
-                        <div class="map">
-                            <img src="/images/franchise/branch_map02.png" alt="서울지사">
+                    <div class="branch_map_wrap active" id="map1">
+                        <div class="branch_map">
+                            <div class="label">
+                                <ul>
+                                    <li class="one">서울강북지사</li>
+                                    <li class="two">서울강남지사</li>
+                                </ul>
+                            </div>
+                            <div class="branch_info">
+                                <ul>
+                                    <li>
+                                        <strong>서울강북지사</strong>
+                                        <p class="manager">구남규 지사장</p>
+                                        <div class="addr">
+                                            서울특별시 강남구 선릉로 121길 5 정림빌딩 2F<br>연락처 : 02-6203-5212<br>팩스번호 : 02-6203-5233
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>서울강남지사</strong>
+                                        <p class="manager">이현주 지사장</p>
+                                        <div class="addr">
+                                            서울시 서초구 사평대로 55길 112-7 2층<br>연락처 : 02-6356-7907<br>팩스번호 : 02-6356-7908
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="txt">· 써브웨이의 가맹요건을 알아보세요</p>
+                                <a class="btn_franchise" href="#">자세히보기</a>
+                            </div>
+                            <div class="map">
+                                <img src="/images/franchise/branch_map01.png" alt="서울지사">
+                            </div>
                         </div>
                     </div>
-                    <div class="branch_map" id="map3">
-                        <div class="label">
-                            <ul>
-                                <li class="one">대전/충남지사</li>
-                                <li class="two">대구/경북지사</li>
-                                <li class="thr">울산/경남지사</li>
-                                <li class="fou">부산/김해지사</li>
-                                <li class="fiv">광주/전라지사</li>
-                                <li class="six">가맹불가지역</li>
-                            </ul>
+                    <div class="branch_map_wrap" id="map2">
+                        <div class="branch_map">
+                            <div class="label">
+                                <ul>
+                                    <li class="one">경기서/인천지사</li>
+                                    <li class="two">경기남부지사</li>
+                                    <li class="six">가맹불가지역</li>
+                                </ul>
+                            </div>
+                            <div class="branch_info">
+                                <ul>
+                                    <li>
+                                        <strong>경기서/인천지사</strong>
+                                        <p class="manager">임재현 지사장</p>
+                                        <div class="addr">
+                                            경기도 부천시 소향로 31 청죽타워빌딩 601호<br>연락처 : 032-224-6000<br>팩스번호 : 032-224-6600
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>경기남부지사</strong>
+                                        <p class="manager">구준희 지사장</p>
+                                        <div class="addr">
+                                            서울특별시 강남구 선릉로 121길 5 정림빌딩 2F<br>연락처 : 02-6203-5212<br>팩스번호 : 02-6203-5233
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="txt">· 써브웨이의 가맹요건을 알아보세요</p>
+                                <a class="btn_franchise" href="#">자세히보기</a>
+                            </div>
+                            <div class="map">
+                                <img src="/images/franchise/branch_map02.png" alt="서울지사">
+                            </div>
                         </div>
-                        <div class="branch_info">
-                            <ul>
-                                <li>
-                                    <strong>대전/충남지사</strong>
-                                    <p class="manager">변정원 지사장</p>
-                                    <div class="addr">
-										대전광역시 서구 둔산대로 117번길 95, 리더스타운 C동 501호<br>연락처 : 042-321-1151 <br>팩스번호 : 042-321-0118
-									</div>
-                                </li>
-                                <li>
-                                    <strong>대구/경북지사</strong>
-                                    <p class="manager">김성필 지사장</p>
-                                    <div class="addr">
-										대구광역시 북구 대학로87 써브웨이 3층<br>연락처 : 053-951-7803<br>팩스번호 : 053-715-1401
-									</div>
-                                </li>
-                                <li>
-                                    <strong>울산/경남지사</strong>
-                                    <p class="manager">김미지 지사장</p>
-                                    <div class="addr">
-										경남 창원시 성산구 중앙대로 100번길 14,<br>스타타워즈 308호<br>연락처 : 055-275-5442<br>팩스번호 : 055-275-5443
-									</div>
-                                </li>
-                                <li>
-                                    <strong>경기서/부산/김해지사</strong>
-                                    <p class="manager">이한종 지사장</p>
-                                    <div class="addr">
-										부산시 해운대구 센텀중앙로 48 에이스 하이테크 21 1710호<br>연락처 : 051-741-1124<br>팩스번호 : 없음
-									</div>
-                                </li>
-                                <li>
-                                    <strong>광주/전라지사</strong>
-                                    <p class="manager">한경민 지사장</p>
-                                    <div class="addr">
-										광주광역시 서구 시청로 92,(유탑 유블레스 트윈시티), 202호<br>연락처 : 010-6462-3900<br팩스번호 : 062-385-1121
-									</div>
-                                </li>
-                            </ul>
-                            <p class="txt">· 써브웨이의 가맹요건을 알아보세요</p>
-                            <a class="btn_franchise" href="#">자세히보기</a>
-                        </div>
-                        <div class="map">
-                            <img src="/images/franchise/branch_map03.png" alt="서울지사">
+                    </div>
+                    <div class="branch_map_wrap" id="map3">
+                        <div class="branch_map">
+                            <div class="label">
+                                <ul>
+                                    <li class="one">대전/충남지사</li>
+                                    <li class="two">대구/경북지사</li>
+                                    <li class="thr">울산/경남지사</li>
+                                    <li class="fou">부산/김해지사</li>
+                                    <li class="fiv">광주/전라지사</li>
+                                    <li class="six">가맹불가지역</li>
+                                </ul>
+                            </div>
+                            <div class="branch_info">
+                                <ul>
+                                    <li>
+                                        <strong>대전/충남지사</strong>
+                                        <p class="manager">변정원 지사장</p>
+                                        <div class="addr">
+                                            대전광역시 서구 둔산대로 117번길 95, 리더스타운 C동 501호<br>연락처 : 042-321-1151 <br>팩스번호 :
+                                            042-321-0118
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>대구/경북지사</strong>
+                                        <p class="manager">김성필 지사장</p>
+                                        <div class="addr">
+                                            대구광역시 북구 대학로87 써브웨이 3층<br>연락처 : 053-951-7803<br>팩스번호 : 053-715-1401
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>울산/경남지사</strong>
+                                        <p class="manager">김미지 지사장</p>
+                                        <div class="addr">
+                                            경남 창원시 성산구 중앙대로 100번길 14,<br>스타타워즈 308호<br>연락처 : 055-275-5442<br>팩스번호 :
+                                            055-275-5443
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>경기서/부산/김해지사</strong>
+                                        <p class="manager">이한종 지사장</p>
+                                        <div class="addr">
+                                            부산시 해운대구 센텀중앙로 48 에이스 하이테크 21 1710호<br>연락처 : 051-741-1124<br>팩스번호 : 없음
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>광주/전라지사</strong>
+                                        <p class="manager">한경민 지사장</p>
+                                        <div class="addr">
+                                            광주광역시 서구 시청로 92,(유탑 유블레스 트윈시티), 202호<br>연락처 : 010-6462-3900<br>팩스번호 : 062-385-1121
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="txt">· 써브웨이의 가맹요건을 알아보세요</p>
+                                <a class="btn_franchise" href="#">자세히보기</a>
+                            </div>
+                            <div class="map">
+                                <img src="/images/franchise/branch_map03.png" alt="서울지사">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -380,7 +391,8 @@
                     <span class="after">대표 : 콜린클락</span>
                     <span class="after">전화 : 02-797-5036</span>
                     <span>사업자등록번호 : 101-84-04143</span>
-                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.
+                    </p>
                 </div>
                 <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
                 <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
@@ -388,4 +400,5 @@
         </footer>
     </div>
 </body>
+
 </html>
