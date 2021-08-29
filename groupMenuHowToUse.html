@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="./css/global.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link rel="stylesheet" href="/css/groupMenuHowToUse.css" type="text/css">
-    <script src="./js/HowToUse.js"></script>
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/index.js"></script>
-    
     <link rel="stylesheet" href="./library/slick-1.8.1/slick/slick.css" type="text/css">
     <link rel="stylesheet" href="./library/slick-1.8.1/slick/slick-theme.css" type="text/css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./library/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/HowToUse.js"></script>
     
 </head>
 <body>
@@ -242,15 +241,15 @@
                             <div class="bx-wrapper" style="max-width: 100%;">
                                 <div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 181px;">
                                     <div class="visual_slider_content" style="width: auto; position: relative;">
-                                        <div class="slider" style="float: none; list-style: none; position: absolute; width: 1524px; z-index: 0; display: none; opacity: 1;" aria-hidden="true">
+                                        <div class="slider">
                                             <strong>Special Day</strong>
                                             <p>생일 파티, 홈 파티 등 다양한 파티에<br />즐거움과 행복을 더해줄 써브웨이 샌드위치</p>
                                         </div>
-                                        <div class="slider" style="float: none; list-style: none; position: absolute; width: 1524px; z-index: 50; opacity: 1; display: block;" aria-hidden="false">
+                                        <div class="slider">
                                             <strong>Travel Day</strong>
                                             <p>설레는 여행에 빠질수 없는 먹는 즐거움!<br />써브웨이 샌드위치와 함께 한다면 여행의 추억이 배가 됩니다.</p>
                                         </div>
-                                        <div class="slider" style="float: none; list-style: none; position: absolute; width: 1524px; z-index: 0; opacity: 1; display: none;" aria-hidden="true">
+                                        <div class="slider">
                                             <strong>Meeting Day</strong>
                                             <p>바쁜 회의에서 간편하고 건강하게!<br />써브웨이 샌드위치와 함께라면 활기차고 든든한 회의가 됩니다.</p>
                                         </div>
@@ -264,9 +263,15 @@
                                 </div>
                             </div>
                             <div class="bx-pager">
-                                <a class="pager1 active" data-slide-index="0" href="#none">Special Day</a>
-                                <a class="pager2" data-slide-index="1" href="#none">Travel Day</a>
-                                <a class="pager3" data-slide-index="2" href="#none">Meeting Day</a>
+                                <div>
+                                    <a class="pager1 active" data-slide-index="0" href="#none">Special Day</a>
+                                </div>
+                                <div>
+                                    <a class="pager2" data-slide-index="1" href="#none">Travel Day</a>
+                                </div>
+                                <div>
+                                    <a class="pager3" data-slide-index="2" href="#none">Meeting Day</a>
+                                </div>
                             </div>
                         </div>
         
