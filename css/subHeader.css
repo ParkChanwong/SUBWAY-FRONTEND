@@ -79,6 +79,7 @@
     text-indent: -9999px;
     font-size: 0;
     line-height: 0;
+    display: none;
 }
 
 .sub_header .top{
@@ -90,6 +91,7 @@
     font-family: 'sw_f';
     color: #bbbbbb;
     font-size: 13px;
+    display: none;
 }
 
 .sub_header .top::after{
