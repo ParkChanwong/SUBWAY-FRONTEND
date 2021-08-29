@@ -16,3 +16,20 @@ $(function(){
     });
 });
 
+
+$(function(){	
+		function m_navi_set_on(){
+			$(".eventPromotion_cate_content").addClass("navi_scroll");
+		}
+		function m_navi_set_off(){
+			$(".eventPromotion_cate_content").removeClass("navi_scroll");
+		}
+		
+		if($(window).scrollTop() < 49){
+			m_navi_set_on();
+		}
+		else{
+			m_navi_set_off();
+		}
+        
+});
