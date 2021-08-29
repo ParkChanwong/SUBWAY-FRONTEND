@@ -28,5 +28,6 @@ $(document).ready(function() {
         } else {
             $('#map3').addClass('active');
         }
+        return false;
     });
 });
