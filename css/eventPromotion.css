@@ -22,7 +22,7 @@
     background: url('../images/eventPromotion/tab_logo.png') 100% no-repeat;
     cursor: pointer;
 }
-.eventPromotion_cate_wrap .tab_logo .navi_scroll{
+.eventPromotion_cate_wrap .navi_scroll .tab_logo{
     display: none;
 }
 
@@ -36,7 +36,7 @@
     font-family: 'sw_f';
     cursor: pointer;
 }
-.eventPromotion_cate_wrap .tab_top .navi_scroll{
+.eventPromotion_cate_wrap .navi_scroll .tab_top{
     display: none;
 }
 

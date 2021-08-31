@@ -40,4 +40,10 @@ $(function(){
             m_navi_set_off();
         }
     });
+
+    $(document).ready(function(){
+        if(){
+            
+        }
+    });
 });
