@@ -24,6 +24,7 @@
     position: absolute;
     left: 50%;
     z-index: 999;
+    display: none;
 }
 
 #popup_wrap{
@@ -234,6 +235,7 @@ button {
     position: absolute;
     left: 50%;
     z-index: 999;
+    display: none;
 }
 
 .popup_content.bread{
@@ -380,6 +382,7 @@ button {
     border-radius: 30px;
     box-sizing: border-box;
     padding: 20px 15px 15px 15px;
+    display: none;
 }
 
 
@@ -420,6 +423,7 @@ button {
     position: absolute;
     left: 50%;
     z-index: 999;
+    display: none;
 }
 
 .cheese h2 {
@@ -478,6 +482,7 @@ button {
     position: absolute;
     left: 50%;
     z-index: 999;
+    display: none;
 }
 
 .vegetable .lately {
@@ -565,6 +570,7 @@ input {
     position: absolute;
     left: 50%;
     z-index: 999;
+    display: none;
 }
 
 #popup_wrap .meterial ul li .select_recipe .info strong {
@@ -608,6 +614,7 @@ input {
     position: absolute;
     left: 50%;
     z-index: 999;
+    display: none;
 }
 
 #popup_wrap .order_display dd.sum {
@@ -639,6 +646,7 @@ input {
     position: absolute;
     left: 30%;
     z-index: 999;
+    display: none;
 }
 #popup_wrap .radio_select {
     padding: 20px;
@@ -753,6 +761,7 @@ input {
     position: absolute;
     left: 50%;
     z-index: 999;
+    display: none;
 }
 
 #popup_wrap.set_popup h1 {
