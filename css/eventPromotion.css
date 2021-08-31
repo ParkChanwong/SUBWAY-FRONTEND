@@ -23,7 +23,7 @@
     cursor: pointer;
 }
 .eventPromotion_cate_wrap .navi_scroll .tab_logo{
-    display: none;
+    display: none !important;
 }
 
 .eventPromotion_cate_wrap .tab_top {
@@ -37,7 +37,7 @@
     cursor: pointer;
 }
 .eventPromotion_cate_wrap .navi_scroll .tab_top{
-    display: none;
+    display: none !important;
 }
 
 .eventPromotion_cate_wrap .tab_top::after {

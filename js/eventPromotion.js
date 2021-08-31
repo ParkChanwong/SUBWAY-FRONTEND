@@ -40,10 +40,15 @@ $(function(){
             m_navi_set_off();
         }
     });
-
-    $(document).ready(function(){
-        if(){
-            
-        }
-    });
+    if($(".eventPromotion_cate_wrap").hasClass("navi_scroll")){
+    }else{
+        $(".tab_logo").fadeIn();
+        $(".eventPromotion_cate_wrap").css({
+            "background-color": "white"
+        });
+        $(".tab_top").fadeIn();
+        $(".eventPromotion_cate_wrap").css({
+            "background-color": "white"
+        });
+    }
 });
