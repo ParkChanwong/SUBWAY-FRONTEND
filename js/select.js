@@ -1,106 +1,3 @@
-// $(document).ready(function() {
-//     var breadLength = $(".popup_back .breadLength");
-//     var breadSelect = $(".popup_back .breadSelect");
-//     var breadWarming = $(".popup_back .breadWarming");
-//     var cheeseSelect = $(".popup_back .cheeseSelect");
-//     var vegeSelect = $(".popup_back .vegeSelect");
-//     var sauceSelect = $(".popup_back .sauceSelect");
-//     var toppingSelect = $(".popup_back .toppingSelect");
-//     var doubleAdd = $(".popup_back .doubleAdd");
-//     var setSelect = $(".popup_back .setSelect");
-
-
-//     if(breadLength.hasClass("active")) {
-//         breadLength.show();
-//         breadLength.find("#ordPrgsNextBtn").click(function() {
-//             breadLength.removeClass("active");
-//             breadLength.hide();
-//             breadSelect.show();
-//             breadSelect.addClass("active");
-
-
-//             if(breadSelect.hasClass("active")) {
-//                 breadSelect.find("#ordPrgsNextBtn").click(function() {
-//                     breadSelect.removeClass("active");
-//                     breadSelect.hide();
-//                     breadWarming.show();
-//                     breadWarming.addClass("active");
-
-
-//                     if(breadWarming.hasClass("active")) {
-//                         breadWarming.find("#ordPrgsNextBtn").click(function() {
-//                             breadWarming.removeClass("active");
-//                             breadWarming.hide();
-//                             cheeseSelect.show();
-//                             cheeseSelect.addClass("active");
-
-
-//                             if(cheeseSelect.hasClass("active")) {
-//                                 cheeseSelect.find("#ordPrgsNextBtn").click(function() {
-//                                     cheeseSelect.removeClass("active");
-//                                     cheeseSelect.hide();
-//                                     vegeSelect.show();
-//                                     vegeSelect.addClass("active");
-
-
-//                                     if(vegeSelect.hasClass("active")) {
-//                                         vegeSelect.find("#ordPrgsNextBtn").click(function() {
-//                                             vegeSelect.removeClass("active");
-//                                             vegeSelect.hide();
-//                                             sauceSelect.show();
-//                                             sauceSelect.addClass("active");
-
-
-//                                             if(sauceSelect.hasClass("active")) {
-//                                                 sauceSelect.find("#ordPrgsNextBtn").click(function() {
-//                                                     sauceSelect.removeClass("active");
-//                                                     sauceSelect.hide();
-//                                                     toppingSelect.show();
-//                                                     toppingSelect.addClass("active");
-
-
-//                                                     if(toppingSelect.hasClass("active")) {
-//                                                         toppingSelect.find("#ordPrgsNextBtn").click(function() {
-//                                                             toppingSelect.removeClass("active");
-//                                                             toppingSelect.hide();
-//                                                             toppingSelect.show();
-//                                                             toppingSelect.addClass("active");
-
-
-//                                                             if(toppingSelect.hasClass("active")) {
-//                                                                 toppingSelect.find("#ordPrgsNextBtn").click(function() {
-//                                                                     toppingSelect.removeClass("active");
-//                                                                     toppingSelect.hide();
-//                                                                     doubleAdd.show();
-//                                                                     doubleAdd.addClass("active");
-
-
-//                                                                     if(doubleAdd.hasClass("active")) {
-//                                                                         doubleAdd.find("#ordPrgsNextBtn").click(function() {
-//                                                                             doubleAdd.removeClass("active");
-//                                                                             doubleAdd.hide();
-//                                                                             setSelect.show();
-//                                                                             setSelect.addClass("active");
-//                                                                         });
-//                                                                     };
-//                                                                 });
-//                                                             };
-//                                                         });
-//                                                     };
-//                                                 });
-//                                             };
-//                                         });
-//                                     };
-//                                 });
-//                             };
-//                         });
-//                     };
-//                 });
-//             };
-//         });
-//     };
-// });
-
 $(document).ready(function() {
     var breadLength = $(".popup_back .breadLength");
     var breadSelect = $(".popup_back .breadSelect");
@@ -112,84 +9,158 @@ $(document).ready(function() {
     var doubleAdd = $(".popup_back .doubleAdd");
     var setSelect = $(".popup_back .setSelect");
 
+    breadLength.show();
 
-    if(breadLength.hasClass("active")) {
+    $('.popup_back .breadLength .bgc_point').click(function() {
+        breadLength.hide();
+        breadSelect.show();
+    });
+
+    $('.popup_back .breadLength .bgc_white').click(function() {
+        breadLength.hide();
+        //주문 시작하기 페이지로
+    });
+
+    $('.popup_back .breadLength .btn_close').click(function() {
+        breadLength.hide();
+        //주문 시작하기 페이지로
+    });
+
+
+    $('.popup_back .breadSelect .bgc_point').click(function() {
+        breadSelect.hide();
+        breadWarming.show();
+    });
+
+    $('.popup_back .breadSelect .bgc_white').click(function() {
+        breadSelect.hide();
         breadLength.show();
-        breadLength.find("#ordPrgsNextBtn").click(function() {
-            breadLength.removeClass("active");
-            breadLength.hide();
-            breadSelect.show();
-            breadSelect.addClass("active");
-        });
-    };
+    });
 
-
-    if($('.pop_back').find('.breadSelect').hasClass("active")) {
-        breadSelect.find("#ordPrgsNextBtn").click(function() {
-            console.log('break넣었느데 과연?')
-            breadSelect.removeClass("active");
-            breadSelect.hide();
-            breadWarming.show();
-            breadWarming.addClass("active");
-        
-        });
-    };
-
-
-    if(breadWarming.hasClass("active")) {
-        breadWarming.find("#ordPrgsNextBtn").click(function() {
-            breadWarming.removeClass("active");
-            breadWarming.hide();
-            cheeseSelect.show();
-            cheeseSelect.addClass("active");
-        });
-    };
-
-    if(cheeseSelect.hasClass("active")) {
-        cheeseSelect.find("#ordPrgsNextBtn").click(function() {
-            cheeseSelect.removeClass("active");
-            cheeseSelect.hide();
-            vegeSelect.show();
-            vegeSelect.addClass("active");
-        });
-    };
-
-    if(vegeSelect.hasClass("active")) {
-        vegeSelect.find("#ordPrgsNextBtn").click(function() {
-            vegeSelect.removeClass("active");
-            vegeSelect.hide();
-            sauceSelect.show();
-            sauceSelect.addClass("active");
-        });
-    };
-
-    if(sauceSelect.hasClass("active")) {
-        sauceSelect.find("#ordPrgsNextBtn").click(function() {
-            sauceSelect.removeClass("active");
-            sauceSelect.hide();
-            toppingSelect.show();
-            toppingSelect.addClass("active");
-        });
-    };
-
-    if(toppingSelect.hasClass("active")) {
-        toppingSelect.find("#ordPrgsNextBtn").click(function() {
-            toppingSelect.removeClass("active");
-            toppingSelect.hide();
-            doubleAdd.show();
-            doubleAdd.addClass("active");
-        });
-    };
-
-
-    if(doubleAdd.hasClass("active")) {
-        doubleAdd.find("#ordPrgsNextBtn").click(function() {
-            doubleAdd.removeClass("active");
-            doubleAdd.hide();
-            setSelect.show();
-            setSelect.addClass("active");
-        });
-    };
+    $('.popup_back .breadSelect .btn_close').click(function() {
+        breadSelect.hide();
+        breadLength.show();
+        breadLength.hide();
+    });
     
+
+    $('.popup_back .breadWarming .bgc_point').click(function() {
+        breadWarming.hide();
+        cheeseSelect.show();
+    });
+
+    $('.popup_back .breadWarming .bgc_white').click(function() {
+        breadWarming.hide();
+        breadSelect.show();
+    });
+
+    $('.popup_back .breadWarming .btn_close').click(function() {
+        breadWarming.hide();
+        breadLength.show();
+        breadLength.hide();
+    });
+
+
+    $('.popup_back .cheeseSelect .bgc_point').click(function() {
+        cheeseSelect.hide();
+        vegeSelect.show();
+    });
+
+    $('.popup_back .cheeseSelect .bgc_white').click(function() {
+        cheeseSelect.hide();
+        breadWarming.show();
+    });
+
+    $('.popup_back .cheeseSelect .btn_close').click(function() {
+        cheeseSelect.hide();
+        breadLength.show();
+        breadLength.hide();
+    });
+
+
+    $('.popup_back .vegeSelect .bgc_point').click(function() {
+        vegeSelect.hide();
+        sauceSelect.show();
+    });
+
+    $('.popup_back .vegeSelect .bgc_white').click(function() {
+        vegeSelect.hide();
+        cheeseSelect.show();
+    });
+
+    $('.popup_back .vegeSelect .btn_close').click(function() {
+        vegeSelect.hide();
+        breadLength.show();
+        breadLength.hide();
+    });
+
+
+    $('.popup_back .sauceSelect .bgc_point').click(function() {
+        sauceSelect.hide();
+        toppingSelect.show();
+    });
+
+    $('.popup_back .sauceSelect .bgc_white').click(function() {
+        sauceSelect.hide();
+        vegeSelect.show();
+    });
+
+    $('.popup_back .sauceSelect .btn_close').click(function() {
+        sauceSelect.hide();
+        breadLength.show();
+        breadLength.hide();
+    });
+
+
+    $('.popup_back .toppingSelect .bgc_point').click(function() {
+        toppingSelect.hide();
+        doubleAdd.show();
+    });
+
+    $('.popup_back .toppingSelect .bgc_white').click(function() {
+        toppingSelect.hide();
+        sauceSelect.show();
+    });
+
+    $('.popup_back .toppingSelect .btn_close').click(function() {
+        toppingSelect.hide();
+        breadLength.show();
+        breadLength.hide();
+    });
+
+
+    $('.popup_back .doubleAdd .bgc_point').click(function() {
+        doubleAdd.hide();
+        setSelect.show();
+    });
+
+    $('.popup_back .doubleAdd .bgc_white').click(function() {
+        doubleAdd.hide();
+        toppingSelect.show();
+    });
+
+    $('.popup_back .doubleAdd .btn_close').click(function() {
+        doubleAdd.hide();
+        breadLength.show();
+        breadLength.hide();
+    });
+
+
+    $('.popup_back .setSelect .bgc_point').click(function() {
+        setSelect.hide();
+        //go step3
+    });
+
+    $('.popup_back .setSelect .bgc_white').click(function() {
+        setSelect.hide();
+        doubleAdd.show();
+    });
+
+    $('.popup_back .setSelect .btn_close').click(function() {
+        setSelect.hide();
+        breadLength.show();
+        breadLength.hide();
+    });
+
 });
 
