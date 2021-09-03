@@ -543,10 +543,16 @@ img {
 
 }
 
-.utilization_subway_content .slider_wrapper button.slick-prev { left:0}
+.utilization_subway_content .slider_wrapper button.slick-prev {
+    left: 50% !important;
+    margin-left: -740px !important;
+   
+}
 .utilization_subway_content .slider_wrapper button.slick-prev:before {
-     content : "\e93d"; font-family:'xeicon'; font-size:40px;
-     position: absolute;
+    content : "\e93d";
+    font-family:'xeicon';
+    font-size:40px;
+    position: absolute;
     top: 0;
     width: 50px;
     height: 50px;
@@ -556,20 +562,23 @@ img {
     text-indent: -9999px;
     left: 0;
     background-position: 0 0;
-    }
+}
 
-    .utilization_subway_content .slider_wrapper button.slick-prev:hover{
-        background-position: 0 100%;
-    }
+.utilization_subway_content .slider_wrapper button.slick-prev:hover{
+    background-position: 0 100%;
+}
 
 
 .utilization_subway_content .slider_wrapper button.slick-next {
-    right:0;
+    right: 50% !important;
+    margin-right: -740px !important;
     background-position: 100% 0;
 
 }
 .utilization_subway_content .slider_wrapper button.slick-next:before { 
-    content : "\e93d"; font-family:'xeicon'; font-size:40px;
+    content : "\e93d";
+    font-family:'xeicon';
+    font-size:40px;
      position: absolute;
     top: 0;
     width: 50px;
