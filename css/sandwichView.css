@@ -27,7 +27,6 @@ a {
     overflow:hidden; 
     font-size:0; 
     line-height:0; 
-    opacity:0
 }
 .sub_header .top{
     position:absolute;
@@ -38,7 +37,6 @@ a {
     font-family:'sw_f'; 
     color:#bbbbbb; 
     font-size:13px; 
-    opacity:0;
 }
 .sub_header .top:after{
     content:''; 
@@ -126,7 +124,7 @@ a {
 .menuView_wrap .menu_header .prod_category a{
     display: none;
     text-decoration: none;
-    font-family: 'noto_m';
+    font-family: 'noto_r';
     color: #bbbbbb;
     font-size: 18px;
     letter-spacing: -0.03em;
