@@ -9,8 +9,10 @@ $(document).ready(function() {
     var doubleAdd = $(".popup_back .doubleAdd");
     var setSelect = $(".popup_back .setSelect");
 
-    breadLength.show();
-
+    $('.btn_area .order_btn').click(function() {
+        breadLength.show();
+    });
+    
     $('.popup_back .breadLength .bgc_point').click(function() {
         breadLength.hide();
         breadSelect.show();
