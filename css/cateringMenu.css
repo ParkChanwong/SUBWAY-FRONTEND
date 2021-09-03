@@ -22,6 +22,7 @@
     z-index:999;
 }
 .sub_header .logo{
+    display: none;
     position:absolute; 
     left:270px; 
     top:0px; 
@@ -32,9 +33,9 @@
     text-indent:-9999px; 
     font-size:0; 
     line-height:0; 
-    opacity:0;
 }
 .sub_header .top{
+    display: none;
     position:absolute; 
     right:270px; 
     top:0px; 
@@ -43,7 +44,6 @@
     font-family:"sw_f"; 
     color:#bbbbbb; 
     font-size:13px; 
-    opacity:0;
 }
 .sub_header .top:after{
     content:''; 
