@@ -34,36 +34,27 @@ function closePopup(){
 
 
 // 서브헤더
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = 140;
+$(document).ready(function() {
+  let stickyOffset = $('.sub_header').offset();
+  $(window).scroll(function() {
+      if($(document).scrollTop() > stickyOffset.top) {
+          $('.content .logo').fadeIn();
+          $('.content .top').fadeIn();
+          $('.sub_header').css('background-color', '#ffffff');
+          $('.menu_list li a').css('color', '#999');
+      } else {
+          $('.content .logo').fadeOut();
+          $('.content .top').fadeOut();
+          $('.sub_header').css('background-color', 'transparent');
+          $('.menu_list li a').css('color', '#fff');
+      }
+  });
 
-$(window).scroll(function(event){
-  didScroll = true;
-
+  $(".content .top").click(function() {
+      $('html').animate({ scrollTop : 0 }, 400);
+      return false;
+  });
 });
-
-setInterval(function() {
-  if (didScroll) {
-    hasScrolled();
-    didScroll = false;
-  }
-}, 150); 
-
-function hasScrolled() {
-  var st = $(this).scrollTop();
-  if(Math.abs(lastScrollTop - st) <= delta)
-    return;
-  if (st > lastScrollTop && st > navbarHeight){
-    $('.sub_header').addClass('nav-up');
-  } else {
-    if(st + $(window).height() < $(document).height()+100) {
-      $('.sub_header').removeClass('nav-up');
-    }
-  }
-  lastScrollTop = st;
-}
 
 // active 클래스 부여
 //prodtab
@@ -83,3 +74,13 @@ $(function(){
 
   })
 })
+
+//알레르기 팝업
+$(function(){
+  var sBtn = $(".allergy_popUp .stuff_tab ul li");    //  ul > li 이를 sBtn으로 칭한다. (클릭이벤트는 li에 적용 된다.)
+  sBtn.find("a").click(function(){   // sBtn에 속해 있는  a 찾아 클릭 하면.
+   sBtn.removeClass("active");     // sBtn 속에 (active) 클래스를 삭제 한다.
+   $(this).parent().addClass("active"); // 클릭한 a에 (active)클래스를 넣는다.
+
+  })
+});
