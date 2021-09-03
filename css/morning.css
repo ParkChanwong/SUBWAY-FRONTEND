@@ -22,6 +22,7 @@
     z-index:999;
 }
 .sub_header .logo{
+    display: none;
     position:absolute; 
     left:270px; 
     top:0px; 
@@ -34,6 +35,7 @@
     line-height:0; 
 }
 .sub_header .top{
+    display: none;
     position:absolute; 
     right:270px; 
     top:0px; 
