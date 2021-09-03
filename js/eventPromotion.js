@@ -52,3 +52,12 @@ $(function(){
         });
     }
 });
+
+$(function(){
+    let sBtn = $("ul > li");
+    sBtn.find("a").click(function(){
+        sBtn.removeClass("active");
+        $(this).parent().addClass("active");
+        return false;
+    });
+});
