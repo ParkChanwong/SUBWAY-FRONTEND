@@ -297,16 +297,16 @@
                     <h2>Subway's Menu</h2>
                     <div class="index_menu_sort">
                         <ul>
-                            <li class="active">
+                            <li class="classic active" onclick="classic()">
                                 <a href="#">클래식</a>
                             </li>
-                            <li>
+                            <li class="fresh_light" onclick="fresh_light()">
                                 <a href="#">프레쉬&라이트</a>
                             </li>
-                            <li>
+                            <li class="premium" onclick="premium()">
                                 <a href="#">프리미엄</a>
                             </li>
-                            <li>
+                            <li class="breakfast" onclick="breakfast()">
                                 <a href="#">아침메뉴</a>
                             </li>
                         </ul>
@@ -399,7 +399,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="subway_menu_slider active" id="fresh_light">
+                    <div class="subway_menu_slider" id="fresh_light">
                         <div class="slider">
                             <div class="slider_img">
                                 <div>
@@ -472,7 +472,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="subway_menu_slider active" id="premium">
+                    <div class="subway_menu_slider" id="premium">
                         <div class="slider">
                             <div class="slider_img">
                                 <div>
@@ -556,7 +556,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="subway_menu_slider active" id="breakfast">
+                    <div class="subway_menu_slider" id="breakfast">
                         <div class="slider">
                             <div class="slider_img">
                                 <div>
@@ -617,6 +617,18 @@
                         </div>
                     </div>
                 </div>
+
+                <script type="text/javascript">
+                    $('.subway_menu_slider').slick({
+                        slide: 'li',
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        arrows : true,
+                        prevArrow : "<button type='button' class='prev'>Previous</button>",
+				        nextArrow : "<button type='button' class='next'>Next</button>",
+                        });
+                </script>
+
             </div>
             <div class="section">
                 <div class="section_top">
