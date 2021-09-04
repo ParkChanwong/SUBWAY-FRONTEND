@@ -18,4 +18,15 @@ $(document).ready(function() {
     $(".drop_li").mouseleave(function() {
         $(this).children("a").css("color", "#666666").css("text-decoration", "none");
     });
+
+
+    $('.imglist').slick({
+        slide: 'li',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots : "true",
+        dotsClass : "slick-dots",
+    });
 });
