@@ -347,6 +347,7 @@
 .order_wrap {
     width: 100%;
     clear: both;
+    display: none;
 }
 
 .order_wrap .order_content {
@@ -624,8 +625,15 @@
 }
 
 .orderStart_btn {
+    display: inline-block;
+}
+
+.addSide_btn,
+.cart_btn,
+.order_btn {
     display: none;
 }
+
 
 .popup_bg {
     background-color: rgba(0, 0, 0, 0.6);
@@ -635,7 +643,6 @@
     width: 100%;
     height: 100%;
     z-index: 9999;
-    display: flex;
     justify-content: center;
     align-items: center;
     display: none;
@@ -1077,6 +1084,7 @@
     display: inline-block;
     border-radius: 30px;
     transition-duration: 0.2s;
+    cursor: pointer;
 }
 
 .no_soldOut .btn_area a span {
@@ -1105,7 +1113,7 @@
 
 /* 팝업 추가 */
 
-.popup_back .popup_wrapper.breadLength{
+.popup_bg .popup_wrapper.breadLength{
     opacity: 1;
     width: 520px;
     margin-left: -260px;
@@ -1233,10 +1241,10 @@
 }
 
 .btn.bgc_white {
-    background-color: #fff;
+    background-color: #fff !important;
     border: 2px solid #009223;
     color: #009223;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 .btn.bgc_white:hover{
@@ -1263,6 +1271,7 @@
 
 #popup_wrap .btn_area .bgc_point {
     width: 160px;
+    cursor: pointer;
 }
 
 .btn_area .btn ~ .btn {
@@ -1271,6 +1280,11 @@
 .btn.bgc_point {
     background-color: #009223;
     color: #fff;
+}
+.btn.bgc_white span {
+    color: #009223 !important;
+    height: 46px !important;
+    line-height: 46px !important;
 }
 
 button {
@@ -1315,11 +1329,10 @@ button {
 
 /* breadLength 종료 */
 
-.popup_back .popup_wrapper.breadSelect{
+.popup_bg .popup_wrapper.breadSelect{
     opacity: 1;
     width: 630px;
     margin-left: -315px;
-    top: 0;
     transform: matrix(1, 0, 0, 1, 0, 0);
     height: 703px;
     background-color: #ffc300;
@@ -1466,7 +1479,7 @@ button {
 
 /* breadSelect 종료 */
 
-.popup_back .popup_wrapper.breadWarming{
+.popup_bg .popup_wrapper.breadWarming{
     opacity: 1;
     width: 630px;
     top: 0;
@@ -1503,11 +1516,10 @@ button {
 }
 
 
-.popup_back .popup_wrapper.cheeseSelect{
+.popup_bg .popup_wrapper.cheeseSelect{
     opacity: 1;
     width: 630px;
     margin-left: -315px;
-    top: 0;
     transform: matrix(1, 0, 0, 1, 0, 0);
     height: 670px;
     background-color: #ffc300;
@@ -1563,12 +1575,12 @@ button {
     margin-right: 10px;
 }
 
-.popup_back .popup_wrapper.vegeSelect{
+.popup_bg .popup_wrapper.vegeSelect{
     opacity: 1;
     width: 630px;
     margin-left: -315px;
     transform: matrix(1, 0, 0, 1, 0, 0);
-    height: 723px;
+    height: 690px;
     background-color: #ffc300;
     border-radius: 30px;
     box-sizing: border-box;
@@ -1651,12 +1663,12 @@ input {
 
 /* vegetableSelect 종료 */
 
-.popup_back .popup_wrapper.sauceSelect{
+.popup_bg .popup_wrapper.sauceSelect{
     opacity: 1;
     width: 630px;
     margin-left: -315px;
     transform: matrix(1, 0, 0, 1, 0, 0);
-    height: 670px;
+    height: 651px;
     background-color: #ffc300;
     border-radius: 30px;
     box-sizing: border-box;
@@ -1695,7 +1707,7 @@ input {
 
 /* sauceSelect 종료 */
 
-.popup_back .popup_wrapper.toppingSelect{
+.popup_bg .popup_wrapper.toppingSelect{
     opacity: 1;
     width: 630px;
     margin-left: -315px;
@@ -1728,7 +1740,7 @@ input {
 
 /* toppingSelect 종료 */
 
-.popup_back .popup_wrapper.doubleAdd{
+.popup_bg .popup_wrapper.doubleAdd{
     opacity: 1;
     width: 520px;
     transform: matrix(1, 0, 0, 1, 0, 0);
@@ -1842,7 +1854,7 @@ input {
 
 /* doubleAdd 종료 */
 
-.popup_back .popup_wrapper.setSelect{
+.popup_bg .popup_wrapper.setSelect{
     opacity: 1;
     width: 520px;
     margin-left: -260px;
@@ -1955,8 +1967,11 @@ select{
 
 .popup_content.set .scroll{
     padding-left: 10px;
-    height: 140px;
+    height: 170px;
 }
 
+#ordPrgsChecktBtn {
+    display: none;
+}
 
 /* setSelect 종료 */
