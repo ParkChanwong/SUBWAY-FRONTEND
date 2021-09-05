@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY - 이벤트ㆍ프로모션</title>
+    <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/global.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/eventPromotion.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./library/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./library/slick-1.8.1/slick/slick-theme.css" type="text/css">
+    <script src="./library/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/eventPromotion.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="">로그인</a></li>
+                        <li class="signUp">
+                            <a href="">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="./images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div id="container">
+            <div class="content_wrap">
+                <div class="eventPromotion_cate_wrap">
+                    <div class="eventPromotion_cate_content">
+                        <a href="#" class="tab_logo"></a>
+                        <a href="#" class="tab_top">TOP</a>
+                        <ul>
+                            <li class="active">
+                                <a href="">이벤트ㆍ프로모션</a>
+                            </li>
+                            <li>
+                                <a href="">뉴스ㆍ공지사항</a>
+                            </li>
+                            <li>
+                                <a href="">광고영상</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="title_slide_content">
+                    <h2 class="eventPromotion_title">이벤트ㆍ프로모션</h2>
+                    <!-- slide -->
+                    <div class="event_slide_wrap">
+                        <div class="event_slide">
+                            <div>
+                                <img class="event_img" src="./images/eventPromotion/event_770x400_20210630104514824.jpg" alt="event">
+                                <div class="event_info" style="opacity: 0;
+                                top: 50px;">
+                                    <p>2020.10.16 ~ </p>
+                                    <h1>써브웨이에서 만나는 슈니첼은!?</h1>
+                                    <h2>두툼한 치킨에 후추가 후추추! 콕콕 박힌 후추가 가득한 슈니첼의 풍미를 입안 가득 느껴 보세요!</h2>
+                                    <a href="./eventPromotionDetail.html">자세히보기</a>
+                                </div>
+                            </div>
+                            <div>
+                                <img class="event_img" src="./images/eventPromotion/event_770x400_20210630104152641.jpg" alt="event">
+                                <div class="event_info" style="opacity: 0;
+                                top: 50px;">
+                                    <p>2021.07.01 ~ 2021.08.31</p>
+                                    <h1>이달의 썹!프라이즈!</h1>
+                                    <h2>맛도 가격도 놀라운<br>
+                                        이달의 썹!프라이즈!</h2>
+                                    <a href="#">자세히보기</a>
+                                </div>
+                            </div>
+                            <div>your content</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- event -->
+                <div class="eventList_wrap">
+                    <div class="eventList_content">
+                        <div class="eventList_category">
+                            <ul>
+                                <li class="cate_all active">
+                                    <a href="#">전체</a>
+                                </li>
+                                <li class="cate_progressEvent">
+                                    <a href="#">진행중인 이벤트</a>
+                                </li>
+                                <li class="cate_endEvent">
+                                    <a href="#">종료된 이벤트</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="eventList">
+                            <ul>
+                                <li>
+                                    <a href="./eventPromotionDetail.html">
+                                        <div class="eventList_img_wrap">
+                                            <img src="./images/subway_logo.jpg" alt="">
+                                        </div>
+                                        <div class="listText_wrap">
+                                            <p class="event_title">페퍼 치킨 슈니첼</p>
+                                            <p class="event_date">2021.07.12 ~ 2021.08.31</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="eventList_img_wrap">
+                                            <img src="./images/subway_logo.jpg" alt="">
+                                        </div>
+                                        <div class="listText_wrap">
+                                            <p class="event_title">페퍼 치킨 슈니첼</p>
+                                            <p class="event_date">2021.07.12 ~ 2021.08.31</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="eventList_img_wrap">
+                                            <img src="./images/subway_logo.jpg" alt="">
+                                        </div>
+                                        <div class="listText_wrap">
+                                            <p class="event_title">페퍼 치킨 슈니첼</p>
+                                            <p class="event_date">2021.07.12 ~ 2021.08.31</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="close">
+                                    <a href="">
+                                        <div class="eventList_img_wrap">
+                                            <img src="./images/subway_logo.jpg" alt="">
+                                        </div>
+                                        <div class="listText_wrap">
+                                            <p class="event_title">페퍼 치킨 슈니첼</p>
+                                            <p class="event_date">이벤트가 종료되었습니다.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="close">
+                                    <a href="">
+                                        <div class="eventList_img_wrap">
+                                            <img src="./images/subway_logo.jpg" alt="">
+                                        </div>
+                                        <div class="listText_wrap">
+                                            <p class="event_title">페퍼 치킨 슈니첼</p>
+                                            <p class="event_date">이벤트가 종료되었습니다.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="close">
+                                    <a href="">
+                                        <div class="eventList_img_wrap">
+                                            <img src="./images/subway_logo.jpg" alt="">
+                                        </div>
+                                        <div class="listText_wrap">
+                                            <p class="event_title">페퍼 치킨 슈니첼</p>
+                                            <p class="event_date">이벤트가 종료되었습니다.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="close">
+                                    <a href="">
+                                        <div class="eventList_img_wrap">
+                                            <img src="./images/subway_logo.jpg" alt="">
+                                        </div>
+                                        <div class="listText_wrap">
+                                            <p class="event_title">페퍼 치킨 슈니첼</p>
+                                            <p class="event_date">이벤트가 종료되었습니다.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="close">
+                                    <a href="">
+                                        <div class="eventList_img_wrap">
+                                            <img src="./images/subway_logo.jpg" alt="">
+                                        </div>
+                                        <div class="listText_wrap">
+                                            <p class="event_title">페퍼 치킨 슈니첼</p>
+                                            <p class="event_date">이벤트가 종료되었습니다.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="close">
+                                    <a href="">
+                                        <div class="eventList_img_wrap">
+                                            <img src="./images/subway_logo.jpg" alt="">
+                                        </div>
+                                        <div class="listText_wrap">
+                                            <p class="event_title">페퍼 치킨 슈니첼</p>
+                                            <p class="event_date">이벤트가 종료되었습니다.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="close">
+                                    <a href="">
+                                        <div class="eventList_img_wrap">
+                                            <img src="./images/subway_logo.jpg" alt="">
+                                        </div>
+                                        <div class="listText_wrap">
+                                            <p class="event_title">페퍼 치킨 슈니첼</p>
+                                            <p class="event_date">이벤트가 종료되었습니다.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="javascript:void(0);" class="more_btn" onclick="more()">더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
