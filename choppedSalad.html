@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUBWAY 써브웨이</title>
+    <title>SUBWAY - 찹샐러드</title>
     <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/choppedSalad.css" type="text/css">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <body>
-    <div id="wrap">
+    <div id="choppedSalad">
         <header>
             <div class="header_wrap">
                 <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
@@ -206,7 +209,158 @@
 
         <div id="container">
             <div class="content_wrap">
-
+                <div class="content">
+                    <div class="sub_header type01">
+                        <div class="content">
+                            <a class="logo" href="#">HOME</a>
+                            <div class="sub_loc">
+                                <ul class="menu_list">
+                                    <li><a href="#">샌드위치</a></li>
+                                    <li><a href=#">랩ㆍ기타</a></li>
+                                    <li class="active"><a href="#">찹샐러드</a></li>
+                                    <li><a href="#">아침메뉴</a></li>
+                                    <li><a href="#">스마일 썹</a></li>
+                                    <li><a href="#">단체메뉴</a></li>
+                                </ul>            
+                            </div>
+                            <a class="top" href="#">TOP</a>
+                        </div>
+                    </div>
+                    <div id="cssCategory" class="visual choppedSalad">
+                        <h2 id="title">Chopped Salad</h2>
+                        <p id="title_text">양은 더 많이! 칼로리는 더 적게!<br>
+                            신선한 야채와 다양한 소스로 가볍게 찹샐러드를 즐겨보세요!</p>
+                        <div class="img1"></div>
+                        <div class="img2"></div>
+                    </div>
+                    <!-- 상품별 정렬 -->
+                    <div class="prod_tab">
+                        <ul class="prod_tab_list">
+                            <li class="active"><a href="#">All</a></li>
+                            <li><a href="#">클래식</a></li>
+                            <li><a href="#">프레쉬&라이트</a></li>
+                            <li><a href="#">프리미엄</a></li>
+                            <li><a href="#">추가선택</a></li>
+                            <li><a href="#">신제품</a></li>
+                        </ul>
+                    </div>
+                    <!-- 상품 목록 -->
+                    <div class="prod_list">
+                        <ul>
+                            <li class="prod_sandwich_new">
+                                <div class="new_label">
+                                    NEW
+                                </div>
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/Chopped_Salad/primeum/Spicy_Shrimp_salad.png" alt="스파이시쉬림프">
+                                </div>
+                                <p class="title">스파이시 쉬림프</p>
+                                <p class="eng">Spicy Shrimp</p>
+                                <p class="kcal">71 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        빨간맛에 빠진 쉬림프! 이국적인 매콤함이 더해진<br> 시즌 한정 스파이시 쉬림프!
+                                    </p>
+                                </div>
+                                <a href="#" class="btn_view"></a>
+                            </li>
+                            <li class="prod_sandwich_new">
+                                <div class="new_label">
+                                    NEW
+                                </div>
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/Chopped_Salad/primeum/Spicy_Shrimp_salad.png" alt="스파이시쉬림프">
+                                </div>
+                                <p class="title">스파이시 쉬림프</p>
+                                <p class="eng">Spicy Shrimp</p>
+                                <p class="kcal">71 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        빨간맛에 빠진 쉬림프! 이국적인 매콤함이 더해진<br> 시즌 한정 스파이시 쉬림프!
+                                    </p>
+                                </div>
+                                <a href="#" class="btn_view"></a>
+                            </li>
+                            <li class="prod_sandwich_new">
+                                <div class="new_label">
+                                    NEW
+                                </div>
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/Chopped_Salad/primeum/Spicy_Shrimp_salad.png" alt="스파이시쉬림프">
+                                </div>
+                                <p class="title">스파이시 쉬림프</p>
+                                <p class="eng">Spicy Shrimp</p>
+                                <p class="kcal">71 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        빨간맛에 빠진 쉬림프! 이국적인 매콤함이 더해진<br> 시즌 한정 스파이시 쉬림프!
+                                    </p>
+                                </div>
+                                <a href="#" class="btn_view"></a>
+                            </li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -245,5 +399,6 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="/js/choppedSalad.js"></script>
 </body>
 </html>

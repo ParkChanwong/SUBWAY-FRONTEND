@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUBWAY 써브웨이</title>
+    <title>SUBWAY - 샌드위치</title>
     <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/sandwich.css" type="text/css">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
 </head>
-<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
     <div id="wrap">
         <header>
             <div class="header_wrap">
@@ -206,7 +209,148 @@
 
         <div id="container">
             <div class="content_wrap">
-
+                <div class="content">
+                    <div class="sub_header type01">
+                        <div class="content">
+                            <a class="logo" href="#">HOME</a>
+                            <div class="sub_loc">
+                                <ul class="menu_list">
+                                    <li class="active"><a href="#">샌드위치</a></li>
+                                    <li><a href=#">랩ㆍ기타</a></li>
+                                    <li><a href="#">찹샐러드</a></li>
+                                    <li><a href="#">아침메뉴</a></li>
+                                    <li><a href="#">스마일 썹</a></li>
+                                    <li><a href="#">단체메뉴</a></li>
+                                </ul>            
+                            </div>
+                            <a class="top" href="#">TOP</a>
+                        </div>
+                    </div>
+                    <div id="cssCategory" class="visual sandwich">
+                        <h2 id="title">Sandwich</h2>
+                        <p id="title_text">전세계 넘버원 브랜드 Subway!
+                        <br>50년 전통의 세계 최고의 샌드위치를 맛보세요!</p>
+                        <div class="img"></div>
+                    </div>
+                    <!-- 상품별 정렬 -->
+                    <div class="prod_tab">
+                        <ul class="prod_tab_list">
+                            <li class="active"><a href="#">All</a></li>
+                            <li><a href="#">클래식</a></li>
+                            <li><a href="#">프레쉬&라이트</a></li>
+                            <li><a href="#">프리미엄</a></li>
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">프로모션</a></li>
+                            <li><a href="#">추가선택</a></li>
+                        </ul>
+                    </div>
+                    <!-- 상품 목록 -->
+                    <div class="prod_list">
+                        <ul>
+                            <li class="prod_sandwich_new" id="test">
+                                <div class="new_label">
+                                    NEW
+                                </div>
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/Sandwich/new_prod/Pepperoni_Pizza.png" alt="페퍼로니 피자 썹">
+                                </div>
+                                <p class="title">페퍼로니 피자 썹</p>
+                                <p class="eng">Pepperoni Pizza Sub</p>
+                                <p class="kcal">436 kcal</p>
+                                <div class="summary">
+                                    <p>가벼운 가격으로 간편하게 즐기는 썹! </p></div>
+                                <a href="/sandwichView.html" class="btn_view"></a>
+                            </li>
+                            <li class="prod_sandwich_new">
+                                <div class="new_label">
+                                    NEW
+                                </div>
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/Sandwich/new_prod/Pepperoni_Pizza.png" alt="페퍼로니 피자 썹">
+                                </div>
+                                <p class="title">페퍼로니 피자 썹</p>
+                                <p class="eng">Pepperoni Pizza Sub</p>
+                                <p class="kcal">436 kcal</p>
+                                <div class="summary">
+                                    <p>가벼운 가격으로 간편하게 즐기는 썹! </p></div>
+                                <a href="/sandwichView.html" class="btn_view"></a>
+                            </li>
+                            <li class="prod_sandwich_new">
+                                <div class="new_label">
+                                    NEW
+                                </div>
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/Sandwich/new_prod/Pepperoni_Pizza.png" alt="페퍼로니 피자 썹">
+                                </div>
+                                <p class="title">페퍼로니 피자 썹</p>
+                                <p class="eng">Pepperoni Pizza Sub</p>
+                                <p class="kcal">436 kcal</p>
+                                <div class="summary">
+                                    <p>가벼운 가격으로 간편하게 즐기는 썹! </p></div>
+                                <a href="/sandwichView.html" class="btn_view"></a>
+                            </li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
             </div>
         </div>
 
@@ -245,5 +389,6 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="/js/sandwich.js"></script>
 </body>
 </html>

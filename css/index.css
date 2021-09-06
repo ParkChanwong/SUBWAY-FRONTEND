@@ -142,6 +142,7 @@ header .logo {
 /* ~todo */
 #container {
     width: 100%;
+
 }
 /* container end */
 
@@ -151,6 +152,7 @@ footer {
     height: auto;
     background-color: #292929;
     position: relative;
+
 }
 
 footer::after {
