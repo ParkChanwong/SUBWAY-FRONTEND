@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUBWAY - 머쉬룸 수프</title>
-    <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/global.css" type="text/css">
-    <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <link rel="stylesheet" href="./css/smileSupView.css" type="text/css">
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/index.js"></script>
+    <title>SUBWAY - 쉬림프 에그 그릴드 랩</title>
+    <link rel="shortcut icon" href="/images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/global.css" type="text/css">
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
+    <link rel="stylesheet" href="/css/menuinfo_css/wrapView.css" type="text/css">
+    <script src=../js/jquery-3.6.0.min.js"></script>
+    <script src="/js/index.js"></script>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
 <body>
     <div id="wrap">
         <header>
             <div class="header_wrap">
-                <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <img src="/images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
                 <div class="header_menu">
                     <ul>
                         <li class="login"><a href="">로그인</a></li>
@@ -26,7 +28,7 @@
                         </li>
                         <li class="menu_icon">
                             <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
-                                <img src="./images/icon_utill_global.png" alt="글로벌">
+                                <img src="/images/icon_utill_global.png" alt="글로벌">
                             </a>
                         </li>
                     </ul>
@@ -208,17 +210,17 @@
 
         <div id="container">
             <div class="content_wrap">
-                <div class="sub_header" id="test">
+                <div class="sub_header">
                     <div class="content">
                         <a class="logo" href="#">HOME</a>
                         <div class="sub_loc">
                             <ul>
-                                <li><a href=#>샌드위치</a></li>
-                                <li><a href="#">랩ㆍ기타</a></li>
-                                <li><a href="#">찹샐러드</a></li>
-                                <li><a href="#">아침메뉴</a></li>
-                                <li class="active"><a href="#">스마일 썹</a></li>
-                                <li><a href="#">단체메뉴</a></li>
+                                <li><a href="/menuinfo_html/sandwich.html">샌드위치</a></li>
+                                <li class="active"><a href=#">랩ㆍ기타</a></li>
+                                <li><a href="/menuinfo_html/choppedSalad.html">찹샐러드</a></li>
+                                <li><a href="/menuinfo_html/morning.html">아침메뉴</a></li>
+                                <li><a href="/menuinfo_html/smileSup.html">스마일 썹</a></li>
+                                <li><a href="/menuinfo_html/cateringMenu.html">단체메뉴</a></li>
                             </ul>        
                         </div>
                         <a class="top" href="#none">TOP</a>
@@ -227,10 +229,19 @@
                 <div class="menuView_wrap">
                     <!-- 메뉴 header -->
                     <div class="menu_header">
-                        <h2 class="name">머쉬룸 수프</h2>
+                        <div class="prod_category">
+                            <a href="#" class="category_list">클래식</a>
+                            <a href="#" class="category_list">프레쉬&라이트</a>
+                            <a href="#" class="category_list">프리미엄</a>
+                            <a href="#" class="active category_list">신제품</a>
+                            <a href="#" class="category_list">프로모션</a>
+                            <a href="#" class="category_list">추가선택</a>
+                            <button type="button" id="plus_btn" onclick="plusClick()"></button>
+                        </div>
+                        <h2 class="name">쉬림프 에그 그릴드 랩</h2>
                         <ul>
-                            <li class="eng">Mushroom Soup </li>
-                            <li class="kcal">150 Kcal</li>
+                            <li class="eng">Shrimp Egg Grilled Wrap </li>
+                            <li class="kcal">427 Kcal</li>
                         </ul>
                         <div class="share1">
                             <a href="#" class="facebook"></a>
@@ -244,41 +255,65 @@
                         <!-- 메뉴 소개 -->
                         <div class="menu_info">
                             <div class="menu_img">
-                                <img src="/images/menuinfo_images/SmileSub/mushroom_soup.png" alt="머쉬룸스프">
+                                <img src="/images/menuinfo_images/wrap_n_others/gril_wrap/shrimp_egg_grilled_wrap.png" alt="쉬림프 에그 그릴드 랩">
                             </div>
+                            <a href="#" class="before arr">
+                                <img src="/images/menuinfo_images/wrap_n_others/gril_wrap/italian_mini_grilled_wrap.png" alt="이탈리안 미니 그릴드 랩">
+                                <span>이탈리안 미니 그릴드 랩</span>
+                            </a>
+                            <a href="#" class="next arr">
+                                <img src="/images/menuinfo_images/wrap_n_others/gril_wrap/steak_n_cheese_avocado_grilled_wrap.png" alt="스테이크 & 치즈 아보카도 그릴드 랩">
+                                <span>스테이크 & 치즈 아보카도 그릴드 랩</span>
+                            </a>
                             <p class="summary">
-                                2020년 겨울, 새롭게 선보이는 부드러운 머쉬룸 수프
+                                더 뜨겁게, 더 맛있게 즐기자!
+                                <br>
+                                탱글한 새우와 부드러운 오믈렛의 만남
+                                <br>
+                                <br>
+                                써브웨이 랩은 최상의 맛을 위해 개발된 고정 레시피로 제공됩니다.
+                                <br>
+                                토마토, 피망, 양파가 제공되며 야채 추가는 불가합니다.
                             </p>
-                            <div class="stuff" style="display: none;">
+                            <div class="stuff">
                                 <ul>
                                     <li>
                                         <div class="stuf_img">
-                                            <img src="/images/menuinfo_images/Stuff/recipe_pepperoni.jpg" alt="페퍼로니">
+                                            <img src="/images/menuinfo_images/Stuff/recipe_shrimp_5.jpg" alt="새우">
                                         </div>
-                                        <p>페퍼로니 6장</p>
+                                        <p>새우 4마리</p>
                                     </li>
                                     <li>
                                         <div class="stuf_img">
-                                            <img src="/images/menuinfo_images/Stuff/recipe_mozzarella_cheese.jpg" alt="모짜렐라">
+                                            <img src="/images/menuinfo_images/Stuff/recipe_egg_garnish.png" alt="에그지단">
                                         </div>
-                                        <p>페퍼로니 6장</p>
+                                        <p>에그지단</p>
                                     </li>
                                     <li>
                                         <div class="stuf_img">
-                                            <img src="/images/menuinfo_images/Stuff/sauce_marinara.png" alt="마리나라소스">
+                                            <img src="/images/menuinfo_images/Stuff/recipe_Shred_cheese.jpg" alt="슈레드치즈">
                                         </div>
-                                        <p>마리나라 소스 29g</p>
+                                        <p>슈레드 치즈 1스쿱</p>
+                                    </li>
+                                    <li>
+                                        <div class="stuf_img">
+                                            <img src="/images/menuinfo_images/Stuff/sauce_sweet_chilli.png" alt="스위트칠리">
+                                        </div>
+                                        <p>스위트 칠리 1줄</p>
+                                    </li>
+                                    <li>
+                                        <div class="stuf_img">
+                                            <img src="/images/menuinfo_images/Stuff/sauce_ranch.png" alt="랜치">
+                                        </div>
+                                        <p>랜치 1줄</p>
                                     </li>
                                 </ul>
                             </div>
                             <div class="caution">
-                                <ul style="display: none;">
-                                    <li>*매장에 따라 추천소스는 상이할 수 있습니다.</li>
-                                    <li>*써브웨이가 제공하는 신선한 야채가 정량으로 제공됩니다.</li>
-                                    <li>*야채는 피망, 양파, 올리브, 할라피뇨가 제공되며 야채 추가 및 모든 추가 선택이 불가합니다.</li>
-                                    <li>*페퍼로니 피자 썹은 Fast-Sub, Home-Sub 이용이 불가 합니다.</li>
-                                </ul>
                                 <p>*제품 사진은 이미지컷입니다.</p>
+                                <ul>
+                                    <li>* 그릴드 랩/파니니는 일부 매장에 한해 제공됩니다. <a>매장 찾기</a>에서 매장명 검색을 통해 제공매장을 확인하실 수 있습니다.</li>
+                                </ul>
                             </div>
                         </div>
                         <!-- 영양 성분표 -->
@@ -309,12 +344,13 @@
                                         </tbody>
                                     </table>
                                     <ul class="board_notice">
+                                        <li>※ 기본야채 5종(양상추, 토마토, 오이, 피망, 양파) 및 제품에 따른 미트류 포함, 치즈 및 소스 제외, 15cm 위트 브레드 기준</li>
                                         <li>※ 괄호 안 %는 1일 영양소 기준치에 대한 비율</li>
                                     </ul>
                                 </div>
                                 <div class="button_wrap">
-                                    <a href="#" class="btn" style="width:110px" onclick="contryPopup()"><span>원산지 정보</span></a>
-                                    <a href="#" class="btn" style="width:125px" onclick="allergyPopup()"><span>알레르기 정보</span></a>
+                                    <a href="javasript:void(0)" class="btn" style="width:110px" onclick="contryPopup()"><span>원산지 정보</span></a>
+                                    <a href="javasript:void(0)" class="btn" style="width:125px" onclick="allergyPopup()"><span>알레르기 정보</span></a>
                                 </div>
                             </div> 
                         </div>
@@ -382,7 +418,7 @@
                         </div>
                         <div class="list_btn_wrap">
                             <div class="list_btn">
-                                <a href="/sandwich.html">
+                                <a href="/menuinfo_html/wrap.html">
                                     <span id="ham1"></span>
                                     <span id="ham2"></span>
                                     <span id="ham3"></span>
@@ -630,8 +666,8 @@
                 </div>
             </div>
         </div>
-        <button class="close_btn" onclick="closePopup()"></button>
+        <button class="close_btn"  onclick="closePopup()"></button>
     </div>
-    <script src="./js/smilesub.js"></script>
+    <script type="text/javascript" src="/js/menuinfo_js/wrap.js"></script>
 </body>
 </html>

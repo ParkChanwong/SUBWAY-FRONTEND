@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUBWAY - 아침메뉴</title>
-    <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/global.css" type="text/css">
-    <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <link rel="stylesheet" href="./css/morning.css" type="text/css">
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/index.js"></script>
+    <title>SUBWAY - 스마일썹</title>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/menuinfo_css/smileSup.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <body>
     <div id="wrap">
         <header>
             <div class="header_wrap">
-                <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
                 <div class="header_menu">
                     <ul>
                         <li class="login"><a href="">로그인</a></li>
@@ -26,7 +26,7 @@
                         </li>
                         <li class="menu_icon">
                             <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
-                                <img src="./images/icon_utill_global.png" alt="글로벌">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
                             </a>
                         </li>
                     </ul>
@@ -206,7 +206,6 @@
             <div class="bg_w"></div>
         </header>
 
-
         <div id="container">
             <div class="content_wrap">
                 <div class="content">
@@ -215,139 +214,170 @@
                             <a class="logo" href="#">HOME</a>
                             <div class="sub_loc">
                                 <ul class="menu_list">
-                                    <li><a href="#">샌드위치</a></li>
-                                    <li><a href=#">랩ㆍ기타</a></li>
-                                    <li><a href="#">찹샐러드</a></li>
-                                    <li class="active"><a href="#">아침메뉴</a></li>
-                                    <li><a href="#">스마일 썹</a></li>
-                                    <li><a href="#">단체메뉴</a></li>
+                                <li><a href="/menuinfo_html/sandwich.html">샌드위치</a></li>
+                                <li><a href="/menuinfo_html/wrap.html">랩ㆍ기타</a></li>
+                                <li><a href="/menuinfo_html/choppedSalad.html">찹샐러드</a></li>
+                                <li><a href="/menuinfo_html/morning.html">아침메뉴</a></li>
+                                <li class="active"><a href="#">스마일 썹</a></li>
+                                <li><a href="/menuinfo_html/cateringMenu.html">단체메뉴</a></li>
                                 </ul>            
                             </div>
                             <a class="top" href="#">TOP</a>
                         </div>
                     </div>
-                    <div id="cssCategory" class="visual morning">
-                        <h2 id="title">Morning Menu</h2>
-                        <p id="title_text">아침 메뉴도 Subway와 함께, 취향대로 즐기자!<br>
-                            * 그릴드 랩과 파니니는 일부 매장에서만 제공 가능합니다. 매장 리스트는 공지사항을 확인해주세요.</p>
-                        <div class="img1"></div>
-                        <div class="img2"></div>
+                        <div id="cssCategory" class="visual smileSup">
+                            <h2 id="title">Smile Sub</h2>
+                            <p id="title_text">웃음이 번지는 착한 가격, 착한 맛!<br>
+                                스마일 썹과 함께 하루 종일 스마일 하세요~</p>
+                            <div class="img1"></div>
+                            <div class="img2"></div>
+                        </div>
                     </div>
                     <!-- 상품별 정렬 -->
                     <div class="prod_tab">
-                        <ul class="prod_tab_list">
-                            <li class="active"><a href="#">All</a></li>
-                            <li><a href="#">샌드위치</a></li>
-                            <li><a href="#">랩</a></li>
-                            <li><a href="#">그릴드 랩</a></li>
-                            <li><a href="#">파니니</a></li>
+                        <ul>
+                            <li class="active"><a href="#">스마일 썹</a></li>
                         </ul>
                     </div>
                     <!-- 상품 목록 -->
                     <div class="prod_list">
                         <ul>
-                            <li class="prod_sandwich_new">
-                                <div class="img">
-                                    <img src="/images/menuinfo_images/Morning_Menu/sanwich/steak_egg_n_cheese_morning.jpg"alt="스테이크, 에그 & 치즈">
+                            <li class="prod_smileSup_new">
+                                <div class="new_label">
+                                    SEASON
                                 </div>
-                                <p class="title">스테이크, 에그 & 치즈</p>
-                                <p class="eng">Steak, Egg & Cheese</p>
-                                <p class="kcal">440 kcal</p>
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
+                                </div>
+                                <p class="title">파인애플 쿠키</p>
+                                <p class="eng">Pineapple Cookies</p>
+                                <p class="kcal">200 kcal</p>
                                 <div class="summary">
                                     <p>
-                                        육즙 가득 비프 스테이크로 든든한 아침 식사<br> ※아침메뉴 제공시간 : 오전 11시까지
+                                        아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
                                     </p>
                                 </div>
-                                <a href="#" class="btn_view"></a>
-                            </li>                           
-                            <li class="prod_sandwich_new">
-                                <div class="img">
-                                    <img src="/images/menuinfo_images/Morning_Menu/sanwich/steak_egg_n_cheese_morning.jpg"alt="스테이크, 에그 & 치즈">
-                                </div>
-                                <p class="title">스테이크, 에그 & 치즈</p>
-                                <p class="eng">Steak, Egg & Cheese</p>
-                                <p class="kcal">440 kcal</p>
-                                <div class="summary">
-                                    <p>
-                                        육즙 가득 비프 스테이크로 든든한 아침 식사<br> ※아침메뉴 제공시간 : 오전 11시까지
-                                    </p>
-                                </div>
-                                <a href="#" class="btn_view"></a>
+                                <a href="/menuinfo_html/smileSupView.html" class="btn_view"></a>
                             </li>
-                            <li class="prod_sandwich_new">
+                            <li class="prod_smileSup_new">
                                 <div class="img">
-                                    <img src="/images/menuinfo_images/Morning_Menu/sanwich/steak_egg_n_cheese_morning.jpg"alt="스테이크, 에그 & 치즈">
+                                    <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
                                 </div>
-                                <p class="title">스테이크, 에그 & 치즈</p>
-                                <p class="eng">Steak, Egg & Cheese</p>
-                                <p class="kcal">440 kcal</p>
+                                <p class="title">파인애플 쿠키</p>
+                                <p class="eng">Pineapple Cookies</p>
+                                <p class="kcal">200 kcal</p>
                                 <div class="summary">
                                     <p>
-                                        육즙 가득 비프 스테이크로 든든한 아침 식사<br> ※아침메뉴 제공시간 : 오전 11시까지
+                                        아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
                                     </p>
                                 </div>
-                                <a href="#" class="btn_view"></a>
+                                <a href="/menuinfo_html/smileSupView.html" class="btn_view"></a>
                             </li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            <li class="prod_smileSup_new">
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
+                                </div>
+                                <p class="title">파인애플 쿠키</p>
+                                <p class="eng">Pineapple Cookies</p>
+                                <p class="kcal">200 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
+                                    </p>
+                                </div>
+                                <a href="/menuinfo_html/smileSupView.html" class="btn_view"></a>
+                            </li>
+                            <li class="prod_smileSup_new">
+                                <div class="new_label">
+                                    SEASON
+                                </div>
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
+                                </div>
+                                <p class="title">파인애플 쿠키</p>
+                                <p class="eng">Pineapple Cookies</p>
+                                <p class="kcal">200 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
+                                    </p>
+                                </div>
+                                <a href="/menuinfo_html/smileSupView.html" class="btn_view"></a>
+                            </li>
+                            <li class="prod_smileSup_new">
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
+                                </div>
+                                <p class="title">파인애플 쿠키</p>
+                                <p class="eng">Pineapple Cookies</p>
+                                <p class="kcal">200 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
+                                    </p>
+                                </div>
+                                <a href="/menuinfo_html/smileSupView.html" class="btn_view"></a>
+                            </li>
+                            <li class="prod_smileSup_new">
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
+                                </div>
+                                <p class="title">파인애플 쿠키</p>
+                                <p class="eng">Pineapple Cookies</p>
+                                <p class="kcal">200 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
+                                    </p>
+                                </div>
+                                <a href="/menuinfo_html/smileSupView.html" class="btn_view"></a>
+                            </li>
+                            <li class="prod_smileSup_new">
+                                <div class="new_label">
+                                    SEASON
+                                </div>
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
+                                </div>
+                                <p class="title">파인애플 쿠키</p>
+                                <p class="eng">Pineapple Cookies</p>
+                                <p class="kcal">200 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
+                                    </p>
+                                </div>
+                                <a href="/menuinfo_html/smileSupView.html" class="btn_view"></a>
+                            </li>
+                            <li class="prod_smileSup_new">
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
+                                </div>
+                                <p class="title">파인애플 쿠키</p>
+                                <p class="eng">Pineapple Cookies</p>
+                                <p class="kcal">200 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
+                                    </p>
+                                </div>
+                                <a href="/menuinfo_html/smileSupView.html" class="btn_view"></a>
+                            </li>
+                            <li class="prod_smileSup_new">
+                                <div class="img">
+                                    <img src="/images/menuinfo_images/SmileSub/pineapple_cookie.png"alt="파인애플쿠키">
+                                </div>
+                                <p class="title">파인애플 쿠키</p>
+                                <p class="eng">Pineapple Cookies</p>
+                                <p class="kcal">200 kcal</p>
+                                <div class="summary">
+                                    <p>
+                                        아임 파인!애플! 상큼 달달한 쫀득한 식감의 파인애플 쿠키<br>특별한 맛의 시즌 한정 쿠키, 놓치지 마세요!
+                                    </p>
+                                </div>
+                                <a href="/menuinfo_html/smileSupView.html" class="btn_view"></a>
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -389,6 +419,6 @@
             </div>
         </footer>
     </div>
-    <script type="text/javascript" src="/js/morning.js"></script>
+    <script type="text/javascript" src="/js/menuinfo_js/smilesub.js"></script>
 </body>
 </html>
