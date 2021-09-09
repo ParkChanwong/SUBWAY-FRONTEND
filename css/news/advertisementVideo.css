@@ -19,7 +19,7 @@
     width: 110px;
     height: 60px;
     left: 0;
-    background: url('../images/eventPromotion/tab_logo.png') 100% no-repeat;
+    background: url('../../images/eventPromotion/tab_logo.png') 100% no-repeat;
     display: none;
 }
 
@@ -39,7 +39,7 @@
     position: absolute;
     width: 100%;
     height: 15px;
-    background: url('../images/eventPromotion/tap_top_arrow.png') 50% 0 no-repeat;
+    background: url('../../images/eventPromotion/tap_top_arrow.png') 50% 0 no-repeat;
     display: block;
     top: 18px;
     left: 0;
@@ -157,7 +157,7 @@
 .video_list li a .video_img::before {
     content: '';
     position: absolute;
-    background: url('../images/advertisementVideo/video_play_btn.png') 0 0 no-repeat;
+    background: url('../../images/advertisementVideo/video_play_btn.png') 0 0 no-repeat;
     top: 50%;
     left: 50%;
     margin: -25px 0 0 -25px;

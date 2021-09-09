@@ -55,7 +55,7 @@ input{
     padding-right: 42px;
 }
 .btn_search{
-    background: url(../images/newsNoticeImages/icon_search.png) 50% 50% no-repeat;
+    background: url(../../images/newsNoticeImages/icon_search.png) 50% 50% no-repeat;
     width: 41px;
     height: 41px;
     position: absolute;
@@ -86,14 +86,14 @@ input{
     display: inline-block;
     width: 20px;
     height: 14px;
-    background: url(../images/newsNoticeImages/icon_notice.png) 0 0 no-repeat;
+    background: url(../../images/newsNoticeImages/icon_notice.png) 0 0 no-repeat;
 }
 
 .left_arrow {
     display: inline-block;
     width: 8px;
     height: 12px;
-    background: url(../images/newsNoticeImages/icon_page_arr.png) 0 0 no-repeat;
+    background: url(../../images/newsNoticeImages/icon_page_arr.png) 0 0 no-repeat;
     background-position: left top;
     margin-right: 97px;
 }
@@ -102,7 +102,7 @@ a:hover .left_arrow{
     display: inline-block;
     width: 8px;
     height: 12px;
-    background: url(../images/newsNoticeImages/icon_page_arr.png) 0 0 no-repeat;
+    background: url(../../images/newsNoticeImages/icon_page_arr.png) 0 0 no-repeat;
     background-position: left bottom;
     margin-right: 97px;
 }
@@ -111,7 +111,7 @@ a:hover .left_arrow{
     display: inline-block;
     width: 8px;
     height: 12px;
-    background: url(../images/newsNoticeImages/icon_page_arr.png) 0 0 no-repeat;
+    background: url(../../images/newsNoticeImages/icon_page_arr.png) 0 0 no-repeat;
     background-position: right top;
     margin-left: 97px;
 }
@@ -119,7 +119,7 @@ a:hover .right_arrow {
     display: inline-block;
     width: 8px;
     height: 12px;
-    background: url(../images/newsNoticeImages/icon_page_arr.png) 0 0 no-repeat;
+    background: url(../../images/newsNoticeImages/icon_page_arr.png) 0 0 no-repeat;
     background-position: right bottom;
     margin-left: 97px;
 }

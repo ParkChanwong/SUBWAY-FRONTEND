@@ -19,7 +19,7 @@
     width: 110px;
     height: 60px;
     left: 0;
-    background: url('../images/eventPromotion/tab_logo.png') 100% no-repeat;
+    background: url('../../images/eventPromotion/tab_logo.png') 100% no-repeat;
     cursor: pointer;
 }
 .eventPromotion_cate_wrap .navi_scroll .tab_logo{
@@ -45,7 +45,7 @@
     position: absolute;
     width: 100%;
     height: 15px;
-    background: url('../images/eventPromotion/tap_top_arrow.png') 50% 0 no-repeat;
+    background: url('../../images/eventPromotion/tap_top_arrow.png') 50% 0 no-repeat;
     display: block;
     top: 18px;
     left: 0;
@@ -187,7 +187,7 @@
 .event_slide .event_info a::after {
     content: '';
     position: absolute;
-    background: url('../images/eventPromotion/event_btn_arrow.png') 0 0 no-repeat;
+    background: url('../../images/eventPromotion/event_btn_arrow.png') 0 0 no-repeat;
     width: 20px;
     height: 20px;
     top: 18px;
@@ -243,7 +243,7 @@
 .slick-prev, .slick-next {
     width: 50px !important;
     height: 50px !important;
-    background: url('../images/eventPromotion/event_slide_arrow.png') no-repeat !important;
+    background: url('../../images/eventPromotion/event_slide_arrow.png') no-repeat !important;
     top: 43% !important;
 }
 
