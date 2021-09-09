@@ -41,6 +41,8 @@ $(function(){
         }
     });
     if($(".eventPromotion_cate_wrap").hasClass("navi_scroll")){
+        $(".tab_logo").hide();
+        $(".tab_top").hide();
     }else{
         $(".tab_logo").fadeIn();
         $(".eventPromotion_cate_wrap").css({
