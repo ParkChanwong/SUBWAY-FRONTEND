@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보 수정</title>
+    <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/global.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/myInfoModify.css" type="text/css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+
+    <div id="popup" style="display: none;">
+        <div class="popup_bgc" style="opacity: 0.6;"></div>
+        <div class="popup_wrapper">
+            
+
+
+
+            <div id="change_pw">
+                <!-- container -->
+                <div id="popup_wrap_wh">
+                    <!-- 비밀번호 변경 팝업-->
+                    <div class="chage_pw">
+                        <h1 class="title">비밀번호 변경</h1>
+                        <div class="popup_content">
+                            <p class="txt">개인정보 보호를 위해 주기적으로 변경해 주세요.<br>타인에게 비밀번호가 노출되지 않도록 주의해 주세요.</p>
+                            <section class="form_box">
+                                <div class="write_info_wrap">
+                                    <div class="input_set">
+                                        <dl class=""><!-- 입력값 정상일때:class="true_v"추가 -->
+                                            <dt>현재 비밀번호<span class="ess"></span></dt>
+                                            <dd>
+                                                <span class="form_text">
+                                                    <input id="cpNo" type="hidden" value="로그인한사람전화번호">
+                                                    <input id="pw" name="pw" placeholder="현재 비밀번호" type="password">
+                                                </span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="input_set input_pw_div">
+                                        <dl>
+                                            <dt>새 비밀번호<span class="ess"></span></dt>
+                                            <dd>
+                                                <span class="form_text">
+                                                    <input class="input_pw" id="newPw" name="newPw" placeholder="비밀번호 변경" type="password">
+                                                </span>
+                                                <span class="pw_check miss" style="display: block;">암호체크문구</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <p class="p_notice on worng-msg-pw">영문+숫자+특수문자 조합 8자리 이상 입력해 주세요.<br> 반드시 현재의 비밀번호와 다르게 입력해 주세요.</p>
+                                    <div class="input_set input_pw_div">
+                                        <dl>
+                                            <dt>새 비밀번호 확인<span class="ess"></span></dt>
+                                            <dd>
+                                                <span class="form_text">
+                                                     <input class="input_pw" id="subPw" name="subPw" placeholder="비밀번호 변경" type="password">
+                                                </span>
+                                                <span class="pw_check miss" id="wrong-msg-subPw" style="display: block;">새 비밀번호와 일치 하지 않습니다.</span>
+                                                <i class="icon_true_v"></i><!-- 입력값 정상 확인 아이콘 -->
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="btn_area">
+                                <a class="btn bgc_white" style="width:130px;" onclick="document.getElementById('popup').style.display='none'"><span>취소</span></a>
+                                <a class="btn bgc_point i_reg" id="pwInfo" style="width:136px;"><span>변경하기</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 비밀번호 변경 팝업 -->
+                </div>
+                
+            </div>
+
+
+            <input type="button" class="popup_close" onclick="document.getElementById('popup').style.display='none'">
+
+        </div>
+    </div>
+
+    
+
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="">로그인</a></li>
+                        <li class="signUp">
+                            <a href="">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="./images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><div class="popup_dim" style="opacity: 0.6;"></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div id="container">
+            <div id="content_wrap">
+				<!-- 내정보관리 > 정보변경 -->
+                    <h2 class="subTitle">정보변경</h2>
+
+                    <div class="manage_wrap">
+                        <section class="form_box">
+                            <div class="write_info_wrap">
+                            	<!--  비밀번호변경 버튼 추가 -->
+                                <input class="pw_btn" type="button" style="width:132px;" onclick="document.getElementById('popup').style.display=''" value="비밀번호 변경">
+								<!-- <a class="pw_btn" href="#" style="width:132px;">
+									<span>비밀번호 변경</span>
+								</a> -->
+								<!--// 비밀번호변경 버튼 추가 -->
+								<div class="write_info_wrap">
+									<h2>회원 정보</h2><!--  타이틀 추가 -->
+
+								<!-- 회원정보 마크업 수정 -->
+									<div class="input_set style01">
+									<dl class="info_dl">
+										<dt>이메일 아이디</dt>
+										<dd>로그인한이메일</dd>
+									</dl>
+								</div>
+									<div class="input_set style01">
+									<dl class="info_dl">
+										<dt>이름</dt>
+										<dd>로그인한이름</dd>
+									</dl>
+									<dl class="info_dl">
+										<dt>생년월일</dt>
+										<dd>로그인한생일</dd>
+									</dl>
+										<dl class="info_dl">
+											<dt>휴대전화</dt>
+										<dd>
+											<div class="phone_num_wrap">
+												<span class="form_text">
+													<input readonly="" type="tel" value="로그인된전화번호">
+												</span>
+												<div class="btn_input_in">
+													<button class="in_form_btn" type="button" onclick="api()">
+														<span>정보변경</span>
+													</button>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+									<p class="p_notice">· 이름이나 생년월일, 성별, 핸드폰 번호 등의 정보가 변경되었다면 본인확인을 통해 정보를 수정할 수
+										있습니다.</p>
+
+                                <h2>추가 정보 입력</h2>
+                                <div class="input_set">
+                                    <dl>
+										<dt>마케팅 동의</dt>
+										<dd>
+											<div class="marketing_agree_box">
+												<label class="form_checkbox">
+													<input type="checkbox">
+													<span class="icon"></span>
+													<span class="agree_text">SMS/LMS/MMS 수신 동의</span>
+												</label>
+												<input type="hidden" value="N">
+												<label class="form_checkbox">
+													<input type="checkbox">
+													<span class="icon"></span>
+													<span class="agree_text">E-mail 수신 동의</span>
+												</label>
+												<input type="hidden" value="N">
+												<label class="form_checkbox">
+													<input type="checkbox">
+													<span class="icon"></span>
+													<span class="agree_text">알림톡 수신 동의</span>
+												</label>
+												<input type="hidden" value="N">
+											</div>
+										</dd>
+                                    </dl>
+                                </div>
+                            </div>
+							</div>
+                        </section>
+						<input id="modifyChk" type="hidden">
+                        <div class="btn_area">
+                             <a class="btn bgc_white" href="#" style="width:126px;"><span>회원탈퇴</span></a>
+                            <a class="btn bgc_point " href="#" style="width:197px;"><span>회원정보 변경</span></a>
+                        </div>
+                    </div>
+				<!--// 내정보관리 > 정보변경 -->
+			</div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+휴대폰 본인인증 api 연결
+ <!-- jQuery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+ <!-- iamport.payment.js -->
+ <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+ <script>
+
+function api(){
+
+    IMP.init("/implementation/account-info?lang=ko"); // "imp00000000" 대신 발급받은 "가맹점 식별코드"를 사용합니다.
+ 
+    IMP.certification({
+        merchant_uid: "ORD20180131-0000011",
+        popup:true
+    }, function (rsp) { // callback
+        if (rsp.success) { // 인증 성공 시
+        // jQuery로 HTTP 요청
+        jQuery.ajax({
+            url: "https://www.myservice.com/certifications", // 서비스 웹서버
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            data: { imp_uid: rsp.imp_uid }
+        });
+    } else {
+      alert("인증에 실패하였습니다. 에러 내용: " +  rsp.error_msg);
+    }
+    });
+}
+ </script>
+</html>
