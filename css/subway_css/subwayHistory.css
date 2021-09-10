@@ -41,7 +41,7 @@ body {
     top: 0px;
     height: 60px;
     width: 110px;
-    background: url(../images/logo_sub_header.png) 0 50% no-repeat;
+    background: url('../../images/common/logo_sub_header.png') 0 50% no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     font-size: 0;
@@ -118,7 +118,7 @@ body {
 .sub_header .top:after {
     content: '';
     height: 15px;
-    background: url(../images/icon_arr_top.png) 50% 0 no-repeat;
+    background: url('../../images/common/icon_arr_top.png') 50% 0 no-repeat;
     display: block;
     position: absolute;
     left: 0;
@@ -186,7 +186,7 @@ body {
     bottom:22px; 
     width:50px; 
     height:126px; 
-    background:url(../images/img_pin_s.png) 0 0 no-repeat;
+    background:url('../../images/subwayhistory/img_pin_s.png') 0 0 no-repeat;
 }
 .subway_history_wrapper .section_content ul li.left:before {
     left: -80px;
@@ -198,7 +198,7 @@ body {
     width:80px; 
     height:200px; 
     bottom:19px;  
-    background:url(../images/img_pin_b.png) 0 0 no-repeat;
+    background:url('../../images/subwayhistory/img_pin_b.png') 0 0 no-repeat;
 }
 .subway_history_wrapper .section_content ul li.big.right:before {
     right: -110px;
@@ -260,7 +260,7 @@ body {
 .subway_history_wrapper .scene01 .line {
     bottom:0; 
     height:1147px; 
-    background:url(../images/bg_history_line01.png) 50% 100% no-repeat;
+    background:url('../../images/subwayhistory/bg_history_line01.png') 50% 100% no-repeat;
 }
 .subway_history_wrapper .scene01 .tit {
     top:242px;
@@ -293,7 +293,7 @@ body {
 .subway_history_wrapper .scene02 .line {
     top:0; 
     bottom:0; 
-    background:url(../images/bg_history_line02.png) 50% 0 no-repeat;
+    background:url('../../images/subwayhistory/bg_history_line02.png') 50% 0 no-repeat;
     z-index:2;
 }
 .subway_history_wrapper .scene02 .img01 {
@@ -335,7 +335,7 @@ body {
 .subway_history_wrapper .scene03 .line {
     top:0; 
     bottom:0; 
-    background:url(../images/bg_history_line03.png) 50% 0 no-repeat;
+    background:url('../../images/subwayhistory/bg_history_line03.png') 50% 0 no-repeat;
 }
 .subway_history_wrapper .scene03 .img01 {
     left:50%; 
@@ -365,7 +365,7 @@ body {
 .subway_history_wrapper .scene04 .line {
     top:0; 
     bottom:0; 
-    background:url(../images/bg_history_line04.png) 50% 0 no-repeat; 
+    background:url('../../images/subwayhistory/bg_history_line04.png') 50% 0 no-repeat; 
     z-index:2;
 }
 .subway_history_wrapper .scene04 .img01 {
