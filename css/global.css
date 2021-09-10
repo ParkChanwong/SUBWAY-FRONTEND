@@ -89,7 +89,7 @@ a:focus {
     url("../fonts/NotoSans-Bold.woff") format("woff"),
     url("../fonts/NotoSans-Bold.woff2") format("woff2");
   }
-  
+
   @font-face {
     font-family: "sw_f";
     font-weight: normal;

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY - 써브웨이 아티스트 지원</title>
+    <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/global.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/artistSupport.css" type="text/css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/artistSupport.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="./js/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="./js/menu_subway.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="">로그인</a></li>
+                        <li class="signUp">
+                            <a href="">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="./images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div id="container">
+            <div class="sub_header">
+                <div class="content">
+                    <a class="logo" href="#none">HOME</a>
+                    <div class="sub_loc">
+                        <ul>
+                            <li><a href="/subwayHistory">써브웨이 역사</a></li>
+                            <li><a href="/subwayPromise">써브웨이 약속</a></li>
+                            <li class="active"><a href="#">샌드위치 아티스트 지원</a></li>
+                            <li><a href="/storeSearch">매장찾기</a></li>
+                        </ul>
+                    </div>
+                    <a class="top" href="#none">TOP</a>
+                </div>
+            </div>
+    
+            <div id="content">
+                <div class="sandwich_artist_wrapper">
+                    <div class="hd">
+                        <h2><span>GREAT PEOPLE, GREAT BRAND,</span><br>GREAT OPPORTUNITY</h2>
+                        <p>샌드위치 아티스트™는 고객에게 최고의 경험을 제공하기 위해<br>써브웨이 NOW 핵심요소 를 실행합니다.</p>
+                    </div>
+
+                    
+                
+                    <div class="slider_content">
+                        <ul class="bxslider">
+                            <li>
+                                <div class="img"><img alt="Best Artist" src="./images/img_sandwich_artist_slider01.jpg"/></div>
+                                <div class="info">
+                                    <strong>Best Artist</strong>
+                                    <p>샌드위치 아티스트™는<br />언제나 완벽한 샌드위치를 만듭니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img"><img alt="Best Fresh Keeper" src="./images/img_sandwich_artist_slider02.jpg" /></div>
+                                <div class="info">
+                                    <strong>Best Fresh Keeper</strong>
+                                    <p>샌드위치 아티스트™는 각종 재료의 신선함과<br />매장의 청결을 철저하게 관리합니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img"><img alt="Best Service Professional" src="./images/img_sandwich_artist_slider03.jpg" /></div>
+                                <div class="info">
+                                    <strong>Best Service Professional</strong>
+                                    <p>샌드위치 아티스트™는 항상 고객을 우선으로 생각하며<br />고객이 무엇을 원하는지 경청합니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img"><img alt="Best Team Member" src="./images/img_sandwich_artist_slider04.jpg" /></div>
+                                <div class="info">
+                                    <strong>Best Team Member</strong>
+                                    <p>샌드위치 아티스트™는 최고의 팀원으로서 고객에게 최고의 경험을<br />제공하기 위해 다른 팀원들과 함께 노력합니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sw_point">
+                        <h3>써브웨이 <span>NOW</span> 핵심 요소</h3>
+                        <ul>
+                            <li>
+                                <div class="icon"><img src="./images/icon_sw_artist_point01.png" alt="Guest First"></div>
+                                <span>Guest First</span>
+                            </li>
+                            <li>
+                                <div class="icon"><img src="./images/icon_sw_artist_point02.png" alt="Great Food"></div>
+                                <span>Great Food</span>
+                            </li>
+                            <li>
+                                <div class="icon"><img src="./images/icon_sw_artist_point03.png" alt="Great Store"></div>
+                                <span>Great Store</span>
+                            </li>
+                            <li>
+                                <div class="icon"><img src="./images/icon_sw_artist_point04.png" alt="Great Team"></div>
+                                <span>Great Team</span>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="career_path">
+                        <h3>Career Path</h3>
+                        <ol>
+                            <li>
+                                <span class="num">01</span>
+                                <strong>Sandwich<br>Artist</strong>
+
+                                <div class="view"><p>상세보기</p>
+                                <div class="layer_view">
+                                    <p>
+                                        샌드위치 아티스트™는 고객에게 <br>
+                                        최고의 경험을 제공하기 위해<br>
+                                        매장 내 다양한 업무를 실행합니다.
+                                    </p>
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                                <span class="num">02</span>
+                                <strong>Senior Sandwich<br>Artist</strong>
+
+                                <div class="view">
+                                    <p>상세보기</p>
+                                    <div class="layer_view">
+                                    <p>
+                                        선임 샌드위치 아티스트™는<br>
+                                        매장 운영 및 관리 업무를<br>
+                                        습득함으로써 매니저로<br>
+                                        성장의 기회를 갖게 됩니다.
+                                    </p>
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                                <span class="num">03</span>
+                                <strong>Shift<br>Manager</strong>
+
+                                <div class="view"><p>상세보기</p>
+                                <div class="layer_view">
+                                    <p>
+                                        시프트 매니저는 함께 일하는<br>
+                                        샌드위치 아티스트™의 업무를 조율하고<br>
+                                        매니저의 업무를 지원하는 역할을<br>
+                                        실행합니다.
+                                    </p>
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                                <span class="num">04</span>
+                                <strong>Assistant<br>Manager</strong>
+                                <div class="view"><p>상세보기</p>
+                                <div class="layer_view">
+                                    <p>
+                                        한 매장을 책임지고 관리하는 매니저가<br>
+                                        되기 위한 이전 단계로, 매장운영과 관련된<br>
+                                        중요한 업무에 대해 본격적으로 책임지기<br>
+                                        시작하는 직급입니다.<br>
+                                        써브웨이 트레이닝 센터에서 진행되는<br>
+                                        매니저 교육을 통해 직원관리,<br>
+                                        매출 및 시스템 관리에 대해 체계적으로<br>
+                                        배울 수 있는 기회가 제공됩니다.
+                                    </p>
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                                <span class="num">05</span>
+                                <strong>Manager</strong>
+                                <div class="view"><p>상세보기</p>
+                                <div class="layer_view">
+                                    <p>
+                                        매장 운영 및 관리의 책임자로서<br>
+                                        역할을 실행하며 온라인 학습 과정을 통해<br>
+                                        지속적으로 업무능력 향상의 기회가<br>
+                                        제공됩니다.
+                                    </p>
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                                <span class="num">06</span>
+                                <strong>Multi-Unit<br>Manager</strong>
+                                <div class="view"><p>상세보기</p>
+                                <div class="layer_view">
+                                    <p>
+                                        한 개 이상의 매장을<br>
+                                        운영 및 관리하는<br>
+                                        매니저입니다.
+                                    </p>
+                                </div>
+                            </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="recruit">
+                        <div class="hd">
+                            <h3>채용지원</h3>
+                            <p>최고의 샌드위치 아티스트™에 도전하세요</p>
+                        </div>
+    
+                        <div class="recruit_link">
+                            <div class="cont">
+                                <div class="box">
+                                    <a href="http://www.alba.co.kr/search/Search.asp?srchType=ALL&clsType=search&EasySearch=mainSearch&wsSrchWord=%BD%E1%BA%EA%BF%FE%C0%CC&wsSrchWordarea=" target="_blank">
+                                        <div class="logo"></div>
+                                        <strong>알바천국 채용지원</strong>
+                                        <span>바로가기</span>
+                                    </a>
+                                </div>
+                                <div class="box">
+                                    <a href="http://www.albamon.com/search?Keyword=%EC%8D%A8%EB%B8%8C%EC%9B%A8%EC%9D%B4" target="_blank">
+                                        <div class="logo"></div>
+                                        <strong>알바몬 채용지원</strong>
+                                        <span>바로가기</span>
+                                    </a>
+                                </div>
+                                <div class="box">
+                                    <a href="/subwayRecruit" target="_blank">
+                                        <div class="logo"></div>
+                                        <strong>홈페이지 채용지원</strong>
+                                        <span>바로가기</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
