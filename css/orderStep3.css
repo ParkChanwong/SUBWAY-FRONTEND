@@ -1,0 +1,756 @@
+#container .content_wrap{
+    min-height: 663px;
+    padding-bottom: 130px;
+    background: url(/images/orderstep3_img/fast_bg.jpg) no-repeat 50% 0 #89cd2f;
+    padding-top: 0;
+    position: relative;
+    z-index: 3;
+}
+
+.order_wrap{
+    width: 1170px;
+    margin: 0 auto;
+}
+.order_title{
+    text-align: center;
+    font-family: 'noto_l';
+}
+.order_title h3{
+    padding: 64px 0 25px 0;
+    color: #fff;
+    font-size: 70px;
+    font-family: 'sw_f';
+}
+.order_title p{
+    color: #fff;
+    font-size: 16px;
+}
+.order_wrap .step_wrap {
+    margin-top: 58px;
+    text-align: center;
+    font-size: 0;
+}
+.order_wrap .step_wrap li{
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 106px;
+    margin-right: 20px;
+    padding-right: 65px;
+    color: #fff;
+    vertical-align: top;
+}
+.order_wrap .step_wrap li:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: 45px;
+    height: 5px;
+    background: url(/images/orderstep3_img/step_bg_off.png) no-repeat 0 0;
+}
+.order_wrap .step_wrap li:last-child:after{
+    background:none;
+}
+.order_wrap .step_wrap .step1{
+    background: url(/images/orderstep3_img/step01_off_bg.png) no-repeat 0 12px;
+}
+.order_wrap .step_wrap .step2{
+    background: url(/images/orderstep3_img/step02_off_bg.png) no-repeat 0 12px;
+}
+.order_wrap .step_wrap .on{
+    width: 164px;
+    height: 170px;
+    padding-right: 16px;
+    background: url(/images/orderstep3_img/step03_on_bg.png) no-repeat 0 0;
+    padding-left: 102px;
+    font-size: 24px;
+    text-align: left;
+    font-family: 'noto_r';
+}
+.order_wrap .step_wrap .on::after{
+    background-image: url(/images/orderstep3_img/step_bg_on.png);
+}
+.order_wrap .step_wrap .on strong{
+    display: block;
+    padding-top: 21px;
+    color: #ffc300;
+    font-size: 16px;
+    font-family: 'sw_f';
+}
+.order_wrap .step_wrap .step4{
+    background: url(/images/orderstep3_img/step04_off_bg.png) no-repeat 0 12px;
+}
+.order_content{
+    padding: 86px 100px 100px 100px;
+    position: relative;
+    background-color: #fff;
+}
+.order_content .form_box{
+    margin-bottom: 54px;
+}
+
+.order_content .form_box h2{
+    font-size: 26px;
+    font-family: 'noto_r';
+    color: #666666;
+    margin-bottom: 26px;
+    letter-spacing: -0.05em;
+}
+.info_write_wrap > div ~ div{
+    margin-top: 10px;
+}
+.order_content .input_set{
+    overflow: hidden;
+    position: relative;
+}
+.order_content .input_set dl{
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    padding: 22px 30px;
+    width: auto;
+}
+.order_content .input_set dl dt{
+    float: left;
+    position: relative;
+    width: 120px;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    font-family: 'noto_l';
+    font-weight: bold;
+}
+.order_content .input_set dl dd{
+    color: #292929;
+    font-family: 'noto_dl';
+}
+.order_content .info_write_wrap .input_set .store_dl{
+    background-color: #f6f6f6;
+    border-color: #f6f6f6;
+}
+.order_content .input_set .store_dl dt{
+    width: 120px;
+    font-family: 'noto_l';
+    font-weight: bold;
+    line-height: 18px;
+    margin-top: 4px;
+}
+.order_content .input_set:first-child dl dt{
+    line-height: 18px;
+    padding-top: 8px;
+}
+.order_content .input_set .store_dl dd{
+    float: left;
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-left: 20px;
+    color: #292929;
+    font-family: 'noto_dl';
+}
+.input_set dd{
+    float: left;
+    position: relative;
+    width: 786px;
+}
+.how_dl dd{
+    padding-left: 18px;
+    box-sizing: border-box;
+}
+.choice_wrap{
+    line-height: 30px;
+}
+.form_circle {
+    display:inline-block;
+    cursor:pointer; 
+    overflow:hidden; 
+    position:relative; 
+    vertical-align:middle; 
+    color:#292929; 
+    font-size:16px; 
+    line-height:26px; 
+    letter-spacing:-0.05em
+}
+.form_circle ~ .form_circle {
+    margin-left:15px;
+}
+.form_circle input[type="radio"] {
+    height:0;
+    opacity:0; 
+    width:0; 
+    position:absolute; 
+    left:-10px;
+}
+.form_circle .icon {
+    width:26px;
+    height:26px; 
+    border:2px solid #dddddd; 
+    border-radius:50px; 
+    display:inline-block; 
+    position:relative; 
+    vertical-align:top; 
+    margin-right:10px;
+}
+.form_circle .icon:before {
+    content:'';
+    width:0; 
+    height:20px; 
+    background:url(/images/orderstep3_img/icon_checkbox.png) 0 0 no-repeat; 
+    position:absolute; 
+    left:4px; 
+    top:0; 
+    transition-duration:0.2s
+}
+.form_circle input[type="radio"]:checked+.icon:before{
+    width:24px;
+}
+.form_circle em {
+    color:#292929; font-style: normal;
+}
+.form_text input {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    height: 45px;
+    color: #292929;
+    font-size: 16px;
+    text-indent: 15px;
+    font-family: 'noto_dl';
+}
+
+.form_text input::placeholder{
+    color:#dddddd;
+    font-size: 16px;
+}
+/* .input_set dl:focusin {border:1px solid #009223} */
+
+.input_set dd .form_text input {
+    height: 35px;
+    line-height: 35px;
+    text-indent: 20px;
+    letter-spacing: -0.05em;
+}
+.form_checkbox{
+    display:inline-block;
+    cursor:pointer; 
+    overflow:hidden; 
+    position:relative; 
+    vertical-align:middle; 
+    color:#292929; 
+    font-size:16px; 
+    line-height:26px; 
+    letter-spacing:-0.05em
+}
+.form_checkbox input[type="checkbox"]{
+    height:0;
+    opacity:0;
+    width:0; 
+    position:absolute; 
+    left:-10px;
+}
+.form_checkbox .icon{
+    width:26px;
+    height:26px; 
+    border:2px solid #dddddd; 
+    border-radius:50px; 
+    display:inline-block; 
+    position:relative; 
+    vertical-align:top; 
+    margin-right:10px;
+}
+.form_checkbox .icon:before{
+    content:''; 
+    width:0; 
+    height:20px; 
+    background:url(/images/orderstep3_img/icon_checkbox.png) 0 0 no-repeat; 
+    position:absolute; 
+    left:4px; 
+    top:0; 
+    transition-duration:0.2s
+}
+.form_checkbox input[type="checkbox"]:checked+.icon:before{width:24px;}
+.form_checkbox em{color:#009223;}
+.input_set .earth p {
+    display: inline-block;
+    position: relative;
+    font-family: 'noto_r';
+}
+.input_set .earth p:after {
+    content: '　　';
+    width: 24px;
+    height: 24px;
+    background: url(/images/orderstep3_img/icon_dispos.png) no-repeat;
+    background-size: 24px 24px;
+    margin-left: 5px;
+}
+
+.form_box h2 ~ h2{
+    padding-top: 70px;
+}
+.info_write_wrap .form_select{
+    border: 2px solid #dddddd;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+}
+.info_write_wrap .form_select select{
+    height: 35px;
+    line-height: 35px;
+    text-indent: 16px;
+    letter-spacing: -0.09em;
+    width: 100%;
+    width: 100%;
+    border: 0;
+    font-size: 16px;
+    color: #999999;
+    position: relative;
+    z-index: 1;
+    appearance:none;
+}
+.form_select:before {
+    content: '';
+    position: absolute;
+    right: 13px;
+    top: 15px;
+    width: 12px;
+    height: 7px;
+    background: url(/images/orderstep3_img/icon_select_arr.png) 0 0 no-repeat;
+    z-index: 3;
+}
+
+.input_set .btn_input{
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+    width: 127px;
+    text-align: center;
+}
+
+.input_set .btn_input::before{
+    background-color: #e8e8e8;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -16px;
+    height: 32px;
+    width: 2px;
+}
+.input_set .btn_input a{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    height: 35px;
+}
+.input_set .btn_input a span{
+    color: #009223;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+    line-height: 35px;
+}
+
+.input_set .use_point .form_text{
+    float: left;
+    position: relative;
+    padding-right: 40px;
+    width: 290px;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+}
+.input_set .use_point .form_text::after{
+    content: 'P';
+    display: block;
+    font-family: 'sw_s';
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+.input_set .use_point .form_text input{
+    text-align: right;
+    text-indent: 0;
+    font-family: 'sw_s';
+    box-sizing: border-box;
+    line-height: 1.1em;
+    letter-spacing: 0;
+    padding-top: 6px;
+    padding-bottom: 11px;
+}
+.input_set .use_point p{
+    float: left;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+.input_set .use_point p::before{
+    background-color: #292929;
+    content: '';
+    display: inline-block;
+    vertical-align: 7px;
+    height: 2px;
+    width: 2px;
+}
+.input_set .use_point p strong{
+    color: #292929;
+    font-family: 'sw_f';
+    font-size: 20px;
+    letter-spacing: -0.05em;
+}
+.input_set .use_point p strong::after{
+    content: 'P';
+}
+
+.input_set .coupon_notice{
+    color: #999999;
+    font-size: 13px;
+    margin-top: 7px;
+    font-family: 'noto_dl';
+}
+.input_set .coupon_notice::before{
+    content: '· ';
+}
+.input_set .use_point.use_card .form_text::after{
+    content: '원';
+    font-size: 17px;
+    font-family: 'noto_dl';
+}
+.input_set .use_point.use_card p strong::after{
+    content: '원';
+}
+.info_write_wrap .input_set dt ~ dt, .info_write_wrap .input_set dd ~ dd {
+    margin-top: 44px;
+}
+.info_write_wrap .input_set dt ~ dt::before{
+    content: '';
+    position: absolute;
+    top: -22px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    padding-left: 30px;
+}
+.info_write_wrap .input_set dd ~ dd::before{
+    content: '';
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    padding-right: 30px;
+}
+
+.form_radio.square{
+    float: left;
+}
+.form_radio.square label {
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.form_radio.square label input {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.info_write_wrap .input_set .form_radio.square .shape {
+    padding-right: 20px;
+    padding-left: 20px;
+    min-width: 120px;
+    width: auto;
+}
+.form_radio.square label input:checked + .shape {
+    background-color: #009223;
+    color: #fff;
+}
+.form_radio.square label .shape {
+    background-color: #f2f2f2;
+    display: inline-block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    transition-duration: 0.2s;
+    height: 35px;
+    width: 50px;
+}
+.info_write_wrap .input_set .form_radio.square label ~ label {
+    margin-left: 10px;
+}
+.info_write_wrap .input_set .cash_receipt .form_text {
+    float: left;
+    margin-left: 10px;
+    display: none;
+}
+.info_write_wrap .input_set .cash_receipt .form_text input{
+    line-height: 33px;
+    height: 33px;
+}
+img {
+    vertical-align: top;
+    border: 0;
+}
+.form_radio .shape .pay_logo {
+    display:inline-block; 
+    overflow:hidden; 
+    height:14px;
+}
+.form_radio .shape .pay_logo ~ .pay_logo:before {
+    background-color:#dddddd;
+    display:inline-block;
+    content:'';
+    vertical-align:11px; 
+    margin-right:12px; 
+    margin-left:12px; 
+    height:12px; 
+    width:1px;
+}
+.form_radio label input[type="radio"]:checked ~ .shape .pay_logo img {margin-top:-15px;}
+
+.input_set .pay_notice{
+    overflow: hidden;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 35px;
+    margin-left: 10px;
+    color:#666666;
+    display: none;
+}
+.order_list_wrap h2{
+    font-size: 26px;
+    margin-bottom: 26px;
+    letter-spacing: -0.05em;
+    color: #666666;
+    font-family: 'noto_r';
+}
+.order_list_wrap .content{
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+.order_table{
+    clear: both;
+    border-top: 4px solid #009223;
+    border-bottom: 1px solid #009223;
+}
+.order_table .name{
+    padding-left: 29px;
+    padding-top: 22px;
+    margin-bottom: 9px;
+    width: 721px;
+}
+.order_table .name strong{
+    color: #292929;
+    font-family: 'noto_dl';
+    line-height: 120%;
+}
+.order_table .stuff{
+    width: 721px;
+    display: inline-block;
+    color: #999;
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 29px;
+    padding-bottom: 22px;
+}
+.order_table .stuff span{
+    color: #999;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'noto_l';
+}
+.order_table .count{
+    display: inline-block;
+    font-family: 'noto_dl';
+    color: #999;
+    width: 90px;
+    vertical-align: middle;
+    margin-top: -30px;
+    margin-left: 20px;
+}
+.order_table .count strong{
+    font-family: 'sw_s';
+    color: #999;
+}
+.order_table .sum{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -30px;
+    margin-left: -10px;
+}
+.order_table .sum strong{
+    font-family: 'sw_f';
+    color: #292929;
+}
+.order_table .sum em{
+    font-family: 'noto_dl';
+    font-style: normal;
+}
+.order_table .detail_btn{
+    float: right;
+    width: 22px;
+    height: 22px;
+    background: url(/images/orderStep3_img/bill_list_btn.png) no-repeat 0 50%;
+    font-size: 0;
+    transform: rotate(180deg);
+    margin-top: -10px;
+}
+.order_table details[open] summary{
+    border-bottom: 1px solid #ddd;
+
+}
+.order_table details[open] .detail_btn{
+    transform: rotate(0deg);
+}
+
+
+.amount h2{
+    border-bottom: 4px solid #009223;
+    font-size: 26px;
+    margin-bottom: 36px;
+    padding-bottom: 26px;
+    padding-top: 44px;
+    letter-spacing: -0.05em;
+    color: #666666;
+    font-family: 'noto_r';
+}
+.amount > dl {
+    padding: 0 29px;
+    border-bottom: 1px solid #e9e9e9;
+    overflow: hidden;
+}
+.amount > dl dt {
+    clear: left;
+    float: left;
+}
+.amount .order_sum dt{
+    color: #292929;
+    line-height: 56px;
+    font-family: 'noto_m';
+}
+.amount .order_sum dd{
+    color: #292929;
+    font-family: 'noto_m';
+    line-height: 56px;
+}
+.amount > dl dd {
+    float: right;
+}
+.order_sum dd #orderTotal{
+    font-family: 'sw_f';
+}
+
+.amount .detail_sum{
+    padding: 16px 29px 23px 29px;
+}
+.amount .detail_sum dt{
+    height: 20px;
+    margin-bottom: 15px;
+    color: #999;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'noto_dl';
+}
+.amount .detail_sum dd{
+    height: 20px;
+    color: #999;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'noto_dl';
+}
+.amount .detail_sum dd strong{
+    font-family: 'sw_s';
+}
+.amount .payment_sum dt{
+    color: #292929;
+    line-height: 94px;
+    font-family: 'noto_m';
+}
+.amount .payment_sum dd span{
+    line-height: 94px;
+    color: #009223;
+    font-size: 20px;
+    font-family: 'noto_m';
+}
+.amount .payment_sum dd strong{
+    color: #009223;
+    font-size: 30px;
+    font-family: 'sw_f';
+}
+.payment_agree{
+    padding: 40px 0 40px 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+.payment_agree dt{
+    font-family: 'noto_dl';
+}
+.payment_agree dt .form_checkbox strong {
+    font-size: 16px;
+    font-family: 'noto_dl';
+    font-weight: normal;
+    color: #666;
+}
+.payment_agree dd ul{
+    padding-left: 43px;
+}
+
+.payment_agree dd ul .order_caution{
+    color: #999999;
+    margin-top: 7px;
+    font-size: 14px;
+    font-family: 'noto_dl';
+    line-height: 120%;
+}
+.payment_agree dd ul .order_caution.red{
+    color: #ff4b06;
+    font-weight: bold;
+}
+.payment_agree dd ul .order_caution::before{
+    content: '· ';
+}
+.btn_area{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.btn_area .order_btn{
+    width: 170px;
+    background-color: #009223;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+}
+.btn_area .order_btn::after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 16px;
+    background: url(/images/orderstep3_img/icon_reg.png) 0 0 no-repeat;
+    margin-left: 7px;
+}
+.btn_area .order_btn:hover{
+    transition-duration: 0.2s;
+    background-color: #00811f;
+}
+.btn_area .order_btn span{
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+    font-family: 'noto_m';
+    font-size: 18px;
+}
