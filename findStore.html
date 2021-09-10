@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY - 매장찾기</title>
+    <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/global.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/findStore.css" type="text/css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="/library/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/library/slick-1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="/library/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/js/findStore.js"></script>
+    <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx360121828bc1498a9a0d5bef45f85c58"></script>
+</head>
+
+<body onload="initTmap()">
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="">로그인</a></li>
+                        <li class="signUp">
+                            <a href="">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="./images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div id="container">
+            <div class="sub_header">
+                <div class="sub_location">
+                    <a href="#" class="logo"></a>
+                    <ul class="content_category">
+                        <li><a href="#">써브웨이 역사</a></li>
+                        <li><a href="#">써브웨이 약속</a></li>
+                        <li><a href="#">샌드위치 아티스트 지원</a></li>
+                        <li class="active"><a href="#">매장찾기</a></li>
+                    </ul>
+                    <a href="#" class="top">TOP</a>
+                </div>
+            </div>
+            <div class="content_wrap">
+                <div class="store_search_wrap">
+                    <div class="store_search_layer">
+                        <h2>매장찾기</h2>
+                        <div class="form_search">
+                            <form>
+                                <input class="keyword" type="text" maxlength="30" placeholder="지역 또는 매장명 입력">
+                                <a href="#" class="search_btn"></a>
+                            </form>
+                        </div>
+                        <div class="search_result">
+                            <p class="search_cnt">
+                                검색 결과
+                                <span>1</span>건
+                            </p>
+                            <div class="store_list">
+                                <div class="store_list_scroll">
+                                    <div class="store_result_container">
+                                        <div class="store_result">
+                                            <ul>
+                                                <li>
+                                                    <strong>잠실역</strong>
+                                                    <div class="info">
+                                                        <p>서울특별시 송파구 올림픽로 293-19 </p>
+                                                        <p>연락처 : 02-2202-1300</p>
+                                                        <p>영업시간 : 08:00 - 23:00</p>
+                                                    </div>
+                                                    <div class="service">
+                                                        <span>APP-패스트썹</span>
+                                                        <span>APP-홈썹</span>
+                                                        <span>배달가능</span>
+                                                        <span>단체주문</span>
+                                                        <span>시그니처랩</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <strong>잠실역</strong>
+                                                    <div class="info">
+                                                        <p>서울특별시 송파구 올림픽로 293-19 </p>
+                                                        <p>연락처 : 02-2202-1300</p>
+                                                        <p>영업시간 : 08:00 - 23:00</p>
+                                                    </div>
+                                                    <div class="service">
+                                                        <span>APP-패스트썹</span>
+                                                        <span>APP-홈썹</span>
+                                                        <span>배달가능</span>
+                                                        <span>단체주문</span>
+                                                        <span>시그니처랩</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <strong>잠실역</strong>
+                                                    <div class="info">
+                                                        <p>서울특별시 송파구 올림픽로 293-19 </p>
+                                                        <p>연락처 : 02-2202-1300</p>
+                                                        <p>영업시간 : 08:00 - 23:00</p>
+                                                    </div>
+                                                    <div class="service">
+                                                        <span>APP-패스트썹</span>
+                                                        <span>APP-홈썹</span>
+                                                        <span>배달가능</span>
+                                                        <span>단체주문</span>
+                                                        <span>시그니처랩</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <a href="#" class="arr prev"></a>
+                                <a href="#" class="active">1</a>
+                                <a href="#" class="arr next"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="map_div">
+                    <div class="store_map_layout">
+                        <div class="title">
+                            <span>잠실역</span>
+                            <a href="#" class="close_btn"></a>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>서울특별시 송파구 올림픽로 293-19</dd>
+                                <dt>연락처</dt>
+                                <dd>02-2202-1300</dd>
+                                <dt>영업시간</dt>
+                                <dd>08:00 - 23:00</dd>
+                            </dl>
+                        </div>
+                        <div class="detail">
+                            <a href="/fintStoreDetail.html" target="_blank">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="new_store_content">
+                    <div class="content">
+                        <h3 class="title">신규매장안내</h3>
+                        <div class="new_store_list_wrapper">
+                            <div class="new_store_slider_wrapper">
+                                <div>
+                                    <div class="new_store_info">
+                                        <div class="area">
+                                            경기도
+                                            <span>판교테크노밸리</span>
+                                        </div>
+                                        <div class="state comming">
+                                            Coming Soon (Remodeling)
+                                        </div>
+                                    </div>
+                                    <div class="new_store_info">
+                                        <div class="area">
+                                            경기도
+                                            <span>화성송산그린시티</span>
+                                        </div>
+                                        <div class="state comming">
+                                            Coming Soon
+                                        </div>
+                                    </div>
+                                    <div class="new_store_info">
+                                        <div class="area">
+                                            서울특별시
+                                            <span>중계은행사거리</span>
+                                        </div>
+                                        <div class="state open">
+                                            OPEN
+                                            <span>2021-07-06</span>
+                                        </div>
+                                    </div>
+                                    <div class="new_store_info">
+                                        <div class="area">
+                                            서울특별시
+                                            <span>테헤란로</span>
+                                        </div>
+                                        <div class="state open">
+                                            OPEN
+                                            <span>2021-07-06</span>
+                                        </div>
+                                    </div>
+                                    <div class="new_store_info">
+                                        <div class="area">
+                                            부산광역시
+                                            <span>부산롯데백화점광복</span>
+                                        </div>
+                                        <div class="state open">
+                                            OPEN
+                                            <span>2021-07-01</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all_store_content">
+                    <div class="content">
+                        <h3 class="title">전체매장</h3>
+                        <div class="board_list_wrapper">
+                            <div class="content">
+                                <p class="board_count">
+                                    총
+                                    <span>454</span>
+                                    개의 매장이 있습니다.
+                                </p>
+                                <form class="searchFrm">
+                                    <div class="area_list">
+                                        <div class="area_select">
+                                            <select id="area1">
+                                                <option value="">시/도</option>
+                                                <option value="서울특별시">서울특별시</option>
+                                                <option value="경기도">경기도</option>
+                                                <option value="인천광역시">인천광역시</option>
+                                                <option value="대전광역시">대전광역시</option>
+                                                <option value="세종특별자치시">세종특별자치시</option>
+                                                <option value="충청남도">충청남도</option>
+                                                <option value="경상남도">경상남도</option>
+                                                <option value="울산광역시">울산광역시</option>
+                                                <option value="부산광역시">부산광역시</option>
+                                                <option value="대구광역시">대구광역시</option>
+                                                <option value="제주특별자치도">제주특별자치도</option>
+                                                <option value="전라북도">전라북도</option>
+                                                <option value="충청북도">충청북도</option>
+                                                <option value="광주광역시">광주광역시</option>
+                                                <option value="전라남도">전라남도</option>
+                                                <option value="경상북도">경상북도</option>
+                                            </select>
+                                        </div>
+                                        <div class="area_select">
+                                            <select id="area2">
+                                                <option value="">시/군/구</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 100px;">NO</th>
+                                            <th style="width: 185px;">매장명</th>
+                                            <th style="width: 410px;">매장주소</th>
+                                            <th style="width: 250px;">주요서비스</th>
+                                            <th style="width: 170px;">연락처</th>
+                                            <th style="width: 55px;"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="num">105</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html">수원역사</a></td>
+                                            <td>
+                                                <div class="title"><a href="/fintStoreDetail.html">경기도 수원시 팔달구 덕영대로924 </a></div>
+                                            </td>
+                                            <td>
+                                                <div class="service">
+                                                    <span class="on">아침메뉴</span>
+                                                    <span>24시간</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tel">031-240-0889</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html"><img alt="자세히보기"src="/images/findStoreImages/icon_detail_view.png"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="num">105</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html">수원역사</a></td>
+                                            <td>
+                                                <div class="title"><a href="/fintStoreDetail.html">경기도 수원시 팔달구 덕영대로924 </a></div>
+                                            </td>
+                                            <td>
+                                                <div class="service">
+                                                    <span class="on">아침메뉴</span>
+                                                    <span>24시간</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tel">031-240-0889</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html"><img alt="자세히보기"src="/images/findStoreImages/icon_detail_view.png"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="num">104</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html">부천원종</a></td>
+                                            <td>
+                                                <div class="title"><a href="/fintStoreDetail.html">경기도 부천시 소사로 742 </a></div>
+                                            </td>
+                                            <td>
+                                                <div class="service">
+                                                    <span>아침메뉴</span>
+                                                    <span>24시간</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tel">070-7762-7770</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html"><img alt="자세히보기"
+                                                        src="/images/findStoreImages/icon_detail_view.png"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="num">103</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html">고양원당</a></td>
+                                            <td>
+                                                <div class="title"><a href="/fintStoreDetail.html">경기도 고양시 덕양구 호국로 781 </a></div>
+                                            </td>
+                                            <td>
+                                                <div class="service">
+                                                    <span>아침메뉴</span>
+                                                    <span>24시간</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tel">031-967-1333</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html"><img alt="자세히보기"
+                                                        src="/images/findStoreImages/icon_detail_view.png"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="num">102</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html">동탄하나로클럽</a></td>
+                                            <td>
+                                                <div class="title"><a href="/fintStoreDetail.html">경기도 화성시 동탄순환대로27길 30 1층 </a></div>
+                                            </td>
+                                            <td>
+                                                <div class="service">
+                                                    <span>아침메뉴</span>
+                                                    <span class="on">24시간</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tel">031-376-1418</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html"><img alt="자세히보기"
+                                                        src="/images/findStoreImages/icon_detail_view.png"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="num">101</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html">의왕포일</a></td>
+                                            <td>
+                                                <div class="title"><a href="/fintStoreDetail.html">경기도 의왕시 안양판교로 101 1층 </a></div>
+                                            </td>
+                                            <td>
+                                                <div class="service">
+                                                    <span>아침메뉴</span>
+                                                    <span>24시간</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tel">031-422-7175</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html"><img alt="자세히보기"
+                                                        src="/images/findStoreImages/icon_detail_view.png"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="num">100</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html">양주옥정</a></td>
+                                            <td>
+                                                <div class="title"><a href="/fintStoreDetail.html">경기도 양주시 옥정로 214 </a></div>
+                                            </td>
+                                            <td>
+                                                <div class="service">
+                                                    <span class="on">아침메뉴</span>
+                                                    <span>24시간</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tel">031-858-2270</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html"><img alt="자세히보기"
+                                                        src="/images/findStoreImages/icon_detail_view.png"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="num">99</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html">화성봉담</a></td>
+                                            <td>
+                                                <div class="title"><a href="/fintStoreDetail.html">경기도 화성시 봉담읍 동화길 51 </a></div>
+                                            </td>
+                                            <td>
+                                                <div class="service">
+                                                    <span>아침메뉴</span>
+                                                    <span>24시간</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tel">031-5183-3960</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html"><img alt="자세히보기"
+                                                        src="/images/findStoreImages/icon_detail_view.png"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="num">98</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html">부천옥길</a></td>
+                                            <td>
+                                                <div class="title"><a href="/fintStoreDetail.html">경기도 부천시 양지로 205 근생 113,1145호 </a></div>
+                                            </td>
+                                            <td>
+                                                <div class="service">
+                                                    <span>아침메뉴</span>
+                                                    <span>24시간</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="comming">Coming Soon</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html"><img alt="자세히보기"
+                                                        src="/images/findStoreImages/icon_detail_view.png"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="num">97</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html">용인김량장</a></td>
+                                            <td>
+                                                <div class="title"><a href="/fintStoreDetail.html">경기도 용인시 처인구 금령로 71번길 3 </a></div>
+                                            </td>
+                                            <td>
+                                                <div class="service">
+                                                    <span>아침메뉴</span>
+                                                    <span>24시간</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="tel">031-328-2929</div>
+                                            </td>
+                                            <td><a href="/fintStoreDetail.html"><img alt="자세히보기"
+                                                        src="/images/findStoreImages/icon_detail_view.png"></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="pagination_wrap">
+                                <div class="pagination">
+                                    <a href="#" class="arr prev"></a>
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">7</a>
+                                    <a href="#">8</a>
+                                    <a href="#">9</a>
+                                    <a href="#">10</a>
+                                    <a href="#" class="arr next"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.
+                    </p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
