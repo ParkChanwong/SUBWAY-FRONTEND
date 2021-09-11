@@ -13,7 +13,7 @@ input {
 .order.fast_sub {
     min-height: 663px;
     padding-bottom: 130px;
-    background: url(../images/fast_bg.jpg) no-repeat 50% 0 #89cd2f;
+    background: url(../images/fastsub_step1/fast_bg.jpg) no-repeat 50% 0 #89cd2f;
 }
 
 #content {
@@ -74,14 +74,14 @@ ol, ul {
 }
 
 .order .order_step li.step_shop {
-    background: url(../images/step01_off_bg.png) no-repeat 0 12px;
+    background: url(../../images/fastsub_step1/step01_off_bg.png) no-repeat 0 12px;
 }
 
 .order .order_step li.step_shop.on {
     width: 164px;
     height: 170px;
     padding-right: 16px;
-    background: url(../images/step01_on_bg.png) no-repeat 0 0;
+    background: url(../../images/fastsub_step1/step01_on_bg.png) no-repeat 0 0;
 }
 
 .order .order_step li.on strong {
@@ -100,15 +100,15 @@ ol, ul {
     top: 45px;
     width: 45px;
     height: 5px;
-    background: url(../images/step_bg_off.png) no-repeat 0 0;
+    background: url(../../images/fastsub_step1/step_bg_off.png) no-repeat 0 0;
 }
 
 .order .order_step li.on:after {
-    background-image: url(../images/step_bg_on.png);
+    background-image: url(../../images/fastsub_step1/step_bg_on.png);
 }
 
 .order .order_step li.step_menu {
-    background: url(../images/step02_off_bg.png) no-repeat 0 12px;
+    background: url(../../images/fastsub_step1/step02_off_bg.png) no-repeat 0 12px;
     font-size: 0;
 }
 .order .order_step li.step_menu strong {
@@ -116,7 +116,7 @@ ol, ul {
 }
 
 .order .order_step li.step_order {
-    background: url(../images/step03_off_bg.png) no-repeat 0 12px;
+    background: url(../../images/fastsub_step1/step03_off_bg.png) no-repeat 0 12px;
     font-size: 0;
 }
 .order .order_step li.step_order strong{
@@ -126,7 +126,7 @@ ol, ul {
 .order .order_step li.step_payment {
     margin-right: 0;
     padding-right: 0;
-    background: url(../images/step04_off_bg.png) no-repeat 0 12px;
+    background: url(../../images/fastsub_step1/step04_off_bg.png) no-repeat 0 12px;
     font-size: 0;
 }
 
@@ -263,7 +263,7 @@ legend {
 }
 
 .form_search .btn_search {
-    background: url(../images/icon_search.png) 50% 50% no-repeat;
+    background: url(../../images/fastsub_step1/icon_search.png) 50% 50% no-repeat;
     width: 41px;
     height: 41px;
     position: absolute;
@@ -386,7 +386,7 @@ em {
 }
 
 .my_bookmark .i_star {
-    background: url(../images/icon_star.png) no-repeat center 50%;
+    background: url(../../images/fastsub_step1/icon_star.png) no-repeat center 50%;
     background-color: #dddddd;
     background-size: 12px;
     display: block;
@@ -533,7 +533,7 @@ em {
     display: block;
     width: 8px;
     height: 12px;
-    background: url(../images/icon_page_arr.png) no-repeat;
+    background: url(../images../images/fastsub_step1/icon_page_arr.png) no-repeat;
 }
 
 .pagination .arr.prev:after {
@@ -593,7 +593,7 @@ em {
 }
 
 #map_api .store_map_layout .title .close_btn {
-    background: url(/images/icon_close01.png) 50% 50% no-repeat;
+    background: url(../../images/fastsub_step1/icon_close01.png) 50% 50% no-repeat;
     width: 54px;
     height: 54px;
     position: absolute;
@@ -773,7 +773,7 @@ caption {
 }
 
 .my_bookmark .i_star {
-    background: url(../images/icon_star.png) no-repeat center 50%;
+    background: url(../../images/fastsub_step1/icon_star.png) no-repeat center 50%;
     background-color: #dddddd;
     background-size: 12px;
     display: block;
@@ -843,7 +843,7 @@ caption {
     top: 0;
     left: 50%;
     margin-left: -20px;
-    background: url(../images/icon_exc_sm.png)no-repeat;
+    background: url(../../images/fastsub_step1/icon_exc_sm.png)no-repeat;
     width: 40px;
     height: 40px;
 }
@@ -882,7 +882,7 @@ caption {
 
 .store_map_layout .btn_order.on span {
     padding-right: 24px;
-    background: url(../images/icon_reg02.png) no-repeat 100% 50%;
+    background: url(../../images/fastsub_step1/icon_reg02.png) no-repeat 100% 50%;
     color: #fff;
 }
 

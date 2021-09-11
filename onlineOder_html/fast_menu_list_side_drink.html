@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메뉴선택</title>
-    <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/global.css" type="text/css">
-    <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <link rel="stylesheet" href="./css/fast_menu_list.css" type="text/css">
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/index.js"></script>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/fastsub/fast_menu_list.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
 </head>
 <body>
     <div id="wrap">
         <header>
             <div class="header_wrap">
-                <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='../index.html'">
                 <div class="header_menu">
                     <ul>
                         <li class="login"><a href="">로그인</a></li>
@@ -25,7 +25,7 @@
                         </li>
                         <li class="menu_icon">
                             <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
-                                <img src="./images/icon_utill_global.png" alt="글로벌">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
                             </a>
                         </li>
                     </ul>
@@ -227,32 +227,74 @@
                     </ol>
                     <div class="menu_tab">
                         <ul>
-                            <li class="active"><a href="#" name="itemMenu" data-category-code="ITEM_FAVORITE">즐겨찾는 메뉴</a></li>
+                            <li><a href="./fast_menu_list_favorite.html" name="itemMenu" data-category-code="ITEM_FAVORITE">즐겨찾는 메뉴</a></li>
                             <li><a href="./fast_menu_list_promotion.html" name="itemMenu" data-category-code="ITEM_PROMOTION">프로모션</a></li>
                             <li><a href="./fast_menu_list_sandwich.html" name="itemMenu" data-category-code="ITEM_SANDWICH">샌드위치</a></li>
                             <li><a href="./fast_menu_list_salad.html" name="itemMenu" data-category-code="ITEM_SALAD">찹샐러드</a></li>
                             <li><a href="./fast_menu_list_etc.html" name="itemMenu" data-category-code="ITEM_UNIT">랩ㆍ기타</a></li>
-                            <li><a href="./fast_menu_list_side_cookie.html" name="itemMenu" data-category-code="ITEM_SIDEDRINK">사이드ㆍ음료</a></li>
+                            <li class="active"><a href="#" name="itemMenu" data-category-code="ITEM_SIDEDRINK">사이드ㆍ음료</a></li>
                         </ul>
                     </div>
                     <div class="menu_contents" id="itemList">
-                        <div class="data_none">
-                            <p>즐겨찾는 메뉴(이/가) 없습니다.</p>
+                        <div class="form_select side_select">
+                            <select id="sideSelect">
+                                <option value="COOKIE">쿠키</option>
+                                <option value="CHIP">칩</option>
+                                <option value="SOUP">웨지/수프</option>
+                                <option value="DRINK">음료</option>
+                            </select>
                         </div>
-                        <p class="menu_favorites">즐겨찾기 메뉴는 최대 3개까지 등록 가능합니다</p>
-                        <ul class="list">
+                        <ul class="list" style="margin-top: -45px;">
                             <li>
-                                <a class="btn_delete" href="#" onclick=""><span class="blind">삭제</span></a>
                                 <a href="#">
-                                    <img src="./upload/item/페퍼치킨슈니첼_샌드위치_사이트변경_20210701025455760.png" alt="페퍼 치킨 슈니첼">
+                                    <img src="../images/item/코카콜라(355ml)_20200306125533872_20200622104441377.png" alt="코카콜라">
                                     <p>
-                                        <strong>페퍼 치킨 슈니첼</strong>
-                                        <span class="eng">Pepper Chicken Schnitzel</span>
-                                        <spen class="kcal"><em>472</em>kcal</spen>
+                                        <strong>코카콜라</strong>
+                                        <span class="eng">CokeCola</span>
                                     </p>
                                     <div class="label">
-                                        <span class="new" style="background-color: #ffc300;">NEW</span>
+                                        <span class="new" style="background-color: #ffc300;">SEASON</span>
                                     </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../images/item/스프라이트(355ml)_20200306125453275_20200622104409536.png" alt="스프라이트">
+                                    <p>
+                                        <strong>스프라이트</strong>
+                                        <span class="eng">sprite</span>
+                                    </p>
+                                    <div class="label"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../images/item/닥터페퍼_20200306123747014_20200622104511463.png" alt="닥터페퍼">
+                                    <p>
+                                        <strong>닥터페퍼</strong>
+                                        <span class="eng">docter papper</span>
+                                    </p>
+                                    <div class="label"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../images/item/코카콜라제로_20210719042706655.png" alt="코카콜라 제로">
+                                    <p>
+                                        <strong>코카콜라 제로</strong>
+                                        <span class="eng_name">CokeCola Zero</span>
+                                    </p>
+                                    <div class="label"> </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../images/item/생수 (휘오 순수)_20200306125557650_20200619030933922.png" alt="생수">
+                                    <p>
+                                        <strong>생수</strong>
+                                        <span class="eng_name">Water</span>
+                                    </p>
+                                    <div class="label"> </div>
                                 </a>
                             </li>
                         </ul>
@@ -260,6 +302,7 @@
                 </div>
             </div>
         </div>
+
         <footer>
             <div class="footer_wrap">
                 <div class="footer_top">

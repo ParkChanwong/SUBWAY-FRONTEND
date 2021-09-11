@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메뉴선택</title>
-    <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/global.css" type="text/css">
-    <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <link rel="stylesheet" href="./css/fast_menu_list.css" type="text/css">
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/index.js"></script>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/fastsub/fast_menu_list.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
 </head>
 <body>
     <div id="wrap">
         <header>
             <div class="header_wrap">
-                <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='../index.html'">
                 <div class="header_menu">
                     <ul>
                         <li class="login"><a href="">로그인</a></li>
@@ -25,7 +25,7 @@
                         </li>
                         <li class="menu_icon">
                             <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
-                                <img src="./images/icon_utill_global.png" alt="글로벌">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
                             </a>
                         </li>
                     </ul>
@@ -231,122 +231,14 @@
                             <li><a href="./fast_menu_list_promotion.html" name="itemMenu" data-category-code="ITEM_PROMOTION">프로모션</a></li>
                             <li><a href="./fast_menu_list_sandwich.html" name="itemMenu" data-category-code="ITEM_SANDWICH">샌드위치</a></li>
                             <li><a href="./fast_menu_list_salad.html" name="itemMenu" data-category-code="ITEM_SALAD">찹샐러드</a></li>
-                            <li><a href="./fast_menu_list_etc.html" name="itemMenu" data-category-code="ITEM_UNIT">랩ㆍ기타</a></li>
-                            <li class="active"><a href="#" name="itemMenu" data-category-code="ITEM_SIDEDRINK">사이드ㆍ음료</a></li>
+                            <li class="active"><a href="#" name="itemMenu" data-category-code="ITEM_UNIT">랩ㆍ기타</a></li>
+                            <li><a href="./fast_menu_list_side_cookie.html" name="itemMenu" data-category-code="ITEM_SIDEDRINK">사이드ㆍ음료</a></li>
                         </ul>
                     </div>
                     <div class="menu_contents" id="itemList">
-                        <div class="form_select side_select">
-                            <select id="sideSelect">
-                                <option value="COOKIE">쿠키</option>
-                                <option value="CHIP">칩</option>
-                                <option value="SOUP">웨지/수프</option>
-                                <option value="DRINK">음료</option>
-                            </select>
+                        <div class="data_none">
+                            <p>랩ㆍ기타(이/가) 없습니다.</p>
                         </div>
-                        <ul class="list" style="margin-top: -45px;">
-                            <li>
-                                <a href="#">
-                                    <img src="./upload/item/pineapple_cookie_size변경_20210629055237770.png" alt="파인애플 쿠키">
-                                    <p>
-                                        <strong>파인애플 쿠키</strong>
-                                        <span class="eng">Pineapple Cookies</span>
-                                        <spen class="kcal"><em>200</em>kcal</spen>
-                                    </p>
-                                    <div class="label">
-                                        <span class="new" style="background-color: #ffc300;">SEASON</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./upload/item/img_sides_04.jpg" alt="초코칩 쿠키">
-                                    <p>
-                                        <strong>초코칩 쿠키</strong>
-                                        <span class="eng">Chocolate Chip</span>
-                                        <spen class="kcal"><em>200</em>kcal</spen>
-                                    </p>
-                                    <div class="label"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./upload/item/img_sides_03.jpg" alt="더블 초코칩 쿠키">
-                                    <p>
-                                        <strong>더블 초코칩 쿠키</strong>
-                                        <span class="eng">Double Chocolate Chip</span>
-                                        <spen class="kcal"><em>210</em>kcal</spen>
-                                    </p>
-                                    <div class="label"></div>
-                                </a>
-                            </li>
-                            <!-- <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <p>
-                                        <strong></strong>
-                                        <span class="eng_name"></span>
-                                        <span class="kcal"></span>
-                                    </p>
-                                    <div class="label"> </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <p>
-                                        <strong></strong>
-                                        <span class="eng_name"></span>
-                                        <span class="kcal"></span>
-                                    </p>
-                                    <div class="label"> </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <p>
-                                        <strong></strong>
-                                        <span class="eng_name"></span>
-                                        <span class="kcal"></span>
-                                    </p>
-                                    <div class="label"> </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <p>
-                                        <strong></strong>
-                                        <span class="eng_name"></span>
-                                        <span class="kcal"></span>
-                                    </p>
-                                    <div class="label"> </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <p>
-                                        <strong></strong>
-                                        <span class="eng_name"></span>
-                                        <span class="kcal"></span>
-                                    </p>
-                                    <div class="label"> </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <p>
-                                        <strong></strong>
-                                        <span class="eng_name"></span>
-                                        <span class="kcal"></span>
-                                    </p>
-                                    <div class="label"> </div>
-                                </a>
-                            </li> -->
-                        </ul>
                     </div>
                 </div>
             </div>
