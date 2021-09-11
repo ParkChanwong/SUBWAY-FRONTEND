@@ -109,9 +109,10 @@ body {
     top: 0px;
     height: 32px;
     padding-top: 28px;
-    font-family: sw_s;
+    font-family: sw_f;
     font-weight: bold;
     color: #bbbbbb;
+    font-size: 13px;
     opacity: 0;
 }
 .sub_header .top:after {

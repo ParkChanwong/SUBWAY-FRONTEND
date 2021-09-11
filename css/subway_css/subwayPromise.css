@@ -16,6 +16,7 @@ body {
     line-height: 120%;
 }
 .sub_header {
+    position: absolute;
     left: 0;
     width: 100%;
     top: 0;
@@ -44,13 +45,12 @@ body {
     top: 0px;
     height: 60px;
     width: 110px;
-    background: url(../images/logo_sub_header.png) 0 50% no-repeat;
+    background: url('../../images/common/logo_sub_header.png') 0 50% no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     font-size: 0;
     line-height: 0;
-    opacity: 1;
-    display: none;
+    opacity: 0;
 }
 .sub_header .sub_loc {
     text-align: center;
@@ -117,13 +117,12 @@ body {
     font-weight: bold;
     color: #bbbbbb;
     font-size: 13px;
-    opacity: 1;
-    display: none;
+    opacity: 0;
 }
 .sub_header .top:after {
     content: '';
     height: 15px;
-    background: url(../images/icon_arr_top.png) 50% 0 no-repeat;
+    background: url('../../images/common/icon_arr_top.png') 50% 0 no-repeat;
     display: block;
     position: absolute;
     left: 0;
@@ -136,7 +135,7 @@ body {
     z-index: 3;
 }
 .subwray_promise_wrapper {
-    padding-top:77px;
+    padding-top: 127px;
 }
 .subwray_promise_wrapper .hd {
     text-align:center; 

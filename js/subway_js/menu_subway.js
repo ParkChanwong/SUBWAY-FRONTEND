@@ -72,7 +72,7 @@ function gnb() {//gnb
 	});
 }
 
-$(document).ready(function() {
+$(document).ready(function() { // artistSupport 슬라이더
 	$('.career_path ol li .view p').on('mouseenter', function () {
 		$(this).parent().next('.layer_view').css('display', 'table').stop(true, false).animate({
 			'top': '36px'
@@ -101,6 +101,7 @@ $(document).ready(function() {
 	});
 });
 
+// subwayhistory jquery
 $(document).ready(function(){
 	AOS.init({
 		once:true,
