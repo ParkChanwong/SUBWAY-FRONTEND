@@ -12,7 +12,7 @@ a {
     border-top:1px solid #e5e5e5; 
     height:59px; 
     background-color:#fff; 
-    z-index:999;
+    z-index:800;
     position: sticky;
     top: 0;
     left: 0;
