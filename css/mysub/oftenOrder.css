@@ -82,7 +82,7 @@
     width: 12px;
     height: 7px;
     z-index: 3;
-    background: url(../images/oftenFindImages/icon_select_arr.png);
+    background: url(../../images/oftenFindImages/icon_select_arr.png);
 }
 .bookmark_wrapper .bookmark_list .board_list_wrapper {
     padding-bottom: 0;
@@ -170,7 +170,7 @@ caption {
     margin-left: -20px;
     width: 40px;
     height: 40px;
-    background: url(../images/oftenFindImages/icon_exc_sm.png);
+    background: url(../../images/oftenFindImages/icon_exc_sm.png);
 }
 
 select{
@@ -210,7 +210,7 @@ select{
     font-family: 'noto_dl';
 }
 .board_list_wrapper .bookmark_map .map{
-    background: url(../images/oftenFindImages/icon_map.png);
+    background: url(../../images/oftenFindImages/icon_map.png);
     display: inline-block;
     vertical-align: middle;
     line-height: 0;
@@ -241,7 +241,7 @@ select{
 }
 
 .my_bookmark .i_star{
-    background: url(../images/oftenFindImages/icon_star.png) no-repeat center 50% #ffc300;
+    background: url(../../images/oftenFindImages/icon_star.png) no-repeat center 50% #ffc300;
     background-size: 12px;
     display: block;
     border-radius: 100%;
@@ -404,7 +404,7 @@ select{
 }
 
 .popup_wrapper .btn_close{
-    background: url(../images/icon_popup_close.png) 50% 50% no-repeat;
+    background: url(../../images/icon_popup_close.png) 50% 50% no-repeat;
     width: 73px;
     height: 73px;
     position: absolute;

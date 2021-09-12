@@ -19,7 +19,7 @@
     width: 110px;
     height: 60px;
     left: 0;
-    background: url('../images/eventPromotion/tab_logo.png') 100% no-repeat;
+    background: url('../../images/eventPromotion/tab_logo.png') 100% no-repeat;
     display: none;
 }
 
@@ -39,7 +39,7 @@
     position: absolute;
     width: 100%;
     height: 15px;
-    background: url('../images/eventPromotion/tap_top_arrow.png') 50% 0 no-repeat;
+    background: url('../../images/eventPromotion/tap_top_arrow.png') 50% 0 no-repeat;
     display: block;
     top: 18px;
     left: 0;
@@ -187,7 +187,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: url('../images/giftCard/bg_giftcard_edge.png') no-repeat;
+    background: url('../../images/giftCard/bg_giftcard_edge.png') no-repeat;
     width: 92px;
     height: 94px;
     z-index: 3;
@@ -198,7 +198,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: url('../images/giftCard/bg_giftcard_edge.png') no-repeat;
+    background: url('../../images/giftCard/bg_giftcard_edge.png') no-repeat;
     width: 92px;
     height: 94px;
     z-index: 3;
@@ -250,7 +250,7 @@
     top: 0;
     width: 0;
     height: 30px;
-    background: url('../images/giftCard/icon_radio_chk.png') 50% 50% no-repeat;
+    background: url('../../images/giftCard/icon_radio_chk.png') 50% 50% no-repeat;
     transition-duration: 0.3s;
     visibility: hidden;
 }
@@ -276,13 +276,13 @@
 }
 
 .slick-prev {
-    background: url('../images/giftCard/icon_gift_slider_arr.png') no-repeat !important;
+    background: url('../../images/giftCard/icon_gift_slider_arr.png') no-repeat !important;
     background-position: 0 0 !important;
     left: -50px !important;
 }
 
 .slick-next {
-    background: url('../images/giftCard/icon_gift_slider_arr.png') no-repeat !important;
+    background: url('../../images/giftCard/icon_gift_slider_arr.png') no-repeat !important;
     background-position: 100% 0 !important;
     right: -50px !important;
 }
@@ -355,7 +355,7 @@
 }
 
 .gift_input_content .receiver p span {
-    background: url('../images/giftCard/yellow_star.png');
+    background: url('../../images/giftCard/yellow_star.png');
     width: 7px;
     height: 6px;
     display: inline-block;
@@ -435,7 +435,7 @@
 .gift_input_content .gift_money ul li span::before {
     content: '';
     display: inline-block;
-    background-image: url('../images/giftCard/won_img.png');
+    background-image: url('../../images/giftCard/won_img.png');
     background-repeat: no-repeat;
     background-size: 32px auto;
     width: 16px;
@@ -516,7 +516,7 @@ input[type="number"]::-webkit-inner-spin-button {
     top: 15px;
     width: 12px;
     height: 7px;
-    background: url('../images/giftCard/icon_select_arr.png') 0 0 no-repeat;
+    background: url('../../images/giftCard/icon_select_arr.png') 0 0 no-repeat;
 }
 
 .gift_input_content .send_method .sel select {
@@ -549,7 +549,7 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 15px 15px 19px 81px;
     box-sizing: border-box;
     min-height: 52px;
-    background: #f6f6f6 url('../images/giftCard/icon_exc.png') 25px 50% no-repeat;
+    background: #f6f6f6 url('../../images/giftCard/icon_exc.png') 25px 50% no-repeat;
     margin-top: 20px;
 }
 
@@ -607,7 +607,7 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-left: 7px;
     vertical-align: middle;
     margin-top: -4px;
-    background: url("../images/giftCard/icon_reg.png") 0 0 no-repeat;
+    background: url("../../images/giftCard/icon_reg.png") 0 0 no-repeat;
 }
 
 .history_content_wrap {
@@ -658,5 +658,5 @@ input[type="number"]::-webkit-inner-spin-button {
     top: 0;
     left: 50%;
     margin-left: -20px;
-    background: url('../images/giftCard/icon_exc_sm.png') no-repeat;
+    background: url('../../images/giftCard/icon_exc_sm.png') no-repeat;
 }

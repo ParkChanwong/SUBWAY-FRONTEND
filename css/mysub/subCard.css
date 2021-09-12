@@ -29,7 +29,7 @@
     top: 0px;
     height: 60px;
     width: 110px;
-    background: url(../images/logo_sub_header.png) 0 50% no-repeat;
+    background: url(../../images/logo_sub_header.png) 0 50% no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     font-size: 0;
@@ -177,7 +177,7 @@
 }
 
 .card_img .status {
-    background: url(../images/icon_status_use.png);
+    background: url(../../images/icon_status_use.png);
     display: block;
     text-align: center;
     position: absolute;
@@ -255,7 +255,7 @@
 }
 
 .mycard_total .txt_price:before {
-    background: url(../images/icon_won_bk_28x17.png) no-repeat 0 0;
+    background: url(../../images/icon_won_bk_28x17.png) no-repeat 0 0;
     display: inline-block;
     content: '';
     line-height: 0;
@@ -387,7 +387,7 @@
 }
 
 .subcard_wrapper .card_info .left_money:before {
-    background: url(../images/icon_won_bk_28x17.png) no-repeat 0 0;
+    background: url(../../images/icon_won_bk_28x17.png) no-repeat 0 0;
     content: '';
     display: inline-block;
     vertical-align: 5px;
@@ -583,7 +583,7 @@ input {
 }
 
 .inquiry_notice {
-    background: #f6f6f6 url(../images/icon_exc.png) 25px 50% no-repeat;
+    background: #f6f6f6 url(../../images/icon_exc.png) 25px 50% no-repeat;
     display: flex;
     color: #999999;
     flex-direction: column;
@@ -700,7 +700,7 @@ input {
     vertical-align: middle;
     width: 21px;
     height: 16px;
-    background: url(../images/icon_reg.png) 0 0 no-repeat;
+    background: url(../../images/icon_reg.png) 0 0 no-repeat;
     margin-left: 7px;
 }
 
@@ -904,7 +904,7 @@ caption {
     top: 0;
     left: 50%;
     margin-left: -20px;
-    background: url(../images/icon_exc_sm.png)no-repeat;
+    background: url(../../images/icon_exc_sm.png)no-repeat;
     width: 40px;
     height: 40px;
 }
