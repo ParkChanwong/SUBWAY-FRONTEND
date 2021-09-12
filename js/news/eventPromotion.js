@@ -60,6 +60,5 @@ $(function(){
     sBtn.find("a").click(function(){
         sBtn.removeClass("active");
         $(this).parent().addClass("active");
-        return false;
     });
 });
