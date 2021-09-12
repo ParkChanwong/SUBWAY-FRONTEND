@@ -23,6 +23,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="../js/subway_js/menu_subway.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/subway_js/findStore_pagination.js"></script>
+    <script src="../js/subway_js/jquery.blockUI.min.js"></script>
 </head>
 
 <body onload="initTmap()">
@@ -647,18 +649,18 @@
                             </div>
                             <div class="pagination_wrap">
                                 <div class="pagination">
-                                    <a href="#" class="arr prev"></a>
+                                    <a href="javascript:void(0);" class="arr prev"></a>
                                     <a href="#" class="active">1</a>
-                                    <a href="#">2</a>
-                                    <a href="#">3</a>
-                                    <a href="#">4</a>
-                                    <a href="#">5</a>
-                                    <a href="#">6</a>
-                                    <a href="#">7</a>
-                                    <a href="#">8</a>
-                                    <a href="#">9</a>
-                                    <a href="#">10</a>
-                                    <a href="#" class="arr next"></a>
+                                    <a href="#" onclick="paging.page(2);return false;">2</a>
+                                    <a href="#" onclick="paging.page(3);return false;">3</a>
+                                    <a href="#" onclick="paging.page(4);return false;">4</a>
+                                    <a href="#" onclick="paging.page(5);return false;">5</a>
+                                    <a href="#" onclick="paging.page(6);return false;">6</a>
+                                    <a href="#" onclick="paging.page(7);return false;">7</a>
+                                    <a href="#" onclick="paging.page(8);return false;">8</a>
+                                    <a href="#" onclick="paging.page(9);return false;">9</a>
+                                    <a href="#" onclick="paging.page(10);return false;">10</a>
+                                    <a href="javascript:void(0)" class="arr next" onclick="paging.next(47);return false;"></a>
                                 </div>
                             </div>
                         </div>
