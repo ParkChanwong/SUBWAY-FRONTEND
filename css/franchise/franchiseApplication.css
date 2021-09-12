@@ -44,7 +44,7 @@ select {
     top: 0px;
     height: 60px;
     width: 110px;
-    background: url('../images/menuinfo_images/logo_sub_header.png') 0 50% no-repeat;
+    background: url('../../images/menuinfo_images/logo_sub_header.png') 0 50% no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     font-size: 0;
@@ -70,7 +70,7 @@ select {
     content: '';
     width: 12px;
     height: 15px;
-    background: url('../images/menuinfo_images/icon_arr_top.png') 50% 0 no-repeat;
+    background: url('../../images/menuinfo_images/icon_arr_top.png') 50% 0 no-repeat;
     display: block;
     position: absolute;
     left: 0;
@@ -270,7 +270,7 @@ select {
     content: '';
     width: 0;
     height: 20px;
-    background: url(../images/icon_checkbox.png) 0 0 no-repeat;
+    background: url(../../images/icon_checkbox.png) 0 0 no-repeat;
     position: absolute;
     left: 4px;
     top: 0;
@@ -302,7 +302,7 @@ select {
     position: absolute;
     right: 0;
     top: -29px;
-    background: url(../images/icon_ess.png) 0 9px no-repeat;
+    background: url(../../images/icon_ess.png) 0 9px no-repeat;
     padding-left: 10px;
 }
 
@@ -325,7 +325,7 @@ select {
 }
 
 .board_write_wrapper th .essImg {
-    background: url(../images/icon_ess.png) 0 0 no-repeat;
+    background: url(../../images/icon_ess.png) 0 0 no-repeat;
     width: 7px;
     height: 6px;
     display: inline-block;
@@ -389,7 +389,7 @@ select {
     top: 18px;
     width: 12px;
     height: 7px;
-    background: url(../images/icon_select_arr.png) 0 0 no-repeat;
+    background: url(../../images/icon_select_arr.png) 0 0 no-repeat;
     z-index: 3;
 }
 
@@ -502,7 +502,7 @@ select {
 
 .board_write_wrapper .agree_info >p:after {
     content: '';
-    background: url(../images/icon_ess.png) 0 0 no-repeat;
+    background: url(../../images/icon_ess.png) 0 0 no-repeat;
     width: 7px;
     height: 6px;
     display: inline-block;
@@ -527,7 +527,7 @@ select {
 
 .inquiry_notice {
     margin: 30px 0 100px;
-    background: #f6f6f6 url(../images/icon_exc.png) 25px 50% no-repeat;
+    background: #f6f6f6 url(../../images/icon_exc.png) 25px 50% no-repeat;
     display: flex;
     color: #999999;
     flex-direction: column;
@@ -596,7 +596,7 @@ select {
     content: '';
     width: 0;
     height: 20px;
-    background: url(../images/icon_checkbox.png) 0 0 no-repeat;
+    background: url(../../images/icon_checkbox.png) 0 0 no-repeat;
     position: absolute;
     left: 4px;
     top: 0;
@@ -671,7 +671,7 @@ select {
     vertical-align: middle;
     width: 21px;
     height: 16px;
-    background: url(../images/icon_reg.png) 0 0 no-repeat;
+    background: url(../../images/icon_reg.png) 0 0 no-repeat;
     margin-left: 7px;
 }
 

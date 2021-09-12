@@ -22,9 +22,9 @@ em{font-style:normal;}
 .content_main h2.sub_tit{text-align:center; font-size:40px; color:#292929; font-weight:300; letter-spacing:-0.07em; padding: 70px 0 70px; font-family: noto_m; background-color: #fff;}
 
 .content_wrap {position: sticky; left: 0; top: 0; width: 100%; border-bottom: 1px solid #e5e5e5; height: 59px;  background-color: #fff; z-index: 5;}
-.content_wrap .logo {position: absolute; left: 0; top: 0; height: 60px; width: 110px; background: url('../images/common/logo_sub_header.png') 0 50% no-repeat; overflow: hidden; text-indent: -9999px; font-size: 0; line-height: 0; display: none;}
+.content_wrap .logo {position: absolute; left: 0; top: 0; height: 60px; width: 110px; background: url('../../images/common/logo_sub_header.png') 0 50% no-repeat; overflow: hidden; text-indent: -9999px; font-size: 0; line-height: 0; display: none;}
 .content_wrap .top {position: absolute; right: 0; top: 0; height: 32px; padding-top: 28px; font-family: font_sw; font-weight: bold; color: #bbbbbb; font-size: 13px; display: none;}
-.content_wrap .top::after {content: ''; width: 12px; height: 15px; background: url(../images/common/icon_arr_top.png) 50% 0 no-repeat; display: inline-block; position: absolute; left: 0; width: 100%; top: 18px;}
+.content_wrap .top::after {content: ''; width: 12px; height: 15px; background: url(../../images/common/icon_arr_top.png) 50% 0 no-repeat; display: inline-block; position: absolute; left: 0; width: 100%; top: 18px;}
 .content_wrap .content_nav {text-align: center;}
 .content_wrap .content_nav ul {overflow: hidden; display: inline-block;}
 .content_wrap .content_nav ul li {float: left; position: relative;}
@@ -59,8 +59,8 @@ em{font-style:normal;}
 .board_list table td{height:69px; border-bottom:1px solid #dddddd; text-align:center; color:#292929; font-size:16px; font-family: noto_dl;}
 .board_list table td .title{text-align:left; letter-spacing:-0.04em}
 .board_list table td .date{color:#bbbbbb; font-family:font_sw;}
-.board_list table td .icon_file{display:inline-block; width:20px; height:20px; background:url(../images/common/icon_file.png) 0 0 no-repeat;}
-.board_list table td .icon_notice{display:inline-block; width:20px; height:14px; background:url(../images/common/icon_notice.png) 0 0 no-repeat;}
+.board_list table td .icon_file{display:inline-block; width:20px; height:20px; background:url(../../images/common/icon_file.png) 0 0 no-repeat;}
+.board_list table td .icon_notice{display:inline-block; width:20px; height:14px; background:url(../../images/common/icon_notice.png) 0 0 no-repeat;}
 .board_list table td .num{color:#ffc300; font-family:font_sw; font-weight:bold;}
 .board_list table td .service span{display:inline-block; font-size:13px; color:#bbb; border:1px solid #bbb; border-radius:30px; height:23px; line-height:23px; padding:0 8px;}
 .board_list table td .service span.on{font-weight:300; color:#666; border-color:#666}

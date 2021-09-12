@@ -64,7 +64,7 @@
 
 .faq_wrapper .question::after {
     content: '';
-    background: url(../images/franchiseFAQ/icon_faq.png)0 0 no-repeat;
+    background: url(../../images/franchiseFAQ/icon_faq.png)0 0 no-repeat;
     width: 20px;
     height: 20px;
     position: absolute;
