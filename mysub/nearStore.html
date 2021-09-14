@@ -213,11 +213,11 @@
                 <a href="#" class="logo">HOME</a>
                 <div class="sub_loc">
                     <ul>
-                        <li><a href="#">멤버십</a></li>
-                        <li><a href="#">쿠폰</a></li>
-                        <li><a href="#">e-Gift카드</a></li>
-                        <li><a href="#">주문내역</a></li>
-                        <li class="active"><a href="#">자주 찾는 매장</a></li>
+                        <li><a href="./point.html">멤버십</a></li>
+                        <li><a href="./coupon.html">쿠폰</a></li>
+                        <li><a href="./giftCard.html">e-Gift카드</a></li>
+                        <li><a href="./subOrder.html">주문내역</a></li>
+                        <li class="active"><a href="./oftenFind.html">자주 찾는 매장</a></li>
                     </ul>
                 </div>
                 <a href="#" class="top">TOP</a>
@@ -234,11 +234,11 @@
                                 <div class="store_list_sorting">
                                     <h3 class="sort_tit">가까운 매장</h3>
                                     <div class="form_select">
-                                        <select name="storeType">
-                                            <option value="oftenFind">자주 찾는 매장</option>
-                                            <option value="oftenOrd">자주 주문한 매장</option>
-                                            <option selected="selected" value="nearStore">가까운 매장</option>
-                                            <option value="areaStore">지역별 매장</option>
+                                        <select onchange="if(this.value) location.href=(this.value);" name="storeType">
+                                            <option value="./oftenFind.html">자주 찾는 매장</option>
+                                            <option value="./oftenOrder.html">자주 주문한 매장</option>
+                                            <option selected="selected" value="./nearStore.html">가까운 매장</option>
+                                            <option value="./regionStore.html">지역별 매장</option>
                                         </select>
                                     </div>
                                 </div>

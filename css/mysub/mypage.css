@@ -63,7 +63,7 @@
 }
 
 .member_active .my_info .info.member .name_gender .character.female {
-    background-image: url(../images/img_profile_female.png);
+    background-image: url(../../images/img_profile_female.png);
 }
 
 .member_active .my_info .info.member .name_gender .name {
@@ -175,7 +175,7 @@ em{
 }
 
 .member_active .my_info .info.subcard:before {
-    background: url(../images/icon_deco.png) no-repeat 0 0;
+    background: url(../../images/icon_deco.png) no-repeat 0 0;
     content: '';
     display: block;
     position: absolute;
@@ -262,7 +262,7 @@ em{
 }
 
 .bookmark_wrap .my_list .add_bookmark .btn_add span:after {
-    background: url(../images/icon_add.png) no-repeat 0 0;
+    background: url(../../images/icon_add.png) no-repeat 0 0;
     display: inline-block;
     content: '';
     vertical-align: middle;
@@ -306,7 +306,7 @@ em{
 }
 
 .bookmark_wrap .my_list .li_wrap .bt_book .i_book {
-    background: url(../images/icon_bookmark.png) no-repeat 0 0;
+    background: url(../../images/icon_bookmark.png) no-repeat 0 0;
     display: block;
     height: 22px;
     width: 22px;
@@ -351,7 +351,7 @@ em{
 }
 
 .bookmark_wrap .my_list .li_wrap .del_book .i_del {
-    background: url(../images/icon_del.png) no-repeat center 50%;
+    background: url(../../images/icon_del.png) no-repeat center 50%;
     background-size: 24px;
     display: block;
     height: 100%;
