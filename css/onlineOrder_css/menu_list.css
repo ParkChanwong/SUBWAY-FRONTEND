@@ -34,7 +34,7 @@ em{font-style:normal;}
 
 .blind {overflow:hidden; font-size:0; line-height:0; position:absolute; height:0; width:0;}
 
-.order.home_sub{min-height:663px; padding-bottom: 130px; background: url('../images/order/home_sub/home_bg.jpg') no-repeat 50% 0 #0aa8e7;}
+.order.home_sub{min-height:663px; padding-bottom: 130px; background: url('../../images/order/home_sub/home_bg.jpg') no-repeat 50% 0 #0aa8e7;}
 
 .order .home_sub_title{text-align: center;}
 .order .home_sub_title h3{padding: 64px 0 25px 0; color: #fff; font-size: 70px; font-weight: bold; font-family: sw_f;}
@@ -42,21 +42,21 @@ em{font-style:normal;}
 
 .order .home_sub_step{margin-top: 58px; text-align: center; font-size: 0;}
 .order .home_sub_step li{position: relative; display: inline-block; width: 70px; height: 106px; margin-right: 20px; padding-right: 65px; color: #fff; vertical-align: top; font-size: 0;}
-.order .home_sub_step li:after{content: ''; position: absolute; right: 0; top: 45px; width: 45px; height: 5px; background: url('../images/order/fast_sub/step_bg_off.png') no-repeat 0 0;}
+.order .home_sub_step li:after{content: ''; position: absolute; right: 0; top: 45px; width: 45px; height: 5px; background: url('../../images/order/fast_sub/step_bg_off.png') no-repeat 0 0;}
 .order .home_sub_step li strong {font-size: 0;}
-.order .home_sub_step li.on:after{background-image: url('../images/order/fast_sub/step_bg_on.png');}
+.order .home_sub_step li.on:after{background-image: url('../../images/order/fast_sub/step_bg_on.png');}
 .order .home_sub_step li.payment:after{display: none;}
 .order .home_sub_step li.on{padding-left: 102px; font-size: 24px; font-weight: 300; text-align: left;}
 .order .home_sub_step li.on strong{display: block; padding-top: 15px; color: #ffc300; font-size: 16px; font-weight: bold; font-family: noto_m;}
-.order .home_sub_step li.shop_select{background: url('../images/order/fast_sub/step01_off_bg.png') no-repeat 0 12px;}
-.order .home_sub_step li.menu_select{background: url('../images/order/fast_sub/step02_off_bg.png') no-repeat 0 12px;}
-.order .home_sub_step li.menu_select.on{width: 164px; height: 170px; padding-right: 16px; background: url('../images/order/fast_sub/step02_on_bg.png') no-repeat 0 0; font-family: noto_r;}
-.order .home_sub_step li.order{background: url('../images/order/fast_sub/step03_off_bg.png') no-repeat 0 12px;}
-.order .home_sub_step li.payment{margin-right: 0; padding-right: 0; background: url('../images/order/fast_sub/step04_off_bg.png') no-repeat 0 12px;}
+.order .home_sub_step li.shop_select{background: url('../../images/order/fast_sub/step01_off_bg.png') no-repeat 0 12px;}
+.order .home_sub_step li.menu_select{background: url('../../images/order/fast_sub/step02_off_bg.png') no-repeat 0 12px;}
+.order .home_sub_step li.menu_select.on{width: 164px; height: 170px; padding-right: 16px; background: url('../../images/order/fast_sub/step02_on_bg.png') no-repeat 0 0; font-family: noto_r;}
+.order .home_sub_step li.order{background: url('../../images/order/fast_sub/step03_off_bg.png') no-repeat 0 12px;}
+.order .home_sub_step li.payment{margin-right: 0; padding-right: 0; background: url('../../images/order/fast_sub/step04_off_bg.png') no-repeat 0 12px;}
 
 /* 메뉴 리스트  */
 .order .menu_list .menu_tab ul li:first-child a{font-size: 0;}
-.order .menu_list .menu_tab ul li:first-child a:after{content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 44px; height: 44px; background: url('../images/order/fast_sub/icon_list_bookmark.png') no-repeat 0 0;}
+.order .menu_list .menu_tab ul li:first-child a:after{content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 44px; height: 44px; background: url('../../images/order/fast_sub/icon_list_bookmark.png') no-repeat 0 0;}
 
 .order .menu_list .menu_contents {background-color: #fff; margin: 0 auto; padding-top: 30px; padding-bottom: 30px; width: 1170px;}
 
@@ -80,7 +80,7 @@ em{font-style:normal;}
 .order .menu_list .list .label span.season {background-color:#9631a8; font-family: sw_f;}
 .order .menu_list .list .label span.recommend {background-color:#ff4b06;}
 
-.order .menu_list .list .btn_delete {position: absolute; top: 0; right: 0; background: url('../images/common/icon_del02.png') no-repeat center 50%; background-size: 44px 44px; width: 44px; height: 44px; margin: 10px 10px 0 0; padding: 0; z-index: 1;}
+.order .menu_list .list .btn_delete {position: absolute; top: 0; right: 0; background: url('../../images/common/icon_del02.png') no-repeat center 50%; background-size: 44px 44px; width: 44px; height: 44px; margin: 10px 10px 0 0; padding: 0; z-index: 1;}
 
 /* issues/501 */
 /* .order .menu_list .list li a p > em{display: block; padding-bottom: 13px; font-family: font_sw;}
@@ -92,12 +92,12 @@ em{font-style:normal;}
 
 .data_none {padding:172px 0; text-align:center;}
 .data_none p {position:relative; line-height:18px; letter-spacing:-0.05em; color:#999; padding-top:58px; font-family: noto_dl;}
-.data_none p:before {content:'';position:absolute;top:0;left:50%;margin-left:-20px;background:url(../images/common/icon_exc_sm.png)no-repeat;width:40px; height:40px;}
+.data_none p:before {content:'';position:absolute;top:0;left:50%;margin-left:-20px;background:url(../../images/common/icon_exc_sm.png)no-repeat;width:40px; height:40px;}
 
 .order .menu_contents {position: relative; background-color: #fff;}
 .order .menu_contents .form_select {box-sizing:border-box;}
 .order .menu_contents .form_select{display:inline-block; vertical-align:middle; overflow:hidden; position:relative; border:2px solid #dddddd;}
-.order .menu_contents .form_select:before{content:''; position:absolute; right:13px; top:18px; width:12px; height:7px; background:url(../images/common/icon_select_arr.png) 0 0 no-repeat; z-index:3;}
+.order .menu_contents .form_select:before{content:''; position:absolute; right:13px; top:18px; width:12px; height:7px; background:url(../../images/common/icon_select_arr.png) 0 0 no-repeat; z-index:3;}
 .order .menu_contents .form_select select{width:100%; border:0; height:41px; line-height:41px; font-size:16px; color:#999999; position:relative; z-index:1; text-indent:9px}
 
 .order .side_select {position:relative; right: -835px; top:-20px; width:335px;}
