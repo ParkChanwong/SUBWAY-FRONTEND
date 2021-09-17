@@ -12,7 +12,7 @@ html, body, button, dl, dt, dd, div, form, fieldset, legend, h1, h2, h3, h4, h5,
 .order.home_sub {
     min-height: 663px;
     padding-bottom: 130px;
-    background: url(../images/home_bg.jpg) no-repeat 50% 0 #0aa8e7;
+    background: url(../../images/homesub_step1/home_bg.jpg) no-repeat 50% 0 #0aa8e7;
 }
 
 #content {
@@ -73,14 +73,14 @@ ol, ul {
 }
 
 .order .order_step li.step_shop {
-    background: url(../images/step01_off_bg.png) no-repeat 0 12px;
+    background: url(../../images/homesub_step1/step01_off_bg.png) no-repeat 0 12px;
 }
 
 .order .order_step li.step_shop.on {
     width: 164px;
     height: 170px;
     padding-right: 16px;
-    background: url(../images/step01_on_bg.png) no-repeat 0 0;
+    background: url(../../images/homesub_step1/step01_on_bg.png) no-repeat 0 0;
 }
 
 .order .order_step li.on strong {
@@ -99,15 +99,15 @@ ol, ul {
     top: 45px;
     width: 45px;
     height: 5px;
-    background: url(../images/step_bg_off.png) no-repeat 0 0;
+    background: url(../../images/homesub_step1/step_bg_off.png) no-repeat 0 0;
 }
 
 .order .order_step li.on:after {
-    background-image: url(../images/step_bg_on.png);
+    background-image: url(../../images/homesub_step1/step_bg_on.png);
 }
 
 .order .order_step li.step_menu {
-    background: url(../images/step02_off_bg.png) no-repeat 0 12px;
+    background: url(../../images/homesub_step1/step02_off_bg.png) no-repeat 0 12px;
     font-size: 0;
 }
 
@@ -116,7 +116,7 @@ ol, ul {
 }
 
 .order .order_step li.step_order {
-    background: url(../images/step03_off_bg.png) no-repeat 0 12px;
+    background: url(../../images/homesub_step1/step03_off_bg.png) no-repeat 0 12px;
     font-size: 0;
 }
 
@@ -127,7 +127,7 @@ ol, ul {
 .order .order_step li.step_payment {
     margin-right: 0;
     padding-right: 0;
-    background: url(../images/step04_off_bg.png) no-repeat 0 12px;
+    background: url(../../images/homesub_step1/step04_off_bg.png) no-repeat 0 12px;
     font-size: 0;
 }
 
@@ -328,7 +328,7 @@ em {
 }
 
 .my_bookmark .i_star {
-    background: url(../images/icon_star.png) no-repeat center 50%;
+    background: url(../../images/homesub_step1/icon_star.png) no-repeat center 50%;
     background-color: #dddddd;
     background-size: 12px;
     display: block;
@@ -502,7 +502,7 @@ em {
     font-family: 'noto_m';
 }
 #map_api .store_map_layout .title .close_btn{
-    background: url(/images/icon_close01.png) 50% 50% no-repeat;
+    background: url(../../images/homesub_step1/icon_close01.png) 50% 50% no-repeat;
     width: 54px;
     height: 54px;
     position: absolute;
@@ -657,7 +657,7 @@ em {
 }
 
 .delivery_add .address_input .write_info_wrap .btn_add span {
-    background: url(../images/btn_address_search.png) no-repeat 100% 50%;
+    background: url(../../images/homesub_step1/btn_address_search.png) no-repeat 100% 50%;
     display: inline-block;
     color: #999;
     font-family: noto_dl;
@@ -804,7 +804,7 @@ em {
     top: 0;
     left: 50%;
     margin-left: -20px;
-    background: url(../images/icon_exc_sm.png)no-repeat;
+    background: url(../../images/homesub_step1/icon_exc_sm.png)no-repeat;
     width: 40px;
     height: 40px;
 }
@@ -873,7 +873,7 @@ em {
 }
 
 .popup_wrapper .popup_close {
-    background: url(../images/icon_popup_close.png) 50% 50% no-repeat;
+    background: url(../../images/homesub_step1/icon_popup_close.png) 50% 50% no-repeat;
     width: 73px;
     height: 73px;
     position: absolute;
@@ -918,7 +918,7 @@ em {
 
 .store_map_layout .btn_order.on span {
     padding-right: 24px;
-    background: url(../images/icon_reg02.png) no-repeat 100% 50%;
+    background: url(../../images/homesub_step1/icon_reg02.png) no-repeat 100% 50%;
     color: #fff;
 }
 
