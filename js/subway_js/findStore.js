@@ -9,6 +9,22 @@ $jq(document).ready(function() {
         dots: true,
         dotsClass : "slick-dots"
     });
+
+    let stickyOffset = $('.sub_header').offset();
+    $(window).scroll(function() {
+        if($(document).scrollTop() > stickyOffset.top) {
+            $('.sub_location .logo').fadeIn();
+            $('.sub_location .top').fadeIn();
+        } else {
+            $('.sub_location .logo').fadeOut();
+            $('.sub_location .top').fadeOut();
+        }
+    });
+
+    $(".sub_location .top").click(function() {
+        $('html').animate({ scrollTop : 0 }, 400);
+        return false;
+    });
 });
 
 // 페이지가 로딩이 된 후 호출하는 함수입니다.

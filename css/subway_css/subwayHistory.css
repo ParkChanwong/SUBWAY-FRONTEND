@@ -48,7 +48,7 @@ body {
     text-indent: -9999px;
     font-size: 0;
     line-height: 0;
-    opacity: 0;
+    opacity: 1;
 }
 .sub_header .sub_loc {
     text-align: center;
@@ -114,7 +114,7 @@ body {
     font-weight: bold;
     color: #bbbbbb;
     font-size: 13px;
-    opacity: 0;
+    opacity: 1;
 }
 .sub_header .top:after {
     content: '';
@@ -126,7 +126,7 @@ body {
     width: 100%;
     top: 18px;
 }
-.sub_header.type01{background-color:transparent; border:0; height:60px;}
+.sub_header.type01{border:0; height:60px;}
 .sub_header.type01:after{content:''; position:absolute; left:0; bottom:0; width:100%; height:1px; background-color:#fff; opacity:0.1}
 .sub_header.type01 .sub_loc ul li:after{opacity:0.2}
 /* .sub_header.type01 .sub_loc ul li a{color:#fff;} */
