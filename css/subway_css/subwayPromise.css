@@ -1,0 +1,273 @@
+html, body, button, dl, dt, dd, div, form, fieldset, legend, h1, h2, h3, h4, h5, h6, input, select, textarea, ul, ol, li, p, pre, table, td, th, caption, a, button, figure {
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+body {
+    font-size: 16px;
+    color: #666666;
+    font-family: noto_dl, sw_s;
+}
+#container {
+    margin-top: 170px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+.sub_header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #e5e5e5;
+    height: 59px;
+    z-index: 5;
+    position: absolute;
+    background-color: transparent;
+    font-size: 16px;
+    color: #666666;
+    font-family: noto_r;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    line-height: 120%;
+}
+.sub_header .logo {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 60px;
+    width: 110px;
+    background: url('../../images/common/logo_sub_header.png') 0 50% no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+}
+.sub_header .sub_loc {
+    text-align: center;
+}
+.sub_header .sub_loc ul {
+    overflow: hidden;
+    display: inline-block;
+    list-style: none;
+}
+.sub_header .sub_loc ul li {
+    float: left;
+    position: relative;
+}
+.sub_header .sub_loc ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+.sub_header .sub_loc ul li:first-child:after {
+    display: none;
+}
+.sub_header .sub_loc ul li a {
+    display: block;
+    line-height: 60px;
+    color: #999999;
+    font-size: 16px;
+    letter-spacing: -0.08em;
+    position: relative;
+    cursor: pointer;
+}
+.sub_header .sub_loc ul li + li {
+    padding-left: 24px;
+    margin-left: 21px;
+}
+.sub_header .sub_loc ul li + li:after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #dddddd;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: 28px;
+}
+.sub_header .sub_loc ul li.active a {
+    color: #009223;
+    font-weight: 300;
+}
+.sub_header .sub_loc ul li.active a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background-color: #009223;
+}
+.sub_header .top {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 32px;
+    padding-top: 28px;
+    font-family: sw_f;
+    font-weight: bold;
+    color: #bbbbbb;
+    font-size: 13px;
+    opacity: 0;
+}
+.sub_header .top:after {
+    content: '';
+    height: 15px;
+    background: url('../../images/common/icon_arr_top.png') 50% 0 no-repeat;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 18px;
+}
+#content {
+    padding-top: 0;
+    position: relative;
+    z-index: 3;
+}
+.subwray_promise_wrapper {
+    padding-top: 127px;
+}
+.subwray_promise_wrapper .hd {
+    text-align:center; 
+    margin-bottom:81px;
+}
+.subwray_promise_wrapper .hd h2 {
+    color:#009223; 
+    font-weight:bold; 
+    font-family:sw_f; 
+    font-size:36px;
+}
+.subwray_promise_wrapper .hd h2 em {
+    color:#62ce08;
+    font-weight: bold;
+    font-family: sw_f;
+    font-size: 36px;
+    font-style: normal;
+}
+.subwray_promise_wrapper .hd h2 span {
+    font-size:28px; 
+    display:inline-block; 
+    vertical-align:top;
+}
+.subwray_promise_wrapper .hd p {
+    color:#292929; 
+    font-size:18px; 
+    margin-top:18px;
+}
+.subwray_promise_wrapper .subwray_promise_content li {
+    padding-bottom:70px; 
+    position:relative;
+}
+.subwray_promise_wrapper .subwray_promise_content li:after {
+    content:''; 
+    position:absolute; 
+    left:0; width:100%; 
+    bottom:0; 
+    height:130px;
+}
+.subwray_promise_wrapper .subwray_promise_content li .wrap {
+    width:1170px; 
+    margin:0 auto; 
+    padding:60px 0 0; 
+    position:relative; 
+    overflow:hidden; 
+    z-index:3;
+}
+.subwray_promise_wrapper .subwray_promise_content li .info {
+    position:absolute; 
+    top:141px
+}
+.subwray_promise_wrapper .subwray_promise_content li .info .tit .num {
+    color:#fff; 
+    font-family:sw_f;
+    font-weight:bold; 
+    font-size:19px; 
+    display:block; 
+    width:50px; 
+    height:50px; 
+    padding-top:20px; 
+    box-sizing:border-box; 
+    position:absolute; 
+    left:0; 
+    top:-21px; 
+    background-color:#009223; 
+    text-align:center;
+}
+.subwray_promise_wrapper .subwray_promise_content li .info .tit .num:after {
+    content:''; 
+    width:22px; 
+    height:3px; 
+    position:absolute; 
+    left:50%; 
+    margin-left:-11px; 
+    top:12px; 
+    background-color:#ffce32
+}
+.subwray_promise_wrapper .subwray_promise_content li .info .tit strong {
+    color:#292929; 
+    font-size:28px; 
+    font-weight:bold; 
+    letter-spacing:-0.04em; 
+    text-align:left; 
+    display: block; 
+    padding-left:69px;
+    font-family: noto_m;
+}
+.subwray_promise_wrapper .subwray_promise_content li .info p {
+    color:#292929; 
+    font-size:16px; 
+    line-height:26px; 
+    letter-spacing:-0.04em; 
+    margin-top:28px;
+    font-family: noto_dl;
+}
+.subwray_promise_wrapper .subwray_promise_content li .eng {
+    color:#fff; 
+    font-size:80px; 
+    font-family:sw_f; 
+    font-weight:bold; 
+    position:absolute; 
+    bottom:52px; 
+    letter-spacing:-0.035em
+}
+.subwray_promise_wrapper .subwray_promise_content li:nth-child(odd) {
+    background-color:#f6f6f6
+}
+.subwray_promise_wrapper .subwray_promise_content li:nth-child(odd) .info {
+    left:670px;
+}
+.subwray_promise_wrapper .subwray_promise_content li:nth-child(odd) .eng {
+    color:#fff; 
+    left:600px;
+}
+.subwray_promise_wrapper .subwray_promise_content li:nth-child(odd):after {
+    background-color:#fff;
+}
+
+.subwray_promise_wrapper .subwray_promise_content li:nth-child(even) {
+    background-color:#fff;
+}
+.subwray_promise_wrapper .subwray_promise_content li:nth-child(even) .img {
+    float:right;
+}
+.subwray_promise_wrapper .subwray_promise_content li:nth-child(even) .info {
+    left:0px;
+}
+.subwray_promise_wrapper .subwray_promise_content li:nth-child(even) .eng {
+    color:#f6f6f6; 
+    text-align:right; 
+    right:600px;
+}
+.subwray_promise_wrapper .subwray_promise_content li:nth-child(even):after {
+    background-color:#f6f6f6;
+}
