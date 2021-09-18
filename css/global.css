@@ -95,8 +95,24 @@ a:focus {
     src: url("../fonts/Subway-Footlong.woff") format('woff');
   }
 
-  @font-face {
-    font-family: "sw_s";
-    font-weight: bold;
-    src: url("../fonts/Subway-SixInch.woff") format('woff');
-  }
+@font-face {
+  font-family: "noto_b";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/NotoSans-Bold.eot?") format("eot"),
+  url("../fonts/NotoSans-Bold.otf") format("opentype"),
+  url("../fonts/NotoSans-Bold.woff") format("woff"),
+  url("../fonts/NotoSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "sw_f";
+  font-weight: normal;
+  src: url("../fonts/Subway-Footlong.woff") format('woff');
+}
+
+@font-face {
+  font-family: "sw_s";
+  font-weight: bold;
+  src: url("../fonts/Subway-SixInch.woff") format('woff');
+}

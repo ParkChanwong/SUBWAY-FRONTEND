@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUBWAY 써브웨이</title>
-    <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/global.css" type="text/css">
-    <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <link rel="stylesheet" href="./css/coupon.css" type="text/css">
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/index.js"></script>
+    <title>비밀번호 확인</title>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/mysub/mypageInfoPW.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
 </head>
 <body>
     <div id="wrap">
         <header>
             <div class="header_wrap">
-                <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='../index.html'">
                 <div class="header_menu">
                     <ul>
                         <li class="login"><a href="">로그인</a></li>
@@ -25,7 +25,7 @@
                         </li>
                         <li class="menu_icon">
                             <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
-                                <img src="./images/icon_utill_global.png" alt="글로벌">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
                             </a>
                         </li>
                     </ul>
@@ -128,7 +128,7 @@
                                         </a>
                                     </li>
                                     <li class="drop_li">
-                                        <a href="./subwayPromise.html">
+                                        <a href="">
                                             써브웨이 약속
                                         </a>
                                     </li>
@@ -206,43 +206,104 @@
         </header>
 
         <div id="container">
-            
-        </div>
-
-        <footer>
-            <div class="footer_wrap">
-                <div class="footer_top">
-                    <ul>
-                        <li>
-                            <a href="">이용약관</a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <strong>개인정보처리방침</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">써브카드</a>
-                        </li>
-                        <li>
-                            <a href="">점주관리자</a>
-                        </li>
-                        <li>
-                            <a href="">Subway Listens</a>
-                        </li>
-                    </ul>
+            <div class="content_wrap">
+                <!--main content start-->
+                <div id="content">
+                    <div class="mypageInfo">
+                        <h2>비밀번호 확인</h2>
+                        <p>회원가입 시 등록한 비밀번호를 재입력 해주세요.</p>
+                    </div>
+                    <div class="mypageInfoPW_wrapper">
+                        <div class="content">
+                            <form id="frm">    
+                                <!-- board list s -->
+                                <div class="board_write_wrapper">
+                                    <section class="form_box">
+                                        <div class="write_info_wrap">									
+                                            <!-- 입력1세트 -->
+                                            <div class="input_set">
+                                                <dl>
+                                                    <dt>이메일 주소<span class="ess"></span></dt>
+                                                    <dd>
+                                                        <span class="form_text" style="width:500px">
+                                                        <input readonly="" type="text" value="로그인한 이메일 자동 입력">
+                                                        </span>
+                                                    <!--     <div class="btn_input_in">
+                                                            <button type="button" class="in_form_btn">
+                                                                <span>중복확인</span>
+                                                            </button>
+                                                        </div> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>									
+                                            <!--// 입력1세트 -->
+                                            <div class="input_set">
+                                                <dl>
+                                                    <dt>비밀번호<span class="ess"></span></dt>
+                                                    <dd>
+                                                        <span class="form_text">
+                                                            <input class="chk_value" id="pw" name="pw" placeholder="비밀번호 입력" type="password">
+                                                        </span>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                    
+                                
+    
+                                
+                            </form>
+                            
+                            
+                        </div>
+                        <div class="inquiry_notice">
+                            <ul>
+                                <li>개인정보 보호를 위해 주기적으로 비밀번호를 변경해 주시고, 타인에게 비밀번호가 노출되지 않도록 주의해 주세요.</li>
+                            </ul>
+                        </div>
+                        <div class="btn_area">
+                            <a class="btn bgc_point" href="./myInfoModify.html" id="submitBtn" style="width:170px;"><span>확인</span></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer_bottom">
-                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
-                    <span class="after">대표 : 콜린클락</span>
-                    <span class="after">전화 : 02-797-5036</span>
-                    <span>사업자등록번호 : 101-84-04143</span>
-                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
-                </div>
-                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
-                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+                <!--main content end-->
             </div>
-        </footer>
-    </div>
+        </div>
+    <footer>
+        <div class="footer_wrap">
+            <div class="footer_top">
+                <ul>
+                    <li>
+                        <a href="">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <strong>개인정보처리방침</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">써브카드</a>
+                    </li>
+                    <li>
+                        <a href="">점주관리자</a>
+                    </li>
+                    <li>
+                        <a href="">Subway Listens</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_bottom">
+                <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                <span class="after">대표 : 콜린클락</span>
+                <span class="after">전화 : 02-797-5036</span>
+                <span>사업자등록번호 : 101-84-04143</span>
+                <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+            </div>
+            <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+            <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+        </div>
+    </footer>
 </body>
 </html>

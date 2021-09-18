@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUBWAY 써브웨이</title>
-    <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/global.css" type="text/css">
-    <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <link rel="stylesheet" href="./css/coupon.css" type="text/css">
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/index.js"></script>
+    <title>마이페이지</title>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/mysub/mypage.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
 </head>
 <body>
     <div id="wrap">
         <header>
             <div class="header_wrap">
-                <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='../index.html'">
                 <div class="header_menu">
                     <ul>
                         <li class="login"><a href="">로그인</a></li>
@@ -25,7 +25,7 @@
                         </li>
                         <li class="menu_icon">
                             <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
-                                <img src="./images/icon_utill_global.png" alt="글로벌">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
                             </a>
                         </li>
                     </ul>
@@ -128,7 +128,7 @@
                                         </a>
                                     </li>
                                     <li class="drop_li">
-                                        <a href="./subwayPromise.html">
+                                        <a href="">
                                             써브웨이 약속
                                         </a>
                                     </li>
@@ -206,7 +206,127 @@
         </header>
 
         <div id="container">
-            
+            <div class="content_wrap">
+                <h2 class="subTitle">MY SUB</h2>
+                <section class="member_active">
+                    <!-- 회원정보 -->
+                    <section class="my_info">
+                        <div class="info member">
+                            <div class="name_gender">
+                                <i class="character female"></i>
+                                <p class="name">
+                                    <strong><em class="multiple_line">김채린</em>님</strong>
+                                </p>
+                            </div>
+                            <a class="btn go_view" href="./mypageInfoPW.html">
+                            <span>회원 정보 변경</span></a>
+                        </div>
+                        <div class="info point">
+                            <dl>
+                                <dt>멤버십 포인트</dt>
+                                <dd>
+                                    <strong><em>0</em>P</strong>
+                                </dd>
+                            </dl>
+                            <a class="btn go_view" href="./point.html"><span>포인트 관리</span></a>
+                        </div>
+                        <div class="info subcard">
+                            <dl>
+                                <dt>써브카드</dt>
+                                <dd>
+                                    <strong><em>0</em>원</strong>
+                                </dd>
+                            </dl>
+                            <a class="btn go_view" href="./subCardMain.html"><span>카드
+                                    관리</span></a>
+                        </div>
+                    </section>
+                    <section class="my_info">
+                        <div class="info order">
+                            <dl>
+                                <dt>주문내역</dt>
+                                <dd>
+                                    <strong>0</strong>개
+                                </dd>
+                            </dl>
+                            <a class="btn go_view" href="./subOrder.html"><span>주문 내역 관리</span></a>
+                        </div>
+                        <div class="info gift">
+                            <dl>
+                                <dt>e-Gift 카드</dt>
+                                <dd>
+                                    <strong>0</strong>개
+                                </dd>
+                            </dl>
+                            <a class="btn go_view" href="./giftCard.html"><span>e-Gift 관리</span></a>
+                        </div>
+                        <div class="info coupon">
+                            <dl>
+                                <dt>쿠폰</dt>
+                                <dd>
+                                    <strong>0</strong>개
+                                </dd>
+                            </dl>
+                            <a class="btn go_view" href="./coupon.html"><span>쿠폰 관리</span></a>
+                        </div>
+                    </section>
+                </section>
+                    <!--// 회원활동 -->
+                <!-- 즐겨찾기 -->
+                <div class="bookmark_wrap">
+                    <div class="bookmark_area">
+                        <!-- 즐겨찾는매장 -->
+                        <section class="my_list">
+                            <h3 class="h_title">자주 찾는 매장</h3>
+                            <ul id="book_mark_store">
+								<li>
+							<input id="franchise_count" type="hidden" value="1">
+									<div class="li_wrap">
+										<button class="bt_book" type="button">
+											<i class="i_book"></i>
+										</button>
+										<div class="info_book">
+											<p class="name">성수역</p>
+											<a class="go_view" href="./oftenFind.html"><span class="blind">바로가기</span></a>
+										</div>
+										<button class="del_book del" onclick="view.del(this);" type="button">
+											<i class="i_del"></i>
+										</button>
+									</div>
+								</li>
+							</ul>
+                            <!-- <div class="add_bookmark">
+                                <button class="btn_add" id="find_store" onclick="add_storeFn();" type="button">
+                                        <span>매장 추가</span>
+                                </button>
+                            </div> -->
+                            <div class="add_bookmark">
+                                <button class="btn_add" id="find_store" onclick="add_storeFn();" type="button">
+                                        <span>매장 추가</span>
+                                </button>
+                            </div>
+                            <div class="add_bookmark">
+                                <button class="btn_add" id="find_store" onclick="add_storeFn();" type="button">
+                                        <span>매장 추가</span>
+                                </button>
+                            </div>
+                        </section>
+                        <!--// 즐겨찾는매장 -->
+    
+                        <section class="event">
+                            <h3 class="h_title">이벤트</h3>
+                            <article class="evt_bnr_wrap">
+                                <div class="evt_bnr_cont">
+                                    <div class="bx-wrapper" style="max-width: 0px;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative;"><ul class="evt_slider" style="width: 215%; position: relative;">
+                                            
+                                    </ul></div><div class="bx-controls bx-has-pager"><div class="bx-pager"></div></div></div>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                <!--// 즐겨찾기 -->
+            </div>
         </div>
 
         <footer>
