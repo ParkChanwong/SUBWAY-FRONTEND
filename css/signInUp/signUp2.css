@@ -31,7 +31,7 @@
 .step_img li::after {
     content: '';
     position: absolute;
-    background: url('../images/signUp/dots.png');
+    background: url('../../images/signUp/dots.png');
     width: 45px;
     height: 5px;
     top: 50%;
@@ -49,22 +49,22 @@
 
 .step_img li.step1 {
     margin-left: 0;
-    background: url('../images/signUp/stepImage.png') no-repeat;
+    background: url('../../images/signUp/stepImage.png') no-repeat;
     background-position: 0 0;
 }
 
 .step_img li.step2 {
-    background: url('../images/signUp/stepImage.png') no-repeat;
+    background: url('../../images/signUp/stepImage.png') no-repeat;
     background-position: -70px 0;
 }
 
 .step_img li.step3 {
-    background: url('../images/signUp/stepImage.png') no-repeat;
+    background: url('../../images/signUp/stepImage.png') no-repeat;
     background-position: -140px 0;
 }
 
 .step_img li.step4 {
-    background: url('../images/signUp/stepImage.png') no-repeat;
+    background: url('../../images/signUp/stepImage.png') no-repeat;
     background-position: -210px 0;
 }
 
@@ -176,7 +176,7 @@
     position: relative;
     margin-top: -4px;
     margin-left: 4px;
-    background: url('../images/signUp/icon_ess.png') 0 0 no-repeat;
+    background: url('../../images/signUp/icon_ess.png') 0 0 no-repeat;
 }
 
 .input_content {
@@ -240,7 +240,7 @@
     top: 15px;
     width: 12px;
     height: 7px;
-    background: url('../images/signUp/icon_select_arr.png') 0 0 no-repeat;
+    background: url('../../images/signUp/icon_select_arr.png') 0 0 no-repeat;
     z-index: 3;
 }
 
@@ -366,7 +366,7 @@
     vertical-align: middle;
     width: 21px;
     height: 16px;
-    background: url('../images/signUp/icon_reg.png') 0 0 no-repeat;
+    background: url('../../images/signUp/icon_reg.png') 0 0 no-repeat;
     margin-left: 7px;
     margin-top: -4px;
 }
@@ -480,7 +480,7 @@
     margin-bottom: 25px;
     width: 68px;
     height: 68px;
-    background: url('../images/signUp/icon_notice02.png') no-repeat;
+    background: url('../../images/signUp/icon_notice02.png') no-repeat;
 }
 
 .popup_content .n_overlap p {
@@ -533,7 +533,7 @@
     vertical-align: middle;
     width: 21px;
     height: 16px;
-    background: url('../images/signUp/icon_reg.png') 0 0 no-repeat;
+    background: url('../../images/signUp/icon_reg.png') 0 0 no-repeat;
     margin-left: 7px;
     margin-top: -4px;
 }
@@ -551,7 +551,7 @@
 }
 
 .pop_close {
-    background: url('../images/signUp/icon_popup_close.png') 50% 50% no-repeat;
+    background: url('../../images/signUp/icon_popup_close.png') 50% 50% no-repeat;
     width: 73px;
     height: 73px;
     position: absolute;

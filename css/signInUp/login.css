@@ -129,7 +129,7 @@
     content: '';
     width: 0px;
     height: 20px;
-    background: url("../images/login/login_check.png") 0 0 no-repeat;
+    background: url("../../images/login/login_check.png") 0 0 no-repeat;
     position: absolute;
     top: 0;
     left: 4px;

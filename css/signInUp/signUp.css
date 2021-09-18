@@ -31,7 +31,7 @@
 .step_img li::after {
     content: '';
     position: absolute;
-    background: url('../images/signUp/dots.png');
+    background: url('../../images/signUp/dots.png');
     width: 45px;
     height: 5px;
     top: 50%;
@@ -49,22 +49,22 @@
 
 .step_img li.step1 {
     margin-left: 0;
-    background: url('../images/signUp/stepImage.png') no-repeat;
+    background: url('../../images/signUp/stepImage.png') no-repeat;
     background-position: 0 0;
 }
 
 .step_img li.step2 {
-    background: url('../images/signUp/stepImage.png') no-repeat;
+    background: url('../../images/signUp/stepImage.png') no-repeat;
     background-position: -70px 0;
 }
 
 .step_img li.step3 {
-    background: url('../images/signUp/stepImage.png') no-repeat;
+    background: url('../../images/signUp/stepImage.png') no-repeat;
     background-position: -140px 0;
 }
 
 .step_img li.step4 {
-    background: url('../images/signUp/stepImage.png') no-repeat;
+    background: url('../../images/signUp/stepImage.png') no-repeat;
     background-position: -210px 0;
 }
 
@@ -170,7 +170,7 @@
     content: '';
     width: 0px;
     height: 20px;
-    background: url("../images/signUp/login_check.png") 0 0 no-repeat;
+    background: url("../../images/signUp/login_check.png") 0 0 no-repeat;
     position: absolute;
     top: 0;
     left: 4px;
@@ -273,14 +273,14 @@
     display: inline-block;
     position: relative;
     margin-right: 8px;
-    background: url('../images/signUp/icon_checkbox_basic.png') no-repeat;
+    background: url('../../images/signUp/icon_checkbox_basic.png') no-repeat;
 }
 
 .detail_check label span::before {
     content: '';
     width: 0px;
     height: 15px;
-    background: url("../images/signUp/icon_checkbox_basic.png") 0 -15px no-repeat;
+    background: url("../../images/signUp/icon_checkbox_basic.png") 0 -15px no-repeat;
     position: absolute;
     top: 0;
     left: 0px;
@@ -296,7 +296,7 @@
 }
 
 .inquiry_notice {
-    background: #f6f6f6 url('../images/signUp/icon_exc.png') 25px 50% no-repeat;
+    background: #f6f6f6 url('../../images/signUp/icon_exc.png') 25px 50% no-repeat;
     display: flex;
     flex-direction: column;
     padding: 15px 15px 19px 81px;
