@@ -1,0 +1,257 @@
+div {
+    display: block;
+}
+
+html, body, button, dl, dt, dd, div, form, fieldset, legend, h1, h2, h3, h4, h5, h6, input, select, textarea, ul, ol, li, p, pre, table, td, th, caption, a, button, figure {
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+
+
+#bg_container.bg_gray {
+    background-color: #f6f6f6;
+    padding-bottom: 130px;
+}
+
+.sub_header {
+    position: sticky;
+    left: 0;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #e5e5e5;
+    height: 59px;
+    background-color: #fff;
+    z-index: 11;
+}
+
+#container.bg_gray .sub_header {
+    background-color: #fff !important;
+}
+
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.sub_header .logo {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 60px;
+    width: 110px;
+    background: url(../../images/logo_sub_header.png) 0 50% no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+}
+
+.sub_header .sub_loc {
+    text-align: center;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.sub_header .sub_loc ul {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.sub_header .sub_loc ul li {
+    float: left;
+    position: relative;
+}
+
+.sub_header .sub_loc ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.sub_header .sub_loc ul li a {
+    display: block;
+    line-height: 60px;
+    color: #999999;
+    font-size: 16px;
+    font-family: noto_dl;
+    letter-spacing: -0.08em;
+    position: relative;
+}
+
+.sub_header .sub_loc ul li + li {
+    padding-left: 24px;
+    margin-left: 21px;
+}
+
+.sub_header .sub_loc ul li + li:after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #dddddd;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: 28px;
+}
+
+.sub_header .sub_loc ul li.active a {
+    color: #009223;
+    font-family: noto_m;
+}
+
+.sub_header .sub_loc ul li.active a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background-color: #009223;
+}
+
+.sub_header .top:after {
+    content: '';
+    width: 12px;
+    height: 15px;
+    background: url(../../images/icon_arr_top.png) 50% 0 no-repeat;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 18px;
+}
+
+.sub_header .top {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 32px;
+    padding-top: 28px;
+    font-family: sw_f;
+    font-weight: bold;
+    color: #bbbbbb;
+    font-size: 13px;
+    opacity: 0;
+}
+
+#content {
+    padding-top: 0;
+    position: relative;
+    z-index: 3;
+}
+
+#content h2.subTitle {
+    text-align: center;
+    font-size: 40px;
+    color: #292929;
+    font-family: noto_dl;
+    letter-spacing: -0.07em;
+    padding: 74px 0 80px;
+}
+
+.tab02 {
+    width: 1170px;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    box-shadow: 7px 7px 20px 0px rgb(0 0 0 / 10%);
+}
+
+.tab02 ul {
+    overflow: hidden;
+    width: 1170px;
+    display: flex;
+    border-left: 1px solid #e5e5e5;
+}
+
+.tab02 ul li {
+    flex: 1;
+    border: 1px solid #e5e5e5;
+    margin-left: -1px;
+    position: relative;
+}
+
+.tab02 ul li:first-child {
+    border-left: 0;
+}
+
+.tab02 ul li.active {
+    z-index: 3;
+    border: 1px solid #009223;
+}
+
+.tab02 ul li a {
+    display: block;
+    height: 68px;
+    line-height: 68px;
+    position: relative;
+    font-size: 18px;
+    font-family: noto_dl;
+    color: #666666;
+    text-align: center;
+    background-color: #fff;
+}
+
+.tab02 ul li.active a {
+    background-color: #009223;
+    color: #fff;
+}
+
+.coupon_wrapper .coupon_content_wrap {
+    background-color: #f6f6f6;
+    margin-top: -35px;
+    padding: 95px 0 130px;
+}
+
+.coupon_wrapper .coupon_area {
+    background-color: #fff;
+    padding: 60px 100px 80px;
+    width: 1170px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.coupon_wrapper .coupon_area .coupon_list ul {
+    padding: 40px 45px 0;
+    overflow: hidden;
+}
+
+.data_none {
+    padding: 172px 0;
+    text-align: center;
+}
+
+.coupon_wrapper .coupon_area .data_none {
+    padding: 110px 0 120px;
+}
+
+.data_none p {
+    position: relative;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    color: #999;
+    font-family: noto_dl;
+    padding-top: 58px;
+}
+
+.data_none p:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+    background: url(../../images/icon_exc_sm.png)no-repeat;
+    width: 40px;
+    height: 40px;
+}

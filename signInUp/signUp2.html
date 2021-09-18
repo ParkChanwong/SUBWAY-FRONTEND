@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보입력</title>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/signUp2.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script>
+        function sample6_execDaumPostcode() {
+            new daum.Postcode({
+                oncomplete: function(data) {
+                    // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                    // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                    // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                    var addr = ''; // 주소 변수
+                    var extraAddr = ''; // 참고항목 변수
+
+                    //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                    if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                        addr = data.roadAddress;
+                    } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                        addr = data.jibunAddress;
+                    }
+
+                    // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                    if(data.userSelectedType === 'R'){
+                        // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                        // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                        if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                            extraAddr += data.bname;
+                        }
+                        // 건물명이 있고, 공동주택일 경우 추가한다.
+                        if(data.buildingName !== '' && data.apartment === 'Y'){
+                            extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                        }
+                        // // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                        // if(extraAddr !== ''){
+                        //     extraAddr = ' (' + extraAddr + ')';
+                        // }
+                        // // 조합된 참고항목을 해당 필드에 넣는다.
+                        // document.getElementById("sample6_extraAddress").value = extraAddr;
+                    
+                    } else {
+                        document.getElementById("sample6_extraAddress").value = '';
+                    }
+
+                    // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                    document.getElementById('sample6_postcode').value = data.zonecode;
+                    document.getElementById("sample6_address").value = addr;
+                    // 커서를 상세주소 필드로 이동한다.
+                    document.getElementById("sample6_detailAddress").focus();
+                }
+            }).open();
+        }
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='../index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="">로그인</a></li>
+                        <li class="signUp">
+                            <a href="">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div id="container">
+            <div class="content_wrap">
+                <h2 class="title">회원가입</h2>
+                <ul class="step_img">
+                    <li class="step1"></li>
+                    <li class="step2"></li>
+                    <li class="step3 check"></li>
+                    <li class="step4"></li>
+                </ul>
+                <h1 class="step_title"><span>Step3.</span> 정보입력</h1>
+                <form action="" method="POST" class="step_content">
+                    <div class="step2_content">
+                        <p class="section_title">기본 정보 (필수 입력)</p>
+                        <div class="input_wrap">
+                            <p>아이디(이메일)<span></span></p>
+                            <div class="input_content">
+                                <input type="text" id="emailId" name="emailId" placeholder="이메일 아이디 입력">
+                                <span>@</span>
+                                <input type="text" id="emailDomain" name="emailDomain" placeholder="이메일 도매인 입력">
+                                <div class="select_wrap">
+                                    <select name="emailDomainList" id="emailDomainList" class="sel">
+                                        <option value="">직접 입력</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="daum.net">daum.net</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="icloud.com">icloud.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                    </select>
+                                </div>
+                                <span class="red_txt missId">이메일 주소를 입력해주세요.</span>
+                                <span class="red_txt missEmail">이메일이 잘못 입력되었습니다. 이메일 아이디 혹은 도메인을 다시 확인해 주세요.</span>
+                                <span class="red_txt missOverlap">이메일 중복 확인을 해주세요.</span>
+                            </div>
+                            <div class="overlapCheck openP">
+                                <a href="">중복확인</a>
+                            </div>
+                        </div>
+                        <div class="input_wrap">
+                            <p>아이디(이메일) 확인<span></span></p>
+                            <div class="input_content">
+                                <input type="text" id="emailIdCheck" name="emailIdCheck" placeholder="이메일 아이디 입력">
+                                <span>@</span>
+                                <input type="text" id="emailDomainCheck" name="emailDomainCheck" placeholder="이메일 도매인 입력">
+                                <div class="select_wrap">
+                                    <select name="emailDomainListCheck" id="emailDomainListCheck" class="sel">
+                                        <option value="">직접 입력</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="daum.net">daum.net</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="icloud.com">icloud.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                    </select>
+                                </div>
+                                <span class="red_txt missId">이메일 주소를 입력해주세요.</span>
+                            </div>
+                        </div>
+                        <div class="input_wrap">
+                            <p>비밀번호<span></span></p>
+                            <div class="input_content">
+                                <input type="password" id="pw" name="pw" placeholder="비밀번호 입력">
+                                <span class="red_txt pwWorng">8자이상 이상 입력하세요. (대문자 1개,소문자 1개,숫자 1개,특수문자 1개 필수)</span>
+                            </div>
+                        </div>
+                        <div class="input_wrap">
+                            <p>비밀번호 확인<span></span></p>
+                            <div class="input_content">
+                                <input type="password" id="pwCheck" name="pwCheck" placeholder="비밀번호 입력">
+                                <span class="red_txt oneMorePw">비밀번호를 한번 더 입력하여 주세요.</span>
+                            </div>
+                        </div>
+
+                        <p class="section_title">기본 정보 (필수 입력)</p>
+                        <div class="input_border">
+                            <div class="input_wrap">
+                                <p>우편번호</p>
+                                <div class="input_content">
+                                    <input type="text" id="sample6_postcode" name="zipCd" placeholder="0000" readonly>
+                                </div>
+                                <div class="overlapCheck openP">
+                                    <a onclick="sample6_execDaumPostcode()">우편번호검색</a>
+                                </div>
+                            </div>
+                            <div class="input_wrap">
+                                <p>주소</p>
+                                <div class="input_content">
+                                    <input type="text" id="sample6_address" name="baseAddr" placeholder="주소 입력" readonly>
+                                </div>
+                            </div>
+                            <div class="input_wrap">
+                                <p>상세주소</p>
+                                <div class="input_content">
+                                    <input type="text" id="sample6_detailAddress" name="dtlAddr" placeholder="상세주소 입력">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit_wrap">
+                        <button type="button" id="go_step3" name="go_step3" onclick="location.href='./signUp3.html'">회원가입 완료</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+    <div class="overlapPopup">
+        <div class="popup_wrap">
+            <div class="popup_content">
+                <h1>회원가입여부 확인 결과</h1>
+                <h2><span>가입이름</span>님은 써브웨이 회원입니다.</h2>
+                <div class="y_overlap">
+                    <div class="y_overlap_info">
+                        <p>아이디</p>
+                        <p>가입이메일</p>
+                        <br>
+                        <p>가입일</p>
+                        <p>가입날짜</p>
+                    </div>
+                </div>
+                <div class="n_overlap">
+                    <p>사용 가능한 아이디입니다.</p>
+                </div>
+                <div class="btn_area">
+                    <a class="pop_find_pw pop_btn">비밀번호 찾기</a>
+                    <a class="pop_login pop_btn">로그인</a>
+                    <a class="pop_ok pop_btn">확인</a>
+                </div>
+            </div>
+            <button class="pop_close"></button>
+        </div>
+    </div>
+</body>
+</html>

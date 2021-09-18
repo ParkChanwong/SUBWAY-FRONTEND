@@ -1,0 +1,140 @@
+#container{
+    position: relative;
+    padding-top: 0;
+    z-index: 3;
+}
+
+.subTitle{
+    font-family: 'noto_m';
+    text-align: center;
+    font-size: 40px;
+    color: #292929;
+    font-weight: 300;
+    letter-spacing: -0.07em;
+    padding: 80px 0 80px;
+}
+
+.content_wrap{
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.faq_wrapper{
+    padding-bottom: 130px;
+    min-height: 277px;
+}
+
+.faq_content .question{
+    position: relative;
+    padding: 20px 100px 25px;
+    cursor: pointer;
+}
+.faq_content li{
+    border-bottom: 1px solid #dddddd;
+}
+.faq_content .question strong{
+    display: block;
+    font-family: 'noto_l';
+    color: #292929;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.faq_content .question .q{
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    margin-top: -15px;
+    color: #fff;
+    font-family: 'sw_f';
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    background-color: #009223;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.faq_wrapper .faq_content{
+    border-top: 4px solid #009223;
+}
+
+.faq_wrapper .question::after {
+    content: '';
+    background: url(../../images/franchiseFAQ/icon_faq.png)0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.faq_content .ask{
+    position: relative;
+    padding: 0 100px;
+    overflow: hidden;
+    font-family: 'noto_r';
+    color: #666666;
+    display: none;
+}
+
+.faq_content .ask .a{
+    position: absolute;
+    left: 35px;
+    top: 21px;
+    color: #fff;
+    font-family: 'sw_f';
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    background-color: #ffc300;
+    text-align: center;
+    border-radius: 15px;
+}
+.faq_content .ask .ask_text{
+    position: relative;
+    padding: 18px 0 22px;
+    border-top: 1px solid #dddddd;
+    color: #666666;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.faq_content .open .ask .ask-text{
+    position: relative;
+    padding: 18px 0 22px;
+    border-top: 1px solid #dddddd;
+    color: #666666;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+div{
+    display: block;
+}
+
+.open .question::after{
+    transform: rotate(135deg);
+}
+
+.open .ask-text{
+    opacity: 1;
+}
+
+.open .question strong{
+    color: #009223;
+    font-family: 'noto_l';
+}
+.open .question, .open .ask{
+    background-color: #fafafa;
+}
+
+.faq_wrapper .faq_content li, .faq_wrapper .question:after, .faq_wrapper .ask .ask_text {
+    transition-duration: 0.4s;
+}

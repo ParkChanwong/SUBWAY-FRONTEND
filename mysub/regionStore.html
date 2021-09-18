@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY-SUB > 지역별 매장</title>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/mysub/regionStore.css" type="text/css">
+    <link rel="stylesheet" href="../css/mysub/subHeader.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/mysub/oftenFind.js"></script>
+    <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx360121828bc1498a9a0d5bef45f85c58"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="">로그인</a></li>
+                        <li class="signUp">
+                            <a href="">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div class="sub_header" style="position: sticky; background-color: #ffffff;">
+            <div class="content">
+                <a href="#" class="logo">HOME</a>
+                <div class="sub_loc">
+                    <ul>
+                        <li><a href="./point.html">멤버십</a></li>
+                        <li><a href="./coupon.html">쿠폰</a></li>
+                        <li><a href="./giftCard.html">e-Gift카드</a></li>
+                        <li><a href="./subOrder.html">주문내역</a></li>
+                        <li class="active"><a href="./oftenFind.html">자주 찾는 매장</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="top">TOP</a>
+            </div>
+        </div>
+
+        <div id="container" class="bg_gray">
+            <div class="content_wrap">
+                <div id="content">
+                    <div class="bookmark_wrapper">
+                        <h2 class="subTitle">지역별 매장</h2>
+                        <div class="bookmark_list">
+                            <div class="board_list_wrapper">
+                                <div class="store_list_sorting">
+                                    <h3 class="sort_tit">지역별 매장</h3>
+                                    <div class="form_select">
+                                        <select onchange="if(this.value) location.href=(this.value);" name="storeType">
+                                            <option value="./oftenFind.html">자주 찾는 매장</option>
+                                            <option value="./oftenOrder.html">자주 주문한 매장</option>
+                                            <option value="./nearStore.html">가까운 매장</option>
+                                            <option selected="selected" value="./regionStore.html">지역별 매장</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="store_txt_search">
+                                    <div class="form_search">
+                                        <input type="text" id="keyword" maxlength="30" placeholder="지역 또는 매장명 입력">
+                                        <a href="#" class="btn_search"></a>
+                                    </div>
+                                </div>
+                                <div class="content_often" id="content_table">
+                                    <p class="board_total">
+                                        검색된 매장 
+                                        <strong>0</strong>개
+                                    </p>
+                                    <table id="bookmark_table">
+                                        <caption>자주 찾는 매장</caption>
+                                        <colgroup>
+                                            <col style="width: 21%">
+                                            <col style="width: 46%">
+                                            <col style="width: 17%">
+                                            <col style="width: 16%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">매장명</th>
+                                                <th scope="col">매장주소</th>
+                                                <th scope="col">연락처</th>
+                                                <th scope="col">자주 찾는 매장</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr id="t_l_none">
+                                                <td class="t_l">
+                                                    <p class="store">인천길병원</p>
+                                                </td>
+                                                <td class="t_l">
+                                                    <div class="bookmark_map">
+                                                        <a href="#" class="map">
+                                                            <span class="blind">매장정보 보기</span>
+                                                        </a>
+                                                        <address>인천광역시 남동구 구월남로 153</address>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="tel">070-8888-3277</div>
+                                                </td>
+                                                <td>
+                                                    <label class="my_bookmark">
+                                                        <i class="i_star"></i>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr id="t_l_none">
+                                                <td class="t_l">
+                                                    <p class="store">인천주안역</p>
+                                                </td>
+                                                <td class="t_l">
+                                                    <div class="bookmark_map">
+                                                        <a href="#" class="map">
+                                                            <span class="blind">매장정보 보기</span>
+                                                        </a>
+                                                        <address>인천광역시 미추홀구 주안로 89</address>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="tel">032-876-4909</div>
+                                                </td>
+                                                <td>
+                                                    <label class="my_bookmark">
+                                                        <i class="i_star"></i>
+                                                    </label>
+                                                </td>
+                                            </tr>
+
+                                            <tr id="data_none">
+                                                <td colspan="4">
+                                                    <div class="data_none">
+                                                        <p>검색결과가 없습니다.</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+    <div class="popup_back">
+        <div class="popup_wrapper">
+            <div class="popup_wrap_wh">
+                <div class="scroll">
+                    <div class="store">
+                        <div class="title">
+                            <h1 id="storNm">인천주안역</h1>
+                        </div>
+                        <div class="popup_content">
+                            <div class="store_info_wrap">
+                                <dl class="store_info">
+                                    <dt>매장주소</dt>
+                                    <dd id="stroAddr">인천광역시 미추홀구 주안로 89</dd>
+                                </dl>
+                                <dl class="store_info">
+                                    <dt>연락처</dt>
+                                    <dd id="tel">
+                                        032-876-4909
+                                    </dd>
+                                </dl>
+                                <dl class="store_info">
+                                    <dt>영업시간</dt>
+                                    <dd>08:00 ~ 23:00</dd>
+                                </dl>
+                                <dl class="store_info">
+                                    <dt>· 주요서비스</dt>
+                                    <dd>
+                                        <p class="badge">매장오픈</p>
+                                        <p class="badge">APP-패스트썹</p>
+                                        <p class="badge">주차가능</p>
+                                        <p class="badge">배달가능</p>
+                                        <p class="badge">단체주문</p>
+                                        <p class="badge">시그니처랩</p>
+                                        <p class="badge">드라이브스루</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div id="map_div">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn_close"></button>
+        </div>
+    </div>
+
+</body>
+</html>

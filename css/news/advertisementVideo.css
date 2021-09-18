@@ -1,0 +1,221 @@
+.eventPromotion_cate_wrap {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 100;
+}
+
+.eventPromotion_cate_wrap .eventPromotion_cate_content {
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.eventPromotion_cate_wrap .tab_logo {
+    position: absolute;
+    width: 110px;
+    height: 60px;
+    left: 0;
+    background: url('../../images/eventPromotion/tab_logo.png') 100% no-repeat;
+    display: none;
+}
+
+.eventPromotion_cate_wrap .tab_top {
+    position: absolute;
+    height: 32px;
+    padding-top: 28px;
+    right: 0;
+    font-size: 13px;
+    color: #bbbbbb;
+    font-family: 'sw_f';
+    display: none;
+}
+
+.eventPromotion_cate_wrap .tab_top::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background: url('../../images/eventPromotion/tap_top_arrow.png') 50% 0 no-repeat;
+    display: block;
+    top: 18px;
+    left: 0;
+}
+
+.eventPromotion_cate_wrap ul {
+    width: 1170px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.eventPromotion_cate_wrap ul li {
+    display: inline-block;
+    position: relative;
+    padding-left: 24px;
+    margin-left: 24px;
+}
+
+.eventPromotion_cate_wrap ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #dddddd;
+    border-radius: 50px;
+}
+
+.eventPromotion_cate_wrap ul li:nth-of-type(1):after {
+    display: none;
+}
+
+.eventPromotion_cate_wrap ul li a {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    color: #999999;
+    line-height: 60px;
+    font-family: 'noto_m';
+}
+
+.eventPromotion_cate_wrap ul .active a {
+    color: #009223;
+}
+
+.eventPromotion_cate_wrap ul .active a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #009223;
+}
+
+.video_title {
+    font-size: 40px;
+    color: #292929;
+    letter-spacing: -0.07em;
+    padding: 74px 0 80px;
+    font-family: 'noto_dl';
+    text-align: center;
+}
+
+.video_wrap {
+    width: 100%;
+    position: relative;
+    background-color: #f2f2f2;
+    padding-bottom: 127px;
+}
+
+.video_wrap::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 532px;
+    background-color: #ffffff;
+}
+
+.video_content {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video_list {
+    width: 100%;
+    margin-top: 79px;
+    font-size: 0;
+}
+
+.video_list li {
+    width: 370px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.video_list li:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.video_list li a {
+    display: block;
+    transition-duration: 0.2s;
+}
+
+.video_list li a .video_img {
+    width: 370px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video_list li a .video_img::before {
+    content: '';
+    position: absolute;
+    background: url('../../images/advertisementVideo/video_play_btn.png') 0 0 no-repeat;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    z-index: 2;
+}
+
+.video_list li a:hover .video_img::before {
+    opacity: 1;
+}
+
+.video_list li a .video_img::after {
+    content: '';
+    position: absolute;
+    border: 10px solid #009223;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    transition-duration: 0.2s;
+}
+
+.video_list li a:hover .video_img::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video_list li .video_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.video_list li.active a .video_img::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video_list li.active a .video_img::before {
+    opacity: 1;
+}
+
+.video_list li a p {
+    text-align: center;
+    color: #292929;
+    font-size: 18px;
+    padding: 27px 0;
+    letter-spacing: -0.035em;
+    height: 96px;
+    font-family: 'noto_dl';
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/mysub/mypage.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='../index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="">로그인</a></li>
+                        <li class="signUp">
+                            <a href="">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div id="container">
+            <div class="content_wrap">
+                <h2 class="subTitle">MY SUB</h2>
+                <section class="member_active">
+                    <!-- 회원정보 -->
+                    <section class="my_info">
+                        <div class="info member">
+                            <div class="name_gender">
+                                <i class="character female"></i>
+                                <p class="name">
+                                    <strong><em class="multiple_line">김채린</em>님</strong>
+                                </p>
+                            </div>
+                            <a class="btn go_view" href="./mypageInfoPW.html">
+                            <span>회원 정보 변경</span></a>
+                        </div>
+                        <div class="info point">
+                            <dl>
+                                <dt>멤버십 포인트</dt>
+                                <dd>
+                                    <strong><em>0</em>P</strong>
+                                </dd>
+                            </dl>
+                            <a class="btn go_view" href="./point.html"><span>포인트 관리</span></a>
+                        </div>
+                        <div class="info subcard">
+                            <dl>
+                                <dt>써브카드</dt>
+                                <dd>
+                                    <strong><em>0</em>원</strong>
+                                </dd>
+                            </dl>
+                            <a class="btn go_view" href="./subCardMain.html"><span>카드
+                                    관리</span></a>
+                        </div>
+                    </section>
+                    <section class="my_info">
+                        <div class="info order">
+                            <dl>
+                                <dt>주문내역</dt>
+                                <dd>
+                                    <strong>0</strong>개
+                                </dd>
+                            </dl>
+                            <a class="btn go_view" href="./subOrder.html"><span>주문 내역 관리</span></a>
+                        </div>
+                        <div class="info gift">
+                            <dl>
+                                <dt>e-Gift 카드</dt>
+                                <dd>
+                                    <strong>0</strong>개
+                                </dd>
+                            </dl>
+                            <a class="btn go_view" href="./giftCard.html"><span>e-Gift 관리</span></a>
+                        </div>
+                        <div class="info coupon">
+                            <dl>
+                                <dt>쿠폰</dt>
+                                <dd>
+                                    <strong>0</strong>개
+                                </dd>
+                            </dl>
+                            <a class="btn go_view" href="./coupon.html"><span>쿠폰 관리</span></a>
+                        </div>
+                    </section>
+                </section>
+                    <!--// 회원활동 -->
+                <!-- 즐겨찾기 -->
+                <div class="bookmark_wrap">
+                    <div class="bookmark_area">
+                        <!-- 즐겨찾는매장 -->
+                        <section class="my_list">
+                            <h3 class="h_title">자주 찾는 매장</h3>
+                            <ul id="book_mark_store">
+								<li>
+							<input id="franchise_count" type="hidden" value="1">
+									<div class="li_wrap">
+										<button class="bt_book" type="button">
+											<i class="i_book"></i>
+										</button>
+										<div class="info_book">
+											<p class="name">성수역</p>
+											<a class="go_view" href="./oftenFind.html"><span class="blind">바로가기</span></a>
+										</div>
+										<button class="del_book del" onclick="view.del(this);" type="button">
+											<i class="i_del"></i>
+										</button>
+									</div>
+								</li>
+							</ul>
+                            <!-- <div class="add_bookmark">
+                                <button class="btn_add" id="find_store" onclick="add_storeFn();" type="button">
+                                        <span>매장 추가</span>
+                                </button>
+                            </div> -->
+                            <div class="add_bookmark">
+                                <button class="btn_add" id="find_store" onclick="add_storeFn();" type="button">
+                                        <span>매장 추가</span>
+                                </button>
+                            </div>
+                            <div class="add_bookmark">
+                                <button class="btn_add" id="find_store" onclick="add_storeFn();" type="button">
+                                        <span>매장 추가</span>
+                                </button>
+                            </div>
+                        </section>
+                        <!--// 즐겨찾는매장 -->
+    
+                        <section class="event">
+                            <h3 class="h_title">이벤트</h3>
+                            <article class="evt_bnr_wrap">
+                                <div class="evt_bnr_cont">
+                                    <div class="bx-wrapper" style="max-width: 0px;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative;"><ul class="evt_slider" style="width: 215%; position: relative;">
+                                            
+                                    </ul></div><div class="bx-controls bx-has-pager"><div class="bx-pager"></div></div></div>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                <!--// 즐겨찾기 -->
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

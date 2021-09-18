@@ -12,7 +12,7 @@ $(document).ready(function() {
     $(".categori_li").mouseleave(function() {
         $(".categori_li").children(".drop_menu").stop().slideUp(350);
         $(".bg_w").stop().slideUp(350);
-        $(this).children("p").css("color", "#292929");
+        $(this).children("p").css("color", "#666666");
     });
 
     $(".drop_li").mouseleave(function() {
