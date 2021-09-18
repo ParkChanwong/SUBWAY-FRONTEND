@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUBWAY 써브웨이</title>
-    <link rel="shortcut icon" href="./images/subway_tIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/global.css" type="text/css">
-    <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/index.js"></script>
+    <title>SUBWAY - 매장찾기</title>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/subway_css/fintStoreDetail.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="../library/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../library/slick/slick-theme.css"/>
+    <script type="text/javascript" src="../library/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../js/subway_js/findStore.js"></script>
+    <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx360121828bc1498a9a0d5bef45f85c58"></script>
+    
 </head>
-<body>
+<body onload="initTmap()">
     <div id="wrap">
         <header>
             <div class="header_wrap">
-                <img src="./images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='./index.html'">
                 <div class="header_menu">
                     <ul>
                         <li class="login"><a href="">로그인</a></li>
@@ -24,7 +31,7 @@
                         </li>
                         <li class="menu_icon">
                             <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
-                                <img src="./images/icon_utill_global.png" alt="글로벌">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
                             </a>
                         </li>
                     </ul>
@@ -127,7 +134,7 @@
                                         </a>
                                     </li>
                                     <li class="drop_li">
-                                        <a href="./subwayPromise.html">
+                                        <a href="">
                                             써브웨이 약속
                                         </a>
                                     </li>
@@ -205,7 +212,55 @@
         </header>
 
         <div id="container">
-            
+            <div class="sub_header">
+                <div class="sub_location">
+                    <a href="#" class="logo"></a>
+                    <ul class="content_category">
+                        <li><a href="#">써브웨이 역사</a></li>
+                        <li><a href="#">써브웨이 약속</a></li>
+                        <li><a href="#">샌드위치 아티스트 지원</a></li>
+                        <li class="active"><a href="#">매장찾기</a></li>
+                    </ul>
+                    <a href="#" class="top">TOP</a>
+                </div>
+            </div>
+            <div class="content_wrap">
+                <div class="store_search_wrap">
+                    <div class="store_search_layer">
+                        <h2>잠실역</h2>
+                        <div class="store_slider">
+                            <div class="store_img">
+                                <img src="/images/findStoreImages/Store_Image_Default.jpg" alt="매장이미지">
+                            </div>
+                        </div>
+                        <div class="slider_page">
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>매장주소</dt>
+                                <dd>서울특별시 송파구 올림픽로 293-19</dd>
+                                <dt>연락처</dt>
+                                <dd>02-2202-1300</dd>
+                                <dt>영업시간</dt>
+                                <dd>08:00 - 23:00</dd>
+                                <dt>주요서비스</dt>
+                                <dd>
+                                    <div class="service">
+                                        <span>APP-패스트썹</span>
+                                        <span>APP-홈썹</span>
+                                        <span>배달가능</span>
+                                        <span>단체주문</span>
+                                        <span>시그니처랩</span>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div id="map_div">
+                    
+                </div>
+            </div>
         </div>
 
         <footer>

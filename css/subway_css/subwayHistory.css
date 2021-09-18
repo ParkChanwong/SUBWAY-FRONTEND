@@ -1,0 +1,400 @@
+html, body, button, dl, dt, dd, div, form, fieldset, legend, h1, h2, h3, h4, h5, h6, input, select, textarea, ul, ol, li, p, pre, table, td, th, caption, a, button, figure {
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+body {
+    font-size: 16px;
+    color: #666666;
+    font-family: sw_s, noto_dl;
+}
+#container {
+    margin-top: 170px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    /* margin-top: -60px; */
+    padding: 0;
+    line-height: 120%;
+}
+.sub_header {
+    position:absolute; 
+    left:0; 
+    width:100%; 
+    top:0; 
+    border-bottom:1px solid #e5e5e5; 
+    height:59px; 
+    background-color:#fff; 
+    z-index:5;
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-family: noto_dl;
+}
+.sub_header .logo {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 60px;
+    width: 110px;
+    background: url('../../images/common/logo_sub_header.png') 0 50% no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+}
+.sub_header .sub_loc {
+    text-align: center;
+}
+.sub_header .sub_loc ul {
+    overflow: hidden;
+    display: inline-block;
+}
+.sub_header .sub_loc ul li {
+    float: left;
+    position: relative;
+}
+.sub_header .sub_loc ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+.sub_header .sub_loc ul li:first-child:after {
+    display: none;
+}
+.sub_header .sub_loc ul li a {
+    display: block;
+    line-height: 60px;
+    color: #999999;
+    font-size: 16px;
+    letter-spacing: -0.08em;
+    position: relative;
+    cursor: pointer;
+}
+.sub_header .sub_loc ul li + li {
+    padding-left: 24px;
+    margin-left: 21px;
+}
+.sub_header .sub_loc ul li + li:after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #dddddd;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: 28px;
+}
+.sub_header .sub_loc ul li.active a {
+    color: #009223;
+    font-weight: 300;
+}
+.sub_header .sub_loc ul li.active a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background-color: #009223;
+}
+.sub_header .top {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 32px;
+    padding-top: 28px;
+    font-family: sw_f;
+    font-weight: bold;
+    color: #bbbbbb;
+    font-size: 13px;
+    opacity: 0;
+}
+.sub_header .top:after {
+    content: '';
+    height: 15px;
+    background: url('../../images/common/icon_arr_top.png') 50% 0 no-repeat;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 18px;
+}
+.sub_header.type01{background-color:transparent; border:0; height:60px;}
+.sub_header.type01:after{content:''; position:absolute; left:0; bottom:0; width:100%; height:1px; background-color:#fff; opacity:0.1}
+.sub_header.type01 .sub_loc ul li:after{opacity:0.2}
+/* .sub_header.type01 .sub_loc ul li a{color:#fff;} */
+.sub_header.type01 .sub_loc ul li.active a{color:#ffce32 !important}
+.sub_header.type01 .sub_loc ul li.active a:after{background-color:#ffce32 !important;}
+
+
+/* 끝 */
+.subway_history_wrapper {
+    position:relative; 
+    overflow:hidden;
+}
+.subway_history_wrapper .section_content {
+    position:relative;
+}
+.subway_history_wrapper .section_content .tit {
+    color:#fff; 
+    position:absolute; 
+    left:0; 
+    width:100%; 
+    text-align:center; 
+    font-family:sw_f; 
+    font-weight:bold; 
+    font-size:46px; 
+    letter-spacing:0.02em
+}
+.subway_history_wrapper .section_content .line {
+    position:absolute; 
+    left:0; 
+    width:100%; 
+    z-index:1
+}
+.subway_history_wrapper .section_content ul {
+    position:relative; 
+    width:1070px; 
+    margin:0 auto; 
+    z-index:3;
+}
+.subway_history_wrapper .section_content ul li {
+    position:absolute; 
+    padding-bottom:66px;
+}
+.subway_history_wrapper .section_content ul li.right {
+    text-align: right;
+}
+.subway_history_wrapper .section_content ul li:after {
+    content:''; 
+    position:absolute; 
+    bottom:2px; 
+    width:15px; 
+    height:15px; 
+    border:5px solid #ffce32; 
+    border-radius:20px;
+}
+.subway_history_wrapper .section_content ul li:before {
+    content:''; 
+    position:absolute; 
+    bottom:22px; 
+    width:50px; 
+    height:126px; 
+    background:url('../../images/subwayhistory/img_pin_s.png') 0 0 no-repeat;
+}
+.subway_history_wrapper .section_content ul li.left:before {
+    left: -80px;
+}
+.subway_history_wrapper .section_content ul li.big:after {
+    bottom:0
+}
+.subway_history_wrapper .section_content ul li.big:before {
+    width:80px; 
+    height:200px; 
+    bottom:19px;  
+    background:url('../../images/subwayhistory/img_pin_b.png') 0 0 no-repeat;
+}
+.subway_history_wrapper .section_content ul li.big.right:before {
+    right: -110px;
+}
+.subway_history_wrapper .section_content ul li .year {
+    color:#ffce32; 
+    font-size:28px; 
+    font-weight:bold; 
+    font-family:sw_f;
+}
+.subway_history_wrapper .section_content ul li p {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+    white-space: nowrap;
+    margin-top: 9px;
+    letter-spacing: -0.04em;
+    font-family: noto_m;
+}
+.subway_history_wrapper .section_content ul li.left {
+    text-align:left
+}
+.subway_history_wrapper .section_content ul li.left:after {
+    left:-70px;
+}
+.subway_history_wrapper .section_content ul li.left:before {
+    left:-80px;
+}
+.subway_history_wrapper .section_content ul li.big.left:after {
+    left:-85px;
+}
+.subway_history_wrapper .section_content ul li.big.left:before {
+    left:-110px;
+}
+.subway_history_wrapper .section_content ul li.right {
+    text-align:right;
+}
+.subway_history_wrapper .section_content ul li.right:after {
+    right:-63px;
+}
+.subway_history_wrapper .section_content ul li.right:before {
+    right:-78px;
+}
+.subway_history_wrapper .section_content ul li.big.right:after {
+    right:-79px;
+}
+.subway_history_wrapper .section_content ul li.big.right:before {
+    right:-110px;
+}
+/* 보라색!! */
+.subway_history_wrapper .scene01 {
+    background:#4d006a; 
+    height:1200px;
+}
+.subway_history_wrapper .scene01 li:after {
+    background-color:#4d006a;
+}
+.subway_history_wrapper .scene01 .line {
+    bottom:0; 
+    height:1147px; 
+    background:url('../../images/subwayhistory/bg_history_line01.png') 50% 100% no-repeat;
+}
+.subway_history_wrapper .scene01 .tit {
+    top:242px;
+}
+.subway_history_wrapper .scene01 .img01 {
+    left:50%; 
+    top:150px; 
+    margin-left:-889px; 
+    position:absolute;
+}
+.subway_history_wrapper .scene01 .img02 {
+    left:50%; 
+    bottom:313px; 
+    margin-left:252px; 
+    position:absolute;
+}
+.subway_history_wrapper .scene01 .y1968 .logo {
+    position:absolute; 
+    left:80px; 
+    top:5px
+}
+/* 하늘색!! */
+.subway_history_wrapper .scene02 {
+    background-color:#14a8e6; 
+    height:1400px;
+}
+.subway_history_wrapper .scene02 li:after {
+    background-color:#14a8e6
+}
+.subway_history_wrapper .scene02 .line {
+    top:0; 
+    bottom:0; 
+    background:url('../../images/subwayhistory/bg_history_line02.png') 50% 0 no-repeat;
+    z-index:2;
+}
+.subway_history_wrapper .scene02 .img01 {
+    left:50%; 
+    top:-141px; 
+    margin-left:-711px; 
+    position:absolute; 
+    z-index:3;
+}
+.subway_history_wrapper .scene02 .img02 {
+    left:50%; 
+    top:330px; 
+    margin-left:424px; 
+    position:absolute; 
+    z-index:3;
+}
+.subway_history_wrapper .scene02 .img03 {
+    left:50%; 
+    bottom:203px; 
+    margin-left:-620px; 
+    position:absolute; 
+    z-index:1;
+}
+.subway_history_wrapper .scene02 .img04 {
+    right:50%; 
+    bottom:-1px; 
+    margin-right:-960px; 
+    position:absolute; 
+    z-index:1;
+}
+/* 주황색!!!!!! */
+.subway_history_wrapper .scene03 {
+    background-color:#e85a1c; 
+    height:1200px;
+}
+.subway_history_wrapper .scene03 li:after {
+    background-color:#e85a1c;
+}
+.subway_history_wrapper .scene03 .line {
+    top:0; 
+    bottom:0; 
+    background:url('../../images/subwayhistory/bg_history_line03.png') 50% 0 no-repeat;
+}
+.subway_history_wrapper .scene03 .img01 {
+    left:50%; 
+    top:347px; 
+    margin-left:-960px; 
+    position:absolute; 
+    z-index:3;
+}
+.subway_history_wrapper .scene03 .img02 {
+    right:50%; 
+    top:79px; 
+    margin-right:-960px; 
+    position:absolute; 
+    z-index:3;
+}
+/* 초록색!!!! */
+.subway_history_wrapper .scene04 {
+    background-color:#009223; 
+    height:2142px;
+}
+.subway_history_wrapper .scene04 li:after {
+    background-color:#009223
+}
+.subway_history_wrapper .scene04 .tit {
+    top:224px;
+}
+.subway_history_wrapper .scene04 .line {
+    top:0; 
+    bottom:0; 
+    background:url('../../images/subwayhistory/bg_history_line04.png') 50% 0 no-repeat; 
+    z-index:2;
+}
+.subway_history_wrapper .scene04 .img01 {
+    left:50%; 
+    top:22px; 
+    margin-left:400px; 
+    position:absolute; 
+    z-index:3;
+}
+.subway_history_wrapper .scene04 .img02 {
+    left:50%; 
+    top:881px; 
+    margin-left:-778px; 
+    position:absolute; 
+    z-index:3;
+}
+.subway_history_wrapper .scene04 .img03 {
+    left:50%; 
+    bottom:142px; 
+    margin-left:-960px; 
+    position:absolute; 
+    z-index:1;
+}
+.subway_history_wrapper .scene04 .y2017 .logo2 {
+    position:absolute; 
+    right:80px; 
+    top:-16px;
+}
+/* .subway_history_wrapper [data-aos=fade-right]{transform: translate(-50px);}
+.subway_history_wrapper [data-aos=fade-left]{transform: translate(50px);}
+.subway_history_wrapper [data-aos=zoom-in]{transform: scale(.8);} */
