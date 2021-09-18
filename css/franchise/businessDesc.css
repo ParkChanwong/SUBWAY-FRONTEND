@@ -1,0 +1,69 @@
+html,body,button,dl,dt,dd,div,form,fieldset,legend,h1,h2,h3,h4,h5,h6,input,select,textarea,ul,ol,li,p,pre,table,td,th,caption,a,button,figure{margin:0;padding:0; line-height:120%;}
+html,body{background-color:#fff;}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+body{font-size:16px; color:#666666; font-family:font_ns, sans-serif;}
+
+ol,ul{list-style:none}
+a{text-decoration:none; color:#333;}
+img{vertical-align:top; border:0}
+table{border-collapse:collapse;border-spacing:0; width:100%;}
+caption{visibility:hidden; font-size:0; line-height:0; opacity:0; height:0; overflow:hidden;}
+em{font-style:normal;}
+
+
+#container{ position:relative;} /*margin-top:170px;*/
+
+/* wrap */
+#wrap{min-width:1280px;}
+.content{max-width:1170px; margin:0 auto; position:relative;}
+
+.content {max-width: 1170px; margin: 0 auto; position: relative;}
+.content_main{padding-top:0; position:relative; z-index:3;}
+.content_main h2.sub_tit{text-align:center; font-size:40px; color:#292929; font-weight:300; letter-spacing:-0.07em; padding: 70px 0 70px; font-family: noto_m; background-color: #fff;}
+
+.content_wrap {position: sticky; left: 0; top: 0; width: 100%; border-bottom: 1px solid #e5e5e5; height: 59px;  background-color: #fff; z-index: 5;}
+.content_wrap .logo {position: absolute; left: 0; top: 0; height: 60px; width: 110px; background: url('../../images/common/logo_sub_header.png') 0 50% no-repeat; overflow: hidden; text-indent: -9999px; font-size: 0; line-height: 0; display: none;}
+.content_wrap .top {position: absolute; right: 0; top: 0; height: 32px; padding-top: 28px; font-family: font_sw; font-weight: bold; color: #bbbbbb; font-size: 13px; display: none;}
+.content_wrap .top::after {content: ''; width: 12px; height: 15px; background: url(../../images/common/icon_arr_top.png) 50% 0 no-repeat; display: inline-block; position: absolute; left: 0; width: 100%; top: 18px;}
+.content_wrap .content_nav {text-align: center;}
+.content_wrap .content_nav ul {overflow: hidden; display: inline-block;}
+.content_wrap .content_nav ul li {float: left; position: relative;}
+.content_wrap .content_nav ul li + li { padding-left: 24px; margin-left: 21px;}
+.content_wrap .content_nav ul li + li::after {content: ''; width: 4px; height: 4px; background-color: #dddddd; border-radius: 30px; position: absolute; left: 0; top: 28px;}
+.content_wrap .content_nav ul li:first-child {margin-left: 0; padding-left: 0;}
+.content_wrap .content_nav ul li:first-child::after {display: none;}
+.content_wrap .content_nav ul li a {display: block; line-height: 60px; color: #999999; font-size: 16px; letter-spacing: -0.08em; position: relative; font-family: noto_r;}
+.content_wrap .content_nav ul li.active a {color: #009223; font-weight: 300;}
+.content_wrap .content_nav ul li.active a::after {content:''; position: absolute; left: 0; width: 100%; height: 4px; bottom: 0; background-color: #009223;}
+
+.business_info{background-color:#f6f6f6;margin-top:30px; padding-bottom:130px;}
+.business_info h3{font-weight:bold; color:#292929; font-size:28px; text-align:center; letter-spacing:-0.05em; margin-bottom:37px; font-family: noto_r; font-weight: bold;}
+.business_info .branch_region{text-align:center; position:relative; top:-29px; width:1194px; margin:0 auto; background:url(../images/franchise/bg_tab.png) 5px 0 no-repeat;}
+.business_info .branch_region ul{overflow:hidden; display:inline-block; height:84px;}
+.business_info .branch_region ul li{float:left; width:585px; border:1px solid #e5e5e5; position:relative; margin-left:-1px; z-index:1;}
+.business_info .branch_region ul li:first-child{margin-left:0}
+.business_info .branch_region ul li a{display:block; text-align:center; color:#999999; font-size:16px; height:58px; line-height:58px; background-color:#fff; font-family: noto_dl;}
+.business_info .branch_region ul li.active{z-index:3;}
+.business_info .branch_region ul li.active a{background-color:#009223; color:#fff;}
+
+.business_info .info{margin:0 auto; position:relative; width:1170px; overflow:hidden; height:0px;}
+.business_info .info.active{height:auto;}
+.business_info .notice{margin-top:-30px;color: #666;font-size: 16px;text-align: center;}
+.business_info .board_list{padding-bottom:70px}
+.business_info .board_list table tbody td{color: #666}
+.business_info .board_list table tbody tr td:first-child{color:#292929}
+
+.board_list table{clear:both; border-top:4px solid #009223;}
+.board_list table th{color:#009223; font-size:16px; font-weight:300; height:69px; border-bottom:1px solid #009223; text-align:center; font-family: noto_m;}
+.board_list table th.hide{font-size:0; display:table-cell;}
+.board_list table td{height:69px; border-bottom:1px solid #dddddd; text-align:center; color:#292929; font-size:16px; font-family: noto_dl;}
+.board_list table td .title{text-align:left; letter-spacing:-0.04em}
+.board_list table td .date{color:#bbbbbb; font-family:font_sw;}
+.board_list table td .icon_file{display:inline-block; width:20px; height:20px; background:url(../../images/common/icon_file.png) 0 0 no-repeat;}
+.board_list table td .icon_notice{display:inline-block; width:20px; height:14px; background:url(../../images/common/icon_notice.png) 0 0 no-repeat;}
+.board_list table td .num{color:#ffc300; font-family:font_sw; font-weight:bold;}
+.board_list table td .service span{display:inline-block; font-size:13px; color:#bbb; border:1px solid #bbb; border-radius:30px; height:23px; line-height:23px; padding:0 8px;}
+.board_list table td .service span.on{font-weight:300; color:#666; border-color:#666}
+.board_list table td .tel{color:#bbbbbb; font-family:font_sw;}
+.board_list table td .coming{color:#009223; font-family:font_sw; font-size:13px; font-weight:bold; background-color:#ffce32; height:25px; line-height:22px; width:110px; margin:0 auto; text-align:center; border-radius:15px}
+.notice {background-color:#f8f8f8; font-family: noto_dl;}
