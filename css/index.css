@@ -267,7 +267,7 @@ em{font-style:normal;}
 .btn{font-size:18px; font-weight:bold; text-align:center; display:inline-block; vertical-align:middle; border-radius:30px; transition-duration:0.2s}
 .btn span{display:inline-block; vertical-align:middle; height:46px; line-height:46px;}
 
-#container {position: relative; background: url(../images/main/bg_content.gif) 0 0 repeat;}
+#container_idx {position: relative; background: url(../images/main/bg_content.gif) 0 0 repeat;}
 
 .main_slider_wrapper img {display: block; height: 440px; left: 10px;}
 .main_slider_wrapper {position: relative; height: 490px; background-color: #fff;}
