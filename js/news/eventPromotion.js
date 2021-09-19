@@ -8,7 +8,7 @@ $(function(){
         draggable : false,
         infinite : false,
     });
-
+    
     TweenMax.to(".event_info", 0.3, {
         top: 0,
         opacity: 1,
@@ -17,7 +17,7 @@ $(function(){
 });
 
 
-$(function(){	
+$(function(){
 	function m_navi_set_on(){
 		$(".eventPromotion_cate_content").addClass("navi_scroll");
 	}
