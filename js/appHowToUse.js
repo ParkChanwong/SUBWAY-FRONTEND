@@ -24,3 +24,34 @@ function groupSub(){
     $('.tab_home').removeClass('active');
     $('.tab_group').addClass('active');
 }
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = 140;
+
+$(window).scroll(function(event){
+  didScroll = true;
+
+});
+
+setInterval(function() {
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
+}, 150); 
+
+function hasScrolled() {
+  var st = $(this).scrollTop();
+  if(Math.abs(lastScrollTop - st) <= delta)
+    return;
+  if (st > lastScrollTop && st > navbarHeight){
+    $('.sub_header').addClass('nav-up');
+  } else {
+    if(st + $(window).height() < $(document).height()+100) {
+      $('.sub_header').removeClass('nav-up');
+    }
+  }
+  lastScrollTop = st;
+}

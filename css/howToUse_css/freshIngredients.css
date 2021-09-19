@@ -27,7 +27,7 @@
     top:0px; 
     height:60px; 
     width:110px; 
-    background:url(/images/menuinfo_images/logo_sub_header.png) 0 50% no-repeat; 
+    background:url('/images/menuinfo_images/logo_sub_header.png') 0 50% no-repeat; 
     overflow:hidden; 
     text-indent:-9999px; 
     font-size:0; 
@@ -49,7 +49,7 @@
     content:''; 
     width:12px; 
     height:15px; 
-    background:url(/images/menuinfo_images/icon_arr_top.png) 50% 0 no-repeat; 
+    background:url('/images/menuinfo_images/icon_arr_top.png') 50% 0 no-repeat; 
     display:block; 
     position:absolute; 
     left:0; 
@@ -146,7 +146,7 @@
     left: 50%;
     margin-left: -640px;
     top: 144px;
-    background: url(/images/menuinfo_images/FreshStuff/img_visual_fresh02.jpg) no-repeat;
+    background: url('/images/menuinfo_images/FreshStuff/img_visual_fresh02.jpg') no-repeat;
     width: 162px;
     height: 214px;
     opacity: 0;
@@ -156,7 +156,7 @@
     left: 50%;
     margin-left: -480px;
     top: 238px;
-    background: url(/images/menuinfo_images/FreshStuff/img_visual_fresh03.jpg) no-repeat;
+    background: url('/images/menuinfo_images/FreshStuff/img_visual_fresh03.jpg') no-repeat;
     width: 176px;
     height: 222px;
     opacity: 0;
@@ -166,7 +166,7 @@
     left: 50%;
     margin-left: 362px;
     top: 0px;
-    background: url(/images/menuinfo_images/FreshStuff/img_visual_fresh01.jpg) no-repeat;
+    background: url('/images/menuinfo_images/FreshStuff/img_visual_fresh01.jpg') no-repeat;
     width: 341px;
     height: 313px;
     opacity: 0;
@@ -200,7 +200,7 @@
     height: 140px;
     width: 1170px;
     margin: -40px auto 0;
-    background: url(/images/menuinfo_images/Sandwich/bg_tabbox.png) no-repeat;
+    background: url('/images/menuinfo_images/Sandwich/bg_tabbox.png') no-repeat;
     position: relative;
 }
 .prod_tab li {
@@ -361,7 +361,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: url(/images/menuinfo_images/icon_view.png) 147px bottom no-repeat;
+    background: url('/images/menuinfo_images/icon_view.png') 147px bottom no-repeat;
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -418,7 +418,7 @@
     vertical-align: middle;
     width: 10px;
     height: 14px;
-    background: url(../images/menuinfo_images/FreshStuff/icon_arr_r01.png) 0 0 no-repeat;
+    background: url('/images/menuinfo_images/FreshStuff/icon_arr_r01.png') 0 0 no-repeat;
     margin-left: 7px;
 }
 
@@ -486,7 +486,7 @@
 }
 
 .allergy_popUp .close_btn{
-    background: url(/images/menuinfo_images/FreshStuff/icon_popup_close.png) no-repeat;
+    background: url('/images/menuinfo_images/FreshStuff/icon_popup_close.png') no-repeat;
     width: 73px;
     height: 73px;
     position: absolute;
