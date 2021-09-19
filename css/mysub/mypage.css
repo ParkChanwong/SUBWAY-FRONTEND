@@ -1,0 +1,373 @@
+.content_wrap {
+    padding-top: 0;
+    position: relative;
+    z-index: 3;
+}
+
+.content_wrap h2.subTitle {
+    text-align: center;
+    font-size: 40px;
+    color: #292929;
+    letter-spacing: -0.05em;
+    padding: 73px 0 50px;
+    background-color: #f6f6f6;
+    font-family: 'sw_f';
+}
+
+.member_active {
+    background-color: #f6f6f6;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+
+.member_active .my_info {
+    overflow: visible;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding-right: 55px;
+    padding-left: 55px;
+    height: 300px;
+    width: 1170px;
+}
+
+.member_active .my_info .info {
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 42px;
+    height: 300px;
+    width: 380px;
+}
+
+.member_active .my_info .info.member {
+    background-color: #ffffff;
+    border: 6px solid #ffc300;
+    border-top-left-radius: 50px;
+    padding-top: 42px;
+}
+
+.member_active .my_info .info.member .name_gender {
+    overflow: hidden;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.member_active .my_info .info.member .name_gender .character {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 150px;
+    width: 150px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.member_active .my_info .info.member .name_gender .character.female {
+    background-image: url(../../images/img_profile_female.png);
+}
+
+.member_active .my_info .info.member .name_gender .name {
+    position: relative;
+    color: #292929;
+    text-align: left;
+    vertical-align: middle;
+    display: table-cell;
+    width: 176px;
+    line-height: 1.15;
+    font-family: 'noto_m';
+}
+
+.member_active .my_info .info.member .name_gender .name strong{
+    font-size: 30px;
+}
+
+em{
+    font-style: normal;
+    font-family: 'sw_f';
+    font-size: 44px;
+    letter-spacing: -0.05em;
+}
+
+.member_active .my_info dd strong {
+    font-family: 'sw_f';
+    font-size: 44px;
+    letter-spacing: -0.05em;
+}
+
+.member_active .my_info .info.member .name_gender .name .multiple_line {
+    word-break: break-all;
+    font-size: 30px;
+    font-family: 'noto_m';
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+    transition-duration: 0.2s;
+}
+
+.member_active .my_info .btn.go_view {
+    display: block;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 42px;
+    margin-left: -63px;
+    width: 126px;
+}
+
+.member_active .my_info .info.member .go_view {
+    border-color: #999;
+    color: #999;
+    bottom: 36px;
+}
+
+.btn span {
+    display: inline-block;
+    vertical-align: middle;
+    height: 46px;
+    line-height: 46px;
+}
+
+.member_active .my_info .btn.go_view span {
+    line-height: 35px;
+    height: 36px;
+    font-family: 'noto_l';
+}
+
+.member_active .my_info .info ~ .info {
+    margin-left: 15px;
+}
+
+.member_active .my_info .info.point {
+    background-color: #009223;
+}
+
+.member_active .my_info dl {
+    overflow: hidden;
+}
+
+.member_active .my_info dt, .member_active .my_info dd {
+    color: #ffffff;
+    text-align: center;
+}
+
+.member_active .my_info dt {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'noto_m';
+}
+
+.member_active .my_info dd {
+    font-size: 28px;
+    font-family: 'noto_m';
+}
+
+.member_active .my_info .info.subcard {
+    background-color: #ffc300;
+    border-top-right-radius: 10px;
+}
+
+.member_active .my_info .info.subcard:before {
+    background: url(../../images/icon_deco.png) no-repeat 0 0;
+    content: '';
+    display: block;
+    position: absolute;
+    right: -65px;
+    bottom: -15px;
+    height: 147px;
+    width: 146px;
+    z-index: 1;
+}
+
+.member_active .my_info .info.order {
+    background-color: #9631a8;
+}
+
+.member_active .my_info .info ~ .info {
+    margin-left: 15px;
+}
+
+.member_active .my_info .info.gift {
+    background-color: #00a9ec;
+}
+
+.member_active .my_info .info.coupon {
+    background-color: #ff8300;
+    border-bottom-right-radius: 50px;
+}
+
+.bookmark_wrap {
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 130px;
+    width: 100%;
+}
+
+.bookmark_wrap .bookmark_area {
+    overflow: hidden;
+    margin: 0 auto;
+    padding-right: 55px;
+    padding-left: 55px;
+    width: 1170px;
+}
+
+.bookmark_wrap .my_list {
+    float: left;
+    width: 565px;
+}
+
+.content_wrap h3.h_title {
+    font-size: 28px;
+    color: #292929;
+    font-family: 'noto_m';
+    letter-spacing: -0.05em;
+    padding-bottom: 38px;
+}
+
+.bookmark_wrap .my_list ul {
+    overflow: hidden;
+}
+
+.bookmark_wrap .my_list .add_bookmark {
+    margin-top: 5px;
+}
+
+.bookmark_wrap .my_list .add_bookmark {
+    overflow: hidden;
+}
+
+.bookmark_wrap .my_list .add_bookmark .btn_add {
+    background-color: #f6f6f6;
+    display: block;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.bookmark_wrap .my_list .add_bookmark .btn_add span {
+    display: inline-block;
+    color: #999999;
+    font-size: 20px;
+    font-family: 'noto_b';
+    line-height: 80px;
+    height: 80px;
+}
+
+.bookmark_wrap .my_list .add_bookmark .btn_add span:after {
+    background: url(../../images/icon_add.png) no-repeat 0 0;
+    display: inline-block;
+    content: '';
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+    height: 22px;
+    width: 22px;
+}
+
+.event {
+    float: left;
+    margin-left: 40px;
+}
+
+.event .evt_bnr_wrap {
+    position: relative;
+}
+
+.bookmark_wrap .my_list .li_wrap {
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    position: relative;
+    padding-right: 78px;
+    padding-left: 29px;
+    height: 80px;
+}
+
+.bookmark_wrap .my_list .li_wrap .bt_book {
+    background: none;
+    display: block;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -11px;
+    height: 22px;
+    width: 22px;
+    z-index: 1;
+}
+
+.bookmark_wrap .my_list .li_wrap .bt_book .i_book {
+    background: url(../../images/icon_bookmark.png) no-repeat 0 0;
+    display: block;
+    height: 22px;
+    width: 22px;
+}
+
+.bookmark_wrap .my_list .li_wrap .info_book {
+    overflow: hidden;
+    position: relative;
+    margin-left: 40px;
+    height: 100%;
+}
+
+.bookmark_wrap .my_list .li_wrap .info_book .name {
+    overflow: hidden;
+    color: #292929;
+    font-size: 20px;
+    font-family: 'noto_r';
+    font-weight: bold;
+    line-height: 78px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    height: 100%;
+}
+
+.bookmark_wrap .my_list .li_wrap .info_book .go_view {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.blind {
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+
+.bookmark_wrap .my_list .li_wrap .del_book .i_del {
+    background: url(../../images/icon_del.png) no-repeat center 50%;
+    background-size: 24px;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.bookmark_wrap .my_list .li_wrap .del_book {
+    background: none;
+    display: block;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+}

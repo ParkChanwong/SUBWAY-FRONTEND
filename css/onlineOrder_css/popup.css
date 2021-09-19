@@ -1,0 +1,868 @@
+.popup_back{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup_back .popup_wrapper.breadLength{
+    opacity: 1;
+    width: 520px;
+    margin-left: -260px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height: 430px;
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    display: none;
+}
+
+#popup_wrap{
+    border-radius: 20px;
+    padding: 0;
+}
+
+#popup_wrap .order_display{
+    position: relative;
+    padding: 12px 39px 12px 39px;
+    background: #fff;
+    margin-bottom: 16px;
+    border-radius: 20px 20px 10px 10px;
+}
+
+#popup_wrap .order_display dt {
+    color: #009223;
+    font-size: 18px;
+    font-family: 'noto_m';
+}
+
+#popup_wrap .order_display dd {
+    color: #292929;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'noto_r';
+}
+
+
+#popup_wrap.order_popup .popup_content.bread_leng {
+    padding-top: 20px;
+}
+
+#popup_wrap.order_popup .popup_content {
+    position: relative;
+    padding: 0;
+    background-color: #fff;
+}
+
+.bread_leng ul {
+    padding: 30px 0 30px 125px;
+    margin: 0 20px;
+    background: #f6f6f6;
+}
+.bread_leng ul li:first-child {
+    margin-bottom: 25px;
+}
+
+.bread_leng ul li label em {
+    color: #292929;
+    font-size: 20px;
+    font-family: 'noto_r';
+    font-style: normal;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form_circle .icon {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #dddddd;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.form_circle input[type="radio"] {
+    height: 0;
+    opacity: 0;
+    width: 0;
+    position: absolute;
+    left: -10px;
+}
+
+.form_circle input[type="radio"]:checked+.icon:before {
+    width: 24px;
+}
+
+.form_circle .icon:before {
+    content: '';
+    width: 0;
+    height: 20px;
+    background: url(../../images/popupImages/icon_checkbox.png) 0 0 no-repeat;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    transition-duration: 0.2s;
+}
+
+#popup_wrap .btn_area.no_scroll{
+    margin-top: 25px;
+}
+
+#popup_wrap .btn_area {
+    background-color: #fff;
+    overflow: hidden;
+    padding: 30px 0 30px 0;
+    border-top: 1px solid #e8e8e8;
+    width: 100%;
+    text-align: center;
+}
+
+#popup_wrap .btn_area .bgc_white {
+    width: 130px;
+}
+
+.btn_area .btn {
+    font-family: 'noto_m';
+}
+
+.btn.bgc_white {
+    background-color: #fff;
+    border: 2px solid #009223;
+    color: #009223;
+    box-sizing: border-box;
+}
+
+.btn.bgc_white:hover{
+    border-color: #2e7d32;
+    transition-duration: 0.2s;
+}
+
+.btn {
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+    transition-duration: 0.2s;
+}
+
+.btn span {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 46px;
+    line-height: 46px;
+}
+
+#popup_wrap .btn_area .bgc_point {
+    width: 160px;
+}
+
+.btn_area .btn ~ .btn {
+    margin-left: 7px;
+}
+.btn.bgc_point {
+    background-color: #009223;
+    color: #fff;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    outline: none;
+}
+
+.btn.i_reg:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 16px;
+    background: url(../../images/popupImages/icon_reg.png) 0 0 no-repeat;
+    margin-left: 7px;
+}
+
+.btn.bgc_point span {
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+}
+.btn.bgc_point:hover{
+    background-color: #2e7d32;
+    transition-duration: 0.2s;
+}
+
+.btn_close {
+    background: url(../../images/popupImages/icon_popup_close.png) 50% 50% no-repeat;
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    right: -73px;
+    top: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    outline: none;
+}
+
+/* breadLength 종료 */
+
+.popup_back .popup_wrapper.breadSelect{
+    opacity: 1;
+    width: 630px;
+    margin-left: -315px;
+    top: 0;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height: 703px;
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    display: none;
+}
+
+.popup_content.bread{
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+
+#popup_wrap .meterial ul {
+    padding: 25px 0 0 6px;
+    overflow: hidden;
+}
+
+#popup_wrap .meterial ul li {
+    position: relative;
+    float: left;
+    margin: 0 0 15px 12px;
+}
+
+#popup_wrap .meterial ul li .select_recipe {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 179px;
+    height: 179px;
+    padding-top: 9px;
+    box-sizing: border-box;
+}
+#popup_wrap .meterial ul li .select_recipe input {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    opacity: 0;
+}
+
+#popup_wrap .meterial ul li .select_recipe .shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 177px;
+    height: 177px;
+    border: 1px solid #ddd;
+    transition: 0.6s;
+}
+
+#popup_wrap .meterial ul li .select_recipe .info {
+    position: relative;
+    z-index: 1;
+}
+
+#popup_wrap .meterial ul li .select_recipe .info img {
+    display: block;
+    width: 160px;
+    height: 112px;
+    margin: 0 auto;
+}
+#popup_wrap .meterial ul li .select_recipe .info > em {
+    display: block;
+    color: #292929;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'noto_r';
+    text-align: center;
+    transition: 0.6s;
+    font-style: normal;
+}
+#popup_wrap .meterial ul li label.soldout + .icon_sold {
+    display: block;
+}
+#popup_wrap .meterial ul li .icon_sold {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#popup_wrap .meterial ul li .icon_sold span {
+    position: absolute;
+    left: 50%;
+    top: 43px;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    border: 6px solid #ff8300;
+    border-radius: 100%;
+    color: #ff8300;
+    font-weight: bold;
+    font-family: 'noto_r';
+    line-height: 44px;
+    text-align: center;
+}
+
+#popup_wrap .meterial ul li .select_recipe input:checked + .shape {
+    background: #009223;
+    border-color: #009223;
+    border-radius: 8px 28px 8px 8px;
+    animation: item-shadow 0.3s 0.2s ease-in-out forwards;
+}
+#popup_wrap .meterial ul li .select_recipe input:checked ~ .info img {
+    animation: select_item 0.7s alternate;
+}
+
+@keyframes item-shadow {
+    0% {
+        box-shadow: 5px 2px 10px rgb(0 0 0 / 0%);
+    }
+    100%{
+        box-shadow: 5px 2px 10px rgb(0 0 0 / 40%);
+    }
+}
+
+@keyframes select_item{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+#popup_wrap .meterial ul li .select_recipe input:checked ~ .info > em {
+    color: #fff;
+}
+
+
+/* breadSelect 종료 */
+
+.popup_back .popup_wrapper.breadWarming{
+    opacity: 1;
+    width: 630px;
+    top: 0;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height: 432px;
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+    display: none;
+}
+
+
+/* breadWarming 종료 */
+
+.popup_content .scroll{
+    overflow-y: scroll;
+    height: 400px;
+}
+.popup_content .scroll::-webkit-scrollbar{
+    width: 12px;
+}
+
+.popup_content .scroll::-webkit-scrollbar-thumb:hover{
+    background-color: #a7a7a7; 
+    transition-duration: 0.5s;
+}
+
+.popup_content .scroll::-webkit-scrollbar-thumb{
+    background-color: #bbbbbb;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    cursor: pointer;
+}
+
+
+.popup_back .popup_wrapper.cheeseSelect{
+    opacity: 1;
+    width: 630px;
+    margin-left: -315px;
+    top: 0;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height: 670px;
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    display: none;
+}
+
+.cheese h2 {
+    padding: 12px 0 3px 16px;
+    font-size: 20px;
+    font-family: 'noto_l';
+    color: #666666;
+}
+
+#popup_wrap .meterial ul li .select_recipe .info span {
+    display: block;
+    padding-top: 5px;
+    color: #ffc300;
+    font-family: 'noto_dl';
+    font-size: 17px;
+    text-align: center;
+    transition: 0.6s;
+}
+
+#popup_wrap .meterial ul li .select_recipe .info span em {
+    font-size: 19px;
+    font-family: 'sw_s';
+    font-style: normal;
+}
+
+#popup_wrap .meterial ul li .select_recipe input:checked ~ .info span {
+    color: #fff;
+}
+
+/* cheeseSelect 종료 */
+#popup_wrap.order_popup .popup_content.vegetable{
+    margin-top: 50px;
+}
+
+.form_checkbox .icon {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #dddddd;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.popup_back .popup_wrapper.vegeSelect{
+    opacity: 1;
+    width: 630px;
+    margin-left: -315px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height: 723px;
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    display: none;
+}
+
+.vegetable .lately {
+    position: absolute;
+    left: 0;
+    top: -42px;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'noto_r';
+}
+
+.vegetable .lately label .icon {
+    margin-right: 6px;
+    background-color: #fff;
+}
+
+.form_checkbox {
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: -0.05em;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.form_checkbox input[type="checkbox"] {
+    height: 0;
+    opacity: 0;
+    width: 0;
+    position: absolute;
+    left: -10px;
+}
+
+input {
+    vertical-align: middle;
+    font-family: 'noto_r';
+    outline: none;
+}
+
+.vegetable .lately label {
+    float: left;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+}
+.vegetable .lately label .icon {
+    margin-right: 6px;
+    background-color: #fff;
+    
+}
+
+.form_checkbox .icon:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(../../images/popupImages/icon_checkbox.png) 0 0 no-repeat;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    transition-duration: 0.2s;
+}
+
+.vegetable h2 {
+    padding: 12px 0 3px 16px;
+    font-size: 20px;
+    font-family: 'noto_l';
+    color: #666666;
+}
+
+
+/* vegetableSelect 종료 */
+
+.popup_back .popup_wrapper.sauceSelect{
+    opacity: 1;
+    width: 630px;
+    margin-left: -315px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height: 670px;
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    display: none;
+}
+
+#popup_wrap .meterial ul li .select_recipe .info strong {
+    font-family: 'noto_dl';
+    display: block;
+    color: #777;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    transition: 0.6s;
+}
+
+#popup_wrap .meterial ul li .select_recipe .info > em {
+    font-family: 'noto_r';
+    display: block;
+    color: #292929;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.6s;
+    line-height: 20px;
+}
+
+#popup_wrap .meterial ul li .select_recipe input:checked ~ .info strong {
+    color: #fff;
+}
+
+/* sauceSelect 종료 */
+
+.popup_back .popup_wrapper.toppingSelect{
+    opacity: 1;
+    width: 630px;
+    margin-left: -315px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height: 680px;
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    display: none;
+}
+
+#popup_wrap .order_display dd.sum {
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    color: #ffc300;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'noto_r';
+}
+
+#popup_wrap .order_display dd.sum span {
+    font-family: 'sw_s';
+    font-size: 18px;
+}
+
+/* toppingSelect 종료 */
+
+.popup_back .popup_wrapper.doubleAdd{
+    opacity: 1;
+    width: 520px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height: 700px;
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+    position: absolute;
+    left: 30%;
+    z-index: 999;
+    display: none;
+}
+#popup_wrap .radio_select {
+    padding: 20px;
+    background: #fff;
+}
+
+#popup_wrap .radio_select ul {
+    padding: 32px 0;
+    background: #f6f6f6;
+    overflow: hidden;
+}
+
+#popup_wrap .radio_select ul li:first-child {
+    width: 204px;
+    margin-left: 50px;
+}
+
+#popup_wrap .radio_select ul li label em {
+    color: #292929;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: normal;
+    font-family: 'noto_dl';
+}
+
+#popup_wrap .radio_select ul li {
+    float: left;
+}
+
+#popup_wrap .radio_list li label .icon {
+    border: 1px solid #ddd;
+    border-width: 1px 1px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition-duration: 0.6s;
+    padding-top: 23px;
+    padding-bottom: 24px;
+    min-height: 70px;
+    margin-right: 10px;
+}
+
+#popup_wrap .radio_list li label input[type=radio] {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+#popup_wrap .radio_list li label .icon strong {
+    float: left;
+    margin-left: 59px;
+    color: #292929;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.333em;
+    transition-duration: 0.6s;
+    max-width: 48%;
+    font-family: 'noto_r';
+}
+
+#popup_wrap .radio_list li label .icon span {
+    float: right;
+    margin-right: 63px;
+    color: #ffc300;
+    font-size: 20px;
+    transition-duration: 0.6s;
+    font-family: 'noto_r';
+}
+#popup_wrap .radio_list li label .icon span em {
+    font-family: 'sw_s';
+    transition: 0.6s;
+    font-size: 20px;
+    font-style: normal;
+}
+
+#popup_wrap .radio_list li label input[type=radio]:checked + .icon span em {
+    color: #fff;
+}
+
+#popup_wrap .radio_list li label input[type=radio]:checked + .icon strong {
+    color: #fff;
+}
+#popup_wrap .radio_list li label input[type=radio]:checked + .icon {
+    background-color: #009223;
+    border-color: #009223;
+}
+#popup_wrap .radio_list li label input[type=radio]:checked + .icon span {
+    color: #fff;
+}
+
+.popup_content.double .scroll{
+    padding-left: 20px;
+    height: 300px;
+
+}
+
+
+/* doubleAdd 종료 */
+
+.popup_back .popup_wrapper.setSelect{
+    opacity: 1;
+    width: 520px;
+    margin-left: -260px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height: 700px;
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    display: none;
+}
+
+#popup_wrap.set_popup h1 {
+    padding: 0 0 23px 0;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'noto_m';
+    text-align: center;
+}
+.form_select select {
+    width: 100%;
+    border: 0;
+    height: 41px;
+    line-height: 41px;
+    font-size: 16px;
+    color: #999999;
+    position: relative;
+    z-index: 1;
+    text-indent: 9px;
+}
+
+.set_popup .form_select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+select{
+    appearance: none;
+}
+
+.form_select {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #dddddd;
+    box-sizing: border-box;
+}
+
+.form_select:before {
+    content: '';
+    position: absolute;
+    right: 13px;
+    top: 18px;
+    width: 12px;
+    height: 7px;
+    background: url(../../images/popupImages/icon_select_arr.png) 0 0 no-repeat;
+    z-index: 3;
+}
+
+#popup_wrap .option_display {
+    position: relative;
+    padding: 15px 39px 16px 39px;
+    background: #fff;
+    margin-bottom: 16px;
+}
+
+#popup_wrap .option_display dt {
+    padding-bottom: 4px;
+    color: #009223;
+    font-size: 18px;
+    font-family: 'noto_r';
+}
+
+#popup_wrap .option_display dd {
+    color: #292929;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'noto_r';
+}
+
+#popup_wrap .option_display dd.sum {
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    color: #ffc300;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#popup_wrap .option_display dd.sum span {
+    font-family: 'sw_s';
+    font-size: 18px;
+}
+
+.set_popup .set h3 {
+    padding: 10px 0px;
+    color: #292929;
+    font-size: 20px;
+    font-family: 'noto_r';
+}
+
+.set_popup .form_select{
+    margin-top: 15px;
+}   
+
+.popup_content.set .scroll{
+    padding-left: 10px;
+    height: 140px;
+}
+
+
+/* setSelect 종료 */

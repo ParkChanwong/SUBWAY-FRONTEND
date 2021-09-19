@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴선택</title>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/onlineOrder_css/menu_list.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='../index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="../signInUp/login.html">로그인</a></li>
+                        <li class="signUp">
+                            <a href="../signInUp/signUp1.html">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/sandwich.html">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/wrap.html">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/choppedSalad.html">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/morning.html">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/smileSup.html">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/cateringMenu.html">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../howToUse/SubwayHowToUse.html">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../howToUse/groupMenuHowToUse.html">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../howToUse/freshIngredients.html">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../howToUse/appHowToUse.html">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../news/eventPromotion.html">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../news/newsNotice.html">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../news/advertisementVideo.html">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../subway_html/subwayHistory.html">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../subway_html/subwayPromise.html">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../subway_html/artistSupport.html">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../subway_html/findStore.html">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../franchise/subwayFranchise.html">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/franchiseFAQ.html">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/franchiseApplication.html">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/branchinfo.html">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/businessDesc.html">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../onlineOder_html/bin_fastsub_step1.html">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../onlineOder_html/homsub_step1.html">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../onlineOder_html/groupOrder.html">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div id="container">
+            <input id="menuType" type="hidden" name="menuType">
+                <input id="itemIdx" type="hidden" value="itemIdx">
+                <input id="groupCd" type="hidden" value="groupCd">
+                <input id="storCd" type="hidden" value="storCd" value="62026">
+                <input id="ordType" type="hidden" value="ordType" value="ORD_TYPE.HOME_SUB">
+            <div class="content_wrap order home_sub">
+                <div class="menu_list">
+                    <div class="home_sub_title">
+                        <h3>Home-Sub</h3>
+                        <p>
+                            <th:object>온라인 주문 시 배달되는 서비스입니다.</th:object>
+                        </p>
+                    </div>
+                    <ol class="home_sub_step">
+                        <li class="shop_select"><strong>STEP 1</strong>매장선택</li>
+                        <li class="menu_select on"><strong>STEP 2</strong>메뉴선택</li>
+                        <li class="order"><strong>STEP 3</strong>주문하기</li>
+                        <li class="payment"><strong>STEP 4</strong>결제하기</li>
+                    </ol>
+                    <div class="menu_tab">
+                        <ul>
+                            <li><a href="./menu_list_favorite.html" name="itemMenu" data-category-code="ITEM_FAVORITE">즐겨찾는 메뉴</a></li>
+                            <li><a href="./menu_list_promotion.html" name="itemMenu" data-category-code="ITEM_PROMOTION">프로모션</a></li>
+                            <li><a href="./menu_list_sandwich.html" name="itemMenu" data-category-code="ITEM_SANDWICH">샌드위치</a></li>
+                            <li><a href="./menu_list_salad.html" name="itemMenu" data-category-code="ITEM_SALAD">찹샐러드</a></li>
+                            <li><a href="./menu_list_etc.html" name="itemMenu" data-category-code="ITEM_UNIT">랩ㆍ기타</a></li>
+                            <li class="active"><a href="#" name="itemMenu" data-category-code="ITEM_SIDEDRINK">사이드ㆍ음료</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_contents" id="itemList">
+                        <div class="form_select side_select">
+                            <select id="sideSelect">
+                                <option value="COOKIE">쿠키</option>
+                                <option value="CHIP">칩</option>
+                                <option value="SOUP">웨지/수프</option>
+                                <option value="DRINK">음료</option>
+                            </select>
+                        </div>
+                        <ul class="list" style="margin-top: -45px;">
+                            <li>
+                                <a href="#">
+                                    <img src="./upload/item/pineapple_cookie_size변경_20210629055237770.png" alt="파인애플 쿠키">
+                                    <p>
+                                        <strong>파인애플 쿠키</strong>
+                                        <span class="eng">Pineapple Cookies</span>
+                                        <spen class="kcal"><em>200</em>kcal</spen>
+                                    </p>
+                                    <div class="label">
+                                        <span class="new" style="background-color: #ffc300;">SEASON</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./upload/item/img_sides_04.jpg" alt="초코칩 쿠키">
+                                    <p>
+                                        <strong>초코칩 쿠키</strong>
+                                        <span class="eng">Chocolate Chip</span>
+                                        <spen class="kcal"><em>200</em>kcal</spen>
+                                    </p>
+                                    <div class="label"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./upload/item/img_sides_03.jpg" alt="더블 초코칩 쿠키">
+                                    <p>
+                                        <strong>더블 초코칩 쿠키</strong>
+                                        <span class="eng">Double Chocolate Chip</span>
+                                        <spen class="kcal"><em>210</em>kcal</spen>
+                                    </p>
+                                    <div class="label"></div>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                    <p>
+                                        <strong></strong>
+                                        <span class="eng_name"></span>
+                                        <span class="kcal"></span>
+                                    </p>
+                                    <div class="label"> </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                    <p>
+                                        <strong></strong>
+                                        <span class="eng_name"></span>
+                                        <span class="kcal"></span>
+                                    </p>
+                                    <div class="label"> </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                    <p>
+                                        <strong></strong>
+                                        <span class="eng_name"></span>
+                                        <span class="kcal"></span>
+                                    </p>
+                                    <div class="label"> </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                    <p>
+                                        <strong></strong>
+                                        <span class="eng_name"></span>
+                                        <span class="kcal"></span>
+                                    </p>
+                                    <div class="label"> </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                    <p>
+                                        <strong></strong>
+                                        <span class="eng_name"></span>
+                                        <span class="kcal"></span>
+                                    </p>
+                                    <div class="label"> </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                    <p>
+                                        <strong></strong>
+                                        <span class="eng_name"></span>
+                                        <span class="kcal"></span>
+                                    </p>
+                                    <div class="label"> </div>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="../footer/policy.html">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="../footer/infoPolicy.html">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../footer/subcard.html">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="https://subwaylistens.com/?subwaylistens&mkt=&priv=84&con=84&tou=84&lang=ko">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

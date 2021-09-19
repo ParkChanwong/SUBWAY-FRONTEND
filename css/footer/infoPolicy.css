@@ -1,0 +1,135 @@
+#content{
+    padding-top: 0;
+    position: relative;
+    z-index: 3;
+    font-family: 'noto_dl';
+}
+
+#content.policy .subTitle{
+    padding: 74px 0 80px;
+}
+
+#content h2.subTitle{
+    font-family: 'noto_l';
+    text-align: center;
+    font-size: 40px;
+    color: #292929;
+    letter-spacing: -0.07em;
+}
+.content{
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.policy_subway_wrapper{
+    letter-spacing: -0.03em;
+    padding-bottom: 80px;
+}
+
+.policy_subway_wrapper .policy_top_box{
+    font-size: 13px;
+    color: #666666;
+    line-height: 23px;
+    background-color: #f6f6f6;
+    padding: 26px 30px;
+}
+
+a{
+    font-size: 13px;
+    color: #333;
+}
+
+.policy_subway_wrapper .policy_content .list_tit{
+    font-size: 21px;
+    color: #00572d;
+    margin-bottom: 20px;
+}
+
+.policy_subway_wrapper .policy_content .tit{
+    font-size: 18px;
+    color: #292929;
+    margin: 20px 0;
+}
+
+.policy_subway_wrapper .policy_content,
+.policy_subway_wrapper .policy_content p,
+.policy_subway_wrapper .policy_content li{
+    font-size: 13px;
+    line-height: 23px;
+    color: #999999;
+}
+
+.policy_top_box + .policy_content .policy_list_area > li:first-child{
+    padding-top: 40px;
+}
+.policy_list_area > li:first-child{
+    border-top: 0;
+}
+
+.policy_list_area > li{
+    padding: 40px 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.policy_list_area > li > ol{
+    padding-top: 10px;
+}
+
+.policy_list_area > li > ol > li{
+    padding-left: 12px;
+    position: relative;
+}
+
+.policy_subway_wrapper .policy_top_box em{
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    font-style: normal;
+}
+.policy_list_area p + ul{
+    margin-top: 16px
+}
+
+.policy_list_area > li > ul> li{
+    padding-left: 9px;
+    position: relative;
+}
+
+.policy_list_area > li > ul> li::before{
+    content: '·';
+    font-size: 13px;
+    display: inline-block;
+    line-height: 23px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.policy_list_area > li > ul > li > ul > li{
+    padding-left: 9px;
+    position: relative;
+}
+
+.policy_list_area > li > ul > li > ul > li::before{
+    content: '-';
+    font-size: 13px;
+    display: inline-block;
+    line-height: 23px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.policy_subway_wrapper .policy_content .list_tit{
+    font-size: 21px;
+    color: #00572d;
+    margin-bottom: 20px;
+}
+
+.policy_list_area p{
+    margin-top: 18px;
+}
+ol, ul{
+    margin-bottom: 9px;
+}

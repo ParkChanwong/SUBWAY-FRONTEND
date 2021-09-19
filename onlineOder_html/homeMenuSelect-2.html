@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY</title>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/onlineOrder_css/homeMenuSelect-2.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='../index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="../signInUp/login.html">로그인</a></li>
+                        <li class="signUp">
+                            <a href="../signInUp/signUp1.html">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/sandwich.html">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/wrap.html">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/choppedSalad.html">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/morning.html">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/smileSup.html">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/cateringMenu.html">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../howToUse/SubwayHowToUse.html">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../howToUse/groupMenuHowToUse.html">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../howToUse/freshIngredients.html">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../howToUse/appHowToUse.html">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../news/eventPromotion.html">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../news/newsNotice.html">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../news/advertisementVideo.html">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../subway_html/subwayHistory.html">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../subway_html/subwayPromise.html">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../subway_html/artistSupport.html">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../subway_html/findStore.html">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../franchise/subwayFranchise.html">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/franchiseFAQ.html">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/franchiseApplication.html">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/branchinfo.html">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/businessDesc.html">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../onlineOder_html/bin_fastsub_step1.html">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../onlineOder_html/homsub_step1.html">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../onlineOder_html/groupOrder.html">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div id="container">
+            <div class="content_wrap">
+                <h1 class="title">Fast-Sub</h1>
+                <p class="subTitle">온라인 주문 후 매장에서 픽업/시식하는 서비스 입니다.</p>
+                <ul class="step_img_wrap">
+                    <li class="step_shop">
+                        <strong>STEP 1</strong>
+                        매장선택
+                    </li>
+                    <li class="step_menu on">
+                        <strong>STEP 2</strong>
+                        메뉴선택
+                    </li>
+                    <li class="step_order">
+                        <strong>STEP 3</strong>
+                        주문하기
+                    </li>
+                    <li class="step_payment">
+                        <strong>STEP 4</strong>
+                        결제하기
+                    </li>
+                </ul>
+
+                <ul class="step_tap">
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href="">프로모션</a>
+                    </li>
+                    <li class="active">
+                        <a href="">샌드위치</a>
+                    </li>
+                    <li>
+                        <a href="">찹샐러드</a>
+                    </li>
+                    <li>
+                        <a href="">랩ㆍ기타</a>
+                    </li>
+                    <li>
+                        <a href="">사이드ㆍ음료</a>
+                    </li>
+                </ul>
+                <div class="section_wrap">
+                    <div class="section_content">
+                        <div class="menu_info">
+                            <img src="../images/homeMenuSelect-2/스테이크-&-치즈_20200707033941552.jpg" alt="">
+                            <div class="text_info">
+                                <h1>샌드위치</h1>
+                                <h2>스테이크 & 치즈</h2>
+                                <h3>
+                                    Steak & Cheese
+                                    <span></span>
+                                </h3>
+                                <p>육즙이 쫙~풍부한 비프 스테이크의 풍미가 입안 한가득</p>
+                                <button>
+                                    <span>추천 꿀 조합</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Nutrition_content">
+                        <h3>영양성분표</h3>
+                        <div class="board_wrap">
+                            <table>
+                                <colgroup>
+                                    <col width="16%">
+                                    <col width="17%">
+                                    <col width="17%">
+                                    <col width="17%">
+                                    <col width="*">
+                                    <col width="16%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>중량(g)</th>
+                                        <th>열량(kcal)</th>
+                                        <th>당류(g)</th>
+                                        <th>단백질(g)</th>
+                                        <th>포화지방(g)</th>
+                                        <th>나트륨(mg)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>187</td>
+                                        <td>436</td>
+                                        <td>9</td>
+                                        <td>19 (35%)</td>
+                                        <td>9 (60%)</td>
+                                        <td>1376 (69%)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="board_notice">
+                                <li>※ 기본야채 5종(양상추, 토마토, 오이, 피망, 양파) 및 제품에 따른 미트류 포함, 치즈 및 소스 제외, 15cm 위트 브레드 기준</li>
+                                <li>※ 괄호 안 %는 1일 영양소 기준치에 대한 비율</li>
+                            </ul>
+                        </div>
+                        <div class="button_wrap">
+                            <a href="#" class="btn"><span>원산지 정보</span></a>
+                            <a href="#" class="btn"><span>알레르기 정보</span></a>
+                        </div>
+                    </div>
+
+                    <div class="order_wrap">
+                        <div class="order_content">
+                            <ul>
+                                <li class="step1">
+                                    <div class="step_title">
+                                        <p>STEP 01</p>
+                                        <span>필수 선택 *</span>
+                                    </div>
+                                    <div class="step_info">
+                                        <ul>
+                                            <li class="on">길이 선택</li>
+                                            <li class="on">빵 선택</li>
+                                            <li class="on">치즈 선택</li>
+                                            <li class="on">야채 선택</li>
+                                            <li class="on" style="width: 140px;">소스/시즈닝 선택</li>
+                                        </ul>
+                                        <em>15cm, 플랫브레드 (토스팅), 아메리칸치즈, 양파, 피망, 오이, 토마토, 양상추, 스위트 어니언, 랜치</em>
+                                    </div>
+                                </li>
+                                <li class="step2">
+                                    <div class="step_title">
+                                        <p>STEP 02</p>
+                                        <span>추가 선택</span>
+                                    </div>
+                                    <div class="step_info">
+                                        <ul>
+                                            <li class="on">추가 선택</li>
+                                            <li class="on">미트 선택</li>
+                                        </ul>
+                                        <em>15cm, 플랫브레드 (토스팅), 아메리칸치즈, 양파, 피망, 오이, 토마토, 양상추, 스위트 어니언, 랜치</em>
+                                    </div>
+                                </li>
+                                <li class="step3">
+                                    <div class="step_title">
+                                        <p>STEP 03</p>
+                                        <span>상품 선택</span>
+                                    </div>
+                                    <div class="step_info">
+                                        <ul>
+                                            <li class="on">단품</li>
+                                            <li>세트</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="order_total">
+                            <h1>수량</h1>
+                            <a class="minus"></a>
+                            <span>1</span>
+                            <a class="plus"></a>
+
+                            <div class="total_won">
+                                <p>최종 결제 금액</p>
+                                <strong>8,600</strong>
+                                <em>원</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn_area">
+                        <button class="orderStart_btn bg_g">
+                            <span>주문 시작하기</span>
+                        </button>
+                        <button class="addSide_btn bor_g" style="width: 250px;">
+                            <span>사이드 추가</span>
+                        </button>
+                        <button class="cart_btn bor_g">
+                            <span>장바구니</span>
+                        </button>
+                        <button class="order_btn bg_g">
+                            <a href="./home_orderStep3.html"><span>주문하기</span></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="popup_bg">
+        <div class="contry_popUp">
+            <h1 class="title">원산지정보</h1>
+            <div class="popUp_content">
+                <div class="popUp_content_wrap">
+                    <ul>
+                        <li>
+                            <div class="img">
+                                <img src="/images/homeMenuSelect-2/icon_country_origin01.png" alt="쇠고기">
+                                <span>쇠고기</span>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <span>미트볼</span>: 호주산
+                                    <br>
+                                    <span>스테이크</span>: 미국산
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="/images/homeMenuSelect-2/icon_country_origin02.png" alt="돼지고기">
+                                <span>돼지고기</span>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <span>베이컨, 살라미, 페퍼로니, 풀드 포크 바비큐</span>: 미국산
+                                    <br>
+                                    <span>베이컨 비츠</span>: 미국산
+                                    <br>
+                                    <span>햄</span>: 외국산(독일, 미국, 네덜란드 등)과 국내산 섞음
+                                    
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="/images/homeMenuSelect-2/icon_country_origin03.png" alt="닭고기">
+                                <span>닭고기</span>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <span>치킨 브레스트, 치킨 스트립, 로티세리 바비큐 치킨
+                                    </span>: 미국산
+                                    <br>
+                                    <span>페퍼치킨 슈니첼</span>: 태국산
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="/images/homeMenuSelect-2/icon_country_origin04.png" alt="칠면조고기">
+                                <span>칠면조고기</span>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <span>터키 브레스트
+                                    </span>: 외국산(칠레, 미국, 헝가리 등)
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="/images/homeMenuSelect-2/icon_country_origin06.png" alt="참치">
+                                <span>참치</span>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <span>참치</span>: 태국산
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="close_btn"></button>
+        </div>
+        <div class="allergy_popUp">
+            <h1 class="title">알레르기 유발성분</h1>
+            <div class="popUp_content">
+                <div class="popUp_content_wrap">
+                    <div class="summary"> 
+                            해당 자료는  Subway® 공식업체로부터 제공받는 식품 자료를 근거로 작성되었습니다.
+                            <br>
+                            해당 자료는 최신 정보로 업데이트 되고 있으나 상황에 따라 매장에서 제공되는 재료가 바뀔 수 있습니다.
+                            <br>
+                            식품에 대한 알러지가 있으신 분은 식품 섭취 전 매장에 식품에 대한 정보를 문의하세요.
+                    </div>
+                    <div class="icon_info">
+                        <span class="inc_icon">　</span>=포함
+                    </div>
+                    <div class="caution">
+                        <div class="caution_img">
+                            <img src="/images/homeMenuSelect-2/icon_exc.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                · 써브웨이는 글루텐이 포함 되여 있는 항목에 밀(wheat)이 포함 되어 있습니다.
+                            </li>
+                            <li>
+                                · 자기 분해된 효모균과 단백질 가수분해물은 MSG와 비슷한 식품입니다.
+                            </li>
+                            <li>
+                                · 써브웨이 제품은 정제된 기름만 함유하고 있으며 알레르기가 있는 소비자가 안전하게 소비할 수 있습니다.
+                            </li>
+                            <li>
+                                · 쿠키의 진열 방식으로 인해 쿠키가 다른 견과류와 접촉할 수도 있습니다.
+                            </li>
+                            <li>
+                                ·“참치”에는 표기된 알레르기유발성분은 없으나, 샌드위치 혹은 샐러드 메뉴 주문 시 
+                                <br>
+                                마요네즈와 함께 제공되어 “계란,대두” 알레르기 유발성분을 포함합니다.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="stuff_tab">
+                        <ul>
+                            <li><a href="#">빵</a></li>
+                            <li><a href="#">미트,가금류,계란</a></li>
+                            <li><a href="#">야채</a></li>
+                            <li class="active"><a href="#">치즈</a></li>
+                            <li><a href="#">드레싱 & 컨디먼트</a></li>
+                            <li><a href="#">수프</a></li>
+                            <li><a href="#">쿠키</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </div>
+                    <div class="stuff_table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="hide">품목</th>
+                                    <th>밀</th>
+                                    <th>계란</th>
+                                    <th>우유</th>
+                                    <th>대두</th>
+                                    <th>토마토</th>
+                                    <th>쇠고기</th>
+                                    <th>돼지고기</th>
+                                    <th>닭고기</th>
+                                    <th>새우</th>
+                                    <th>조개류</th>
+                                    <th>땅콩</th>
+                                    <th>호두</th>
+                                    <th>아황산</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>아메리칸<br>치즈</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="inc_icon">　</span></td>
+                                    <td><span class="inc_icon">　</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>슈레드 몬터레이<br>체다 치즈</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="inc_icon">　</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>모차렐라<br>치즈</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="inc_icon">　</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <button class="close_btn"></button>
+        </div>
+
+        <div class="suggestion_popUp">
+            <div class="no_soldOut">
+                <div class="pop_title">
+                    <h1>스테이크 & 치즈</h1>
+                    <p>추천 꿀 조합</p>
+                </div>
+                <div class="pop_info">
+                    <p class="g_text">빵</p>
+                    <p class="b_text">화이트</p>
+                    <p class="g_text">치즈</p>
+                    <p class="b_text">슈레드치즈</p>
+                    <p class="g_text">토스팅</p>
+                    <p class="b_text">토스팅</p>
+                    <p class="g_text">야채</p>
+                    <p class="b_text">양파 피망 오이 토마토 양상추</p>
+                    <p class="g_text">소스/시즈닝</p>
+                    <p class="b_text">스모크 바비큐 사우스 웨스트 치폴레</p>
+                </div>
+                <form class="check_length">
+                    <div class="length_input_wrap">
+                        <input type="radio" id="cm15" name="length_input" checked>
+                        <label for="cm15">
+                            <span></span>
+                            15cm
+                        </label>
+                    </div>
+                    <div class="length_input_wrap">
+                        <input type="radio" id="cm30" name="length_input">
+                        <label for="cm30">
+                            <span></span>
+                            30cm
+                        </label>
+                    </div>
+                </form>
+                <p class="tip_wrap">
+                    <strong>TIP</strong>
+                    (양파, 올리브, 피망, 후추 뿌리고)  토스트
+                </p>
+                <div class="btn_area">
+					<a class="btn bgc_point">
+                        <span>적용</span>
+                    </a>
+				</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY 써브웨이</title>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/onlineOrder_css/popup.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='../index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="">로그인</a></li>
+                        <li class="signUp">
+                            <a href="">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div id="container">
+            <div class="content_wrap">
+
+            </div>
+        </div>
+        <div class="popup_back">
+            <div class="popup_wrapper doubleAdd">
+                <div class="order_popup" id="popup_wrap">
+                    <div class="order_display">
+                        <dl>
+                            <dt>미트 추가</dt>
+                            <dd id="doubleNavi">미트 추가를 선택 해 주세요</dd>
+                            <dd class="sum">
+                                <span id="doubleAmt">0</span>
+                                원
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="popup_content double">
+                        <div class="radio_select">
+                            <ul>
+                                <li>
+                                    <label class="form_circle" for="list01">
+                                        <input id="list01" name="doubleUpYn" type="radio" checked="checked" value="N">
+                                        <span class="icon"></span>
+                                        <em>미트 추가 안 함</em>
+                                    </label>
+                                </li>
+                                
+                                <li>
+                                    <label class="form_circle" for="list02">
+                                        <input id="list02" name="doubleUpYn" type="radio" checked="checked" value="Y">
+                                        <span class="icon"></span>
+                                        <em>미트 추가 선택</em>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scroll">
+                            <ul class="radio_list">
+                                <li>
+                                    <label for="double1">
+                                        <input type="radio" name="double" id="double1" value="6667">
+                                        <div class="icon">
+                                            <strong>스테이크/치즈</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double2">
+                                        <input type="radio" name="double" id="double2" value="6651">
+                                        <div class="icon">
+                                            <strong>햄</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double3">
+                                        <input type="radio" name="double" id="double3" value="6652">
+                                        <div class="icon">
+                                            <strong>참치</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double4">
+                                        <input type="radio" name="double" id="double4" value="6653">
+                                        <div class="icon">
+                                            <strong>미트볼</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double5">
+                                        <input type="radio" name="double" id="double5" value="6654">
+                                        <div class="icon">
+                                            <strong>비엘티</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double6">
+                                        <input type="radio" name="double" id="double6" value="6655">
+                                        <div class="icon">
+                                            <strong>비엠티</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double7">
+                                        <input type="radio" name="double" id="double7" value="6656">
+                                        <div class="icon">
+                                            <strong>터키</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double8">
+                                        <input type="radio" name="double" id="double8" value="6657">
+                                        <div class="icon">
+                                            <strong>클럽</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double9">
+                                        <input type="radio" name="double" id="double9" value="6651">
+                                        <div class="icon">
+                                            <strong>치킨 데리야끼</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double10">
+                                        <input type="radio" name="double" id="double10" value="6663">
+                                        <div class="icon">
+                                            <strong>스파이시 이탈리안</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double11">
+                                        <input type="radio" name="double" id="double11" value="7272">
+                                        <div class="icon">
+                                            <strong>쉬림프</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double12">
+                                        <input type="radio" name="double" id="double12" value="6659">
+                                        <div class="icon">
+                                            <strong>로티세리 치킨</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double13">
+                                        <input type="radio" name="double" id="double13" value="6660">
+                                        <div class="icon">
+                                            <strong>로스트 치킨</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double14">
+                                        <input type="radio" name="double" id="double14" value="6666">
+                                        <div class="icon">
+                                            <strong>풀드포크</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double15">
+                                        <input type="radio" name="double" id="double15" value="6668">
+                                        <div class="icon">
+                                            <strong>터키베이컨</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="double16">
+                                        <input type="radio" name="double" id="double16" value="7966">
+                                        <div class="icon">
+                                            <strong>페퍼 치킨 슈니첼</strong>
+                                            <span>
+                                                <em>+1800</em>
+                                                원
+                                            </span>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn_area no_scroll">
+                            <a href="#" class="btn bgc_white">
+                                <span>이전</span>
+                            </a>
+                            <button class="btn bgc_point i_reg" id="ordPrgsNextBtn" type="button">
+                                <span>다음</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn_close"></button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="../footer/policy.html">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="../footer/infoPolicy.html">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../footer/subcard.html">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="https://subwaylistens.com/?subwaylistens&mkt=&priv=84&con=84&tou=84&lang=ko">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

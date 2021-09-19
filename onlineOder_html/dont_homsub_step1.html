@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME-SUB > 매장찾기</title>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/onlineOrder_css/homesub_step1.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script type="text/javascript" src="/js/onlinOrder_js/homesub_step1.js"></script>
+    <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx360121828bc1498a9a0d5bef45f85c58"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script>
+        function sample6_execDaumPostcode() {
+            new daum.Postcode({
+                oncomplete: function(data) {
+                    // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                    // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                    // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                    var addr = ''; // 주소 변수
+                    var extraAddr = ''; // 참고항목 변수
+
+                    //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                    if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                        addr = data.roadAddress;
+                    } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                        addr = data.jibunAddress;
+                    }
+
+                    // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                    if(data.userSelectedType === 'R'){
+                        // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                        // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                        if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                            extraAddr += data.bname;
+                        }
+                        // 건물명이 있고, 공동주택일 경우 추가한다.
+                        if(data.buildingName !== '' && data.apartment === 'Y'){
+                            extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                        }
+                        // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                        if(extraAddr !== ''){
+                            extraAddr = ' (' + extraAddr + ')';
+                        }
+                        // 조합된 참고항목을 해당 필드에 넣는다.
+                        document.getElementById("sample6_extraAddress").value = extraAddr;
+                    
+                    } else {
+                        document.getElementById("sample6_extraAddress").value = '';
+                    }
+
+                    // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                    document.getElementById('sample6_postcode').value = data.zonecode;
+                    document.getElementById("sample6_address").value = addr;
+                    // 커서를 상세주소 필드로 이동한다.
+                    document.getElementById("sample6_detailAddress").focus();
+                }
+            }).open();
+        }
+    </script>
+</head>
+<body onload="initTmap()">
+
+    <div id="popup" style="display: none;">
+        <div class="popup_bgc" style="opacity: 0.6;"></div>
+        <div class="popup_wrapper">
+
+
+            <div id="popup_wrap_wh">
+                <input id="zipCode" type="hidden" value="">
+                <div class="delivery_add">
+                    <h1 class="title">
+                        배달 주소
+                    </h1>
+                    <div class="popup_content">
+                        <div class="address_input">
+                            <div class="write_info_wrap">
+                                <a class="btn_add bgc_white small i_search addressSearchBtn" onclick="sample6_execDaumPostcode()"><span>주소검색</span></a>
+                                <div class="input_set">
+                                    <dl>
+                                        <dt>기본주소</dt>
+                                        <dd class="addressSearchBtn">
+                                            <span class="form_text">
+                                                <input id="baseAddr" readonly="" type="text" placeholder="기본주소" onclick="sample6_execDaumPostcode()">
+                                            </span>
+                                        </dd>
+                                        <dt>상세주소</dt>
+                                        <dd>
+                                            <span class="form_text">
+                                                <input id="dtlAddr" placeholder="상세주소입력" type="text">
+                                            </span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <p class="counsel_copy" style="display: none;">배달 받으실 주소를 입력하여 주세요.</p>
+                        </div>
+                        <h2>최근 주소</h2>
+                        <div class="data_none">
+                            <p>최근 배달 주소가 없습니다.</p>
+                        </div>
+                        <div class="btn_area">
+                            <a class="btn bgc_white exit" href="javascript:void(0);" onclick="document.getElementById('popup').style.display='none'"><span>취소</span></a>
+                            <a class="btn bgc_point" href="javascript:void(0);" onclick="document.getElementById('popup').style.display='none'"><span>확인</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="button" class="popup_close" onclick="document.getElementById('popup').style.display='none'">
+        </div>
+        <button class="btn_close"></button>
+    </div>
+
+
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='../index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="../signInUp/login.html">로그인</a></li>
+                        <li class="signUp">
+                            <a href="../signInUp/signUp1.html">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/sandwich.html">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/wrap.html">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/choppedSalad.html">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/morning.html">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/smileSup.html">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/cateringMenu.html">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../howToUse/SubwayHowToUse.html">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../howToUse/groupMenuHowToUse.html">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../howToUse/freshIngredients.html">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../howToUse/appHowToUse.html">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../news/eventPromotion.html">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../news/newsNotice.html">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../news/advertisementVideo.html">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../subway_html/subwayHistory.html">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../subway_html/subwayPromise.html">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../subway_html/artistSupport.html">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../subway_html/findStore.html">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../franchise/subwayFranchise.html">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/franchiseFAQ.html">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/franchiseApplication.html">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/branchinfo.html">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/businessDesc.html">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../onlineOder_html/bin_fastsub_step1.html">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../onlineOder_html/homsub_step1.html">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../onlineOder_html/groupOrder.html">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div id="container">
+            <div class="content_wrap">
+                <form method="post" name="orderForm">
+                    <input name="cartStorCd" type="hidden" value="" />
+                    <input name="storCd" type="hidden" />
+                    <input name="ordType" type="hidden" value="ORD_TYPE.HOME_SUB" />
+                    <input name="receiverZipcd" type="hidden" value="21518" />
+                    <input name="receiverAddr" type="hidden" value="인천 남동구 백범로248번길 20" />
+                    <input name="receiverAddrDtl" type="hidden" value="영풍아파트 202동 1101호" />
+                    <input name="changeYn" type="hidden" value="N" />
+                </form>
+                <!-- sub content s -->
+                <div class="order home_sub" id="content">
+                    <!-- index -->
+                    <div class="store_map">
+                        <div class="order_title">
+                            <h3>Home-Sub</h3>
+                            <p>
+                                온라인 주문 시 배달되는 서비스입니다.
+                            </p>
+                        </div>
+                        <ol class="order_step">
+                            <li class="step_shop on">
+                                <strong>STEP 1</strong>
+                                매장선택
+                            </li>
+                            <li class="step_menu">
+                                <strong>STEP 2</strong>
+                                메뉴선택
+                            </li>
+                            <li class="step_order">
+                                <strong>STEP 3</strong>
+                                주문하기
+                            </li>
+                            <li class="step_payment">
+                                <strong>STEP 4</strong>
+                                결제하기
+                            </li>
+                        </ol>
+                        <div class="order_con order_map">
+                            <fieldset class="delivery_address">
+                                <legend>배달 주소 입력</legend>
+                                <dl>
+                                    <dt>배달주소</dt>
+                                    <dd>
+                                        <input id="addr_home" onclick="document.getElementById('popup').style.display=''" placeholder="배달 받으실 주소를 입력해 주세요" readonly="readonly" type="text" value="배달 받으실 주소를 입력하세요.">
+                                        <a href="#" id="ord_pop" onclick="document.getElementById('popup').style.display=''">변경</a>
+                                        
+                                    </dd>
+                                </dl>
+                            </fieldset>
+                            <!-- map api area w1170 h819 -->
+                            <div id="map_api">
+                                <div id="uiShopMap" style="height:820px;"></div>
+                                <div class="store_map_layout">
+                                    <div class="title">
+                                        <span>잠실역</span>
+                                        <a href="#" class="close_btn"></a>
+                                    </div>
+                                    <div class="info">
+                                        <dl>
+                                            <dt>주소</dt>
+                                            <dd>서울특별시 송파구 올림픽로 293-19</dd>
+                                            <dt>연락처</dt>
+                                            <dd>02-2202-1300</dd>
+                                            <dt>영업시간</dt>
+                                            <dd>08:00 - 23:00</dd>
+                                            <dt>최소주문금액</dt>
+                                            <dd>3,000원</dd>
+                                            <dt>배달비</dt>
+                                            <dd>3,900원</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="" target="_blank" class="btn_order"><span>주문불가</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// map api area -->
+                            <div class="store_search">
+                                <h3>매장찾기</h3>
+                                <fieldset>
+                                    <legend>매장 검색</legend>
+                                    <p id="search_result"><strong></strong>검색 결과 <em>3</em>건</p>
+                                </fieldset>
+                                <div class="store_list">
+                                    <div class="store_list_scroll">
+                                        <div class="store_result_container">
+                                            <div class="store_result">
+                                                <ul>
+                                                    <li>
+                                                        <dl class="box">
+                                                            <dt>
+                                                                <strong>잠실역</strong>
+                                                                <label class="my_bookmark">
+                                                                    <input type="checkbox">
+                                                                    <i class="i_star"></i>
+                                                                </label>
+                                                                <em class="" style="cursor:pointer;">배달불가</em>
+                                                            </dt>
+                                                            <dd class="delivery time">
+                                                                <p>예상 배달 소요시간</p>
+                                                                <span>40분</span>
+                                                            </dd>
+                                                            <dd class="delivery">
+                                                                <p>최소 주문 금액</p>
+                                                                <span>3,000원</span>
+                                                            </dd>
+                                                            <dd class="delivery">
+                                                                <p>배달비</p>
+                                                                <span>3,900원</span>
+                                                            </dd>
+                                                            <dd>
+                                                                <p>서울특별시 송파구 올림픽로 293-19 </p>
+                                                                <p>02-2202-1300</p>
+                                                                    <span>152m</span>
+                                                            </dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li>
+                                                        <dl class="box">
+                                                            <dt>
+                                                                <strong>석촌호수</strong>
+                                                                <label class="my_bookmark">
+                                                                    <input type="checkbox">
+                                                                    <i class="i_star"></i>
+                                                                </label>
+                                                                <em class="" style="cursor: pointer;">배달불가</em>
+                                                            </dt>
+                                                            <dd class="delivery time">
+                                                                <p>예상 배달 소요시간</p>
+                                                                <span>50분</span>
+                                                            </dd>
+                                                            <dd class="delivery">
+                                                                <p>최소 주문 금액</p>
+                                                                <span>3,000원</span>
+                                                            </dd>
+                                                            <dd class="delivery">
+                                                                <p>배달비</p>
+                                                                <span>3,900원</span>
+                                                            </dd>
+                                                            <dd>
+                                                                <p>서울특별시 송파구 석촌호수로 298 </p>
+                                                                <p>02-424-0020</p>
+                                                                    <span>509m</span>
+                                                            </dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li>
+                                                        <dl class="box">
+                                                            <dt>
+                                                                <strong>석촌역</strong>
+                                                                <label class="my_bookmark">
+                                                                    <input type="checkbox">
+                                                                    <i class="i_star"></i>
+                                                                </label>
+                                                                <em class="" style="cursor:pointer;">배달불가</em>
+                                                            </dt>
+                                                            <dd class="delivery time">
+                                                                <p>예상 배달 소요시간</p>
+                                                                <span>40분</span>
+                                                            </dd>
+                                                            <dd class="delivery">
+                                                                <p>최소 주문 금액</p>
+                                                                <span>3,000원</span>
+                                                            </dd>
+                                                            <dd class="delivery">
+                                                                <p>배달비</p>
+                                                                <span>3,900원</span>
+                                                            </dd>
+                                                            <dd>
+                                                                <p>서울특별시 송파구 송파대로 438 </p>
+                                                                <p>02-420-4320</p>
+                                                                    <span>1.0km</span>
+                                                            </dd>
+                                                        </dl>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// sub content e -->
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="../footer/policy.html">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="../footer/infoPolicy.html">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../footer/subcard.html">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="https://subwaylistens.com/?subwaylistens&mkt=&priv=84&con=84&tou=84&lang=ko">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

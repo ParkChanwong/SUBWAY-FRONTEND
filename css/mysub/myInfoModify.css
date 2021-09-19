@@ -1,0 +1,529 @@
+#container {
+    position: relative;
+    background-color: #f6f6f6;
+    padding-bottom: 130px;
+}
+
+#content_wrap {
+    padding-top: 0;
+    position: relative;
+    z-index: 3;
+}
+
+#content_wrap h2.subTitle {
+    text-align: center;
+    font-size: 40px;
+    color: #292929;
+    font-family: 'noto_dl';
+    letter-spacing: -0.05em;
+    padding: 73px 0 50px;
+}
+
+.manage_wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1170px;
+    background: #ffffff;
+}
+
+.manage_wrap .form_box {
+    padding: 87px 100px 0 100px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.pw_btn {
+    text-align: center;
+    vertical-align: middle;
+    transition-duration: 0.2s;
+}
+
+.manage_wrap .pw_btn {
+    position: absolute;
+    right: 100px;
+    top: 88px;
+    background-color: #f2f2f2;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 33px;
+    height: 35px;
+    letter-spacing: -0.025em;
+    color: #666666;
+    font-family: 'noto_m';
+    border: 0;
+    cursor: pointer;
+}
+
+.manage_wrap .pw_btn:hover {
+    background-color: #e5e5e5;
+}
+
+.form_box h2{
+    font-size: 26px;
+    font-family: 'noto_r';
+    margin-bottom: 26px;
+    letter-spacing: -0.05em;
+    color: #666666;
+}
+
+.write_info_wrap .input_set {
+    overflow: hidden;
+    position: relative;
+}
+
+.manage_wrap .input_set.style01 {
+    border: 1px solid #e5e5e5;
+}
+
+.write_info_wrap .input_set dl {
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    padding: 22px 30px;
+}
+
+.write_info_wrap .input_set .info_dl {
+    overflow: hidden;
+}
+
+.manage_wrap .input_set.style01 .info_dl {
+    position: relative;
+    border: 0;
+}
+
+.write_info_wrap .input_set dt {
+    float: left;
+    position: relative;
+    font-family: 'noto_dl';
+    width: 120px;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+}
+
+.manage_wrap .input_set.style01 .info_dl dt {
+    position: relative;
+    float: left;
+    width: 140px;
+}
+
+.manage_wrap .input_set.style01 .info_dl dd {
+    position: relative;
+    float: left;
+    width: calc(100% - 140px);
+    color: #292929;
+    margin-left: unset;
+    line-height: 35px;
+    color: #999;
+    font-family: 'noto_dl';
+}
+
+.write_info_wrap > div ~ div {
+    margin-top: 10px;
+}
+
+.manage_wrap .input_set.style01 .info_dl + dl {
+    padding-top: 0;
+}
+
+.write_info_wrap .input_set .phone_num_wrap {
+    display: inline-block;
+}
+
+.write_info_wrap .input_set dd .form_text {
+    display: inline-block;
+    background-color: #fff;
+    width: 100%;
+}
+
+.form_text input {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    font-size: 16px;
+    vertical-align: middle;
+    font-family: 'noto_dl';
+    outline: none;
+    height: 35px;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    color: #999;
+    text-indent: 0;
+}
+
+.write_info_wrap .input_set .btn_input_in {
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+    width: 127px;
+    text-align: center;
+}
+
+.write_info_wrap .input_set .btn_input_in:before {
+    background-color: #e8e8e8;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -16px;
+    height: 32px;
+    width: 2px;
+}
+
+.write_info_wrap .input_set .btn_input_in .in_form_btn {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    height: 35px;
+    font: inherit;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.write_info_wrap .input_set .btn_input_in .in_form_btn span{
+    color: #009223;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+    line-height: 35px;
+    font-family: 'noto_dl';
+}
+
+.manage_wrap .p_notice {
+    margin-top: 28px;
+    font-size: 13px;
+    color: #999;
+    font-family: 'noto_dl';
+}
+
+.form_box h2 ~ h2 {
+    margin-top: 70px;
+}
+
+.write_info_wrap .input_set dd .marketing_agree_box {
+    height: 35px;
+}
+
+.form_checkbox {
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    color: #292929;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+    font-family: 'noto_dl';
+}
+
+.write_info_wrap .input_set dd .marketing_agree_box label {
+    margin-left: 30px;
+}
+
+.write_info_wrap .input_set dd .marketing_agree_box label:first-child {
+    margin-left: 20px;
+}
+
+.form_checkbox input[type="checkbox"] {
+    height: 0;
+    opacity: 0;
+    width: 0;
+    position: absolute;
+    left: -10px;
+}
+
+.form_checkbox .icon {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #dddddd;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.form_checkbox input[type="checkbox"]:checked+span.icon:before {
+    width: 24px;
+}
+
+.form_checkbox input[type="checkbox"]+span.icon::before {
+    content: '';
+    width: 0;
+    height: 20px;
+    background: url(../../images/icon_checkbox.png) 0 0 no-repeat;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    transition-duration: 0.2s;
+}
+
+.form_checkbox .agree_text{
+    margin-top: 4px;
+    display: inline-block;
+}
+
+.btn_area {
+    text-align: center;
+    margin-top: 100px;
+    padding: 40px 0 60px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.btn_area .btn {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+    transition-duration: 0.2s;
+}
+
+.btn_area .btn.bgc_white {
+    background-color: #fff;
+    border: 2px solid #009223;
+    color: #009223;
+    box-sizing: border-box;
+}
+
+.btn.bgc_white:hover{
+    border-color: #00811f;
+}
+
+.btn_area .btn span {
+    display: inline-block;
+    vertical-align: middle;
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    font-family: 'noto_m';
+}
+
+.btn.bgc_point {
+    background-color: #009223;
+    color: #fff;
+}
+
+.btn.bgc_point:hover{
+    background-color: #00811f;
+}
+
+.btn_area .btn:last-child {
+    margin-left: 7px;
+}
+
+.btn.bgc_point span {
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+}
+
+
+
+/* 팝업 css */
+
+.popup_bgc {
+    position: fixed;
+    opacity: 0;
+    background-color: #000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.popup_wrapper {
+    position: absolute;
+    z-index: 1000;
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+    opacity: 1;
+    width: 1000px;
+    margin-left: -500px;
+    left: 50%;
+    top: 20px;
+    height: 795px;
+}
+
+#change_pw {
+    font-size: 16px;
+    color: #666666;
+    font-family: 'noto_dl';
+    overflow:hidden;
+}
+
+#popup_wrap_wh {
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    height: 747px;
+}
+
+#popup_wrap_wh h1.title {
+    font-size: 30px;
+    color: #009223;
+    text-align: center;
+    font-family: 'noto_dl';
+    letter-spacing: -0.05em;
+    line-height: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#popup_wrap_wh h1.title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #009223;
+}
+
+#popup_wrap_wh .chage_pw .txt {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    color: #666666;
+    text-align: center;
+}
+
+.form_box {
+    overflow: hidden;
+}
+
+.write_info_wrap .input_set {
+    overflow: hidden;
+    position: relative;
+}
+
+.write_info_wrap .input_set dl {
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    padding: 22px 30px;
+}
+
+.write_info_wrap .input_set dt {
+    float: left;
+    position: relative;
+    font-family: 'noto_m';
+    width: 120px;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    color: #666666;
+}
+
+.write_info_wrap .input_set dt .ess {
+    background: url(../../images/icon_ess.png) 0 0 no-repeat;
+    width: 7px;
+    height: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin-left: 4px;
+}
+
+.write_info_wrap .input_set dd {
+    float: left;
+    position: relative;
+    width: 786px;
+}
+
+#popup_wrap_wh .chage_pw .write_info_wrap .input_set dl dd {
+    width: calc(100% - 120px);
+}
+
+#popup_wrap_wh .chage_pw .write_info_wrap .input_set dd:before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#popup_wrap_wh .chage_pw .write_info_wrap .input_set dd .form_text {
+    width: 180px;
+}
+
+#popup_wrap_wh .chage_pw .write_info_wrap .input_set dd .form_text #pw{
+    margin-left: 15px;
+}
+
+#popup_wrap_wh .chage_pw .write_info_wrap .input_set dd .form_text #pw::placeholder{
+    color: #ddd;
+    font-family: 'noto_l';
+}
+
+#popup_wrap_wh .chage_pw .write_info_wrap .input_set dd .form_text .input_pw{
+    margin-left: 15px;
+}
+
+#popup_wrap_wh .chage_pw .write_info_wrap .input_set dd .form_text .input_pw::placeholder{
+    color: #ddd;
+    font-family: 'noto_l';
+}
+
+.write_info_wrap .input_set dd .pw_check {
+    vertical-align: top;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    float: right;
+    color: #ff4b06;
+}
+
+#popup_wrap_wh .chage_pw .write_info_wrap .p_notice {
+    position: relative;
+    margin: 16px 0 35px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #999999;
+}
+
+#popup_wrap_wh .chage_pw .write_info_wrap .p_notice:before {
+    content: '※';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#popup_wrap_wh .chage_pw .btn_area {
+    margin: 37px 0 20px;
+    border: 0;
+    padding: 0;
+}
+
+.btn.i_reg:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 16px;
+    background: url(../../images/icon_reg.png) 0 0 no-repeat;
+    margin-left: 7px;
+}
+
+.popup_wrapper .popup_close {
+    background: url(../../images/icon_popup_close.png) 50% 50% no-repeat;
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    right: -73px;
+    top: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    outline: none;
+}

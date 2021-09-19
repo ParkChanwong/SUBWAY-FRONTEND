@@ -1,0 +1,426 @@
+#container.bg_gray{
+    background-color: #f6f6f6;
+    padding-bottom: 130px;
+}
+#container{
+    margin-top: -60px;
+    position: relative;
+}
+#content{
+    padding-top: 0;
+    position: relative;
+    z-index: 3;
+}
+
+#content h2.subTitle{
+    text-align: center;
+    font-size: 40px;
+    color: #292929;
+    font-family: 'noto_dl';
+    letter-spacing: -0.07em;
+    padding: 134px 0 80px;
+}
+.bookmark_wrapper .bookmark_list{
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 40px 100px 80px;
+    width: 1170px;
+}
+.board_list_wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.board_list_wrapper .store_list_sorting{
+    background-color: #f6f6f6;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.board_list_wrapper .store_list_sorting .sort_tit{
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'noto_l';
+}
+
+.form_select select{
+    width: 100%;
+    border: 0;
+    height: 41px;
+    line-height: 41px;
+    font-size: 16px;
+    color: #999999;
+    position: relative;
+    z-index: 1;
+    text-indent: 9px;
+}
+
+.board_list_wrapper .store_list_sorting .form_select{
+    display: inline-block;
+    margin-left: 24px;
+    width: 340px;
+}
+
+.form_select {
+    box-sizing: border-box;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #dddddd;
+}
+
+.form_select:before{
+    content: '';
+    position: absolute;
+    right: 13px;
+    top: 18px;
+    width: 12px;
+    height: 7px;
+    z-index: 3;
+    background: url(../../images/oftenFindImages/icon_select_arr.png);
+}
+.bookmark_wrapper .bookmark_list .board_list_wrapper {
+    padding-bottom: 0;
+}
+
+.content_often{
+    margin: 0 auto;
+    position: relative;
+}
+.bookmark_wrapper .bookmark_list .board_list_wrapper .board_total {
+    margin-bottom: 17px;
+}
+
+.board_list_wrapper .board_total {
+    font-family: 'noto_dl';
+    color: #999999;
+    letter-spacing: -0.045em;
+    float: left;
+    margin-top: 17px;
+}
+
+.board_list_wrapper .board_total strong {
+    font-weight: bold;
+    color: #009223;
+    display: inline-block;
+    margin: 0 0 0 3px;
+}
+.board_list_wrapper table {
+    clear: both;
+    border-top: 4px solid #009223;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.board_list_wrapper table th {
+    color: #009223;
+    font-size: 16px;
+    font-family: 'noto_dl';
+    height: 69px;
+    border-bottom: 1px solid #009223;
+    text-align: center;
+}
+caption {
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+.bookmark_wrapper .bookmark_list .board_list_wrapper tbody td {
+    letter-spacing: -0.05em;
+}
+.board_list_wrapper table td {
+    height: 69px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    color: #292929;
+    font-size: 16px;
+}
+.bookmark_wrapper .bookmark_list .board_list_wrapper tbody td p {
+    color: #999999;
+    font-family: 'noto_dl';
+}
+.data_none p {
+    position: relative;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    color: #999;
+    padding-top: 58px;
+}
+
+.data_none {
+    padding: 172px 0;
+    text-align: center;
+}
+
+.data_none p:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background: url(../../images/oftenFindImages/icon_exc_sm.png);
+}
+
+select{
+    appearance:none;
+}
+
+
+/* 데이터가 없는경우 활성화 */
+/* #t_l_none{
+    display: none;
+} */
+
+#data_none{
+    display: none;
+}
+
+
+
+.bookmark_wrapper .bookmark_list .board_list_wrapper tbody td {
+    letter-spacing: -0.05em;
+}
+
+.board_list_wrapper table td.t_l {
+    text-align: left;
+    padding-left: 30px;
+}
+.board_list_wrapper table td {
+    height: 69px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    color: #292929;
+    font-size: 16px;
+}
+.bookmark_wrapper .bookmark_list .board_list_wrapper table td .store {
+    color: #292929;
+    padding-left: 30px;
+    font-family: 'noto_dl';
+}
+.board_list_wrapper .bookmark_map .map{
+    background: url(../../images/oftenFindImages/icon_map.png);
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0;
+    transition-duration: 0.2s;
+    height: 22px;
+    width: 22px;
+}
+.blind {
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+.board_list_wrapper .bookmark_map address {
+    display: inline-block;
+    color: #292929;
+    font-family: 'noto_dl';
+    font-style: normal;
+    vertical-align: middle;
+    margin-left: 10px;
+    max-width: 88%;
+}
+.board_list_wrapper table td .tel {
+    color: #999999;
+    font-family: 'sw_s';
+}
+
+.my_bookmark .i_star{
+    background: url(../../images/oftenFindImages/icon_star.png) no-repeat center 50% #ffc300;
+    background-size: 12px;
+    display: block;
+    border-radius: 100%;
+    transition-duration: 0.3s;
+    height: 24px;
+    width: 24px;
+}
+.my_bookmark {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 24px;
+    z-index: 5;
+}
+.my_bookmark input {
+    opacity: 0;
+    position: absolute;
+    left: -2px;
+    height: 0;
+    width: 0;
+}
+.bookmark_wrapper .bookmark_list .board_list_wrapper table td .my_bookmark {
+    margin: 0 auto;
+}
+
+.counsel_copy {
+    font-family: 'noto_dl';
+    color: #999999;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.counsel_copy::before {
+    content: '· ';
+}
+
+.store_distance{
+    font-size: 16px;
+    font-family: 'noto_dl';
+}
+
+
+
+/* 팝업창 */
+.popup_back{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.popup_wrapper{
+    width: 620px;
+    height: 694px;
+    transform: matrix(1,0,0,1,0,0);
+
+    background-color: #ffc300;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+}
+
+.popup_wrapper{
+    position: absolute;
+    z-index: 999;
+}
+
+.popup_wrap_wh{
+    padding-right: 40px;
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    height: 644px;
+    box-sizing: border-box;
+    
+}
+.popup_wrap_wh .scroll{
+    overflow-y: scroll;
+    height: 567px;
+}
+.popup_wrap_wh .scroll::-webkit-scrollbar{
+    width: 12px;
+}
+
+.popup_wrap_wh .scroll::-webkit-scrollbar-thumb{
+    background-color: #dddddd; 
+    background-clip: padding-box;
+    border: 4px solid transparent;
+}
+
+.popup_wrap_wh .store .title{
+    text-align: left;
+    padding-bottom: 25px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.popup_wrap_wh .store .title h1{
+    font-family: 'noto_dl';
+    font-size: 30px;
+    color: #009223;
+    letter-spacing: -0.05em;
+    line-height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.popup_wrap_wh .store .title::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #009223;
+}
+
+.store_info_wrap{
+    font-family: 'noto_r';
+}
+
+.store .store_info{
+    margin-top: 5px;
+    min-height: 25px;
+    overflow: hidden;
+}
+
+.store .store_info:first-child{
+    margin-top: 0;
+}
+
+.store .store_info dt{
+    float: left;
+    color: #999999;
+    letter-spacing: -0.05em;
+    width: 105px;
+    margin-bottom: 1px;
+}
+.store .store_info dd{
+    float: left;
+    color: #292929;
+    letter-spacing: -0.04em;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+.store .store_info dd .badge{
+    font-size: 11px;
+    color: #666666;
+    letter-spacing: -0.05em;
+    display: inline-block;
+    border-radius: 15px;
+    border: 1px solid #666;
+    padding: 3px 10px 5px;
+    vertical-align: middle;
+    margin: 0 3px 6px 0;
+}
+
+.popup_wrapper .btn_close{
+    background: url(../../images/icon_popup_close.png) 50% 50% no-repeat;
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    right: -73px;
+    top: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    outline: none;
+}
+
+.popup_back{
+    display: none;
+}

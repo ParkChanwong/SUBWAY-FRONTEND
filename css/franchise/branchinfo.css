@@ -1,0 +1,90 @@
+html,body,button,dl,dt,dd,div,form,fieldset,legend,h1,h2,h3,h4,h5,h6,input,select,textarea,ul,ol,li,p,pre,table,td,th,caption,a,button,figure{margin:0;padding:0; line-height:120%;}
+html,body{background-color:#fff;}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+body{font-size:16px; color:#666666; font-family:font_ns, sans-serif;}
+
+ol,ul{list-style:none}
+a{text-decoration:none; color:#333;}
+img{vertical-align:top; border:0}
+
+#container{ position:relative;} /*margin-top:170px;*/
+
+/* wrap */
+#wrap{min-width:1280px;}
+.content{max-width:1170px; margin:0 auto; position:relative;}
+
+.content {max-width: 1170px; margin: 0 auto; position: relative;}
+.content_main{padding-top:0; position:relative; z-index:3;}
+.content_main h2.sub_tit{text-align:center; font-size:40px; color:#292929; font-weight:300; letter-spacing:-0.07em; padding:50px 0 110px; font-family: noto_m; background-color: #fff;}
+
+.content_wrap {position: sticky; left: 0; top: 0; width: 100%; border-bottom: 1px solid #e5e5e5; height: 59px;  background-color: #fff; z-index: 5;}
+.content_wrap .logo {position: absolute; left: 0; top: 0; height: 60px; width: 110px; background: url('../../images/common/logo_sub_header.png') 0 50% no-repeat; overflow: hidden; text-indent: -9999px; font-size: 0; line-height: 0; opacity: 1; display: none;}
+.content_wrap .top {position: absolute; right: 0; top: 0; height: 32px; padding-top: 28px; font-family: font_sw; font-weight: bold; color: #bbbbbb; font-size: 13px; opacity: 1; display: none;}
+.content_wrap .top::after {content: ''; width: 12px; height: 15px; background: url(../../images/common/icon_arr_top.png) 50% 0 no-repeat; display: inline-block; position: absolute; left: 0; width: 100%; top: 18px;}
+.content_wrap .content_nav {text-align: center;}
+.content_wrap .content_nav ul {overflow: hidden; display: inline-block;}
+.content_wrap .content_nav ul li {float: left; position: relative;}
+.content_wrap .content_nav ul li + li { padding-left: 24px; margin-left: 21px;}
+.content_wrap .content_nav ul li + li::after {content: ''; width: 4px; height: 4px; background-color: #dddddd; border-radius: 30px; position: absolute; left: 0; top: 28px;}
+.content_wrap .content_nav ul li:first-child {margin-left: 0; padding-left: 0;}
+.content_wrap .content_nav ul li:first-child::after {display: none;}
+.content_wrap .content_nav ul li a {display: block; line-height: 60px; color: #999999; font-size: 16px; letter-spacing: -0.08em; position: relative; font-family: noto_r;}
+.content_wrap .content_nav ul li.active a {color: #009223; font-weight: 300;}
+.content_wrap .content_nav ul li.active a::after {content:''; position: absolute; left: 0; width: 100%; height: 4px; bottom: 0; background-color: #009223;}
+
+/* .content_wrap.fixed {positon: sticky; top: 0; left: 0; border-bottom:1px solid #e5e5e5 !important; }
+.content_wrap.fixed .content_nav ul li a{color:#999999 !important;}
+.content_wrap.fixed .content_nav ul li.active a{color:#009223 !important}
+.content_wrap.fixed .content_nav ul li:after{opacity:1 !important;} */
+
+/*branch*/
+.content_main {background-color: #f6f6f6; margin-top: 30px; padding-bottom: 130px;}
+.branch_guide .branch_region {margin: 0 auto; text-align: center; position: relative; top: -29px; width: 1194px; background: url('../../images/franchise/bg_tab.png') 5px 0 no-repeat;}
+.branch_guide .branch_region ul {overflow: hidden; display: inline-block; height: 84px;}
+.branch_guide .branch_region ul li {float: left; width: 391px; border: 1px solid #e5e5e5; position: relative; margin-left: -1px; z-index: 1;}
+.branch_guide .branch_region ul li:first-child {margin-left: 0;}
+.branch_guide .branch_region ul li a {display: block; text-align: center; color: #999999; font-size: 16px; height: 58px; line-height: 58px; background-color: #fff; font-family: noto_dl;}
+.branch_guide .branch_region ul li.active {z-index: 3;}
+.branch_guide .branch_region ul li.active a {background-color: #009223; color: #fff;}
+
+.branch_guide .branch_map_wrap {height: 0; overflow: hidden;}
+.branch_guide .branch_map {margin:0 auto; position:relative; width:1170px;} /*overflow:hidden;*/
+.branch_guide .branch_map .label{position:absolute; left:0px; top:11px; margin-left: 20px; font-family: noto_dl;}
+.branch_guide .branch_map .label li{letter-spacing:-0.05em; margin-top:11px;}
+.branch_guide .branch_map .label li:first-child{margin-top:0}
+.branch_guide .branch_map .label ul li:before {content: ''; display: inline-block; width: 10px; height: 10px; border-radius: 10px; vertical-align: middle; margin-right: 8px; position: relative; top: -2px;}
+.branch_guide .branch_map .label ul li.one:before {background-color: #9631a8}
+.branch_guide .branch_map .label ul li.two:before {background-color: #ffc300;}
+.branch_guide .branch_map .label ul li.thr:before {background-color: #006228;}
+.branch_guide .branch_map .label ul li.for:before {background-color: #62ce08;}
+.branch_guide .branch_map .label ul li.fiv:before {background-color: #ff8201;}
+.branch_guide .branch_map .label ul li.six:before {background-color: #dddddd;}
+.branch_guide .branch_map .map {opacity: 1; transform: scale(0.8); transition-duration: 0.5s; position: relative; z-index: 1;} /*opacity: 0;*/
+.branch_guide .branch_map_wrap#map1 .branch_map {padding: 15px 0 0 35px;}
+.branch_guide .branch_map_wrap#map2 .branch_map {padding: 12px 0 0 0px;}
+.branch_guide .branch_map_wrap#map2 .branch_map .label {margin-left: -10px;}
+.branch_guide .branch_map_wrap#map3 .branch_map {padding: 26px 0 0 103px;}
+.branch_guide .branch_map_wrap#map3 .branch_map .label {margin-top: -12px; margin-left: 42px;}
+.branch_guide .branch_map .branch_info {position: absolute; top: 3px; right: 14px; z-index: 3; margin-right: 10px;}
+.branch_guide .branch_map_wrap#map2 .branch_map .branch_info {margin-right: -10px;}
+.branch_guide .branch_map_wrap#map3 .branch_map .branch_info {margin-top: -12px; margin-right: 40px;}
+.branch_guide .branch_map .branch_info ul {border: 1px solid #dddddd; background-color: #fff; width: 388px; margin-bottom: 18px; padding: 14px 0;}
+.branch_guide .branch_map .branch_info ul li{padding: 24px 0 20px 0; margin: 0 29px; border-top: 1px solid #ddd;}
+.branch_guide .branch_map .branch_info ul li:first-child {border-top: 0;}
+.branch_guide .branch_map .branch_info ul li strong {color: #292929; font-size: 18px; font-weight: bold; letter-spacing:-0.04em; font-family: noto_r; font-weight: bold;}
+.branch_guide .branch_map .branch_info ul li .manager {color: #000; font-size: 13px; letter-spacing:-0.04em; margin-top: 7px; margin-bottom: 15px; font-family: noto_dl;}
+.branch_guide .branch_map .branch_info ul li .addr {color: #999; font-size: 13px; line-height: 23px; letter-spacing:-0.04em; padding-right: 14px; font-family: noto_dl;}
+.branch_guide .branch_map .branch_info p.txt{letter-spacing:-0.05em; font-family: noto_dl;}
+.branch_guide .branch_map .branch_info .btn_franchise {position: absolute; right: 0; bottom: 0; font-weight: 300; letter-spacing:-0.04em; padding-right: 34px; font-family: noto_r;}
+.branch_guide .branch_map .branch_info .btn_franchise::after {content: ''; position: absolute; right: 0; top: -3px; width: 25px; height: 25px; background: url('../../images/common/icon_more.png') 0 0 no-repeat;}
+.branch_guide .branch_map_wrap.active {height: auto;}
+.branch_guide .branch_map_wrap.active .branch_map .map{opacity: 1; transform: scale(1);}
+.branch_guide .branch_map_wrap.active#map3 .branch_map{height: 980px;}
+
+
+
+
+
+
+
+

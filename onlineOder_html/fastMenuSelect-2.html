@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY</title>
+    <link rel="shortcut icon" href="../images/subway_tIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/onlineOrder_css/fastMenuSelect-2.css" type="text/css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/onlinOrder_js/fastMenuSelect-2.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <img src="../images/subway_logo.jpg" alt="SUBWAY 로고" class="logo" onclick="location.href='../index.html'">
+                <div class="header_menu">
+                    <ul>
+                        <li class="login"><a href="../signInUp/login.html">로그인</a></li>
+                        <li class="signUp">
+                            <a href="../signInUp/signUp1.html">회원가입</a>
+                        </li>
+                        <li class="menu_icon">
+                            <a href="https://www.subway.com/en-us/exploreourworld" target="_blank">
+                                <img src="../images/icon_utill_global.png" alt="글로벌">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="menu_categori">
+                    <ul class="categori_ul">
+                        <li class="categori_li">
+                            <p>메뉴소개</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/sandwich.html">
+                                            샌드위치
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/wrap.html">
+                                            랩ㆍ기타
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/choppedSalad.html">
+                                            찹샐러드
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/morning.html">
+                                            아침메뉴
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/smileSup.html">
+                                            스마일 썹
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../menuinfo_html/cateringMenu.html">
+                                            단체메뉴
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>이용방법</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../howToUse/SubwayHowToUse.html">
+                                            써브웨이 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../howToUse/groupMenuHowToUse.html">
+                                            단체메뉴 이용방법
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../howToUse/freshIngredients.html">
+                                            신선한 재료 소개
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../howToUse/appHowToUse.html">
+                                            App 이용방법
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>새소식</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../news/eventPromotion.html">
+                                            이벤트ㆍ프로모션
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../news/newsNotice.html">
+                                            뉴스ㆍ공지사항
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../news/advertisementVideo.html">
+                                            광고영상
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>써브웨이</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../subway_html/subwayHistory.html">
+                                            써브웨이 역사
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../subway_html/subwayPromise.html">
+                                            써브웨이 약속
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../subway_html/artistSupport.html">
+                                            샌드위치 아티스트 지원
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../subway_html/findStore.html">
+                                            매장찾기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>가맹점</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../franchise/subwayFranchise.html">
+                                            써브웨이 프랜차이즈
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/franchiseFAQ.html">
+                                            가맹관련 FAQ
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/franchiseApplication.html">
+                                            가맹신청ㆍ문의
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/branchinfo.html">
+                                            지사안내
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../franchise/businessDesc.html">
+                                            사업설명회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categori_li">
+                            <p>온라인주문</p>
+                            <div class="drop_menu">
+                                <ul class="drop_ul">
+                                    <li class="drop_li">
+                                        <a href="../onlineOder_html/bin_fastsub_step1.html">
+                                            FAST-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../onlineOder_html/homsub_step1.html">
+                                            HOME-SUB
+                                        </a>
+                                    </li>
+                                    <li class="drop_li">
+                                        <a href="../onlineOder_html/groupOrder.html">
+                                            단체주문
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg_w"></div>
+        </header>
+
+        <div id="container">
+            <div class="content_wrap">
+                <h1 class="title">Fast-Sub</h1>
+                <p class="subTitle">온라인 주문 후 매장에서 픽업/시식하는 서비스 입니다.</p>
+                <ul class="step_img_wrap">
+                    <li class="step_shop">
+                        <strong>STEP 1</strong>
+                        매장선택
+                    </li>
+                    <li class="step_menu on">
+                        <strong>STEP 2</strong>
+                        메뉴선택
+                    </li>
+                    <li class="step_order">
+                        <strong>STEP 3</strong>
+                        주문하기
+                    </li>
+                    <li class="step_payment">
+                        <strong>STEP 4</strong>
+                        결제하기
+                    </li>
+                </ul>
+
+                <ul class="step_tap">
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href="">프로모션</a>
+                    </li>
+                    <li class="active">
+                        <a href="">샌드위치</a>
+                    </li>
+                    <li>
+                        <a href="">찹샐러드</a>
+                    </li>
+                    <li>
+                        <a href="">랩ㆍ기타</a>
+                    </li>
+                    <li>
+                        <a href="">사이드ㆍ음료</a>
+                    </li>
+                </ul>
+                <div class="section_wrap">
+                    <div class="section_content">
+                        <div class="menu_info">
+                            <img src="../images/fastMenuSelect-2/스테이크-&-치즈_20200707033941552.jpg" alt="">
+                            <div class="text_info">
+                                <h1>샌드위치</h1>
+                                <h2>스테이크 & 치즈</h2>
+                                <h3>
+                                    Steak & Cheese
+                                    <span></span>
+                                </h3>
+                                <p>육즙이 쫙~풍부한 비프 스테이크의 풍미가 입안 한가득</p>
+                                <button>
+                                    <span>추천 꿀 조합</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Nutrition_content">
+                        <h3>영양성분표</h3>
+                        <div class="board_wrap">
+                            <table>
+                                <colgroup>
+                                    <col width="16%">
+                                    <col width="17%">
+                                    <col width="17%">
+                                    <col width="17%">
+                                    <col width="*">
+                                    <col width="16%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>중량(g)</th>
+                                        <th>열량(kcal)</th>
+                                        <th>당류(g)</th>
+                                        <th>단백질(g)</th>
+                                        <th>포화지방(g)</th>
+                                        <th>나트륨(mg)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>187</td>
+                                        <td>436</td>
+                                        <td>9</td>
+                                        <td>19 (35%)</td>
+                                        <td>9 (60%)</td>
+                                        <td>1376 (69%)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="board_notice">
+                                <li>※ 기본야채 5종(양상추, 토마토, 오이, 피망, 양파) 및 제품에 따른 미트류 포함, 치즈 및 소스 제외, 15cm 위트 브레드 기준</li>
+                                <li>※ 괄호 안 %는 1일 영양소 기준치에 대한 비율</li>
+                            </ul>
+                        </div>
+                        <div class="button_wrap">
+                            <a href="#" class="btn"><span>원산지 정보</span></a>
+                            <a href="#" class="btn"><span>알레르기 정보</span></a>
+                        </div>
+                    </div>
+
+                    <div class="order_wrap">
+                        <div class="order_content">
+                            <ul>
+                                <li class="step1">
+                                    <div class="step_title">
+                                        <p>STEP 01</p>
+                                        <span>필수 선택 *</span>
+                                    </div>
+                                    <div class="step_info">
+                                        <ul>
+                                            <li class="on breadLength">길이 선택</li>
+                                            <li class="on breadSelect">빵 선택</li>
+                                            <li class="on cheeseSelect">치즈 선택</li>
+                                            <li class="on vegeSelect">야채 선택</li>
+                                            <li class="on sauceSelect" style="width: 140px;">소스/시즈닝 선택</li>
+                                        </ul>
+                                        <em>15cm, 플랫브레드 (토스팅), 아메리칸치즈, 양파, 피망, 오이, 토마토, 양상추, 스위트 어니언, 랜치</em>
+                                    </div>
+                                </li>
+                                <li class="step2">
+                                    <div class="step_title">
+                                        <p>STEP 02</p>
+                                        <span>추가 선택</span>
+                                    </div>
+                                    <div class="step_info">
+                                        <ul>
+                                            <li class="on toppingSelect">추가 선택</li>
+                                            <li class="on doubleAdd">미트 선택</li>
+                                        </ul>
+                                        <em>15cm, 플랫브레드 (토스팅), 아메리칸치즈, 양파, 피망, 오이, 토마토, 양상추, 스위트 어니언, 랜치</em>
+                                    </div>
+                                </li>
+                                <li class="step3">
+                                    <div class="step_title">
+                                        <p>STEP 03</p>
+                                        <span>상품 선택</span>
+                                    </div>
+                                    <div class="step_info">
+                                        <ul>
+                                            <li class="on">단품</li>
+                                            <li class="setSelect">세트</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="order_total">
+                            <h1>수량</h1>
+                            <a class="minus"></a>
+                            <span>1</span>
+                            <a class="plus"></a>
+
+                            <div class="total_won">
+                                <p>최종 결제 금액</p>
+                                <strong>8,600</strong>
+                                <em>원</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn_area">
+                        <button class="orderStart_btn bg_g">
+                            <span>주문 시작하기</span>
+                        </button>
+                        <button class="addSide_btn bor_g" style="width: 250px;">
+                            <span>사이드 추가</span>
+                        </button>
+                        <button class="cart_btn bor_g">
+                            <span>장바구니</span>
+                        </button>
+                        <button class="order_btn bg_g">
+                            <a href="orderStep3.html"><span>주문하기</span></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">써브카드</a>
+                        </li>
+                        <li>
+                            <a href="">점주관리자</a>
+                        </li>
+                        <li>
+                            <a href="">Subway Listens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="after">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="after">대표 : 콜린클락</span>
+                    <span class="after">전화 : 02-797-5036</span>
+                    <span>사업자등록번호 : 101-84-04143</span>
+                    <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                </div>
+                <a href="https://www.instagram.com/subwaykorea/" target="_blank" class="footer_sns_icon instagram"></a>
+                <a href="https://www.facebook.com/Subwaykr" target="_blank" class="footer_sns_icon facebook"></a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="popup_bg">
+        <div class="contry_popUp">
+            <h1 class="title">원산지정보</h1>
+            <div class="popUp_content">
+                <div class="popUp_content_wrap">
+                    <ul>
+                        <li>
+                            <div class="img">
+                                <img src="../images/fastMenuSelect-2/icon_country_origin01.png" alt="쇠고기">
+                                <span>쇠고기</span>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <span>미트볼</span>: 호주산
+                                    <br>
+                                    <span>스테이크</span>: 미국산
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="../images/fastMenuSelect-2/icon_country_origin02.png" alt="돼지고기">
+                                <span>돼지고기</span>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <span>베이컨, 살라미, 페퍼로니, 풀드 포크 바비큐</span>: 미국산
+                                    <br>
+                                    <span>베이컨 비츠</span>: 미국산
+                                    <br>
+                                    <span>햄</span>: 외국산(독일, 미국, 네덜란드 등)과 국내산 섞음
+                                    
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="../images/fastMenuSelect-2/icon_country_origin03.png" alt="닭고기">
+                                <span>닭고기</span>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <span>치킨 브레스트, 치킨 스트립, 로티세리 바비큐 치킨
+                                    </span>: 미국산
+                                    <br>
+                                    <span>페퍼치킨 슈니첼</span>: 태국산
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="../images/fastMenuSelect-2/icon_country_origin04.png" alt="칠면조고기">
+                                <span>칠면조고기</span>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <span>터키 브레스트
+                                    </span>: 외국산(칠레, 미국, 헝가리 등)
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="../images/fastMenuSelect-2/icon_country_origin06.png" alt="참치">
+                                <span>참치</span>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <span>참치</span>: 태국산
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="close_btn"></button>
+        </div>
+
+        <div class="allergy_popUp">
+            <h1 class="title">알레르기 유발성분</h1>
+            <div class="popUp_content">
+                <div class="popUp_content_wrap">
+                    <div class="summary"> 
+                            해당 자료는  Subway® 공식업체로부터 제공받는 식품 자료를 근거로 작성되었습니다.
+                            <br>
+                            해당 자료는 최신 정보로 업데이트 되고 있으나 상황에 따라 매장에서 제공되는 재료가 바뀔 수 있습니다.
+                            <br>
+                            식품에 대한 알러지가 있으신 분은 식품 섭취 전 매장에 식품에 대한 정보를 문의하세요.
+                    </div>
+                    <div class="icon_info">
+                        <span class="inc_icon">　</span>=포함
+                    </div>
+                    <div class="caution">
+                        <div class="caution_img">
+                            <img src="../images/fastMenuSelect-2/icon_exc.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                · 써브웨이는 글루텐이 포함 되여 있는 항목에 밀(wheat)이 포함 되어 있습니다.
+                            </li>
+                            <li>
+                                · 자기 분해된 효모균과 단백질 가수분해물은 MSG와 비슷한 식품입니다.
+                            </li>
+                            <li>
+                                · 써브웨이 제품은 정제된 기름만 함유하고 있으며 알레르기가 있는 소비자가 안전하게 소비할 수 있습니다.
+                            </li>
+                            <li>
+                                · 쿠키의 진열 방식으로 인해 쿠키가 다른 견과류와 접촉할 수도 있습니다.
+                            </li>
+                            <li>
+                                ·“참치”에는 표기된 알레르기유발성분은 없으나, 샌드위치 혹은 샐러드 메뉴 주문 시 
+                                <br>
+                                마요네즈와 함께 제공되어 “계란,대두” 알레르기 유발성분을 포함합니다.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="stuff_tab">
+                        <ul>
+                            <li><a href="#">빵</a></li>
+                            <li><a href="#">미트,가금류,계란</a></li>
+                            <li><a href="#">야채</a></li>
+                            <li class="active"><a href="#">치즈</a></li>
+                            <li><a href="#">드레싱 & 컨디먼트</a></li>
+                            <li><a href="#">수프</a></li>
+                            <li><a href="#">쿠키</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </div>
+                    <div class="stuff_table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="hide">품목</th>
+                                    <th>밀</th>
+                                    <th>계란</th>
+                                    <th>우유</th>
+                                    <th>대두</th>
+                                    <th>토마토</th>
+                                    <th>쇠고기</th>
+                                    <th>돼지고기</th>
+                                    <th>닭고기</th>
+                                    <th>새우</th>
+                                    <th>조개류</th>
+                                    <th>땅콩</th>
+                                    <th>호두</th>
+                                    <th>아황산</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>아메리칸<br>치즈</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="inc_icon">　</span></td>
+                                    <td><span class="inc_icon">　</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>슈레드 몬터레이<br>체다 치즈</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="inc_icon">　</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>모차렐라<br>치즈</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="inc_icon">　</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <button class="close_btn"></button>
+        </div>
+
+        <div class="suggestion_popUp">
+            <div class="no_soldOut">
+                <div class="pop_title">
+                    <h1>스테이크 & 치즈</h1>
+                    <p>추천 꿀 조합</p>
+                </div>
+                <div class="pop_info">
+                    <p class="g_text">빵</p>
+                    <p class="b_text">화이트</p>
+                    <p class="g_text">치즈</p>
+                    <p class="b_text">슈레드치즈</p>
+                    <p class="g_text">토스팅</p>
+                    <p class="b_text">토스팅</p>
+                    <p class="g_text">야채</p>
+                    <p class="b_text">양파 피망 오이 토마토 양상추</p>
+                    <p class="g_text">소스/시즈닝</p>
+                    <p class="b_text">스모크 바비큐 사우스 웨스트 치폴레</p>
+                </div>
+                <form class="check_length">
+                    <div class="length_input_wrap">
+                        <input type="radio" id="cm15" name="length_input" checked>
+                        <label for="cm15">
+                            <span></span>
+                            15cm
+                        </label>
+                    </div>
+                    <div class="length_input_wrap">
+                        <input type="radio" id="cm30" name="length_input">
+                        <label for="cm30">
+                            <span></span>
+                            30cm
+                        </label>
+                    </div>
+                </form>
+                <p class="tip_wrap">
+                    <strong>TIP</strong>
+                    (양파, 올리브, 피망, 후추 뿌리고)  토스트
+                </p>
+                <div class="btn_area honey">
+					<a class="btn bgc_point">
+                        <span>적용</span>
+                    </a>
+					<a class="btn bgc_white" style="display: none;">
+                        <span>적용 안함</span>
+                    </a>
+				</div>
+            </div>
+            <button class="close_btn"></button>
+        </div>
+
+         <!-- 빵 길이 선택 -->
+         <div class="popup_wrapper breadLength">
+            <div class="order_popup" id="popup_wrap">
+                <div class="order_display">
+                    <dl>
+                        <dt>빵 길이 선택</dt>
+                        <dd id="breadLength">15cm</dd>
+                    </dl>
+                </div>
+                <div class="popup_content bread_leng">
+                    <input type="hidden" id="breadLengthMeta" readonly value>
+                    <ul>
+                        <li>
+                            <label class="form_circle" for="15SUB">
+                                <input name="breadType" type="radio" checked="checked" id="15SUB" value="15SUB">
+                                <span class="icon"></span>
+                                <em>15cm</em>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="form_circle" for="30SUB">
+                                <input name="breadType" type="radio" id="30SUB" value="30SUB">
+                                <span class="icon"></span>
+                                <em>30cm</em>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="btn_area no_scroll">
+                        <a href="#" class="btn bgc_white">
+                            <span>이전</span>
+                        </a>
+                        <button class="btn bgc_point i_reg" id="ordPrgsNextBtn" type="button">
+                            <span>다음</span>
+                        </button>
+                        <button class="btn bgc_point i_reg" id="ordPrgsChecktBtn" type="button">
+                            <span>확인</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn_close"></button>
+            </div>
+        </div>
+        <!-- 빵 길이 선택 끝 -->
+
+        <!-- 빵 선택 -->
+        <div class="popup_wrapper breadSelect">
+            <div class="order_popup" id="popup_wrap">
+                <div class="order_display">
+                    <dl>
+                        <dt>빵 선택</dt>
+                        <dd id="breadNavi">빵을 선택하세요.</dd>
+                    </dl>
+                </div>
+                <div class="popup_content bread meterial">
+                    <ul>
+                        <li>
+                            <label class="select_recipe soldout" for="b1">
+                                <input type="radio" name="bread" value="1" id="b1">
+                                <span class="shape"></span>
+                                <div class="info">
+                                    <img src="../images/recipe/img_recipe_b05.png" alt="화이트">
+                                    <em>화이트</em>
+                                </div>
+                            </label>
+                            <div class="icon_sold">
+                                <span>품절</span>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="select_recipe" for="b2">
+                                <input type="radio" name="bread" value="2" id="b2">
+                                <span class="shape"></span>
+                                <div class="info">
+                                    <img src="../images/recipe/img_recipe_b01.png" alt="허니오트">
+                                    <em>허니오트</em>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="select_recipe" for="b3">
+                                <input type="radio" name="bread" value="3" id="b3">
+                                <span class="shape"></span>
+                                <div class="info">
+                                    <img src="../images/recipe/img_recipe_b06.png" alt="플랫브레드">
+                                    <em>플랫브레드</em>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="select_recipe soldout" for="b4">
+                                <input type="radio" name="bread" value="4" id="b4">
+                                <span class="shape"></span>
+                                <div class="info">
+                                    <img src="../images/recipe/img_recipe_b05.png" alt="화이트">
+                                    <em>화이트</em>
+                                </div>
+                            </label>
+                            <div class="icon_sold">
+                                <span>품절</span>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="select_recipe" for="b5">
+                                <input type="radio" name="bread" value="5" id="b5">
+                                <span class="shape"></span>
+                                <div class="info">
+                                    <img src="../images/recipe/img_recipe_b01.png" alt="허니오트">
+                                    <em>허니오트</em>
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="select_recipe" for="b6">
+                                <input type="radio" name="bread" value="6" id="b6">
+                                <span class="shape"></span>
+                                <div class="info">
+                                    <img src="../images/recipe/img_recipe_b06.png" alt="플랫브레드">
+                                    <em>플랫브레드</em>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="btn_area no_scroll">
+                        <a href="#" class="btn bgc_white">
+                            <span>이전</span>
+                        </a>
+                        <button class="btn bgc_point i_reg" id="ordPrgsNextBtn" type="button">
+                            <span>다음</span>
+                        </button>
+                        <button class="btn bgc_point i_reg" id="ordPrgsChecktBtn" type="button">
+                            <span>확인</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn_close"></button>
+            </div>
+        </div>
+        <!-- 빵 선택 끝 -->
+
+        <!-- 빵/미트 토스팅 선택 -->
+        <div class="popup_wrapper breadWarming">
+            <div class="order_popup" id="popup_wrap">
+                <div class="order_display">
+                    <dl>
+                        <dt>빵/미트 토스팅 선택</dt>
+                        <dd id="breadLength">선택한 빵 (선택한 빵 길이)</dd>
+                    </dl>
+                </div>
+                <div class="popup_content bread_leng">
+                    <input type="hidden" id="breadLengthMeta" readonly value>
+                    <ul>
+                        <li>
+                            <label class="form_circle">
+                                <input name="warmingChk" type="radio" checked="checked" value="H0001">
+                                <span class="icon"></span>
+                                <em>토스팅</em>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="form_circle">
+                                <input name="warmingChk" type="radio" value="H0002">
+                                <span class="icon"></span>
+                                <em>토스팅 안 함</em>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="btn_area no_scroll">
+                        <a href="#" class="btn bgc_white">
+                            <span>이전</span>
+                        </a>
+                        <button class="btn bgc_point i_reg" id="ordPrgsNextBtn" type="button">
+                            <span>다음</span>
+                        </button>
+                        <button class="btn bgc_point i_reg" id="ordPrgsChecktBtn" type="button">
+                            <span>확인</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn_close"></button>
+            </div>
+        </div>
+        <!-- 빵/미트 토스팅 선택 끝 -->
+
+        <!-- 치즈 선택 -->
+        <div class="popup_wrapper cheeseSelect">
+            <div class="order_popup" id="popup_wrap">
+                <div class="order_display">
+                    <dl>
+                        <dt>치즈 선택</dt>
+                        <dd id="cheeseNavi">선택한 치즈</dd>
+                        <dd class="sum" id="plueCharge" style="display: none;">
+                        +
+                        <span id="doubleCheeseName">아메리칸치즈</span>
+                        <span>900</span>
+                        원
+                        </dd>
+                    </dl>
+                </div>
+                <div class="popup_content cheese meterial">
+                    <div class="scroll">
+                        <ul>
+                            <li>
+                                <label class="select_recipe" for="c1">
+                                    <input type="radio" name="cheese" value="7" id="c1">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_c01.png" alt="아메리칸치즈">
+                                        <em>아메리칸치즈</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="c2">
+                                    <input type="radio" name="cheese" value="8" id="c2">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_c02.png" alt="슈레드치즈">
+                                        <em>슈레드치즈</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="c3">
+                                    <input type="radio" name="cheese" value="10" id="c3">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_c03.png" alt="모짜렐라치즈">
+                                        <em>모짜렐라치즈</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="c4">
+                                    <input type="radio" name="cheese" value="9" id="c4">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/icon_except.png" alt="치즈 제외">
+                                        <em>치즈 제외</em>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                        <input type="hidden" name="cheesePrice" value="900">
+                        <h2>치즈 추가</h2>
+                        <ul>
+                            <li>
+                                <label class="select_recipe" for="dc1">
+                                    <input type="checkbox" name="doubleCheese" value="7" id="dc1">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_c01.png" alt="아메리칸치즈">
+                                        <em>아메리칸치즈</em>
+                                        <span>
+                                            <em>+900</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="dc2">
+                                    <input type="checkbox" name="doubleCheese" value="8" id="dc2">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_c02.png" alt="슈레드치즈">
+                                        <em>슈레드치즈</em>
+                                        <span>
+                                            <em>+900</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="dc3">
+                                    <input type="checkbox" name="doubleCheese" value="10" id="dc3">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_c03.png" alt="모짜렐라치즈">
+                                        <em>모짜렐라치즈</em>
+                                        <span>
+                                            <em>+900</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" class="btn bgc_white">
+                            <span>이전</span>
+                        </a>
+                        <button class="btn bgc_point i_reg" id="ordPrgsNextBtn" type="button">
+                            <span>다음</span>
+                        </button>
+                        <button class="btn bgc_point i_reg" id="ordPrgsChecktBtn" type="button">
+                            <span>확인</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn_close"></button>
+            </div>
+        </div>
+        <!-- 치즈 선택 끝 -->
+
+        <!-- 야채 선택 -->
+        <div class="popup_wrapper vegeSelect">
+            <div class="order_popup" id="popup_wrap">
+                <div class="order_display">
+                    <dl>
+                        <dt>야채 선택 (다중 선택)</dt>
+                        <dd id="vegeNavi">원하는 야채를 선택하여 주세요.</dd>
+                    </dl>
+                </div>
+                <div class="popup_content vegetable meterial">
+                    <div class="lately">
+                        <label class="form_checkbox">
+                            <input type="checkbox" id="orderVegeBtn">
+                            <span class="icon"></span>
+                            최근 야채 불러오기
+                        </label>
+                    </div>
+                    <div class="scroll">
+                        <h2>생야채</h2>
+                        <ul>
+                            <li>
+                                <label class="select_recipe" for="b1">
+                                    <input type="checkbox" name="vegetable" value="64" id="b1">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_v01.png" alt="양상추">
+                                        <em>양상추</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="b2">
+                                    <input type="checkbox" name="vegetable" value="66" id="b2">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_v02.png" alt="토마토">
+                                        <em>토마토</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="b3">
+                                    <input type="checkbox" name="vegetable" value="67" id="b3">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_v03.png" alt="오이">
+                                        <em>오이</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="b4">
+                                    <input type="checkbox" name="vegetable" value="68" id="b4">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_v04.png" alt="피망">
+                                        <em>피망</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="b5">
+                                    <input type="checkbox" name="vegetable" value="69" id="b5">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_v05.png" alt="양파">
+                                        <em>양파</em>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                        <h2>절임류</h2>
+                        <ul>
+                            <li>
+                                <label class="select_recipe">
+                                    <input type="checkbox" name="vegetable" value="70">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_v06.png" alt="피클">
+                                        <em>피클</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe">
+                                    <input type="checkbox" name="vegetable" value="71">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_v07.png" alt="올리브">
+                                        <em>올리브</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe">
+                                    <input type="checkbox" name="vegetable" value="72">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_v08.png" alt="할라피뇨">
+                                        <em>할라피뇨</em>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                        <h2>선택 안함</h2>
+                        <ul>
+                            <li>
+                                <label class="select_recipe">
+                                    <input type="checkbox" name="vegetable" value="73">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/icon_except.png" alt="선택 안함">
+                                        <em>모든 야채 빼기</em>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" class="btn bgc_white">
+                            <span>이전</span>
+                        </a>
+                        <button class="btn bgc_point i_reg" id="ordPrgsNextBtn" type="button">
+                            <span>다음</span>
+                        </button>
+                        <button class="btn bgc_point i_reg" id="ordPrgsChecktBtn" type="button">
+                            <span>확인</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn_close"></button>
+            </div>
+        </div>
+        <!-- 아채 선택 끝 -->
+
+        <!-- 소스/시즈닝 선택 -->
+        <div class="popup_wrapper sauceSelect">
+            <div class="order_popup" id="popup_wrap">
+                <div class="order_display">
+                    <dl>
+                        <dt>소스/시즈닝 선택</dt>
+                        <dd id="sauceNavi">소스/시즈닝을 선택하여 주세요.</dd>
+                    </dl>
+                </div>
+                <div class="popup_content sauce meterial">
+                    <div class="scroll">
+                        <ul>
+                            <li>
+                                <label class="select_recipe">
+                                    <input type="checkbox" name="sauce" value="15">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_s11.png" alt="머스타드">
+                                        <strong>알싸한</strong>
+                                        <em>머스타드</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe">
+                                    <input type="checkbox" name="sauce" value="18">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_s05.png" alt="레드와인식초">
+                                        <strong>과일향</strong>
+                                        <em>레드와인식초</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe">
+                                    <input type="checkbox" name="sauce" value="19">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_s07.png" alt="스위트 어니언">
+                                        <strong>달콤한</strong>
+                                        <em>스위트 어니언</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe">
+                                    <input type="checkbox" name="sauce" value="29">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_s13.png" alt="소금">
+                                        <strong></strong>
+                                        <em>소금</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe">
+                                    <input type="checkbox" name="sauce" value="30">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_recipe_s14.png" alt="후추">
+                                        <strong></strong>
+                                        <em>후추</em>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe">
+                                    <input type="checkbox" name="sauce" value="14">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/icon_except.png" alt="선택안함">
+                                        <strong></strong>
+                                        <em>선택안함</em>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" class="btn bgc_white">
+                            <span>이전</span>
+                        </a>
+                        <button class="btn bgc_point i_reg" id="ordPrgsNextBtn" type="button">
+                            <span>다음</span>
+                        </button>
+                        <button class="btn bgc_point i_reg" id="ordPrgsChecktBtn" type="button">
+                            <span>확인</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn_close"></button>
+            </div>
+        </div>
+        <!-- 소스/시즈닝 선택 끝 -->
+
+        <!-- 추가 선택 -->
+        <div class="popup_wrapper toppingSelect">
+            <div class="order_popup" id="popup_wrap">
+                <div class="order_display">
+                    <dl>
+                        <dt>추가 선택 (다중 선택 가능)</dt>
+                        <dd id="cheeseNavi">원하는 추가 선택 제품을 선택하여 주세요</dd>
+                        <dd class="sum">
+                            +
+                            <span id="toppingAmtNavi">0</span>
+                            원
+                        </dd>
+                    </dl>
+                </div>
+                <div class="popup_content cheese meterial">
+
+                        <ul>
+                            <li>
+                                <label class="select_recipe" for="b1">
+                                    <input type="checkbox" name="topping" value="6671" id="b1">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_toppping_02.png" alt="에그마요">
+                                        <em>에그마요</em>
+                                        <span>
+                                            <em>+1600</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="b2">
+                                    <input type="checkbox" name="topping" value="6672" id="b2">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_toppping_06.png" alt="페퍼로니">
+                                        <em>페퍼로니</em>
+                                        <span>
+                                            <em>+900</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="b3">
+                                    <input type="checkbox" name="topping" value="6673" id="b3">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_toppping_05.png" alt="베이컨">
+                                        <em>베이컨</em>
+                                        <span>
+                                            <em>+1300</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="b4">
+                                    <input type="checkbox" name="topping" value="6674" id="b4">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_toppping_04.png" alt="아보카도">
+                                        <em>아보카도</em>
+                                        <span>
+                                            <em>+1300</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select_recipe" for="b5">
+                                    <input type="checkbox" name="topping" value="6675" id="b5">
+                                    <span class="shape"></span>
+                                    <div class="info">
+                                        <img src="../images/recipe/img_toppping_03.png" alt="오믈렛">
+                                        <em>오믈렛</em>
+                                        <span>
+                                            <em>+1200</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+
+                    <div class="btn_area no_scroll">
+                        <a href="#" class="btn bgc_white">
+                            <span>이전</span>
+                        </a>
+                        <button class="btn bgc_point i_reg" id="ordPrgsNextBtn" type="button">
+                            <span>다음</span>
+                        </button>
+                        <button class="btn bgc_point i_reg" id="ordPrgsChecktBtn" type="button">
+                            <span>확인</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn_close"></button>
+            </div>
+        </div>
+        <!-- 추가 선태 끝 -->
+
+        <!-- 미트 추가 -->
+        <div class="popup_wrapper doubleAdd">
+            <div class="order_popup" id="popup_wrap">
+                <div class="order_display">
+                    <dl>
+                        <dt>미트 추가</dt>
+                        <dd id="doubleNavi">미트 추가를 선택 해 주세요</dd>
+                        <dd class="sum">
+                            <span id="doubleAmt">0</span>
+                            원
+                        </dd>
+                    </dl>
+                </div>
+                <div class="popup_content double">
+                    <div class="radio_select">
+                        <ul>
+                            <li>
+                                <label class="form_circle" for="list01">
+                                    <input id="list01" name="doubleUpYn" type="radio" checked="checked" value="N">
+                                    <span class="icon"></span>
+                                    <em>미트 추가 안 함</em>
+                                </label>
+                            </li>
+                            
+                            <li>
+                                <label class="form_circle" for="list02">
+                                    <input id="list02" name="doubleUpYn" type="radio" checked="checked" value="Y">
+                                    <span class="icon"></span>
+                                    <em>미트 추가 선택</em>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="scroll">
+                        <ul class="radio_list">
+                            <li>
+                                <label for="double1">
+                                    <input type="radio" name="double" id="double1" value="6667">
+                                    <div class="icon">
+                                        <strong>스테이크/치즈</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double2">
+                                    <input type="radio" name="double" id="double2" value="6651">
+                                    <div class="icon">
+                                        <strong>햄</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double3">
+                                    <input type="radio" name="double" id="double3" value="6652">
+                                    <div class="icon">
+                                        <strong>참치</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double4">
+                                    <input type="radio" name="double" id="double4" value="6653">
+                                    <div class="icon">
+                                        <strong>미트볼</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double5">
+                                    <input type="radio" name="double" id="double5" value="6654">
+                                    <div class="icon">
+                                        <strong>비엘티</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double6">
+                                    <input type="radio" name="double" id="double6" value="6655">
+                                    <div class="icon">
+                                        <strong>비엠티</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double7">
+                                    <input type="radio" name="double" id="double7" value="6656">
+                                    <div class="icon">
+                                        <strong>터키</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double8">
+                                    <input type="radio" name="double" id="double8" value="6657">
+                                    <div class="icon">
+                                        <strong>클럽</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double9">
+                                    <input type="radio" name="double" id="double9" value="6651">
+                                    <div class="icon">
+                                        <strong>치킨 데리야끼</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double10">
+                                    <input type="radio" name="double" id="double10" value="6663">
+                                    <div class="icon">
+                                        <strong>스파이시 이탈리안</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double11">
+                                    <input type="radio" name="double" id="double11" value="7272">
+                                    <div class="icon">
+                                        <strong>쉬림프</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double12">
+                                    <input type="radio" name="double" id="double12" value="6659">
+                                    <div class="icon">
+                                        <strong>로티세리 치킨</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double13">
+                                    <input type="radio" name="double" id="double13" value="6660">
+                                    <div class="icon">
+                                        <strong>로스트 치킨</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double14">
+                                    <input type="radio" name="double" id="double14" value="6666">
+                                    <div class="icon">
+                                        <strong>풀드포크</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double15">
+                                    <input type="radio" name="double" id="double15" value="6668">
+                                    <div class="icon">
+                                        <strong>터키베이컨</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="double16">
+                                    <input type="radio" name="double" id="double16" value="7966">
+                                    <div class="icon">
+                                        <strong>페퍼 치킨 슈니첼</strong>
+                                        <span>
+                                            <em>+1800</em>
+                                            원
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_area no_scroll">
+                        <a href="#" class="btn bgc_white">
+                            <span>이전</span>
+                        </a>
+                        <button class="btn bgc_point i_reg" id="ordPrgsNextBtn" type="button">
+                            <span>다음</span>
+                        </button>
+                        <button class="btn bgc_point i_reg" id="ordPrgsChecktBtn" type="button">
+                            <span>확인</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn_close"></button>
+            </div>
+        </div>
+        <!-- 미트 추가 끝 -->
+
+        <!-- 세트 선택 -->
+        <div class="popup_wrapper setSelect">
+            <div class="order_popup set_popup" id="popup_wrap">
+                <h1 class="title">세트 선택</h1>
+                <div class="radio_select">
+                    <ul>
+                        <li>
+                            <label class="form_circle" for="one">
+                                <input id="one" name="setup" type="radio" value="one">
+                                <span class="icon"></span>
+                                <em>단품</em>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label class="form_circle" for="set">
+                                <input id="set" name="setup" type="radio" checked="checked" value="set">
+                                <span class="icon"></span>
+                                <em>세트</em>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form_select">
+                    <select id="setOptionSelectBox" name="setOptionType">
+                        <option selected="selected" value="COOKIE">
+                            쿠키 세트
+                        </option>
+                        <option value="CHIP">
+                            칩 세트
+                        </option>
+                        <option value="SNACK">
+                            웨지 세트
+                        </option>
+                    </select>
+                </div>
+                <div class="option_display">
+                    <dl>
+                        <dt id="setName">쿠키 세트 선택</dt>
+                        <dd id="setOptionNavi">구성품을 선택해주세요.</dd>
+                        <dd class="sum">
+                            +
+                            <span id="setOptionAmt">0</span>
+                            원
+                        </dd>
+                    </dl>
+                </div>
+                <div class="popup_content set">
+                    <div class="scroll">
+                        <h3 id="menuName">쿠키</h3>
+                        <ul class="radio_list" id="setListMst">
+                            <li>
+                                <label for="set1-1">
+                                    <input type="radio" id="set1-1" name="set" value="7387">
+                                    <div class="icon">
+                                        <strong>초코칩 쿠키</strong>
+                                        <span> </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="set1-2">
+                                    <input type="radio" id="set1-2" name="set" value="7388">
+                                    <div class="icon">
+                                        <strong>더블 초코칩 쿠키</strong>
+                                        <span> </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="set1-3">
+                                    <input type="radio" id="set1-3" name="set" value="7389">
+                                    <div class="icon">
+                                        <strong>오트밀 레이즌 쿠키</strong>
+                                        <span> </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="set1-4">
+                                    <input type="radio" id="set1-4" name="set" value="7390">
+                                    <div class="icon">
+                                        <strong>라즈베리 치즈케익 쿠키</strong>
+                                        <span> </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="set1-5">
+                                    <input type="radio" id="set1-5" name="set" value="7391">
+                                    <div class="icon">
+                                        <strong>화이트 초코 마카다미아 쿠키</strong>
+                                        <span> </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="set1-6">
+                                    <input type="radio" id="set1-6" name="set" value="7961">
+                                    <div class="icon">
+                                        <strong>파인애플 쿠키</strong>
+                                        <span> </span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                        <h3>음료</h3>
+                        <ul class="radio_list" id="drinkListMst">
+                            <li>
+                                <label for="set2-0">
+                                    <input type="radio" id="set2-0" name="drink" value="6708">
+                                    <div class="icon">
+                                        <strong>탄산음료 16oz</strong>
+                                        <span>
+
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="set2-1">
+                                    <input type="radio" id="set2-1" name="drink" value="6709">
+                                    <div class="icon">
+                                        <strong>탄산음료 22oz</strong>
+                                        <span>
+
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label for="set2-2">
+                                    <input type="radio" id="set2-2" name="drink" value="6736">
+                                    <div class="icon">
+                                        <strong>생수</strong>
+                                        <span>
+
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" class="btn bgc_white">
+                            <span>이전</span>
+                        </a>
+                        <button class="btn bgc_point i_reg" id="ordPrgsNextBtn" type="button">
+                            <span>다음</span>
+                        </button>
+                        <button class="btn bgc_point i_reg" id="ordPrgsChecktBtn" type="button">
+                            <span>확인</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn_close"></button>
+            </div>
+        </div>
+        <!-- 세트 선택 끝 -->
+    </div>
+
+</body>
+</html>
