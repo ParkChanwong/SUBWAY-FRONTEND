@@ -37,7 +37,7 @@ div {
     top: 0px;
     height: 60px;
     width: 110px;
-    background: url(../images/logo_sub_header.png) 0 50% no-repeat;
+    background: url('/images/logo_sub_header.png') 0 50% no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     font-size: 0;
@@ -155,7 +155,7 @@ a {
     content: '';
     width: 12px;
     height: 15px;
-    background: url(../images/icon_arr_top.png) 50% 0 no-repeat;
+    background: url('/images/icon_arr_top.png') 50% 0 no-repeat;
     display: block;
     position: absolute;
     left: 0;
@@ -272,7 +272,7 @@ strong {
     right: 0;
     top: 33px;
     width: 65px;
-    background: url(../images/icon_step_dot.png) 50% 0 no-repeat;
+    background: url('/images/icon_step_dot.png') 50% 0 no-repeat;
     height: 5px;
 }
 
@@ -428,7 +428,7 @@ img {
     top: 79px;
     width: 11px;
     height: 21px;
-    background: url(../images/icon_step_arr.png) 0 0 no-repeat;
+    background: url('/images/icon_step_arr.png') 0 0 no-repeat;
     z-index: 3;
 }
 
@@ -447,7 +447,7 @@ img {
     top: 0;
     width: 50px;
     height: 50px;
-    background: url(../images/icon_event_slider_arr.png) no-repeat;
+    background: url('/images/icon_event_slider_arr.png') no-repeat;
     overflow: hidden;
     font-size: 0;
     line-height: 0px;
@@ -545,7 +545,7 @@ section {
 }
 
 .process_order .explan_wrap.step1 .txt_box .category_tit::before {
-    background-image: url(../images/order_icon01.png);
+    background-image: url('/images/order_icon01.png');
 }
 
 .process_order .explan_wrap .txt_box p {
@@ -604,7 +604,7 @@ section {
 }
 
 .process_order .explan_wrap .txt_box::after {
-    background: url(../images/arrow_wh_16x22.png) no-repeat 0 0;
+    background: url('/images/arrow_wh_16x22.png') no-repeat 0 0;
     content: '';
     display: block;
     position: absolute;
@@ -668,7 +668,7 @@ section {
 }
 
 .process_order .explan_wrap.step2 .txt_box .category_tit::before {
-    background-image: url(../images/order_icon02.png);
+    background-image: url('/images/order_icon02.png');
 }
 
 .process_order .explan_wrap.step2 .txt_box::after {
@@ -698,5 +698,5 @@ section {
 }
 
 .process_order .explan_wrap.step3 .txt_box .category_tit::before {
-    background-image: url(../images/order_icon03.png);
+    background-image: url('/images/order_icon03.png');
 }
