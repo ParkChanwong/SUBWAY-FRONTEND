@@ -43,7 +43,7 @@ body {
     top: 0px;
     height: 60px;
     width: 110px;
-    background: url('/images/logo_sub_header.png') 0 50% no-repeat;
+    background: url(../images/logo_sub_header.png) 0 50% no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     font-size: 0;
@@ -120,7 +120,7 @@ body {
 .sub_header .top:after {
     content: '';
     height: 15px;
-    background: url('/images/icon_arr_top.png') 50% 0 no-repeat;
+    background: url(../images/icon_arr_top.png) 50% 0 no-repeat;
     display: block;
     position: absolute;
     left: 0;
@@ -160,7 +160,7 @@ body {
     padding-bottom:130px;
 }
 .group_menu_wrapper .visual_slider_wrapper {
-    background:url('/images/bg_group_menu_slider.jpg') 50% 0 no-repeat; 
+    background:url(../images/bg_group_menu_slider.jpg) 50% 0 no-repeat; 
     height:640px; 
     text-align:center; 
     overflow:hidden; 
@@ -239,7 +239,7 @@ body {
     font-size: 0 !important;
     line-height: 0px !important;
     z-index:999 !important;
-    background: url('/images/icon_event_slider_arr.png') no-repeat !important;
+    background: url(../images/icon_event_slider_arr.png) no-repeat !important;
     width: 50px !important; 
     height: 50px !important;
 }
@@ -249,7 +249,7 @@ body {
     font-size: 0 !important;
     line-height: 0px !important;
     z-index:999 !important;
-    background: url('/images/icon_event_slider_arr.png') no-repeat !important;
+    background: url(../images/icon_event_slider_arr.png) no-repeat !important;
     width: 50px !important; 
     height: 50px !important;
     background-position:0 0 !important; 
@@ -265,7 +265,7 @@ body {
     font-size: 0 !important;
     line-height: 0px !important;
     z-index:999 !important;
-    background: url('/images/icon_event_slider_arr.png') no-repeat !important;
+    background: url(../images/icon_event_slider_arr.png) no-repeat !important;
     width: 50px !important; 
     height: 50px !important;
     background-position:100% 0 !important; 
@@ -289,7 +289,7 @@ body {
     float:left; 
     width:70px; 
     height:70px; 
-    background:url('/images/icon_group_menu_pager.png') no-repeat; 
+    background:url(../images/icon_group_menu_pager.png) no-repeat; 
     margin:0 20px; 
     overflow:hidden; 
     font-size:0; 
@@ -348,7 +348,7 @@ body {
     content:''; 
     width:45px;
     height:5px; 
-    background:url('/images/bul04.png') 0 0 no-repeat; 
+    background:url(../images/bul04.png) 0 0 no-repeat; 
     position:absolute; 
     left:-20px; 
     top:50px;
@@ -357,7 +357,7 @@ body {
     display:none;
 }
 .group_menu_wrapper .group_menu_order ol li .icon {
-    background:url('/images/icon_group_menu_order_step.jpg') no-repeat; 
+    background:url(../images/icon_group_menu_order_step.jpg) no-repeat; 
     display:block; 
     width:100px; 
     height:100px; 
@@ -450,7 +450,7 @@ body {
     vertical-align: middle;
     width: 10px;
     height: 14px;
-    background: url('/images/icon_arr_r01.png') 0 0 no-repeat;
+    background: url(../images/icon_arr_r01.png) 0 0 no-repeat;
     margin-left: 7px;
 }
 

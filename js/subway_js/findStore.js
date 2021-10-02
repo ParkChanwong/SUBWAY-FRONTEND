@@ -1,10 +1,11 @@
-$(document).ready(function() {
-    $('.new_store_slider_wrapper').slick({
+var $jq = jQuery.noConflict();
+$jq(document).ready(function() {
+    $jq('.new_store_slider_wrapper').slick({
         dots: true,
         dotsClass : "slick-dots"
     });
     
-    $('.store_slider').slick({
+    $jq('.store_slider').slick({
         dots: true,
         dotsClass : "slick-dots"
     });

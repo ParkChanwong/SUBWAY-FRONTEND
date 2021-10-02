@@ -24,7 +24,7 @@ body {
     height: 59px;
     z-index: 5;
     position: absolute;
-    background-color: transparent;
+    background-color: white;
     font-size: 16px;
     color: #666666;
     font-family: noto_r;
@@ -50,10 +50,10 @@ body {
     text-indent: -9999px;
     font-size: 0;
     line-height: 0;
-    opacity: 0;
 }
 .sub_header .sub_loc {
     text-align: center;
+    background-color: white;
 }
 .sub_header .sub_loc ul {
     overflow: hidden;
@@ -117,7 +117,6 @@ body {
     font-weight: bold;
     color: #bbbbbb;
     font-size: 13px;
-    opacity: 0;
 }
 .sub_header .top:after {
     content: '';
