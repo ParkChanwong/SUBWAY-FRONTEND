@@ -2,7 +2,7 @@
  * 써브웨이 페이징 공통함수
  */
 
-var pagination = {
+ var pagination = {
     requestData : {
         pageNo : 1,
         itemCountPerPage : 3,

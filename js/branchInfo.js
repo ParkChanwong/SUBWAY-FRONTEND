@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    let stickyOffset = $('.content_wrap').offset();
+    let stickyOffset = $('.sub_header').offset();
     $(window).scroll(function() {
         if($(document).scrollTop() > stickyOffset.top) {
             $('.content .logo').fadeIn();
