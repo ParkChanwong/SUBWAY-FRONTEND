@@ -654,6 +654,9 @@
     font-size: 16px;
     font-family: 'noto_dl';
 }
+.board_list_wrapper .content table td a{
+    color: #292929;
+}
 .board_list_wrapper .content table td .num{
     color: #ffc300;
     font-family: 'sw_f';
