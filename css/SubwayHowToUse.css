@@ -42,7 +42,7 @@ a {
     top: 0px;
     height: 60px;
     width: 110px;
-    background: url('/images/logo_sub_header.png') 0 50% no-repeat;
+    background: url(../images/logo_sub_header.png) 0 50% no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     font-size: 0;
@@ -123,7 +123,7 @@ li {
     content: '';
     width: 12px;
     height: 15px;
-    background: url('/images/icon_arr_top.png') 50% 0 no-repeat;
+    background: url(../images/icon_arr_top.png) 50% 0 no-repeat;
     display: block;
     position: absolute;
     left: 0;
@@ -160,7 +160,7 @@ li {
 }
 
 .utilization_subway_wrapper .tab {
-    background: url('/images/bg_tab_subway.png') -5px -1px no-repeat;
+    background: url(../images/bg_tab_subway.png) -5px -1px no-repeat;
     width: 1189px;
     height: 79px;
     margin: 0 auto;
@@ -279,7 +279,7 @@ li {
     right: 0;
     top: 33px;
     width: 65px;
-    background: url('/images/icon_step_dot.png') 50% 0 no-repeat;
+    background: url(../images/icon_step_dot.png) 50% 0 no-repeat;
     height: 5px;
 }
 
@@ -465,7 +465,7 @@ img {
     vertical-align: middle;
     width: 16px;
     height: 16px;
-    background: url('/images/btn_mag.png') 0 0 no-repeat;
+    background: url(../images/btn_mag.png) 0 0 no-repeat;
     margin-left: 4px;
     margin-top: 1px;
 }
@@ -477,7 +477,7 @@ img {
 }
 
 .btn.bgc_bw:hover .i_mag {
-    background: url('/images/btn_mag_hover.png') 0 0 no-repeat;
+    background: url(../images/btn_mag_hover.png) 0 0 no-repeat;
 }
 
 .utilization_subway_content .slider_wrapper .info_content:after {
@@ -487,7 +487,7 @@ img {
     top: 79px;
     width: 11px;
     height: 21px;
-    background: url('/images/icon_step_arr.png') 0 0 no-repeat;
+    background: url(../images/icon_step_arr.png) 0 0 no-repeat;
     z-index: 3;
 }
 
@@ -539,7 +539,7 @@ img {
     width:50px;
     height:50px;
     border-radius:100%;
-    background: url('/images/icon_event_slider_arr.png') no-repeat;
+    background: url(../images/icon_event_slider_arr.png) no-repeat;
 
 }
 
@@ -611,7 +611,7 @@ img {
 
 #order_tip .order_tip_wrapper .section01 .visual {
     height: 510px;
-    background: url('/images/bg_order_tip01.jpg') 50% 0 no-repeat;
+    background: url(../images/bg_order_tip01.jpg) 50% 0 no-repeat;
 }
 
 #order_tip .order_tip_wrapper .content {
@@ -754,7 +754,7 @@ em {
     font-family: sw_f;
     padding-top: 21px;
     letter-spacing: 0.01em;
-    background: url('/images/bul01.png') 0 26px no-repeat;
+    background: url(../images/bul01.png) 0 26px no-repeat;
     padding-left: 20px;
 }
 
@@ -774,7 +774,7 @@ em {
     top: 78px;
     width: 65px;
     height: 5px;
-    background: url('/images/bul02.png') 50% 0 no-repeat;
+    background: url(../images/bul02.png) 50% 0 no-repeat;
 }
 
 #order_tip .order_tip_wrapper .tip_intro ul li:first-child:after {
@@ -782,12 +782,12 @@ em {
 }
 
 #order_tip .order_tip_wrapper .tip_intro ul li.bul02 em {
-    background: url('/images/bul03.png') 0 31px no-repeat;
+    background: url(../images/bul03.png) 0 31px no-repeat;
 }
 
 #order_tip .order_tip_wrapper .section02 .visual {
     height: 480px;
-    background: url('/images/bg_order_tip02.jpg') 50% 0 no-repeat;
+    background: url(../images/bg_order_tip02.jpg) 50% 0 no-repeat;
 }
 
 #order_tip .order_tip_wrapper .section02 .visual .sandwich {
@@ -797,5 +797,5 @@ em {
 
 #order_tip .order_tip_wrapper .section03 .visual {
     height: 480px;
-    background: url('/images/bg_order_tip03.jpg') 50% 0 no-repeat;
+    background: url(../images/bg_order_tip03.jpg) 50% 0 no-repeat;
 }

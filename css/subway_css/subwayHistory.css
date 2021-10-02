@@ -48,7 +48,6 @@ body {
     text-indent: -9999px;
     font-size: 0;
     line-height: 0;
-    opacity: 0;
 }
 .sub_header .sub_loc {
     text-align: center;
@@ -114,7 +113,6 @@ body {
     font-weight: bold;
     color: #bbbbbb;
     font-size: 13px;
-    opacity: 0;
 }
 .sub_header .top:after {
     content: '';

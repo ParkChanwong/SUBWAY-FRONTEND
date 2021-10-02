@@ -20,7 +20,6 @@
     text-indent: -9999px;
     font-size: 0;
     line-height: 0;
-    opacity: 0;
 }
 
 .sub_header .top{
@@ -32,7 +31,6 @@
     font-family: 'sw_f';
     color: #bbbbbb;
     font-size: 13px;
-    opacity: 0;
 }
 .sub_header .top::after{
     content: '';
@@ -46,6 +44,9 @@
     top: 18px;
 }
 
+.content_category {
+    background-color: white;
+}
 
 .content_category ul {
     font-size: 0;
